@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+.bg-image{
+    width: 100vw;
+    height: 100vh;
+    object-fit:cover;
+}
+.heading{
+    position: absolute;
+    top: 20vh;
+    left: 50px;
+    font-size: 8vw;
+    color: #fff;
+    font-family: 'Playfair-display';
+}
+.remaining-time-div{
+    font-size: 3.5rem;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 200px;
+}
+.remaining-time-div p{
+    margin: 0px;
+}
+.time-for-event{
+    font-family: 'Playfair-display';
+}
+.time{
+    display: flex;
+    justify-content: center;
+}
+.duration{
+    font-size: 1.5rem;
+}
+.time-and-duration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto';
+}
+@media all and (max-width:1220px) {
+    .heading{
+        font-size: 8rem;
+    }
+}
+@media all and (max-width:991px) {
+    .heading{
+        top: 37vh;
+        font-size: 6rem;
+        left: 20px;
+    }
+}
+@media all and (max-width:768px) {
+    .heading{
+        top: 32vh;
+        font-size: 6rem;
+    }
+    .remaining-time-div{
+        font-size: 2.5rem;
+        bottom: 150px;
+    }
+    .duration{
+        font-size: 1.2rem;
+    }
+}
+@media all and (max-width:479px) {
+    .heading{
+        top: 32vh;
+        font-size: 5rem;
+    }
+}
+@media all and (max-width:380px) {
+    .heading{
+        top: 32vh;
+        font-size: 4rem;
+    }
+    .remaining-time-div{
+        font-size: 2rem;
+        bottom: 150px;
+    }
+}
