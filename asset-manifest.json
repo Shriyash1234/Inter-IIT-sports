@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/Inter-IIT-sports/static/css/main.cc00afde.css",
-    "main.js": "/Inter-IIT-sports/static/js/main.4fedd5d7.js",
+    "main.css": "/Inter-IIT-sports/static/css/main.35b9d6ac.css",
+    "main.js": "/Inter-IIT-sports/static/js/main.3ececa2f.js",
     "static/js/787.fa79374b.chunk.js": "/Inter-IIT-sports/static/js/787.fa79374b.chunk.js",
     "static/media/iitgn-sports.jpg": "/Inter-IIT-sports/static/media/iitgn-sports.b3ec87754ca648e7fbd5.jpg",
+    "static/media/Inter-IIT-logo.jpg": "/Inter-IIT-sports/static/media/Inter-IIT-logo.64fabe66365bff668a41.jpg",
     "index.html": "/Inter-IIT-sports/index.html",
-    "main.cc00afde.css.map": "/Inter-IIT-sports/static/css/main.cc00afde.css.map",
-    "main.4fedd5d7.js.map": "/Inter-IIT-sports/static/js/main.4fedd5d7.js.map",
+    "main.35b9d6ac.css.map": "/Inter-IIT-sports/static/css/main.35b9d6ac.css.map",
+    "main.3ececa2f.js.map": "/Inter-IIT-sports/static/js/main.3ececa2f.js.map",
     "787.fa79374b.chunk.js.map": "/Inter-IIT-sports/static/js/787.fa79374b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc00afde.css",
-    "static/js/main.4fedd5d7.js"
+    "static/css/main.35b9d6ac.css",
+    "static/js/main.3ececa2f.js"
   ]
 }
