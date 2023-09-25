@@ -1,0 +1,30 @@
+
+.card-title::before,
+.card-text::before {
+    content: "";
+    background-image: url('../Assests//blue.jpg'); /* Reference the local image file */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1.6;
+    z-index: -1;
+}
+.left-aligned-header{
+    font-family: "Fjalla One";
+}
+.cards{
+    position: relative;
+    bottom: 150px;
+}
+.cardsX {
+    font-family: "Olympic Sans", Arial, Helvetica, sans-serif;
+}
+
+.dates{
+    font-size: 2rem;
+    line-height: 1.8rem;
+}

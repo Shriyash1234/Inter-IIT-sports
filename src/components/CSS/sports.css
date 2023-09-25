@@ -1,0 +1,43 @@
+.sports{
+    position: relative;
+    bottom: 130px;
+    width: 70%;
+    margin: auto;
+}
+.sports-heading{
+    font-family: "Fjalla One";
+    text-align: center;
+}
+.sports-names{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sport-div{
+    width: 32%;
+    font-size: 1.6rem;
+    padding: 15px 30px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #41c5eb;
+    color: #fff;
+}
+.sport-div:hover{
+    background-color:#0351a4;
+    transition: 300ms ;
+}
+@media all and (max-width:1070px) {
+    .sport-div{
+        width: 48%;
+    }
+}
+@media all and (max-width:768px) {
+    .sports{
+        width: 90%;
+    }
+    .sport-div{
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 12px 25px;
+        margin: 7px;
+    }
+}

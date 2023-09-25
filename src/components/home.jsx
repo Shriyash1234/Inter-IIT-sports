@@ -1,6 +1,9 @@
 import React,{useState,useEffect} from 'react'
 import Header from './header'
 import About from './about'
+import Cards from './cards'
+import Sports from './sports'
+import Footer from './footer'
 import './CSS/home.css'
 const Home = () => {
   const [countdown, setCountdown] = useState({
@@ -64,6 +67,9 @@ const Home = () => {
           </div>
         </section>
         <About/>
+        <Cards/>
+        <Sports/>
+        <Footer/>
     </section>
   )
 }
