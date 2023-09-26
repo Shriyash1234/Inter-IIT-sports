@@ -5,6 +5,7 @@ import Cards from './cards'
 import Sports from './sports'
 import Footer from './footer'
 import './CSS/home.css'
+import Caraousel from './caraousel'
 const Home = () => {
   const [countdown, setCountdown] = useState({
     days: 0,
@@ -68,6 +69,7 @@ const Home = () => {
         </section>
         <About/>
         <Cards/>
+        <Caraousel/>
         <Sports/>
         <Footer/>
     </section>
