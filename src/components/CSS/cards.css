@@ -18,7 +18,7 @@
 }
 .cards{
     position: relative;
-    bottom: 150px;
+    bottom: 300px;
 }
 .cardsX {
     font-family: "Olympic Sans", Arial, Helvetica, sans-serif;
@@ -27,4 +27,10 @@
 .dates{
     font-size: 2rem;
     line-height: 1.8rem;
+}
+@media all and (max-width:991px) {
+    .cards{
+        position: relative;
+        bottom: 500px;
+    }
 }

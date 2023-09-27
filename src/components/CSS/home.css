@@ -38,6 +38,32 @@
     align-items: center;
     font-family: 'Roboto';
 }
+.homapge-logo{
+	position: relative;
+    text-align: center;
+	min-width: 25vw;
+    width: 300px;
+	margin: 0px auto;
+	bottom: 85vh;
+	left: 37.5vw;
+	border-radius: 10px;
+}
+.time-div{
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    bottom: 580px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: space-between;
+}
+.time-div p{
+    margin-bottom: 0px;
+    font-size: 1.3rem;
+}
 @media all and (max-width:1220px) {
     .heading{
         font-size: 8rem;
@@ -61,6 +87,12 @@
     }
     .duration{
         font-size: 1.2rem;
+    }
+    .homapge-logo{
+        left: calc(50vw - 150px);
+    }
+    .time-div p{
+        margin-bottom: 10px;
     }
 }
 @media all and (max-width:479px) {

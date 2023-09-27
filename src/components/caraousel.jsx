@@ -126,7 +126,7 @@ const data = [
 
 const Caraousel = () => {
     const [currentPage, setCurrentPage] = useState(1);
-    const cardsPerPage = 5;
+    const [cardsPerPage, setCardsPerPage] = useState(4);
 
     const totalCards = data.length;
     const totalPages = Math.ceil(totalCards / cardsPerPage);
@@ -146,9 +146,9 @@ const Caraousel = () => {
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth < 991 && cardsPerPage !== 1) {
-                // Handle resizing logic if needed
+                setCardsPerPage(1);
             } else if (window.innerWidth >= 991 && cardsPerPage !== 5) {
-                // Handle resizing logic if needed
+                setCardsPerPage(4);
             }
         };
 
@@ -171,8 +171,9 @@ const Caraousel = () => {
                 flexDirection: 'column',
             }}
         >
-            <h2 className='about-us'>Carousel</h2>
+
             <div className="carousel-container">
+            <h2 className='about-us'>Participating IITs</h2>
                 <div className="carousel-cards">
                     {displayedCards.map((item) => (
                         <div key={item.id} className="carousel-card">

@@ -43,9 +43,10 @@ const Home = () => {
     <section className='home'>
         <Header color={'white'}/>
         <section className='homepage-image'>
-          <img className='bg-image' src={require('./Assests/iitgn-sports.jpg')}></img>
-          <p className='heading'>Inter IIT Sports<br/> Meet 2023</p>
-          <div className='remaining-time-div'>
+          <img className='bg-image' src={require('./Assests/Swimming-pool.jpg')}></img>
+          {/* <p className='heading'>Inter IIT Sports<br/> Meet 2023</p> */}
+          <img src={require('./Assests/Inter-IIT-logo.jpg')} className='homapge-logo'></img>
+          {/* <div className='remaining-time-div'>
             <p className='time-for-event'>Time for the event</p>
             <p className='time'>
               <div className='time-and-duration'>
@@ -65,6 +66,20 @@ const Home = () => {
                 <div className='duration'>&nbsp;&nbsp;Seconds</div>
               </div>
             </p>
+          </div> */}
+          <div className='time-div'>
+            <div className='name-of-event'>
+              <p>INTER IIT SPORTS MEET 2023</p>
+            </div>
+            <div className='name-of-event'>
+              <p>4 OCT - 9 OCT </p>
+            </div>
+            <div className='name-of-event'>
+              <p>IIT Gandhinagar </p>
+            </div>
+            <div className='name-of-event'>
+              <p>Days Remaining: {countdown.days}</p>
+            </div>
           </div>
         </section>
         <About/>
