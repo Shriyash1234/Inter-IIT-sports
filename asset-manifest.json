@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/Inter-IIT-sports/static/css/main.3637ee43.css",
-    "main.js": "/Inter-IIT-sports/static/js/main.8a444d51.js",
+    "main.css": "/Inter-IIT-sports/static/css/main.ded3e874.css",
+    "main.js": "/Inter-IIT-sports/static/js/main.3ab36697.js",
     "static/js/787.fa79374b.chunk.js": "/Inter-IIT-sports/static/js/787.fa79374b.chunk.js",
-    "static/media/iitgn-sports.jpg": "/Inter-IIT-sports/static/media/iitgn-sports.b3ec87754ca648e7fbd5.jpg",
+    "static/media/Swimming-pool.jpg": "/Inter-IIT-sports/static/media/Swimming-pool.4c87ab3c7fdebde14585.jpg",
     "static/media/Inter-IIT-logo.jpg": "/Inter-IIT-sports/static/media/Inter-IIT-logo.64fabe66365bff668a41.jpg",
+    "static/media/img4.jpg": "/Inter-IIT-sports/static/media/img4.7627dd101efa71abb3dc.jpg",
+    "static/media/img3.jpg": "/Inter-IIT-sports/static/media/img3.92ff1e97d8351104898b.jpg",
+    "static/media/img2.jpg": "/Inter-IIT-sports/static/media/img2.a67bacad0015755394be.jpg",
+    "static/media/img1.jpg": "/Inter-IIT-sports/static/media/img1.df5d121f7202633a8149.jpg",
     "static/media/event1.webp": "/Inter-IIT-sports/static/media/event1.145eef6bd67712f57a84.webp",
     "index.html": "/Inter-IIT-sports/index.html",
-    "main.3637ee43.css.map": "/Inter-IIT-sports/static/css/main.3637ee43.css.map",
-    "main.8a444d51.js.map": "/Inter-IIT-sports/static/js/main.8a444d51.js.map",
+    "main.ded3e874.css.map": "/Inter-IIT-sports/static/css/main.ded3e874.css.map",
+    "main.3ab36697.js.map": "/Inter-IIT-sports/static/js/main.3ab36697.js.map",
     "787.fa79374b.chunk.js.map": "/Inter-IIT-sports/static/js/787.fa79374b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3637ee43.css",
-    "static/js/main.8a444d51.js"
+    "static/css/main.ded3e874.css",
+    "static/js/main.3ab36697.js"
   ]
 }
