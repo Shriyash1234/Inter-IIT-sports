@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Home from './components/home';
+import Schedule from './components/schedule';
 import './index.css';
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
     <HashRouter>
       <Routes>
         <Route index path="/" element={<Home />} />
+        <Route index path="/Schedule" element={<Schedule />} />
       </Routes>
     </HashRouter>
   );
