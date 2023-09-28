@@ -72,9 +72,10 @@
     width: calc(25% - 20px);
     /* Set width for each card */
     margin: 10px;
-    min-height: 300px;
+    height: 300px;
     /* Adjust the minimum height */
     font-family: 'open sans';
+    padding-bottom: auto;
 }
 
 .card-content,
