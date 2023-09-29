@@ -392,6 +392,517 @@ const Schedule = () => {
           </div>
         </div>
       </div>
+      <div className='schedule-div'>
+        <div className='date-day'>
+          <p>Friday 6th October</p>
+        </div>
+        <div className='event-divs'>
+          {/* Morning Session */}
+          <div className='event-div'>
+            <div className='vertical-line-blue'></div>
+            <p className='event-timing'>Morning</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/backstroke.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Men</p>
+            <p className='event-timing'>200M Back Stroke</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Heats
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-blue'></div>
+            <p className='event-timing'>Morning</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/freesyle.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Men</p>
+            <p className='event-timing'>100M Butterfly</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Heats
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-blue'></div>
+            <p className='event-timing'>Morning</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/freesyle.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Women</p>
+            <p className='event-timing'>50M Freestyle</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Heats
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-blue'></div>
+            <p className='event-timing'>Morning</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/freesyle.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Men</p>
+            <p className='event-timing'>50M Freestyle</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Heats
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-blue'></div>
+            <p className='event-timing'>Morning</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/relay.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Women</p>
+            <p className='event-timing'>4 x 50M Freestyle Relay</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Time Trials
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-blue'></div>
+            <p className='event-timing'>Morning</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/water-polo.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Water Polo</p>
+            <p className='event-timing league-matches'>
+              Match-09: WINNER OF POOL A vs RUNNER OF POOL C
+            </p>
+            <p className='event-timing league-matches'>
+              Match-10: WINNER OF POOL B vs RUNNER OF POOL D
+            </p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Matches
+            </p>
+          </div>
+          {/* Add more event-div components for the morning session */}
+        </div>
+        <div className='event-divs'>
+          {/* Evening Session */}
+          <div className='event-div'>
+            <div className='vertical-line-orange'></div>
+            <p className='event-timing'>Evening</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/backstroke.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Men</p>
+            <p className='event-timing'>200M Back Stroke</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Final
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-orange'></div>
+            <p className='event-timing'>Evening</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/freesyle.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Men</p>
+            <p className='event-timing'>100M Butterfly</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Final
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-orange'></div>
+            <p className='event-timing'>Evening</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/freesyle.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Women</p>
+            <p className='event-timing'>50M Freestyle</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Final
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-orange'></div>
+            <p className='event-timing'>Evening</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/freesyle.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Men</p>
+            <p className='event-timing'>50M Freestyle</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Final
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-orange'></div>
+            <p className='event-timing'>Evening</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/water-polo.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Water Polo</p>
+            <p className='event-timing league-matches'>
+              Match-11: RUNNER OF POOL A vs WINNER OF POOL C
+            </p>
+            <p className='event-timing league-matches'>
+              Match-12: RUNNER OF POOL B vs WINNER OF POOL D
+            </p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Matches
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className='schedule-div'>
+        <div className='date-day'>
+          <p>Saturday 7th October</p>
+        </div>
+        <div className='event-divs'>
+          {/* Morning Session */}
+          <div className='event-div'>
+            <div className='vertical-line-blue'></div>
+            <p className='event-timing'>Morning</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/freesyle.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Men</p>
+            <p className='event-timing'>100M Freestyle</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Heats
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-blue'></div>
+            <p className='event-timing'>Morning</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/freesyle.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Women</p>
+            <p className='event-timing'>100M Freestyle</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Heats
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-blue'></div>
+            <p className='event-timing'>Morning</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/freesyle.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Men</p>
+            <p className='event-timing'>50M Butterfly</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Heats
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-blue'></div>
+            <p className='event-timing'>Morning</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/backstroke.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Men</p>
+            <p className='event-timing'>50M Back Stroke</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Heats
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-blue'></div>
+            <p className='event-timing'>Morning</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/relay.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Men</p>
+            <p className='event-timing'>4 x 100M Freestyle Relay</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Time Trials
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-blue'></div>
+            <p className='event-timing'>Morning</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/water-polo.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Water Polo</p>
+            <p className='event-timing league-matches'>
+              Match-13: SF 1 vs SF 4
+            </p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Semi Final 1
+            </p>
+          </div>
+          {/* Add more event-div components for the morning session */}
+        </div>
+        <div className='event-divs'>
+          {/* Evening Session */}
+          <div className='event-div'>
+            <div className='vertical-line-orange'></div>
+            <p className='event-timing'>Evening</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/freesyle.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Men</p>
+            <p className='event-timing'>100M Freestyle</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Final
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-orange'></div>
+            <p className='event-timing'>Evening</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/freesyle.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Women</p>
+            <p className='event-timing'>100M Freestyle</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Final
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-orange'></div>
+            <p className='event-timing'>Evening</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/freesyle.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Men</p>
+            <p className='event-timing'>50M Butterfly</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Final
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-orange'></div>
+            <p className='event-timing'>Evening</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/backstroke.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Men</p>
+            <p className='event-timing'>50M Back Stroke</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Final
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-orange'></div>
+            <p className='event-timing'>Evening</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/water-polo.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Water Polo</p>
+            <p className='event-timing league-matches'>
+              Match-14: SF 2 vs SF 3
+            </p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Semi Final 2
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className='schedule-div'>
+        <div className='date-day'>
+          <p>Sunday 8th October</p>
+        </div>
+        <div className='event-divs'>
+          {/* Morning Session */}
+          <div className='event-div'>
+            <div className='vertical-line-blue'></div>
+            <p className='event-timing'>Morning</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/freesyle.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Men</p>
+            <p className='event-timing'>1500M Freestyle</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Time Trials
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-blue'></div>
+            <p className='event-timing'>Morning</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/backstroke.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Women</p>
+            <p className='event-timing'>50M Back Stroke</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Heats
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-blue'></div>
+            <p className='event-timing'>Morning</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/backstroke.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Men</p>
+            <p className='event-timing'>100M Back Stroke</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Heats
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-blue'></div>
+            <p className='event-timing'>Morning</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/relay.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Women</p>
+            <p className='event-timing'>4 x 50M Medley Relay</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Time Trials
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-blue'></div>
+            <p className='event-timing'>Morning</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/water-polo.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Water Polo</p>
+            <p className='event-timing league-matches'>
+              Rest
+            </p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Matches
+            </p>
+          </div>
+          {/* Add more event-div components for the morning session */}
+        </div>
+        <div className='event-divs'>
+          {/* Evening Session */}
+          <div className='event-div'>
+            <div className='vertical-line-orange'></div>
+            <p className='event-timing'>Evening</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/backstroke.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Women</p>
+            <p className='event-timing'>50M Back Stroke</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Final
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-orange'></div>
+            <p className='event-timing'>Evening</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/backstroke.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Men</p>
+            <p className='event-timing'>100M Back Stroke</p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Final
+            </p>
+          </div>
+          <div className='event-div'>
+            <div className='vertical-line-orange'></div>
+            <p className='event-timing'>Evening</p>
+            <div className='vertical-line-grey'></div>
+            <img
+              src={require('./Assests/icons/water-polo.png')}
+              className='event-icon'
+              alt='Event Icon'
+            />
+            <p className='event-timing'>Water Polo</p>
+            <p className='event-timing league-matches'>
+              Match-15: LOSER OF F1 vs LOSER OF F2
+            </p>
+            <p className='event-timing league-matches'>
+              Match-16: WINNER OF F1 vs WINNER OF F2
+            </p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              3rd Place Match
+            </p>
+            <p className='event-timing' style={{ color: '#7f848c' }}>
+              Final Match
+            </p>
+          </div>
+        </div>
+      </div>
       <Footer />
     </section>
   )
