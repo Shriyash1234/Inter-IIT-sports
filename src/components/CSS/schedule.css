@@ -34,6 +34,12 @@
     height: 50%;
     margin-right: 60px;
 }
+.vertical-line-orange{
+    background-color: #db5000;
+    width: 5px;
+    height: 50%;
+    margin-right: 60px;
+}
 .vertical-line-grey{
     background-color: #ebeef0;
     width: 3px;
