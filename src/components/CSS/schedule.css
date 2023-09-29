@@ -66,13 +66,14 @@
 }
 
 .date-button{
-    background-color: #007BFF;
-    color: white;
+    background-color: #fff;
+    color: #41c5eb;
     padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
+    border: 1px solid #41c5eb;
+    border-radius: 30px;
     cursor: pointer;
     margin: 0 10px;
+    font-size: 1.3rem;
 }
 
   
@@ -113,6 +114,18 @@
     }
     .league-matches{
         font-size: 1rem;
+    }
+    .buttons-container{
+        flex-direction: row;
+        overflow-x:scroll;
+        margin: 10px 0px;
+    }
+    .date-button{
+        margin: 0px 20px;
+        padding: 10px 90px 10px 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 @media all and (max-width:479px) {

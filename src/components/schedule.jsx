@@ -6,8 +6,32 @@ import './CSS/schedule.css';
 const Schedule = () => {
   const [selectedDate, setSelectedDate] = useState('Wednesday 4th October');
 
+  const dateButtonMappings = {
+    "Wednesday 4th October": 'btn-1',
+    "Thursday 5th October": 'btn-2',
+    "Friday 6th October": 'btn-3',
+    "Saturday 7th October": 'btn-4',
+    "Sunday 8th October": 'btn-5',
+  };
+  function setColor(btn){
+    const buttons = document.getElementsByClassName('date-button');
+    const activeButton = document.getElementsByClassName(btn)[0];
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].style.color = "#41c5eb";
+      buttons[i].style.backgroundColor = "#fff";
+    }
+    activeButton.style.color = "#fff";
+    activeButton.style.backgroundColor = "#41c5eb";
+  }
+  window.onload= ()=>{
+    setColor('btn-1');
+  }
+  
   const handleDateButtonClick = (date) => {
-    // Scroll to the top of the page
+    const buttonClass = dateButtonMappings[date];
+    if (buttonClass) {
+      setColor(buttonClass);
+    }
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
@@ -1083,11 +1107,11 @@ const Schedule = () => {
 
       {/* Add buttons for other dates */}
       <div className='buttons-container'>
-        <button className='date-button' onClick={() => handleDateButtonClick('Wednesday 4th October')}>4th Oct</button>
-        <button className='date-button' onClick={() => handleDateButtonClick('Thursday 5th October')}>5th Oct</button>
-        <button className='date-button' onClick={() => handleDateButtonClick('Friday 6th October')}>6th Oct</button>
-        <button className='date-button' onClick={() => handleDateButtonClick('Saturday 7th October')}>7th Oct</button>
-        <button className='date-button' onClick={() => handleDateButtonClick('Sunday 8th October')}>8th Oct</button>
+        <button className='date-button btn-1' onClick={() => handleDateButtonClick('Wednesday 4th October')}>4th Oct</button>
+        <button className='date-button btn-2' onClick={() => handleDateButtonClick('Thursday 5th October')}>5th Oct</button>
+        <button className='date-button btn-3' onClick={() => handleDateButtonClick('Friday 6th October')}>6th Oct</button>
+        <button className='date-button btn-4' onClick={() => handleDateButtonClick('Saturday 7th October')}>7th Oct</button>
+        <button className='date-button btn-5' onClick={() => handleDateButtonClick('Sunday 8th October')}>8th Oct</button>
       </div>
 
       <div className='schedule-div'>
