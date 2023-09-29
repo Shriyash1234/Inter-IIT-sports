@@ -56,17 +56,46 @@
     width: 30px;
     margin-right: 10px;
 }
+
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.date-button{
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+  
+
 @media all and (max-width:991px) {
     .schedule-div{
         width: 90%;
     }
 }
+
 @media all and (max-width:768px) {
     .schedule-div{
         width: 95%;
     }
     .event-timing{
         font-size: 1.2rem;
+    }
+    .buttons-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .date-button{
+        margin: 0 0 10px 0;
     }
 }
 @media all and (max-width:685px) {

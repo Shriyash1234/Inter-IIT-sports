@@ -22,18 +22,18 @@ const Footer = () => {
                     <h4 className='CRTDH-name-footer1' style={{marginBottom:'0px',marginTop:'30px'}}>Connect with us!</h4>
                     <span>
                         <a target='blank' href='https://www.facebook.com/profile.php?id=100007227152962'><Facebook className="fa-brands fb1"/></a>
-                        <a target='blank' href='https://www.instagram.com/ayush_socool'><Instagram className="fa-brands insta1"/></a> 
-                        <a target='blank' href='https://www.linkedin.com/in/ayush-singh-kushwah-0717931b9/'><Linkedin className="fa-brands linkedin1"/></a>
+                        <a target='blank' href='https://instagram.com/interiit_2023?igshid=MzRlODBiNWFlZA=='><Instagram className="fa-brands insta1"/></a> 
+                        <a target='blank' href='https://www.linkedin.com/company/inter-iit-sports-meet-2023/'><Linkedin className="fa-brands linkedin1"/></a>
                         <a target='blank' href='https://www.youtube.com/channel/UCAoBCMDA6s-wUOGfKF9c2kQ'><Youtube className="fa-brands youtube1"/></a>
                     </span>
                 </div>
             </div>
             <div className="quick-links-block" style={styles.quickLinks}>
                 <h4 className='CRTDH-name-footer1'>Quick Links</h4>
-                <Link to='' className='quick-links-link'> <p className='quick-links'><ArrowRight /> &nbsp;Home</p></Link>
-                <Link to='' className='quick-links-link'><p className='quick-links'><ArrowRight /> &nbsp;About us</p></Link>
-                <Link to='' className='quick-links-link'><p className='quick-links'><ArrowRight /> &nbsp;Schedule</p></Link>
-                <Link to='' className='quick-links-link'><p className='quick-links'><ArrowRight /> &nbsp;Leaderboard</p></Link>
+                <Link to='/' className='quick-links-link'> <p className='quick-links'><ArrowRight /> &nbsp;Home</p></Link>
+                <Link to='/' className='quick-links-link'><p className='quick-links'><ArrowRight /> &nbsp;About us</p></Link>
+                <Link to='/Schedule' className='quick-links-link'><p className='quick-links'><ArrowRight /> &nbsp;Schedule</p></Link>
+                <Link to='/' className='quick-links-link'><p className='quick-links'><ArrowRight /> &nbsp;Leaderboard</p></Link>
             </div>
             <div style={styles.reachUs}>
                 <h4 className='CRTDH-name-footer1'>Reach Us</h4>
