@@ -176,7 +176,7 @@ const Caraousel = () => {
                     {displayedCards.map((item) => (
                         <div key={item.id} className="carousel-card">
                             <img
-                                src={require(`${item.image}`)}
+                                src={item.image}
                                 alt={item.title}
                                 className="card-image"
                             />
