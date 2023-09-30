@@ -5,10 +5,10 @@ import { Home } from 'lucide-react';
 import { Phone } from 'lucide-react';
 import { Mail } from 'lucide-react';
 
-import {Youtube } from 'lucide-react'
-import {Instagram} from 'lucide-react'
-import {Facebook} from 'lucide-react'
-import {Linkedin} from 'lucide-react'
+import { Youtube } from 'lucide-react'
+import { Instagram } from 'lucide-react'
+import { Facebook } from 'lucide-react'
+import { Linkedin } from 'lucide-react'
 import './CSS/footer.css'
 const Footer = () => {
     return (
@@ -19,12 +19,12 @@ const Footer = () => {
                 <p className='CRTDH-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iusto ullam.</p>
                 <div className="social-icons">
                     <hr></hr>
-                    <h4 className='CRTDH-name-footer1' style={{marginBottom:'0px',marginTop:'30px'}}>Connect with us!</h4>
+                    <h4 className='CRTDH-name-footer1' style={{ marginBottom: '0px', marginTop: '30px' }}>Connect with us!</h4>
                     <span>
-                        <a target='blank' href='https://www.facebook.com/profile.php?id=100007227152962'><Facebook className="fa-brands fb1"/></a>
-                        <a target='blank' href='https://instagram.com/interiit_2023?igshid=MzRlODBiNWFlZA=='><Instagram className="fa-brands insta1"/></a> 
-                        <a target='blank' href='https://www.linkedin.com/company/inter-iit-sports-meet-2023/'><Linkedin className="fa-brands linkedin1"/></a>
-                        <a target='blank' href='https://www.youtube.com/channel/UCAoBCMDA6s-wUOGfKF9c2kQ'><Youtube className="fa-brands youtube1"/></a>
+                        <a target='blank' href='https://www.facebook.com/profile.php?id=100007227152962'><Facebook className="fa-brands fb1" /></a>
+                        <a target='blank' href='https://instagram.com/interiit_2023?igshid=MzRlODBiNWFlZA=='><Instagram className="fa-brands insta1" /></a>
+                        <a target='blank' href='https://www.linkedin.com/company/inter-iit-sports-meet-2023/'><Linkedin className="fa-brands linkedin1" /></a>
+                        <a target='blank' href='https://www.youtube.com/channel/UCAoBCMDA6s-wUOGfKF9c2kQ'><Youtube className="fa-brands youtube1" /></a>
                     </span>
                 </div>
             </div>
@@ -39,9 +39,9 @@ const Footer = () => {
                 <h4 className='CRTDH-name-footer1'>Reach Us</h4>
                 <p className='Head-office'><Home />&nbsp;&nbsp;Get In Touch</p>
                 <p className='head-office-address'>
-                    <Link to="https://www.google.com/maps/dir//Indian+Institute+Of+Technology+Gandhinagar+(IIT+Gandhinagar)+Indian+Institute+of+Technology+Palaj,+Gujarat+382355/@23.2114236,72.6842489,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x395c2adec1f16d8d:0xdc447b8706689bc3" target='_blank' style={{color:'white',textDecoration:'none'}}>
-                    Academic Block 4/405, IIT Gandhinagar, Palaj, Gandhinagar,
-                    Gujarat - 382355</Link> </p>
+                    <Link to="https://www.google.com/maps/dir//Indian+Institute+Of+Technology+Gandhinagar+(IIT+Gandhinagar)+Indian+Institute+of+Technology+Palaj,+Gujarat+382355/@23.2114236,72.6842489,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x395c2adec1f16d8d:0xdc447b8706689bc3" target='_blank' style={{ color: 'white', textDecoration: 'none' }}>
+                        Academic Block 4/405, IIT Gandhinagar, Palaj, Gandhinagar,
+                        Gujarat - 382355</Link> </p>
                 <hr></hr>
                 <p className='Head-office'><Phone />&nbsp;&nbsp;CALL US</p>
                 <p className='head-office-address'>+91-9925029889 (M)</p>
@@ -63,6 +63,7 @@ const styles = {
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'space-between',
+        marginTop: '50px'
     },
     description: {
         flex: '1 1 30%',
