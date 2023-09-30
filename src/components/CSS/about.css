@@ -88,6 +88,11 @@
   .inter-iit-logo{
     width: 100%;
   }
+
+  .bold {
+    font-weight: bold;
+  }
+  
 @media all and (max-width:1300px) {
     .about-container {
         width: 85%;
