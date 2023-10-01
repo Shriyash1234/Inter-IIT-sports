@@ -6,6 +6,7 @@ import Sports from './sports'
 import Footer from './footer'
 import './CSS/home.css'
 import Caraousel from './caraousel'
+import {CalendarDays } from 'lucide-react'
 const Home = () => {
 
   return (
@@ -18,7 +19,12 @@ const Home = () => {
         <img src={require('./Assests/Inter-IIT-logo-new.jpg')} className='homapage-logo'></img>
 
         <div className="blue-section">
-          <h2 className="centered-heading">37th Inter IIT Aquatics Meet<br />IIT Gandhinagar <br/> 04 Oct - 08 Oct 2023</h2>
+          <h2 className="centered-heading">37th Inter IIT Aquatics Meet 
+          <div className='name-place'>
+            <img src={require('./Assests/IITs/IITGN.jpg')} className='IITGN-icon'></img>&nbsp; IIT Gandhinagar&nbsp;&nbsp;
+            <span className='home-date'> <CalendarDays/> 04 Oct - 08 Oct 2023</span>
+          </div>
+          </h2>
         </div>
       </section>
 

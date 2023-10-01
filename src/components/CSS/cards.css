@@ -18,7 +18,7 @@
 }
 .cards{
     position: relative;
-    bottom: 300px;
+    bottom: 50px;
 }
 .cardsX {
     font-family: "Olympic Sans", Arial, Helvetica, sans-serif;
@@ -31,6 +31,6 @@
 @media all and (max-width:991px) {
     .cards{
         position: relative;
-        bottom: 500px;
+        bottom: 0px;
     }
 }

@@ -47,7 +47,7 @@
     justify-content: center;
     position: relative;
     background-color: #fff;
-    bottom: 300px;
+    bottom: 80px;
 }
 
 .carousel-cards {
@@ -142,7 +142,11 @@
         font-size: 1.6rem;
     }
 }
-
+@media all and (max-width: 991px) {
+    .carousel-container{
+        bottom: 0px;
+    }
+}
 @media all and (max-width: 576px) {
     .carousel-card {
         width: 100%;

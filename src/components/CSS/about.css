@@ -122,7 +122,7 @@
     }
     .about-container {
        width: 90%;
-       bottom: 530px;
+       bottom: 0px;
     }
     .hide-br {
         display: none;

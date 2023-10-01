@@ -1,6 +1,6 @@
 .sports{
     position: relative;
-    bottom: 400px;
+    bottom: 200px;
     width: 70%;
     margin: auto;
 }
@@ -33,6 +33,7 @@
 @media all and (max-width:768px) {
     .sports{
         width: 90%;
+        bottom: 100px;
     }
     .sport-div{
         width: 100%;
