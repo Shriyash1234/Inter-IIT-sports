@@ -43,7 +43,7 @@ function Header(props) {
   return (
     <section className='header'>
       <div className='logos'>
-        <Link to='/'> <img className='comapny-logo' src={require('./Assests/logo.png')}/></Link>
+        <Link to='/'> <img className='comapny-logo' src={require('./Assests/logo-1.png')}/></Link>
       </div>
       <div className="cm-header-wrap" style={{ backgroundColor: headerBackground }}>
         <div className="cm-menu-wrap">

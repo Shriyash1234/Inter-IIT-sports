@@ -13,7 +13,7 @@ const Schedule = () => {
     "Saturday 7th October": 'btn-4',
     "Sunday 8th October": 'btn-5',
   };
-  function setColor(btn){
+  function setColor(btn) {
     const buttons = document.getElementsByClassName('date-button');
     const activeButton = document.getElementsByClassName(btn)[0];
     for (let i = 0; i < buttons.length; i++) {
@@ -23,10 +23,10 @@ const Schedule = () => {
     activeButton.style.color = "#fff";
     activeButton.style.backgroundColor = "#41c5eb";
   }
-  window.onload= ()=>{
+  window.onload = () => {
     setColor('btn-1');
   }
-  
+
   const handleDateButtonClick = (date) => {
     const buttonClass = dateButtonMappings[date];
     if (buttonClass) {
@@ -38,7 +38,7 @@ const Schedule = () => {
     });
     setSelectedDate(date);
   };
-  
+
 
   const renderSchedule = () => {
     switch (selectedDate) {
@@ -1095,7 +1095,6 @@ const Schedule = () => {
                 <p className='event-timing' style={{ color: '#7f848c' }}>League Matches</p>
               </div>
             </div>
-
           </div>
         );
     }

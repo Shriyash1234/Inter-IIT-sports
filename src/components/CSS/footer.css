@@ -11,6 +11,7 @@
     font-size: 1.4rem;
     padding-bottom: 20px;
 }
+
 .quick-links-link{
     text-decoration: none;
     color: #fff;
@@ -89,4 +90,8 @@
     width: 100vw;
     padding: 20px 100px 20px 20px !important;
    }
+}
+
+.quick-links:hover{
+    color: rgb(0, 212, 166);
 }

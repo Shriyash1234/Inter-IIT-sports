@@ -2,9 +2,9 @@
     width: 70%;
     margin: 120px auto;
 }
-/* .result-divs{
-    margin-top: 1400px;
-} */
+.result-divs1{
+    margin-top: 100vh;
+}
 .results-heading{
     font-size: 2rem;
     font-family: "Fjalla One";
