@@ -1165,9 +1165,9 @@ const Results = () => {
       <div className='Results-div'>
         <p className='results-heading'>Overall Results</p>
         <JsonToTable jsonData={tableData} table="resultTable" />
-        <p className='results-heading'>Results</p>
       </div>
       <div className='event-divs result-divs1'>
+        <p className='results-heading'>Results</p>
       <div className='buttons-container'>
         <button className='date-button btn-1' onClick={() => handleDateButtonClick('Wednesday 4th October')}>4th Oct</button>
         <button className='date-button btn-2' onClick={() => handleDateButtonClick('Thursday 5th October')}>5th Oct</button>
