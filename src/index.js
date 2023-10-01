@@ -5,6 +5,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Home from './components/home';
 import Schedule from './components/schedule';
+import Results from './components/results';
 import './index.css';
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route index path="/Schedule" element={<Schedule />} />
+        <Route index path="/Results" element={<Results />} />
       </Routes>
     </HashRouter>
   );

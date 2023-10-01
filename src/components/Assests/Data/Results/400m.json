@@ -1,0 +1,32 @@
+[
+ {
+  "Rank ": 1,
+  "Athlete": "Manav Gadpale",
+  "IIT": "IIT Gandhinagar (IITGN)",
+  "Timing": "00:00:40"
+ },
+ {
+  "Rank ": 2,
+  "Athlete": "Ayush Gupta",
+  "IIT": "IIT Delhi (IITD)",
+  "Timing": "00:00:45"
+ },
+ {
+  "Rank ": 3,
+  "Athlete": "Keshav Kumar",
+  "IIT": "IIT Madras (IITM)",
+  "Timing": "00:00:47"
+ },
+ {
+  "Rank ": 4,
+  "Athlete": "Akash Mehta",
+  "IIT": "IIT Bombay (IITB)",
+  "Timing": "00:00:48"
+ },
+ {
+  "Rank ": 5,
+  "Athlete": "Yash Jadhav",
+  "IIT": "IIT Kanpur (IITK)",
+  "Timing": "00:00:50"
+ }
+]

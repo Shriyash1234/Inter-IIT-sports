@@ -60,7 +60,7 @@ function Header(props) {
                 <Link to="/Schedule" className='link1 links' style={{ color: linkbg }}>Schedule</Link>
               </li>
               <li className="has-child">
-                <Link to="/" className='link1 links' style={{ color: linkbg }}>Leaderboard</Link>
+                <Link to="/Results" className='link1 links' style={{ color: linkbg }}>Results</Link>
               </li>
               <li className="has-child">
                 <Link to="/" className='link1 links' style={{ color: linkbg }}>Contact us</Link>
