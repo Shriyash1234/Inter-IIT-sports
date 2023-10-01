@@ -40,11 +40,6 @@
   "Points": 0
  },
  {
-  "Rank": 9,
-  "IIT": "IIT Bhubaneswar (IITBBS)",
-  "Points": 0
- },
- {
   "Rank": 10,
   "IIT": "IIT Gandhinagar (IITGN)",
   "Points": 0
@@ -55,21 +50,6 @@
   "Points": 0
  },
  {
-  "Rank": 12,
-  "IIT": "IIT Jodhpur (IITJ)",
-  "Points": 0
- },
- {
-  "Rank": 13,
-  "IIT": "IIT Patna (IITP)",
-  "Points": 0
- },
- {
-  "Rank": 14,
-  "IIT": "IIT Indore (IITI)",
-  "Points": 0
- },
- {
   "Rank": 15,
   "IIT": "IIT Mandi (IITMD)",
   "Points": 0
@@ -77,11 +57,6 @@
  {
   "Rank": 16,
   "IIT": "IIT Varanasi (IIT BHU)",
-  "Points": 0
- },
- {
-  "Rank": 17,
-  "IIT": "IIT Palakkad (IITPKD)",
   "Points": 0
  },
  {
@@ -100,18 +75,8 @@
   "Points": 0
  },
  {
-  "Rank": 21,
-  "IIT": "IIT Dharwad (IITDH)",
-  "Points": 0
- },
- {
   "Rank": 22,
   "IIT": "IIT Jammu (IITJMU)",
-  "Points": 0
- },
- {
-  "Rank": 23,
-  "IIT": "IIT Goa (IIT GOA)",
   "Points": 0
  }
 ]

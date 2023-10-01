@@ -13,7 +13,7 @@ function JsonToTable({ jsonData,visiblity,table }) {
     }
   }
   if (!jsonData) {
-    return <div>No data to display.</div>;
+    return <div>Match is yet to happen</div>;
   }
 
   const data = Array.isArray(jsonData) ? jsonData : [jsonData];
