@@ -1,0 +1,69 @@
+.Results-div{
+    width: 70%;
+    margin: 120px auto;
+}
+/* .result-divs{
+    margin-top: 1400px;
+} */
+.results-heading{
+    font-size: 2rem;
+    font-family: "Fjalla One";
+}
+.results-event-div{
+    cursor: pointer;
+    flex-direction: row !important;
+}
+.dropdown{
+    position: absolute;
+    right: 18%;
+}
+.not-visible{
+   visibility: hidden;
+}
+.versus-div{
+    position: absolute;
+    flex-direction: column;
+    margin-top: 250px;
+    left:15.5% !important;
+   justify-content: center;
+   font-size: 1.6rem;
+   height: 150px;
+   width: 70% !important;
+   margin: 270px auto 0px auto;
+}
+.scores{
+    margin-bottom: 0px;
+    font-size: 2.2rem;
+}
+.versus-div-score-text{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+@media all and (max-width:479px) {
+    .result-divs{
+        margin-top: 1600px;
+    }
+}
+@media all and (max-width:768px) {
+    .league-div{
+        flex-direction: column !important;
+        height: 200px;
+    }
+    .dropdown{
+        display: none;
+    }
+    .league-div .vertical-line-blue{
+        display: none;
+    }
+    .versus-div{
+        margin-top: 210px;
+        width: 100% !important;
+        left: 0px !important;
+    }
+}
+@media all and (max-width:479px) {
+    .vertical-line-blue{
+        margin-right: 0px;
+    }
+}
