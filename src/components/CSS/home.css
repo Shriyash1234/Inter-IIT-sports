@@ -1,69 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display:wght@500&family=Roboto:wght@500&display=swap');
-.bg-image{
-    width: 100vw;
-    height: 100vh;
-    object-fit:cover;
-}
-.heading{
+
+.homapage-logo{
     position: absolute;
-    top: 20vh;
-    left: 50px;
-    font-size: 8vw;
-    color: #fff;
-    font-family: 'Playfair-display';
-}
-.remaining-time-div{
-    font-size: 3.5rem;
-    color: #fff;
     text-align: center;
-    position: relative;
-    bottom: 200px;
-}
-.remaining-time-div p{
-    margin: 0px;
-}
-.time-for-event{
-    font-family: 'Playfair-display';
-}
-.time{
-    display: flex;
-    justify-content: center;
-}
-.duration{
-    font-size: 1.5rem;
-}
-.time-and-duration{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Roboto';
-}
-.homapge-logo{
-	position: relative;
-    text-align: center;
-	min-width: 25vw;
-    width: 300px;
-	margin: 0px auto;
-	bottom: 85vh;
-	left: 37.5vw;
-	border-radius: 10px;
-}
-.time-div{
-    background-color: #fff;
-    width: 80%;
-    margin: auto;
-    position: relative;
-    bottom: 580px;
+    min-width: 25vw;
+    width: 200px;
     border-radius: 10px;
     display: flex;
-    flex-wrap: wrap;
-    padding: 30px;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    margin: auto; /* Center horizontally */
+    /* left: calc(50vw - 150px); */
+    left: 38vw;
+    bottom: 38vh;
 }
-.time-div p{
-    margin-bottom: 0px;
-    font-size: 1.3rem;
+
+.image-section {
+    width: 100%;
+    height: 50vh;
 }
+  
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blue-section {
+    background-color: #102661;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+}
+  
+.centered-heading {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
 @media all and (max-width:1220px) {
     .heading{
         font-size: 8rem;
