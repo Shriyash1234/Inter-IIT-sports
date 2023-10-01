@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/Inter-IIT-sports/static/css/main.ebcee1b1.css",
-    "main.js": "/Inter-IIT-sports/static/js/main.fe082d95.js",
+    "main.css": "/Inter-IIT-sports/static/css/main.34c9338d.css",
+    "main.js": "/Inter-IIT-sports/static/js/main.306985ca.js",
     "static/js/787.fa79374b.chunk.js": "/Inter-IIT-sports/static/js/787.fa79374b.chunk.js",
+    "static/media/swmming.png": "/Inter-IIT-sports/static/media/swmming.53010e0269f648c33987.png",
     "static/media/Swimming-pool.jpg": "/Inter-IIT-sports/static/media/Swimming-pool.4c87ab3c7fdebde14585.jpg",
+    "static/media/iitgn-sports.jpg": "/Inter-IIT-sports/static/media/iitgn-sports.b3ec87754ca648e7fbd5.jpg",
     "static/media/IITISM.jpg": "/Inter-IIT-sports/static/media/IITISM.0c17ba354243813e4258.jpg",
     "static/media/IITBHU.jpg": "/Inter-IIT-sports/static/media/IITBHU.6ed51689c1346c85819a.jpg",
     "static/media/IITR.jpg": "/Inter-IIT-sports/static/media/IITR.cb03efbb9a37bb9f7cb3.jpg",
@@ -31,13 +33,14 @@
     "static/media/IITT.jpg": "/Inter-IIT-sports/static/media/IITT.b00c6e76f1019b2b0569.jpg",
     "static/media/backstroke.png": "/Inter-IIT-sports/static/media/backstroke.de3bffab71e1fcc66150.png",
     "static/media/breaststroke.png": "/Inter-IIT-sports/static/media/breaststroke.4eccfb011f11e875a261.png",
+    "static/media/logo.svg": "/Inter-IIT-sports/static/media/logo.8ba0faecf30bc6b181e4.svg",
     "index.html": "/Inter-IIT-sports/index.html",
-    "main.ebcee1b1.css.map": "/Inter-IIT-sports/static/css/main.ebcee1b1.css.map",
-    "main.fe082d95.js.map": "/Inter-IIT-sports/static/js/main.fe082d95.js.map",
+    "main.34c9338d.css.map": "/Inter-IIT-sports/static/css/main.34c9338d.css.map",
+    "main.306985ca.js.map": "/Inter-IIT-sports/static/js/main.306985ca.js.map",
     "787.fa79374b.chunk.js.map": "/Inter-IIT-sports/static/js/787.fa79374b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ebcee1b1.css",
-    "static/js/main.fe082d95.js"
+    "static/css/main.34c9338d.css",
+    "static/js/main.306985ca.js"
   ]
 }
