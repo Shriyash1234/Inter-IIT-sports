@@ -16,7 +16,7 @@ const Footer = () => {
             <div style={styles.description}>
                 <h4 className='CRTDH-name-footer1'>Inter IIT Sports Meet 2023</h4>
                 <hr></hr>
-                <p className='CRTDH-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iusto ullam.</p>
+                <p className='CRTDH-desc'>Hospitality: <span> ✆ 99999 99999</span> </p>
                 <div className="social-icons">
                     <hr></hr>
                     <h4 className='CRTDH-name-footer1' style={{ marginBottom: '0px', marginTop: '30px' }}>Connect with us!</h4>
