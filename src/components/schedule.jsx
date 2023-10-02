@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from './header';
 import Footer from './footer';
 import './CSS/schedule.css';
@@ -38,7 +38,9 @@ const Schedule = () => {
     });
     setSelectedDate(date);
   };
-
+  useEffect(()=>{
+    window.scrollTo(0, 0)
+  },[])
 
   const renderSchedule = () => {
     switch (selectedDate) {

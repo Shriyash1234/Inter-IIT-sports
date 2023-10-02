@@ -9,6 +9,9 @@ import Caraousel from './caraousel'
 import {CalendarDays } from 'lucide-react'
 const Home = () => {
 
+  useEffect(()=>{
+    window.scrollTo(0, 0)
+  },[])
   return (
     <section className='home'>
       <Header color={'white'} />
