@@ -91,10 +91,6 @@ const Results = () => {
     if (buttonClass) {
       setColor(buttonClass);
     }
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
     setSelectedDate(date);
   };
 
