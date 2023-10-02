@@ -6,14 +6,19 @@ import './CSS/caraousel.css';
 
 const data = [
     {
-        id: 1,
-        title: 'IIT Kharagpur (IITKGP)',
-        image: require('./Assests/IITs/IITKGP.jpg'),
+        id: 10,
+        title: 'IIT Gandhinagar (IITGN)',
+        image: require('./Assests/IITs/IITGN.jpg'),
     },
     {
         id: 2,
         title: 'IIT Bombay (IITB)',
         image: require('./Assests/IITs/IITB.jpg'),
+    },
+    {
+        id: 1,
+        title: 'IIT Kharagpur (IITKGP)',
+        image: require('./Assests/IITs/IITKGP.jpg'),
     },
     {
         id: 3,
@@ -49,11 +54,6 @@ const data = [
         id: 9,
         title: 'IIT Bhubaneswar (IITBBS)',
         image: require('./Assests/IITs/IITBBS.jpg'),
-    },
-    {
-        id: 10,
-        title: 'IIT Gandhinagar (IITGN)',
-        image: require('./Assests/IITs/IITGN.jpg'),
     },
     {
         id: 11,
