@@ -16,7 +16,7 @@ const Footer = () => {
             <div style={styles.description}>
                 <h4 className='CRTDH-name-footer1'>Inter IIT Sports Meet 2023</h4>
                 <hr></hr>
-                <p className='CRTDH-desc'>Hospitality: <span> ✆ 99999 99999</span> </p>
+                <p className='CRTDH-name-footer1'>Hospitality: <span className='Head-office'> <Phone /></span> <span className='head-office-address'>+91-99250 29889</span> </p>
                 <div className="social-icons">
                     <hr></hr>
                     <h4 className='CRTDH-name-footer1' style={{ marginBottom: '0px', marginTop: '30px' }}>Connect with us!</h4>
@@ -33,7 +33,7 @@ const Footer = () => {
                 <Link to='/' className='quick-links-link'> <p className='quick-links'><ArrowRight /> &nbsp;Home</p></Link>
                 <Link to='/' className='quick-links-link'><p className='quick-links'><ArrowRight /> &nbsp;About us</p></Link>
                 <Link to='/Schedule' className='quick-links-link'><p className='quick-links'><ArrowRight /> &nbsp;Schedule</p></Link>
-                <Link to='/' className='quick-links-link'><p className='quick-links'><ArrowRight /> &nbsp;Leaderboard</p></Link>
+                <Link to='/' className='quick-links-link'><p className='quick-links'><ArrowRight /> &nbsp;Results</p></Link>
             </div>
             <div style={styles.reachUs}>
                 <h4 className='CRTDH-name-footer1'>Reach Us</h4>
@@ -47,7 +47,7 @@ const Footer = () => {
                 <p className='head-office-address'>+91-9925029889 (M)</p>
                 <hr></hr>
                 <p className='Head-office'><Mail />&nbsp;&nbsp;Email</p>
-                <p className='head-office-address'>crtdh@iitgn.ac.in</p>
+                <p className='head-office-address'>sports.secretary@iitgn.ac.in</p>
             </div>
         </footer1>
     );
