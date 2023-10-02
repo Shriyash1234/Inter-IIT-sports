@@ -27,13 +27,27 @@ function Header(props) {
     };
   }, []);
   const handleAboutLink = () => {
-    const element = document.getElementsByClassName('about-us')[0];
+    const element = document.getElementsByClassName('about-container')[0];
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     } else {
       Navigate('/');
       setTimeout(() => {
-        const updatedElement = document.getElementsByClassName('about-us')[0];
+        const updatedElement = document.getElementsByClassName('about-container')[0];
+        if (updatedElement) {
+          updatedElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 500);
+    }
+  };
+  const handleFooterLink = () => {
+    const element = document.getElementsByClassName('footer-div')[0];
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      Navigate('/');
+      setTimeout(() => {
+        const updatedElement = document.getElementsByClassName('footer-div')[0];
         if (updatedElement) {
           updatedElement.scrollIntoView({ behavior: 'smooth' });
         }
@@ -54,7 +68,7 @@ function Header(props) {
                 <Link className='about-link links' style={{ color: linkbg }}><Link to="/" className='links' style={{ color: linkbg }}>Home</Link></Link>
               </li>
               <li className="has-child">
-                <Link to="/About" className='about-link links' style={{ color: linkbg }}><Link to="/" className='links' style={{ color: linkbg }}>About</Link></Link>
+                <div onClick={handleAboutLink} className='about-link links' style={{ color: linkbg }}><Link to="/" className='links' style={{ color: linkbg }}>About</Link></div>
               </li>
               <li className="has-child">
                 <Link to="/Schedule" className='link1 links' style={{ color: linkbg }}>Schedule</Link>
@@ -63,7 +77,7 @@ function Header(props) {
                 <Link to="/Results" className='link1 links' style={{ color: linkbg }}>Results</Link>
               </li>
               <li className="has-child">
-                <Link to="/" className='link1 links' style={{ color: linkbg }}>Contact us</Link>
+                <div onClick={handleFooterLink} className='link1 links' style={{ color: linkbg,fontSize:"1.5rem" }}>Contact us</div>
               </li>
             </ul>
           </div>

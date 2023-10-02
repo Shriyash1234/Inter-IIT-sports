@@ -18,6 +18,9 @@ const Results = () => {
     console.log(elementHeight);
   }, []);
 
+  useEffect(()=>{
+    window.scrollTo(0, 0)
+  },[])
   const toggleVisibility = (index) => {
     return;
     const newVisibility = isVisible.map((value, i) => (i === index ? !value : false));

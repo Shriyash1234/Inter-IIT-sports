@@ -12,7 +12,7 @@ import { Linkedin } from 'lucide-react'
 import './CSS/footer.css'
 const Footer = () => {
     return (
-        <footer1 style={styles.footer1}>
+        <footer1 style={styles.footer1} className="footer-div">
             <div style={styles.description}>
                 <h4 className='CRTDH-name-footer1'>Inter IIT Sports Meet 2023</h4>
                 <hr></hr>
@@ -31,9 +31,8 @@ const Footer = () => {
             <div className="quick-links-block" style={styles.quickLinks}>
                 <h4 className='CRTDH-name-footer1'>Quick Links</h4>
                 <Link to='/' className='quick-links-link'> <p className='quick-links'><ArrowRight /> &nbsp;Home</p></Link>
-                <Link to='/' className='quick-links-link'><p className='quick-links'><ArrowRight /> &nbsp;About us</p></Link>
                 <Link to='/Schedule' className='quick-links-link'><p className='quick-links'><ArrowRight /> &nbsp;Schedule</p></Link>
-                <Link to='/' className='quick-links-link'><p className='quick-links'><ArrowRight /> &nbsp;Leaderboard</p></Link>
+                <Link to='/Results' className='quick-links-link'><p className='quick-links'><ArrowRight /> &nbsp;Results</p></Link>
             </div>
             <div style={styles.reachUs}>
                 <h4 className='CRTDH-name-footer1'>Reach Us</h4>
