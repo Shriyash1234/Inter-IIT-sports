@@ -19,7 +19,7 @@ const Home = () => {
         <div className='image-section'>
           <img src={require('./Assests/Swimming-pool.jpg')}></img>
         </div>
-        <img src={require('./Assests/Inter-IIT-logo-new.jpg')} className='homapage-logo'></img>
+        <img src={require('./Assests/Inter-IIT-logo.jpg')} className='homapage-logo'></img>
 
         <div className="blue-section">
           <h2 className="centered-heading">37th Inter IIT Aquatics Meet 

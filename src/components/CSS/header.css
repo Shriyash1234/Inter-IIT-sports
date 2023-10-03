@@ -37,7 +37,9 @@
 .level2{
 	flex-direction: column;
 }
-
+.cm-menu-inner{
+	box-shadow: 0 0 2rem 0 rgba(0,0,0,0.2);
+}
 .cm-menu-inner ul {
     margin: 0;
     padding: 0;
@@ -58,7 +60,7 @@
 	font-weight:500;
     font-family: Raleway;
     color: #fff;
-    padding: 10px 20px;
+    padding: 5px 20px;
     font-size: 1.3rem;
     text-decoration: none;
 	/* font-family: Inter; */
@@ -73,7 +75,7 @@
 .comapny-logo{
 	position: fixed;
     z-index: 100;
-    width: 50px;
+    width: 30px;
 	top: 5px;
 	left: 20px;
     /* left: 30px;
@@ -135,6 +137,7 @@
 	.cm-menu-btn, .child-menu-btn {
 	    display: none;
 	}
+	
     
 }
 
@@ -204,8 +207,11 @@
 	.clear-all,.cm-header-wrap{
 		background-color: #fff !important;
 	}
-	.cm-menu-inner > ul  li a,.searchbar,.search-text,.lucide-search,.CRTDH-logo-phone,.cm-menu-btn{
+	.cm-menu-inner > ul  li a,.searchbar,.search-text,.lucide-search{
 		color: #000 !important;
+	}
+	.cm-menu-btn{
+		color: #0d4fad !important;
 	}
 	.CRTDH-logo-phone{
 		z-index: 20;
@@ -225,11 +231,14 @@
 		top:25px; */
 	}
 	.cm-header-wrap {
-		padding: 10px 15px;
+		padding: 5px 15px;
 		margin-top: 0px;
 	}
 	.menu-ul{
 		border-radius: 0px;
+	}
+	.contact-link{
+		color: #000 !important; 
 	}
 }
 

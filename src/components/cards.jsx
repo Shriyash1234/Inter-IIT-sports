@@ -10,11 +10,11 @@ const Cards = () => {
                 
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <img class="card-img-top" src={require('./Assests/event1.webp')} alt="Card image cap"/>
+                        <img class="card-img-top" src={require('./Assests/Cards/aquatics.jpg')} alt="Card image cap"/>
                         <div class="card-body">
-                            <h5 class="card-title dates">4 - 8 October</h5>
-                            <p class="card-text"> <span> aquatics meet</span> </p>
-                            <a href="#" class="btn btn-primary">Games information</a>
+                            <h5 class="card-title dates">37th Inter IIT Aquatics meet</h5>
+                            <p class="card-text-date"> <span>4 - 8 October</span> </p>
+                            {/* <a href="#" class="btn btn-primary">Games information</a> */}
                         </div>
                     </div>
                 </div>
@@ -22,11 +22,10 @@ const Cards = () => {
                 
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <img class="card-img-top" src={require('./Assests/event1.webp')} alt="Card image cap"/>
+                        <img class="card-img-top" src={require('./Assests/Cards/sports-meet.jpg')} alt="Card image cap"/>
                         <div class="card-body">
-                            <h5 class="card-title dates">14 - 20 December</h5>
-                            <p class="card-text"><span> aquatics meet</span> </p>
-                            <a href="#" class="btn btn-primary">Games information</a>
+                            <h5 class="card-title dates">56th Inter IIT Sports Meet</h5>
+                            <p class="card-text-date"><span>14 - 22 December</span> </p>
                         </div>
                     </div>
                 </div>
@@ -34,11 +33,10 @@ const Cards = () => {
                 
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <img class="card-img-top" src={require('./Assests/event1.webp')} alt="Card image cap"/>
+                        <img class="card-img-top" src={require('./Assests/Cards/staff.jpg')} alt="Card image cap"/>
                         <div class="card-body">
-                            <h5 class="card-title dates ">23 - 31 December</h5>
-                            <p class="card-text"><span> aquatics meet</span></p>
-                            <a href="#" class="btn btn-primary">Games information</a>
+                            <h5 class="card-title dates ">28th Inter IIT Staff Meet</h5>
+                            <p class="card-text-date"><span>23 - 31 December</span></p>
                         </div>
                     </div>
                 </div>

@@ -96,6 +96,7 @@
     }
     .event-timing{
         font-size: 1.2rem;
+        margin-right: 0px;
     }
     .buttons-container{
         flex-direction: column;
@@ -103,6 +104,9 @@
     }
     .date-button{
         margin: 0 0 10px 0;
+    }
+    .event-icon{
+        margin-right: 0px;
     }
 }
 @media all and (max-width:685px) {

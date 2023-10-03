@@ -13,12 +13,24 @@
     opacity: 1.6;
     z-index: -1;
 }
+.card-img-top{
+    height: 200px;
+}
+.card-text-date{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.card-title{
+    font-weight: 500;
+    font-family: 'Montserrat',sans-serif;
+
+}
 .left-aligned-header{
     font-family: "Fjalla One";
 }
 .cards{
     position: relative;
-    bottom: 50px;
+    top:50px
 }
 .cardsX {
     font-family: "Olympic Sans", Arial, Helvetica, sans-serif;

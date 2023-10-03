@@ -12,11 +12,19 @@ const Results = () => {
 
   const [isVisible, setIsVisible] = useState(Array(100).fill(false));
 
+  
   useEffect(() => {
-    const elementHeight = document.getElementById('result-table').offsetHeight;
-    document.getElementsByClassName('result-divs1')[0].style.marginTop = elementHeight * 1.1 + 'px';
-    console.log(elementHeight);
-  }, []);
+    const handleWindowLoad = () => {
+        const elementHeight = document.getElementById('result-table').offsetHeight;
+        document.getElementsByClassName('result-divs1')[0].style.marginTop = elementHeight * 1.1 + 'px';
+        console.log(elementHeight);
+    };
+    window.addEventListener('load', handleWindowLoad);
+    return () => {
+        window.removeEventListener('load', handleWindowLoad);
+    };
+}, []);
+
 
   useEffect(()=>{
     window.scrollTo(0, 0)
