@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Inter-IIT-sports/static/css/main.5342ad2c.css",
-    "main.js": "/Inter-IIT-sports/static/js/main.c40e6b12.js",
+    "main.css": "/Inter-IIT-sports/static/css/main.0c1a27d0.css",
+    "main.js": "/Inter-IIT-sports/static/js/main.842158ac.js",
     "static/js/787.fa79374b.chunk.js": "/Inter-IIT-sports/static/js/787.fa79374b.chunk.js",
     "static/media/swmming.png": "/Inter-IIT-sports/static/media/swmming.53010e0269f648c33987.png",
     "static/media/Swimming-pool.jpg": "/Inter-IIT-sports/static/media/Swimming-pool.4c87ab3c7fdebde14585.jpg",
@@ -42,12 +42,12 @@
     "static/media/breaststroke.png": "/Inter-IIT-sports/static/media/breaststroke.4eccfb011f11e875a261.png",
     "static/media/logo.svg": "/Inter-IIT-sports/static/media/logo.4361579e402959270574.svg",
     "index.html": "/Inter-IIT-sports/index.html",
-    "main.5342ad2c.css.map": "/Inter-IIT-sports/static/css/main.5342ad2c.css.map",
-    "main.c40e6b12.js.map": "/Inter-IIT-sports/static/js/main.c40e6b12.js.map",
+    "main.0c1a27d0.css.map": "/Inter-IIT-sports/static/css/main.0c1a27d0.css.map",
+    "main.842158ac.js.map": "/Inter-IIT-sports/static/js/main.842158ac.js.map",
     "787.fa79374b.chunk.js.map": "/Inter-IIT-sports/static/js/787.fa79374b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5342ad2c.css",
-    "static/js/main.c40e6b12.js"
+    "static/css/main.0c1a27d0.css",
+    "static/js/main.842158ac.js"
   ]
 }
