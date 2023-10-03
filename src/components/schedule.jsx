@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from './header';
 import Footer from './footer';
 import './CSS/schedule.css';
+import Water_Polo from './waterpolo';
 
 const Schedule = () => {
   const [selectedDate, setSelectedDate] = useState('Wednesday 4th October');
@@ -1105,7 +1106,6 @@ const Schedule = () => {
   return (
     <section className='schedule-page'>
       <Header color='black' />
-
       {/* Add buttons for other dates */}
       <div className='buttons-container'>
         <button className='date-button btn-1' onClick={() => handleDateButtonClick('Wednesday 4th October')}>4th Oct</button>
@@ -1121,6 +1121,7 @@ const Schedule = () => {
         </div>
         {renderSchedule()}
       </div>
+      <Water_Polo/>
       <Footer />
     </section>
   );
