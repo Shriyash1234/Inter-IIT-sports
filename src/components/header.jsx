@@ -54,6 +54,20 @@ function Header(props) {
       }, 500);
     }
   };
+  const HomeLink = () => {
+    const element = document.getElementsByClassName('logos')[0];
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      Navigate('/');
+      setTimeout(() => {
+        const updatedElement = document.getElementsByClassName('logos')[0];
+        if (updatedElement) {
+          updatedElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 500);
+    }
+  };
   return (
     <section className='header'>
       <div className='logos'>
@@ -65,7 +79,7 @@ function Header(props) {
           <div className="cm-menu-inner">
             <ul className="menu-ul clear-all" >
               <li className="has-child">
-                <Link className='about-link links' style={{ color: linkbg }}><Link to="/" className='links' style={{ color: linkbg }}>Home</Link></Link>
+              <div onClick={HomeLink} className='about-link links' style={{ color: linkbg }}><Link to="/" className='links' style={{ color: linkbg }}>Home</Link></div>
               </li>
               <li className="has-child">
                 <div onClick={handleAboutLink} className='about-link links' style={{ color: linkbg }}><Link to="/" className='links' style={{ color: linkbg }}>About</Link></div>
