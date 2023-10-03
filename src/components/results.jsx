@@ -1324,7 +1324,7 @@ const Results = () => {
 
   return (
     <section className='Results'>
-      <Header color='black' />
+      <Header color='white' />
       <div className='Results-div'>
         <p className='results-heading'>Overall Results</p>
         <JsonToTable jsonData={tableData} table="resultTable" />

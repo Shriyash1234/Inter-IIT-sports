@@ -9,23 +9,23 @@ function Header(props) {
   const color = props.color;
   const anticolor = color === 'white' ? 'black' : 'white'
   const [linkbg, setLinkbg] = useState(color);
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setHeaderBackground("#fff");
-        color === 'white' ? setLinkbg(anticolor) : setLinkbg(color)
-      } else {
-        color === 'white' ? setHeaderBackground('transparent') : setHeaderBackground('#fff');
-        setLinkbg(color)
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 100) {
+  //       setHeaderBackground("#fff");
+  //       color === 'white' ? setLinkbg(anticolor) : setLinkbg(color)
+  //     } else {
+  //       color === 'white' ? setHeaderBackground('transparent') : setHeaderBackground('#fff');
+  //       setLinkbg(color)
+  //     }
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
+  //   window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
   const handleAboutLink = () => {
     const element = document.getElementsByClassName('about-container')[0];
     if (element) {
@@ -77,7 +77,7 @@ function Header(props) {
                 <Link to="/Results" className='link1 links' style={{ color: linkbg }}>Results</Link>
               </li>
               <li className="has-child">
-                <div onClick={handleFooterLink} className='link1 links' style={{ color: linkbg,fontSize:"1.5rem" }}>Contact us</div>
+                <div onClick={handleFooterLink} className='link1 links' style={{ color: linkbg,fontSize:"1.4rem" }}>Contact us</div>
               </li>
             </ul>
           </div>

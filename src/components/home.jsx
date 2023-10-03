@@ -24,7 +24,8 @@ const Home = () => {
         <div className="blue-section">
           <h2 className="centered-heading">37th Inter IIT Aquatics Meet 
           <div className='name-place'>
-            <img src={require('./Assests/IITs/IITGN.jpg')} className='IITGN-icon'></img>&nbsp; IIT Gandhinagar&nbsp;&nbsp;
+            {/* <img src={require('./Assests/IITs/IITGN.jpg')} className='IITGN-icon'></img> */}
+            &nbsp; IIT Gandhinagar&nbsp;&nbsp;
             <span className='home-date'> <CalendarDays/> 04 Oct - 08 Oct 2023</span>
           </div>
           </h2>

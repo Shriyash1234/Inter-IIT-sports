@@ -1104,7 +1104,7 @@ const Schedule = () => {
 
   return (
     <section className='schedule-page'>
-      <Header color='black' />
+      <Header color='white' />
 
       {/* Add buttons for other dates */}
       <div className='buttons-container'>

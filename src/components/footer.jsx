@@ -16,15 +16,16 @@ const Footer = () => {
             <div style={styles.description}>
                 <h4 className='CRTDH-name-footer1'>Inter IIT Sports Meet 2023</h4>
                 <hr></hr>
-                <p className='CRTDH-desc'>Hospitality: <span> ✆ 99999 99999</span> </p>
+                <p className='CRTDH-desc'>Oficial website of INTER IIT Sports Meet 2023<br></br>Copyright © 2023, IIT Gandhinagar, All rights reserved
+                </p>
                 <div className="social-icons">
                     <hr></hr>
                     <h4 className='CRTDH-name-footer1' style={{ marginBottom: '0px', marginTop: '30px' }}>Connect with us!</h4>
                     <span>
-                        <a target='blank' href='https://www.facebook.com/profile.php?id=100007227152962'><Facebook className="fa-brands fb1" /></a>
+                        <a target='blank' href='https://www.facebook.com/interiit19'><Facebook className="fa-brands fb1" /></a>
                         <a target='blank' href='https://instagram.com/interiit_2023?igshid=MzRlODBiNWFlZA=='><Instagram className="fa-brands insta1" /></a>
                         <a target='blank' href='https://www.linkedin.com/company/inter-iit-sports-meet-2023/'><Linkedin className="fa-brands linkedin1" /></a>
-                        <a target='blank' href='https://www.youtube.com/channel/UCAoBCMDA6s-wUOGfKF9c2kQ'><Youtube className="fa-brands youtube1" /></a>
+                        {/* <a target='blank' href='https://www.youtube.com/channel/UCAoBCMDA6s-wUOGfKF9c2kQ'><Youtube className="fa-brands youtube1" /></a> */}
                     </span>
                 </div>
             </div>
@@ -39,14 +40,16 @@ const Footer = () => {
                 <p className='Head-office'><Home />&nbsp;&nbsp;Get In Touch</p>
                 <p className='head-office-address'>
                     <Link to="https://www.google.com/maps/dir//Indian+Institute+Of+Technology+Gandhinagar+(IIT+Gandhinagar)+Indian+Institute+of+Technology+Palaj,+Gujarat+382355/@23.2114236,72.6842489,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x395c2adec1f16d8d:0xdc447b8706689bc3" target='_blank' style={{ color: 'white', textDecoration: 'none' }}>
-                        Academic Block 4/405, IIT Gandhinagar, Palaj, Gandhinagar,
+                        Sports Complex, IIT Gandhinagar, Palaj, Gandhinagar,
                         Gujarat - 382355</Link> </p>
                 <hr></hr>
                 <p className='Head-office'><Phone />&nbsp;&nbsp;CALL US</p>
-                <p className='head-office-address'>+91-9925029889 (M)</p>
+                <p className='head-office-address'>Aman Samria(+91 7357637225) Sports Secretary 
+                Anil Kataria (+91 83858 13914) Overall Coordinator 
+                Suteekshna Mishra (+91 9044412185) Hospitality Core</p>
                 <hr></hr>
                 <p className='Head-office'><Mail />&nbsp;&nbsp;Email</p>
-                <p className='head-office-address'>crtdh@iitgn.ac.in</p>
+                <p className='head-office-address'>sports.secretary@iitgn.ac.in</p>
             </div>
         </footer1>
     );
