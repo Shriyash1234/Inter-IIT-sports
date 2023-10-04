@@ -177,7 +177,7 @@ const Results = () => {
                 <p className='event-timing'>4 X 100M Medley Relay</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Time Trials</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[4] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day1MorRelay} visiblity={isVisible[4] ? "visible" : "not-visible"} />
               </div>
 
               <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(5)}>
