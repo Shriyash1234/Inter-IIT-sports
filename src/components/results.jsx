@@ -28,8 +28,8 @@ const Results = () => {
   useEffect(() => {
     const handleWindowLoad = () => {
         const elementHeight = document.getElementById('result-table').offsetHeight;
+        
         document.getElementsByClassName('result-divs1')[0].style.marginTop = elementHeight * 1.1 + 'px';
-        console.log(elementHeight);
     };
     window.addEventListener('load', handleWindowLoad);
     return () => {
@@ -50,11 +50,12 @@ const Results = () => {
     const element = document.getElementById("normal-table");
     const elementHeight = element.offsetHeight;
 
-    console.log('height', elementHeight)
     if (newVisibility[index]) {
       for (let i = index; i < eventDivs.length; i++) {
         eventDivs[i].style.transform = `translateY(${elementHeight * 1.1}px)`;
       }
+      document.getElementsByClassName('footer-div')[0].style.marginTop = `${elementHeight * 1.1}px`;
+      console.log(document.getElementsByClassName('schedule-div')[0])
       targetDiv.style.transform = "translateY(0)";
     } else {
       for (let i = index; i < eventDivs.length; i++) {
