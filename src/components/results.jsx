@@ -29,7 +29,7 @@ const Results = () => {
     const handleWindowLoad = () => {
         const elementHeight = document.getElementById('result-table').offsetHeight;
         
-        document.getElementsByClassName('result-divs1')[0].style.marginTop = elementHeight * 1.4 + 'px';
+        document.getElementsByClassName('result-divs1')[0].style.marginTop = elementHeight * 1.1 + 'px';
     };
     window.addEventListener('load', handleWindowLoad);
     return () => {
@@ -54,7 +54,7 @@ const Results = () => {
       for (let i = index; i < eventDivs.length; i++) {
         eventDivs[i].style.transform = `translateY(${elementHeight * 1.4}px)`;
       }
-      document.getElementsByClassName('footer-div')[0].style.marginTop = `${elementHeight * 1.1}px`;
+      document.getElementsByClassName('footer-div')[0].style.marginTop = `${elementHeight * 1.4}px`;
       console.log(document.getElementsByClassName('schedule-div')[0])
       targetDiv.style.transform = "translateY(0)";
     } else {
@@ -175,7 +175,7 @@ const Results = () => {
                 <img src={require('./Assests/icons/relay.png')} className='event-icon'></img>
                 <p className='event-timing'>Men</p>
                 <p className='event-timing'>4 X 100M Medley Relay</p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>Time Trials</p>
+                <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
                 <JsonToTable jsonData={Day1MorRelay} visiblity={isVisible[4] ? "visible" : "not-visible"} />
               </div>
