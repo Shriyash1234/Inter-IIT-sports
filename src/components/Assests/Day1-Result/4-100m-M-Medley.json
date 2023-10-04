@@ -1,0 +1,79 @@
+[
+    {
+        "Rank": 1,
+        "Name": "IIT Delhi",
+        "College": "IIT Delhi",
+        "Time": "4:57.08",
+        "Points": 337
+    },
+    {
+        "Rank": 2,
+        "Name": "IIT Guwahati",
+        "College": "IIT Guwahati",
+        "Time": "5:01.07",
+        "Points": 323
+    },
+    {
+        "Rank": 3,
+        "Name": "IIT Hyderabad",
+        "College": "IIT Hyderabad",
+        "Time": "5:02.73",
+        "Points": 318
+    },
+    {
+        "Rank": 4,
+        "Name": "IIT Kanpur",
+        "College": "IIT Kanpur",
+        "Time": "5:06.41",
+        "Points": 307
+    },
+    {
+        "Rank": 5,
+        "Name": "IIT Bombay",
+        "College": "IIT Bombay",
+        "Time": "5:09.89",
+        "Points": 297
+    },
+    {
+        "Rank": 6,
+        "Name": "IIT Roorkee",
+        "College": "IIT Roorkee",
+        "Time": "5:12.72",
+        "Points": 289
+    },
+    {
+        "Rank": 7,
+        "Name": "IIT Kharagpur",
+        "College": "IIT Kharagpur",
+        "Time": "5:13.63",
+        "Points": 286
+    },
+    {
+        "Rank": 8,
+        "Name": "IIT Bhu",
+        "College": "IIT Bhu",
+        "Time": "5:13.68",
+        "Points": 286
+    },
+    {
+        "Rank": 9,
+        "Name": "IIT Madras",
+        "College": "IIT Madras",
+        "Time": "5:15.07",
+        "Points": 282
+    },
+    {
+        "Rank": 10,
+        "Name": "IIT Dhanbad",
+        "College": "IIT Dhanbad",
+        "Time": "5:43.93",
+        "Points": 217
+    },
+    {
+        "Rank": 11,
+        "Name": "IIT Gandhinagar",
+        "College": "IIT Gandhinagar",
+        "Time": "5:54.98",
+        "Points": 197
+    }
+]
