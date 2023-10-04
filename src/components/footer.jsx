@@ -16,8 +16,7 @@ const Footer = () => {
             <div style={styles.description}>
                 <h4 className='CRTDH-name-footer1'>Inter IIT Sports Meet 2023</h4>
                 <hr></hr>
-                <p className='CRTDH-desc'>Official website of INTER IIT Sports Meet 2023<br></br>Copyright © 2023, IIT Gandhinagar, All rights reserved
-                </p>
+                <p className='CRTDH-name-footer1'>Hospitality: <span className='Head-office'> <Phone /></span> <span className='head-office-address'>+91-99250 29889</span> </p>
                 <div className="social-icons">
                     <hr></hr>
                     <h4 className='CRTDH-name-footer1' style={{ marginBottom: '0px', marginTop: '30px' }}>Connect with us!</h4>
@@ -49,10 +48,7 @@ const Footer = () => {
                 Suteekshna Mishra (+91 9044412185) Hospitality Core</p>
                 <hr></hr>
                 <p className='Head-office'><Mail />&nbsp;&nbsp;Email</p>
-                <p className='head-office-address'>
-                    <a href = "mailto: interiitsports@iitgn.ac.in" className='email-link'>interiitsports@iitgn.ac.in</a><br></br>
-                    <a href = "mailto: sports.secretary@iitgn.ac.in" className='email-link'>sports.secretary@iitgn.ac.in</a>
-                </p>
+                <p className='head-office-address'>sports.secretary@iitgn.ac.in</p>
             </div>
         </footer1>
     );
