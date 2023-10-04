@@ -4,11 +4,13 @@ import { ChevronDown } from 'lucide-react'
 import JsonToTable from './jsontotable'
 import tableData from './Assests/Data/Inter-IIT-table.json'
 import data from './Assests/Data/Results/400m.json'
-import Day1MorRelay from './Assests/Data/Results/Day1-Result/4-100m-M-Medley.json'
-import Day1Mor50WBackStroke from './Assests/Data/Results/Day1-Result/50m-W-Backstroke.json'
-import Day1Mor100BackStroke from './Assests/Data/Results/Day1-Result/50m-W-Backstroke.json'
-import Day1Mor200BackStroke from './Assests/Data/Results/Day1-Result/200m-M-Breaststroke.json'
-import Day1Mor400Freestyle from './Assests/Data/Results/Day1-Result/400m.json'
+
+
+import Day1MorRelay from './Assests/Data/Results/Day1-Result/Morning/4-100m-M-Medley.json'
+import Day1Mor50WBackStroke from './Assests/Data/Results/Day1-Result/Morning/50m-W-Backstroke.json'
+import Day1Mor100BackStroke from './Assests/Data/Results/Day1-Result/Morning/100m-M-Backstroke.json'
+import Day1Mor200BackStroke from './Assests/Data/Results/Day1-Result/Morning/200m-M-Breaststroke.json'
+import Day1Mor400Freestyle from './Assests/Data/Results/Day1-Result/Morning/400m.json'
 import './CSS/results.css'
 import './CSS/schedule.css'
 import Footer from './footer';
@@ -137,7 +139,7 @@ const Results = () => {
                 <p className='event-timing'>50M Backstroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Heats</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[1] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day1Mor50WBackStroke} visiblity={isVisible[1] ? "visible" : "not-visible"} />
               </div>
               <div className='event-div results-event-div' onClick={() => toggleVisibility(2)}>
                 <div className='vertical-line-blue'></div>
@@ -145,10 +147,10 @@ const Results = () => {
 
                 <img src={require('./Assests/icons/backstroke.png')} className='event-icon'></img>
                 <p className='event-timing'>Men</p>
-                <p className='event-timing'>100M Freestyle</p>
+                <p className='event-timing'>100M BackStroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Heats</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[2] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day1Mor100BackStroke} visiblity={isVisible[2] ? "visible" : "not-visible"} />
               </div>
               <div className='event-div results-event-div' onClick={() => toggleVisibility(3)}>
                 <div className='vertical-line-blue'></div>
@@ -218,7 +220,7 @@ const Results = () => {
 
             {/* Evening Events  */}
             <div className='event-divs result-divs'>
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(7)}>
+              {/* <div className='event-div results-event-div' onClick={() => toggleVisibility(7)}>
                 <div className='vertical-line-orange'></div>
 
 
@@ -228,7 +230,7 @@ const Results = () => {
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
                 <JsonToTable visiblity={isVisible[7] ? "visible" : "not-visible"} />
-              </div>
+              </div> */}
               <div className='event-div results-event-div' onClick={() => toggleVisibility(8)}>
                 <div className='vertical-line-orange'></div>
 
@@ -246,7 +248,7 @@ const Results = () => {
 
                 <img src={require('./Assests/icons/backstroke.png')} className='event-icon'></img>
                 <p className='event-timing'>Men</p>
-                <p className='event-timing'>100M Freestyle</p>
+                <p className='event-timing'>100M Backstroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
                 <JsonToTable visiblity={isVisible[9] ? "visible" : "not-visible"} />
