@@ -48,7 +48,9 @@ function JsonToTable({ jsonData,visiblity,table }) {
                 <td>{index + 1}</td>
                 {/* <td>{item["Rank"]}</td> */}
                 <td><img src={require(`${getImageByTitle(item["IIT"])}`)} className='IIT-icon' alt={item["IIT"]}/>{item["IIT"]}</td>
-                <td>{item["Points"]}</td>
+                <td>{item["Gold"]}</td>
+                <td>{item["Silver"]}</td>
+                <td>{item["Bronze"]}</td>
               </tr>
             ))
           )

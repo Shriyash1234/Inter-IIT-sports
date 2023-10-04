@@ -1,82 +1,116 @@
 [
- {
-  "Rank": 1,
-  "IIT": "IIT Kharagpur (IITKGP)",
-  "Points": 0
- },
- {
-  "Rank": 2,
-  "IIT": "IIT Bombay (IITB)",
-  "Points": 0
- },
- {
-  "Rank": 3,
-  "IIT": "IIT Madras (IITM)",
-  "Points": 0
- },
- {
-  "Rank": 4,
-  "IIT": "IIT Kanpur (IITK)",
-  "Points": 0
- },
- {
-  "Rank": 5,
-  "IIT": "IIT Delhi (IITD)",
-  "Points": 0
- },
- {
-  "Rank": 6,
-  "IIT": "IIT Guwahati (IITG)",
-  "Points": 0
- },
- {
-  "Rank": 7,
-  "IIT": "IIT Roorkee (IITR)",
-  "Points": 0
- },
- {
-  "Rank": 8,
-  "IIT": "IIT Ropar (IITRPR)",
-  "Points": 0
- },
- {
-  "Rank": 10,
-  "IIT": "IIT Gandhinagar (IITGN)",
-  "Points": 0
- },
- {
-  "Rank": 11,
-  "IIT": "IIT Hyderabad (IITH)",
-  "Points": 0
- },
- {
-  "Rank": 15,
-  "IIT": "IIT Mandi (IITMD)",
-  "Points": 0
- },
- {
-  "Rank": 16,
-  "IIT": "IIT Varanasi (IIT BHU)",
-  "Points": 0
- },
- {
-  "Rank": 18,
-  "IIT": "IIT Tirupati (IITT)",
-  "Points": 0
- },
- {
-  "Rank": 19,
-  "IIT": "IIT Dhanbad (IIT ISM)",
-  "Points": 0
- },
- {
-  "Rank": 20,
-  "IIT": "IIT Bhilai (IITBH)",
-  "Points": 0
- },
- {
-  "Rank": 22,
-  "IIT": "IIT Jammu (IITJMU)",
-  "Points": 0
- }
-]
+    {
+     "Rank": 1,
+     "IIT": "IIT Kharagpur (IITKGP)",
+     "Gold": 0,
+     "Silver": 0,
+     "Bronze": 0
+    },
+    {
+     "Rank": 2,
+     "IIT": "IIT Bombay (IITB)",
+     "Gold": 0,
+     "Silver": 0,
+     "Bronze": 0
+    },
+    {
+     "Rank": 3,
+     "IIT": "IIT Madras (IITM)",
+     "Gold": 0,
+     "Silver": 0,
+     "Bronze": 0
+    },
+    {
+     "Rank": 4,
+     "IIT": "IIT Kanpur (IITK)",
+     "Gold": 0,
+     "Silver": 0,
+     "Bronze": 0
+    },
+    {
+     "Rank": 5,
+     "IIT": "IIT Delhi (IITD)",
+     "Gold": 0,
+     "Silver": 0,
+     "Bronze": 0
+    },
+    {
+     "Rank": 6,
+     "IIT": "IIT Guwahati (IITG)",
+     "Gold": 0,
+     "Silver": 0,
+     "Bronze": 0
+    },
+    {
+     "Rank": 7,
+     "IIT": "IIT Roorkee (IITR)",
+     "Gold": 0,
+     "Silver": 0,
+     "Bronze": 0
+    },
+    {
+     "Rank": 8,
+     "IIT": "IIT Ropar (IITRPR)",
+     "Gold": 0,
+     "Silver": 0,
+     "Bronze": 0
+    },
+    {
+     "Rank": 9,
+     "IIT": "IIT Gandhinagar (IITGN)",
+     "Gold": 0,
+     "Silver": 0,
+     "Bronze": 0
+    },
+    {
+     "Rank": 10,
+     "IIT": "IIT Hyderabad (IITH)",
+     "Gold": 0,
+     "Silver": 0,
+     "Bronze": 0
+    },
+    {
+     "Rank": 11,
+     "IIT": "IIT Mandi (IITMD)",
+     "Gold": 0,
+     "Silver": 0,
+     "Bronze": 0
+    },
+    {
+     "Rank": 12,
+     "IIT": "IIT Varanasi (IIT BHU)",
+     "Gold": 0,
+     "Silver": 0,
+     "Bronze": 0
+    },
+
+    {
+     "Rank": 13,
+     "IIT": "IIT Tirupati (IITT)",
+     "Gold": 0,
+     "Silver": 0,
+     "Bronze": 0
+    },
+    {
+     "Rank": 14,
+     "IIT": "IIT Dhanbad (IIT ISM)",
+     "Gold": 0,
+     "Silver": 0,
+     "Bronze": 0
+    },
+    {
+     "Rank": 15,
+     "IIT": "IIT Bhilai (IITBH)",
+     "Gold": 0,
+     "Silver": 0,
+     "Bronze": 0
+    },
+
+    {
+     "Rank": 16,
+     "IIT": "IIT Jammu (IITJMU)",
+     "Gold": 0,
+     "Silver": 0,
+     "Bronze": 0
+    }
+   ]
