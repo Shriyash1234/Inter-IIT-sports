@@ -46,7 +46,6 @@ const Results = () => {
     setIsVisible(newVisibility);
     const eventDivs = document.getElementsByClassName("results-event-div");
     const targetDiv = eventDivs[index];
-
     const element = document.getElementById("normal-table");
     const elementHeight = element.offsetHeight;
 
@@ -55,7 +54,7 @@ const Results = () => {
         eventDivs[i].style.transform = `translateY(${elementHeight * 1.4}px)`;
       }
       // document.getElementsByClassName('footer-div')[0].style.marginTop = `${elementHeight * 1.4}px`;
-      console.log(document.getElementsByClassName('schedule-div')[0])
+      // console.log(document.getElementsByClassName('schedule-div')[0])
       targetDiv.style.transform = "translateY(0)";
     } else {
       for (let i = index; i < eventDivs.length; i++) {
@@ -228,34 +227,34 @@ const Results = () => {
                 <JsonToTable visiblity={isVisible[7] ? "visible" : "not-visible"} />
               </div> */}
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(7)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(5)}>
                 <div className='vertical-line-orange'></div>
                 <img src={require('./Assests/icons/backstroke.png')} className='event-icon'></img>
                 <p className='event-timing'>Women</p>
                 <p className='event-timing'>50M Backstroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable jsonData={Day1Eve50WBackStroke} visiblity={isVisible[7] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day1Eve50WBackStroke} visiblity={isVisible[5] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(8)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(6)}>
                 <div className='vertical-line-orange'></div>
                 <img src={require('./Assests/icons/backstroke.png')} className='event-icon'></img>
                 <p className='event-timing'>Men</p>
                 <p className='event-timing'>100M Backstroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable  jsonData={Day1Eve100MBackStroke} visiblity={isVisible[8] ? "visible" : "not-visible"} />
+                <JsonToTable  jsonData={Day1Eve100MBackStroke} visiblity={isVisible[6] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(9)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(7)}>
                 <div className='vertical-line-orange'></div>
                 <img src={require('./Assests/icons/breaststroke.png')} className='event-icon'></img>
                 <p className='event-timing'>Men</p>
                 <p className='event-timing'>200M Breast Stroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable jsonData={Day1Eve200MBreastStroke} visiblity={isVisible[9] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day1Eve200MBreastStroke} visiblity={isVisible[7] ? "visible" : "not-visible"} />
               </div>
 
               {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(10)}>
