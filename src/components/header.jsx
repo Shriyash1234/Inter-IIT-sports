@@ -9,6 +9,10 @@ function Header(props) {
   const color = props.color;
   const anticolor = color === 'white' ? 'black' : 'white'
   const [linkbg, setLinkbg] = useState(color);
+  const handleLinkClick = () => {
+    window.location.href = '/#/Results'; // Set the URL to the desired location
+    window.location.reload();
+  };
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
@@ -96,8 +100,8 @@ function Header(props) {
                 <Link to="/Schedule" className='link1 links' style={{ color: linkbg }}>Schedule</Link>
               </li>
               <li className="has-child">
-                <a href="https://interiit.in/#/Results" >Results</a>
-                {/* <Link to="/Results" className='link1 links' style={{ color: linkbg }}>Results</Link> */}
+                {/* <a href="https://interiit.in/#/Results" >Results</a> */}
+                <Link to="/Results" onClick={handleLinkClick} className='link1 links' style={{ color: linkbg }}>Results</Link>
               </li>
               <li className="has-child">
                 <div onClick={handleFooterLink} className='link1 links contact-link' style={{ color: linkbg,fontSize:"1.4rem" }}>Contact us</div>

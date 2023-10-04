@@ -54,7 +54,7 @@ const Results = () => {
       for (let i = index; i < eventDivs.length; i++) {
         eventDivs[i].style.transform = `translateY(${elementHeight * 1.4}px)`;
       }
-      document.getElementsByClassName('footer-div')[0].style.marginTop = `${elementHeight * 1.4}px`;
+      // document.getElementsByClassName('footer-div')[0].style.marginTop = `${elementHeight * 1.4}px`;
       console.log(document.getElementsByClassName('schedule-div')[0])
       targetDiv.style.transform = "translateY(0)";
     } else {
@@ -1359,7 +1359,6 @@ const Results = () => {
           </div>
         </section>
       </div>
-      <Footer />
     </section>
   );
 };
