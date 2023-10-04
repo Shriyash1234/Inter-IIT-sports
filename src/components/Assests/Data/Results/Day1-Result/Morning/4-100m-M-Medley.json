@@ -1,23 +1,21 @@
 [
     {
-        "Rank": 1,
-        "Name": "IIT Delhi",
-        "College": "IIT Delhi",
-        "Time": "4:57.08",
-        "Points": 337
+        "Rank": "1.",
+        "Athlete": "Rachit Rambhia | Akash Suryawanshi | Saksham Paliwal | Aman Raj ",
+        "IIT": "IIT Delhi (IITD)",
+        "Timing": "00:04:57.08"
     },
     {
-        "Rank": 2,
-        "Name": "IIT Guwahati",
-        "College": "IIT Guwahati",
-        "Time": "5:01.07",
-        "Points": 323
+        "Rank": "2.",
+        "Athlete": "Shlok Suraiya | Kushal Dornahalli | Bhargov Phukan | Rajib Modak",
+        "IIT": "IIT Guwahati (IITG)",
+        "Timing": "00:05:01.07"
     },
     {
-        "Rank": 3,
-        "Name": "IIT Hyderabad",
-        "College": "IIT Hyderabad",
-        "Time": "5:02.73",
-        "Points": 318
+        "Rank": "3.",
+        "Athlete": "Rishabh Pillai | Barath Surya M | Siddhartha Pamidi | Venkata Manikanta Kumbha",
+        "IIT": "IIT Hyderabad (IITH)",
+        "Timing": "00:05:02.73"
     }
 ]
+
