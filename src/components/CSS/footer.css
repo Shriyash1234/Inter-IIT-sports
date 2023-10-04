@@ -80,6 +80,12 @@
     color: #1f2f37;
     background-color: #fff;
 }
+.email-link{
+    color: #fff;
+}
+.email-link:hover{
+    color: #fff;
+}
 @media all and (max-width:768px) {
     .footer-text{
         font-size: 3vw;

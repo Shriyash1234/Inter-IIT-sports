@@ -17,7 +17,7 @@ const Sports = () => {
         <div className='sport-div'>Table Tennis</div>
         <div className='sport-div'>Volleyball</div>
         <div className='sport-div'>Water Polo</div>
-        <div className='sport-div'>Weighlifting</div>
+        <div className='sport-div'>Weightlifting</div>
        </div>
     </section>
   )

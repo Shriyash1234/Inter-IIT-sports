@@ -4,9 +4,10 @@
     justify-content: space-between;
     align-items: center;
     /* background-color: #f0f8ff;  */
-    padding: 20px;
+    margin-top: 50px;
+    padding: 30px 20px;
     position: relative;
-    bottom: 0px;
+    top: 50px;
     width: 75%;
     margin: auto;
     scroll-margin-top:110px;
@@ -23,7 +24,7 @@
   
   .right-section {
     flex: 2;
-
+    font-family: 'Montserrat',sans-serif;
     max-width: 750px; /* Set the maximum width for the right section */
   }
   
@@ -48,17 +49,14 @@
     font-size: 1.5rem;
     line-height: 2.5rem;
     color: #1a1616d6;
-    font-family: "open sans", Arial, Helvetica, sans-serif;
     word-wrap: break-word;
   }
   
   .about-paragraph {
     font-size: 1.5em;
-    line-height: 2.5rem;
     margin-bottom: 10px;
     color: #2d2d2d;
     font-weight: 100;
-    font-family: "open sans";
     word-wrap: break-word;
   }
 

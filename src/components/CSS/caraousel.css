@@ -13,7 +13,8 @@
 }
 
 .card-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
     text-align: center;
     margin: 10px 0;
 }
@@ -47,7 +48,7 @@
     justify-content: center;
     position: relative;
     background-color: #fff;
-    bottom: 80px;
+    top:50px;
 }
 
 .carousel-cards {
