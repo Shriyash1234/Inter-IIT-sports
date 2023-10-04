@@ -39,9 +39,9 @@ const Schedule = () => {
     });
     setSelectedDate(date);
   };
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo(0, 0)
-  },[])
+  }, [])
 
   const renderSchedule = () => {
     switch (selectedDate) {
@@ -95,45 +95,10 @@ const Schedule = () => {
                 <p className='event-timing'>4 X 100M Medley Relay</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Time Trials</p>
               </div>
-              <div className='event-div'>
-                <div className='vertical-line-blue'></div>
-                <p className='event-timing'>Morning</p>
-                <div className='vertical-line-grey'></div>
-                <img src={require('./Assests/icons/water-polo.png')} className='event-icon'></img>
-                <p className='event-timing'>Men</p>
-                <p className='event-timing'>Water Polo</p>
-                <p className='event-timing league-matches'>
-                  <img src={require('./Assests/IITs/IITB.jpg')} className="IIT-icon" />(C1) BOMBAY vs&nbsp;&nbsp;
-                  <img src={require('./Assests/IITs/IITK.jpg')} className="IIT-icon" />(C2) KANPUR
-                </p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>League Matches</p>
-              </div>
-              <div className='event-div'>
-                <div className='vertical-line-blue'></div>
-                <p className='event-timing'>Morning</p>
-                <div className='vertical-line-grey'></div>
-                <img src={require('./Assests/icons/water-polo.png')} className='event-icon'></img>
-                <p className='event-timing' >Men</p>
-                <p className='event-timing' >Water Polo</p>
-                <p className='event-timing league-matches' >
-                  <img src={require('./Assests/IITs/IITM.jpg')} className="IIT-icon" />(D1) MADRAS vs&nbsp;&nbsp;
-                  <img src={require('./Assests/IITs/IITGN.jpg')} className="IIT-icon" />(D2) GANDHINAGAR
-                </p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>League Matches</p>
-              </div>
             </div>
 
             {/* Evening Events  */}
             <div className='event-divs'>
-              <div className='event-div'>
-                <div className='vertical-line-orange'></div>
-                <p className='event-timing'>Evening</p>
-                <div className='vertical-line-grey'></div>
-                <img src={require('./Assests/icons/freesyle.png')} className='event-icon'></img>
-                <p className='event-timing'>Men</p>
-                <p className='event-timing'>400M Freestyle</p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
-              </div>
               <div className='event-div'>
                 <div className='vertical-line-orange'></div>
                 <p className='event-timing'>Evening</p>
@@ -160,32 +125,6 @@ const Schedule = () => {
                 <p className='event-timing'>Men</p>
                 <p className='event-timing'>200M Breast Stroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
-              </div>
-              <div className='event-div'>
-                <div className='vertical-line-orange'></div>
-                <p className='event-timing'>Evening</p>
-                <div className='vertical-line-grey'></div>
-                <img src={require('./Assests/icons/water-polo.png')} className='event-icon'></img>
-                <p className='event-timing'>Men</p>
-                <p className='event-timing'>Water Polo</p>
-                <p className='event-timing league-matches'>
-                  <img src={require('./Assests/IITs/IITKGP.jpg')} className="IIT-icon" />(A1) KHARAGPUR vs&nbsp;&nbsp;
-                  <img src={require('./Assests/IITs/IITDH.jpg')} className="IIT-icon" />(A2) DHANBAD
-                </p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>League Matches</p>
-              </div>
-              <div className='event-div'>
-                <div className='vertical-line-orange'></div>
-                <p className='event-timing'>Evening</p>
-                <div className='vertical-line-grey'></div>
-                <img src={require('./Assests/icons/water-polo.png')} className='event-icon'></img>
-                <p className='event-timing' >Men</p>
-                <p className='event-timing' >Water Polo</p>
-                <p className='event-timing league-matches' >
-                  <img src={require('./Assests/IITs/IITD.jpg')} className="IIT-icon" />(B1) DELHI vs&nbsp;&nbsp;
-                  <img src={require('./Assests/IITs/IITG.jpg')} className="IIT-icon" />(B3) GUWAHATI
-                </p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>League Matches</p>
               </div>
             </div>
 
@@ -258,63 +197,6 @@ const Schedule = () => {
                   Heats
                 </p>
               </div>
-              <div className='event-div'>
-                <div className='vertical-line-blue'></div>
-                <p className='event-timing'>Morning</p>
-                <div className='vertical-line-grey'></div>
-                <img
-                  src={require('./Assests/icons/water-polo.png')}
-                  className='event-icon'
-                  alt='Event Icon'
-                />
-                <p className='event-timing'>Water Polo</p>
-                <p className='event-timing league-matches'>
-                  <img
-                    src={require('./Assests/IITs/IITB.jpg')}
-                    className='IIT-icon'
-                    alt='IIT Logo'
-                  />
-                  (C1) BOMBAY vs&nbsp;&nbsp;
-                  <img
-                    src={require('./Assests/IITs/IITK.jpg')}
-                    className='IIT-icon'
-                    alt='IIT Logo'
-                  />
-                  (D2) KANPUR
-                </p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>
-                  League Matches
-                </p>
-              </div>
-              <div className='event-div'>
-                <div className='vertical-line-blue'></div>
-                <p className='event-timing'>Morning</p>
-                <div className='vertical-line-grey'></div>
-                <img
-                  src={require('./Assests/icons/water-polo.png')}
-                  className='event-icon'
-                  alt='Event Icon'
-                />
-                <p className='event-timing'>Water Polo</p>
-                <p className='event-timing league-matches'>
-                  <img
-                    src={require('./Assests/IITs/IITM.jpg')}
-                    className='IIT-icon'
-                    alt='IIT Logo'
-                  />
-                  (D1) MADRAS vs&nbsp;&nbsp;
-                  <img
-                    src={require('./Assests/IITs/IITR.jpg')}
-                    className='IIT-icon'
-                    alt='IIT Logo'
-                  />
-                  (C2) ROORKEE
-                </p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>
-                  League Matches
-                </p>
-              </div>
-              {/* Add more event-div components for the morning session */}
             </div>
 
             <div className='event-divs'>
@@ -354,21 +236,6 @@ const Schedule = () => {
                 <p className='event-timing'>Evening</p>
                 <div className='vertical-line-grey'></div>
                 <img
-                  src={require('./Assests/icons/relay.png')}
-                  className='event-icon'
-                  alt='Event Icon'
-                />
-                <p className='event-timing'>Men</p>
-                <p className='event-timing'>200M Individual Medley</p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>
-                  Final
-                </p>
-              </div>
-              <div className='event-div'>
-                <div className='vertical-line-orange'></div>
-                <p className='event-timing'>Evening</p>
-                <div className='vertical-line-grey'></div>
-                <img
                   src={require('./Assests/icons/backstroke.png')}
                   className='event-icon'
                   alt='Event Icon'
@@ -379,63 +246,6 @@ const Schedule = () => {
                   Final
                 </p>
               </div>
-              <div className='event-div'>
-                <div className='vertical-line-orange'></div>
-                <p className='event-timing'>Evening</p>
-                <div className='vertical-line-grey'></div>
-                <img
-                  src={require('./Assests/icons/water-polo.png')}
-                  className='event-icon'
-                  alt='Event Icon'
-                />
-                <p className='event-timing'>Water Polo</p>
-                <p className='event-timing league-matches'>
-                  <img
-                    src={require('./Assests/IITs/IITR.jpg')}
-                    className='IIT-icon'
-                    alt='IIT Logo'
-                  />
-                  (C2) ROORKEE  vs&nbsp;&nbsp;
-                  <img
-                    src={require('./Assests/IITs/IITK.jpg')}
-                    className='IIT-icon'
-                    alt='IIT Logo'
-                  />
-                  (C3) KANPUR
-                </p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>
-                  League Matches
-                </p>
-              </div>
-              <div className='event-div'>
-                <div className='vertical-line-orange'></div>
-                <p className='event-timing'>Evening</p>
-                <div className='vertical-line-grey'></div>
-                <img
-                  src={require('./Assests/icons/water-polo.png')}
-                  className='event-icon'
-                  alt='Event Icon'
-                />
-                <p className='event-timing'>Water Polo</p>
-                <p className='event-timing league-matches'>
-                  <img
-                    src={require('./Assests/IITs/IITBHU.jpg')}
-                    className='IIT-icon'
-                    alt='IIT Logo'
-                  />
-                  (B2) BHU vs&nbsp;&nbsp;
-                  <img
-                    src={require('./Assests/IITs/IITG.jpg')}
-                    className='IIT-icon'
-                    alt='IIT Logo'
-                  />
-                  (B3) GUWAHATI
-                </p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>
-                  League Matches
-                </p>
-              </div>
-
             </div>
           </div>
         );
@@ -520,27 +330,6 @@ const Schedule = () => {
                   Time Trials
                 </p>
               </div>
-              <div className='event-div'>
-                <div className='vertical-line-blue'></div>
-                <p className='event-timing'>Morning</p>
-                <div className='vertical-line-grey'></div>
-                <img
-                  src={require('./Assests/icons/water-polo.png')}
-                  className='event-icon'
-                  alt='Event Icon'
-                />
-                <p className='event-timing'>Water Polo</p>
-                <p className='event-timing league-matches'>
-                  Match-09: WINNER OF POOL A vs RUNNER OF POOL C
-                </p>
-                <p className='event-timing league-matches'>
-                  Match-10: WINNER OF POOL B vs RUNNER OF POOL D
-                </p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>
-                  Matches
-                </p>
-              </div>
-              {/* Add more event-div components for the morning session */}
             </div>
             <div className='event-divs'>
               {/* Evening Session */}
@@ -602,26 +391,6 @@ const Schedule = () => {
                 <p className='event-timing'>50M Freestyle</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>
                   Final
-                </p>
-              </div>
-              <div className='event-div'>
-                <div className='vertical-line-orange'></div>
-                <p className='event-timing'>Evening</p>
-                <div className='vertical-line-grey'></div>
-                <img
-                  src={require('./Assests/icons/water-polo.png')}
-                  className='event-icon'
-                  alt='Event Icon'
-                />
-                <p className='event-timing'>Water Polo</p>
-                <p className='event-timing league-matches'>
-                  Match-11: RUNNER OF POOL A vs WINNER OF POOL C
-                </p>
-                <p className='event-timing league-matches'>
-                  Match-12: RUNNER OF POOL B vs WINNER OF POOL D
-                </p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>
-                  Matches
                 </p>
               </div>
             </div>
@@ -688,7 +457,7 @@ const Schedule = () => {
                   alt='Event Icon'
                 />
                 <p className='event-timing'>Men</p>
-                <p className='event-timing'>50M Back Stroke</p>
+                <p className='event-timing'>50M Breast Stroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>
                   Heats
                 </p>
@@ -708,24 +477,6 @@ const Schedule = () => {
                   Time Trials
                 </p>
               </div>
-              <div className='event-div'>
-                <div className='vertical-line-blue'></div>
-                <p className='event-timing'>Morning</p>
-                <div className='vertical-line-grey'></div>
-                <img
-                  src={require('./Assests/icons/water-polo.png')}
-                  className='event-icon'
-                  alt='Event Icon'
-                />
-                <p className='event-timing'>Water Polo</p>
-                <p className='event-timing league-matches'>
-                  Match-13: SF 1 vs SF 4
-                </p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>
-                  Semi Final 1
-                </p>
-              </div>
-              {/* Add more event-div components for the morning session */}
             </div>
             <div className='event-divs'>
               {/* Evening Session */}
@@ -784,26 +535,9 @@ const Schedule = () => {
                   alt='Event Icon'
                 />
                 <p className='event-timing'>Men</p>
-                <p className='event-timing'>50M Back Stroke</p>
+                <p className='event-timing'>50M Breast Stroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>
                   Final
-                </p>
-              </div>
-              <div className='event-div'>
-                <div className='vertical-line-orange'></div>
-                <p className='event-timing'>Evening</p>
-                <div className='vertical-line-grey'></div>
-                <img
-                  src={require('./Assests/icons/water-polo.png')}
-                  className='event-icon'
-                  alt='Event Icon'
-                />
-                <p className='event-timing'>Water Polo</p>
-                <p className='event-timing league-matches'>
-                  Match-14: SF 2 vs SF 3
-                </p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>
-                  Semi Final 2
                 </p>
               </div>
             </div>
@@ -841,7 +575,7 @@ const Schedule = () => {
                   alt='Event Icon'
                 />
                 <p className='event-timing'>Women</p>
-                <p className='event-timing'>50M Back Stroke</p>
+                <p className='event-timing'>50M Breast Stroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>
                   Heats
                 </p>
@@ -856,7 +590,7 @@ const Schedule = () => {
                   alt='Event Icon'
                 />
                 <p className='event-timing'>Men</p>
-                <p className='event-timing'>100M Back Stroke</p>
+                <p className='event-timing'>100M Breast Stroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>
                   Heats
                 </p>
@@ -876,24 +610,6 @@ const Schedule = () => {
                   Time Trials
                 </p>
               </div>
-              <div className='event-div'>
-                <div className='vertical-line-blue'></div>
-                <p className='event-timing'>Morning</p>
-                <div className='vertical-line-grey'></div>
-                <img
-                  src={require('./Assests/icons/water-polo.png')}
-                  className='event-icon'
-                  alt='Event Icon'
-                />
-                <p className='event-timing'>Water Polo</p>
-                <p className='event-timing league-matches'>
-                  Rest
-                </p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>
-                  Matches
-                </p>
-              </div>
-              {/* Add more event-div components for the morning session */}
             </div>
             <div className='event-divs'>
               {/* Evening Session */}
@@ -907,7 +623,7 @@ const Schedule = () => {
                   alt='Event Icon'
                 />
                 <p className='event-timing'>Women</p>
-                <p className='event-timing'>50M Back Stroke</p>
+                <p className='event-timing'>50M Breast Stroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>
                   Final
                 </p>
@@ -922,32 +638,9 @@ const Schedule = () => {
                   alt='Event Icon'
                 />
                 <p className='event-timing'>Men</p>
-                <p className='event-timing'>100M Back Stroke</p>
+                <p className='event-timing'>100M Breast Stroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>
                   Final
-                </p>
-              </div>
-              <div className='event-div'>
-                <div className='vertical-line-orange'></div>
-                <p className='event-timing'>Evening</p>
-                <div className='vertical-line-grey'></div>
-                <img
-                  src={require('./Assests/icons/water-polo.png')}
-                  className='event-icon'
-                  alt='Event Icon'
-                />
-                <p className='event-timing'>Water Polo</p>
-                <p className='event-timing league-matches'>
-                  Match-15: LOSER OF F1 vs LOSER OF F2
-                </p>
-                <p className='event-timing league-matches'>
-                  Match-16: WINNER OF F1 vs WINNER OF F2
-                </p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>
-                  3rd Place Match
-                </p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>
-                  Final Match
                 </p>
               </div>
             </div>
@@ -1005,45 +698,10 @@ const Schedule = () => {
                 <p className='event-timing'>4 X 100M Medley Relay</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Time Trials</p>
               </div>
-              <div className='event-div'>
-                <div className='vertical-line-blue'></div>
-                <p className='event-timing'>Morning</p>
-                <div className='vertical-line-grey'></div>
-                <img src={require('./Assests/icons/water-polo.png')} className='event-icon'></img>
-                <p className='event-timing'>Men</p>
-                <p className='event-timing'>Water Polo</p>
-                <p className='event-timing league-matches'>
-                  <img src={require('./Assests/IITs/IITB.jpg')} className="IIT-icon" />(C1) BOMBAY vs&nbsp;&nbsp;
-                  <img src={require('./Assests/IITs/IITK.jpg')} className="IIT-icon" />(C2) KANPUR
-                </p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>League Matches</p>
-              </div>
-              <div className='event-div'>
-                <div className='vertical-line-blue'></div>
-                <p className='event-timing'>Morning</p>
-                <div className='vertical-line-grey'></div>
-                <img src={require('./Assests/icons/water-polo.png')} className='event-icon'></img>
-                <p className='event-timing' >Men</p>
-                <p className='event-timing' >Water Polo</p>
-                <p className='event-timing league-matches' >
-                  <img src={require('./Assests/IITs/IITM.jpg')} className="IIT-icon" />(D1) MADRAS vs&nbsp;&nbsp;
-                  <img src={require('./Assests/IITs/IITGN.jpg')} className="IIT-icon" />(D2) GANDHINAGAR
-                </p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>League Matches</p>
-              </div>
             </div>
 
             {/* Evening Events  */}
             <div className='event-divs'>
-              <div className='event-div'>
-                <div className='vertical-line-orange'></div>
-                <p className='event-timing'>Evening</p>
-                <div className='vertical-line-grey'></div>
-                <img src={require('./Assests/icons/freesyle.png')} className='event-icon'></img>
-                <p className='event-timing'>Men</p>
-                <p className='event-timing'>400M Freestyle</p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
-              </div>
               <div className='event-div'>
                 <div className='vertical-line-orange'></div>
                 <p className='event-timing'>Evening</p>
@@ -1071,33 +729,8 @@ const Schedule = () => {
                 <p className='event-timing'>200M Breast Stroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
               </div>
-              <div className='event-div'>
-                <div className='vertical-line-orange'></div>
-                <p className='event-timing'>Evening</p>
-                <div className='vertical-line-grey'></div>
-                <img src={require('./Assests/icons/water-polo.png')} className='event-icon'></img>
-                <p className='event-timing'>Men</p>
-                <p className='event-timing'>Water Polo</p>
-                <p className='event-timing league-matches'>
-                  <img src={require('./Assests/IITs/IITKGP.jpg')} className="IIT-icon" />(A1) KHARAGPUR vs&nbsp;&nbsp;
-                  <img src={require('./Assests/IITs/IITDH.jpg')} className="IIT-icon" />(A2) DHANBAD
-                </p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>League Matches</p>
-              </div>
-              <div className='event-div'>
-                <div className='vertical-line-orange'></div>
-                <p className='event-timing'>Evening</p>
-                <div className='vertical-line-grey'></div>
-                <img src={require('./Assests/icons/water-polo.png')} className='event-icon'></img>
-                <p className='event-timing' >Men</p>
-                <p className='event-timing' >Water Polo</p>
-                <p className='event-timing league-matches' >
-                  <img src={require('./Assests/IITs/IITD.jpg')} className="IIT-icon" />(B1) DELHI vs&nbsp;&nbsp;
-                  <img src={require('./Assests/IITs/IITG.jpg')} className="IIT-icon" />(B3) GUWAHATI
-                </p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>League Matches</p>
-              </div>
             </div>
+
           </div>
         );
     }
@@ -1121,7 +754,7 @@ const Schedule = () => {
         </div>
         {renderSchedule()}
       </div>
-      <Water_Polo/>
+      <Water_Polo />
       <Footer />
     </section>
   );
