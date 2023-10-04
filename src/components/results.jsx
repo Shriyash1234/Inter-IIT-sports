@@ -18,7 +18,7 @@ import Day1Eve200MBreastStroke from './Assests/Data/Results/Day1-Result/Evening/
 
 import './CSS/results.css'
 import './CSS/schedule.css'
-import Footer from './footer';
+// import Footer from './footer';
 
 const Results = () => {
 
@@ -180,7 +180,7 @@ const Results = () => {
                 <JsonToTable jsonData={Day1MorRelay} visiblity={isVisible[4] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(5)}>
+              {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(5)}>
                 <div className='vertical-line-blue'></div>
                 <img src={require('./Assests/icons/water-polo.png')} className='event-icon'></img>
                 <p className='event-timing'>Men</p>
@@ -198,9 +198,9 @@ const Results = () => {
                     <p>(1:3, 1:3, 1:4, 2:3)</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(6)}>
+              {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(6)}>
                 <div className='vertical-line-blue'></div>
                 <img src={require('./Assests/icons/water-polo.png')} className='event-icon'></img>
                 <p className='event-timing' >Men</p>
@@ -211,14 +211,7 @@ const Results = () => {
                 </p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>League Matches</p>
                 <ChevronDown className='dropdown' />
-                {/* <div className={isVisible[6]?'event-div versus-div':'not-visible'}>
-                  <p className='versus-div-score-text'>BOMBAY&nbsp;&nbsp;<img src={require('./Assests/IITs/IITB.jpg')} className="IIT-icon" /><p className='scores'>5 : 13</p>  &nbsp;&nbsp;
-                  <img src={require('./Assests/IITs/IITK.jpg')} className="IIT-icon" />KANPUR</p>
-                  <div>
-                  <p>(1:3, 1:3, 1:4, 2:3)</p>
-                  </div>
-                </div> */}
-              </div>
+              </div> */}
             </div>
 
             {/* Evening Events  */}
@@ -265,7 +258,7 @@ const Results = () => {
                 <JsonToTable jsonData={Day1Eve200MBreastStroke} visiblity={isVisible[9] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(10)}>
+              {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(10)}>
                 <div className='vertical-line-orange'></div>
                 <img src={require('./Assests/icons/water-polo.png')} className='event-icon'></img>
                 <p className='event-timing'>Men</p>
@@ -283,9 +276,9 @@ const Results = () => {
                     <p>(1:3, 1:3, 1:4, 2:3)</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(11)}>
+              {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(11)}>
                 <div className='vertical-line-orange'></div>
                 <img src={require('./Assests/icons/water-polo.png')} className='event-icon'></img>
                 <p className='event-timing' >Men</p>
@@ -303,7 +296,8 @@ const Results = () => {
                     <p>(1:3, 1:3, 1:4, 2:3)</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
+
             </div>
 
           </div>
@@ -375,10 +369,9 @@ const Results = () => {
                 <ChevronDown className='dropdown' />
                 <JsonToTable visiblity={isVisible[16] ? "visible" : "not-visible"} />
               </div>
-              <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(17)}>
+
+              {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(17)}>
                 <div className='vertical-line-blue'></div>
-
-
                 <img
                   src={require('./Assests/icons/water-polo.png')}
                   className='event-icon'
@@ -410,11 +403,11 @@ const Results = () => {
                     <p>(1:3, 1:3, 1:4, 2:3)</p>
                   </div>
                 </div>
-              </div>
-              <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(18)}>
+              </div> */}
+
+
+              {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(18)}>
                 <div className='vertical-line-blue'></div>
-
-
                 <img
                   src={require('./Assests/icons/water-polo.png')}
                   className='event-icon'
@@ -446,7 +439,8 @@ const Results = () => {
                     <p>(1:3, 1:3, 1:4, 2:3)</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
+
               {/* Add more event-div results-event-div components for the morning session */}
             </div>
 
@@ -512,10 +506,10 @@ const Results = () => {
                 <ChevronDown className='dropdown' />
                 <JsonToTable visiblity={isVisible[22] ? "visible" : "not-visible"} />
               </div>
-              <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(23)}>
+
+
+              {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(23)}>
                 <div className='vertical-line-orange'></div>
-
-
                 <img
                   src={require('./Assests/icons/water-polo.png')}
                   className='event-icon'
@@ -547,11 +541,11 @@ const Results = () => {
                     <p>(1:3, 1:3, 1:4, 2:3)</p>
                   </div>
                 </div>
-              </div>
-              <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(24)}>
+              </div> */}
+
+
+              {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(24)}>
                 <div className='vertical-line-orange'></div>
-
-
                 <img
                   src={require('./Assests/icons/water-polo.png')}
                   className='event-icon'
@@ -583,7 +577,7 @@ const Results = () => {
                     <p>(1:3, 1:3, 1:4, 2:3)</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
             </div>
           </div>
@@ -669,10 +663,10 @@ const Results = () => {
                 <ChevronDown className='dropdown' />
                 <JsonToTable visiblity={isVisible[29] ? "visible" : "not-visible"} />
               </div>
-              <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(30)}>
+
+
+              {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(30)}>
                 <div className='vertical-line-blue'></div>
-
-
                 <img
                   src={require('./Assests/icons/water-polo.png')}
                   className='event-icon'
@@ -696,7 +690,9 @@ const Results = () => {
                     <p>(1:3, 1:3, 1:4, 2:3)</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
+
+
               {/* Add more event-div results-event-div components for the morning session */}
             </div>
             <div className='event-divs result-divs'>
@@ -761,10 +757,9 @@ const Results = () => {
                 <ChevronDown className='dropdown' />
                 <JsonToTable visiblity={isVisible[34] ? "visible" : "not-visible"} />
               </div>
-              <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(35)}>
+
+              {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(35)}>
                 <div className='vertical-line-orange'></div>
-
-
                 <img
                   src={require('./Assests/icons/water-polo.png')}
                   className='event-icon'
@@ -788,8 +783,12 @@ const Results = () => {
                     <p>(1:3, 1:3, 1:4, 2:3)</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
+
+
             </div>
+
+
           </div>
         );
 
@@ -873,7 +872,8 @@ const Results = () => {
                 <ChevronDown className='dropdown' />
                 <JsonToTable visiblity={isVisible[40] ? "visible" : "not-visible"} />
               </div>
-              <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(41)}>
+
+              {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(41)}>
                 <div className='vertical-line-blue'></div>
 
 
@@ -889,7 +889,8 @@ const Results = () => {
                 <p className='event-timing' style={{ color: '#7f848c' }}>
                   Semi Final 1
                 </p>
-              </div>
+              </div> */}
+
               {/* Add more event-div results-event-div components for the morning session */}
             </div>
             <div className='event-divs result-divs'>
@@ -954,10 +955,9 @@ const Results = () => {
                 <ChevronDown className='dropdown' />
                 <JsonToTable visiblity={isVisible[45] ? "visible" : "not-visible"} />
               </div>
-              <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(46)}>
+
+              {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(46)}>
                 <div className='vertical-line-orange'></div>
-
-
                 <img
                   src={require('./Assests/icons/water-polo.png')}
                   className='event-icon'
@@ -978,7 +978,8 @@ const Results = () => {
                     <p>(1:3, 1:3, 1:4, 2:3)</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
+
             </div>
           </div>
 
@@ -1049,10 +1050,10 @@ const Results = () => {
                 <ChevronDown className='dropdown' />
                 <JsonToTable visiblity={isVisible[50] ? "visible" : "not-visible"} />
               </div>
-              <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(51)}>
+
+
+              {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(51)}>
                 <div className='vertical-line-blue'></div>
-
-
                 <img
                   src={require('./Assests/icons/water-polo.png')}
                   className='event-icon'
@@ -1073,7 +1074,8 @@ const Results = () => {
                     <p>(1:3, 1:3, 1:4, 2:3)</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
+
               {/* Add more event-div results-event-div components for the morning session */}
             </div>
             <div className='event-divs result-divs'>
@@ -1108,10 +1110,10 @@ const Results = () => {
                 <ChevronDown className='dropdown' />
                 <JsonToTable visiblity={isVisible[53] ? "visible" : "not-visible"} />
               </div>
-              <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(54)}>
+
+
+              {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(54)}>
                 <div className='vertical-line-orange'></div>
-
-
                 <img
                   src={require('./Assests/icons/water-polo.png')}
                   className='event-icon'
@@ -1138,7 +1140,7 @@ const Results = () => {
                     <p>(1:3, 1:3, 1:4, 2:3)</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         );
@@ -1204,10 +1206,9 @@ const Results = () => {
                 <ChevronDown className='dropdown' />
                 <JsonToTable visiblity={isVisible[59] ? "visible" : "not-visible"} />
               </div>
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(60)}>
+
+              {/* <div className='event-div results-event-div' onClick={() => toggleVisibility(60)}>
                 <div className='vertical-line-blue'></div>
-
-
                 <img src={require('./Assests/icons/water-polo.png')} className='event-icon'></img>
                 <p className='event-timing'>Men</p>
                 <p className='event-timing'>Water Polo</p>
@@ -1216,11 +1217,9 @@ const Results = () => {
                   <img src={require('./Assests/IITs/IITK.jpg')} className="IIT-icon" />(C2) KANPUR
                 </p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>League Matches</p>
-              </div>
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(61)}>
+              </div> */}
+              {/* <div className='event-div results-event-div' onClick={() => toggleVisibility(61)}>
                 <div className='vertical-line-blue'></div>
-
-
                 <img src={require('./Assests/icons/water-polo.png')} className='event-icon'></img>
                 <p className='event-timing' >Men</p>
                 <p className='event-timing' >Water Polo</p>
@@ -1237,7 +1236,7 @@ const Results = () => {
                     <p>(1:3, 1:3, 1:4, 2:3)</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Evening Events  */}
@@ -1286,7 +1285,7 @@ const Results = () => {
                 <ChevronDown className='dropdown' />
                 <JsonToTable visiblity={isVisible[65] ? "visible" : "not-visible"} />
               </div>
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(66)}>
+              {/* <div className='event-div results-event-div' onClick={() => toggleVisibility(66)}>
                 <div className='vertical-line-orange'></div>
 
 
@@ -1306,8 +1305,8 @@ const Results = () => {
                     <p>(1:3, 1:3, 1:4, 2:3)</p>
                   </div>
                 </div>
-              </div>
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(67)}>
+              </div> */}
+              {/* <div className='event-div results-event-div' onClick={() => toggleVisibility(67)}>
                 <div className='vertical-line-orange'></div>
 
 
@@ -1327,7 +1326,7 @@ const Results = () => {
                     <p>(1:3, 1:3, 1:4, 2:3)</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         );
