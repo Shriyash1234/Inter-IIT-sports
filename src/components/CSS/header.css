@@ -37,9 +37,9 @@
 .level2{
 	flex-direction: column;
 }
-.cm-menu-inner{
+/* .cm-menu-inner{
 	box-shadow: 0 0 2rem 0 rgba(0,0,0,0.2);
-}
+} */
 .cm-menu-inner ul {
     margin: 0;
     padding: 0;

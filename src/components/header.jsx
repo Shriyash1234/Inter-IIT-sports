@@ -14,10 +14,16 @@ function Header(props) {
       if (window.scrollY > 100) {
         setHeaderBackground("#fff");
         document.getElementsByClassName('cm-header-wrap')[0].style.marginTop = '-1px';
+        if(window.innerWidth>991){
+          document.getElementsByClassName('cm-menu-inner')[0].style.boxShadow = '0 0 2rem 0 rgba(0,0,0,0.2)'
+        } 
         // color === 'white' ? setLinkbg(anticolor) : setLinkbg(color)
       } else {
         color === 'white' ? setHeaderBackground('transparent') : setHeaderBackground('#fff');
-        if(window.innerWidth>991) document.getElementsByClassName('cm-header-wrap')[0].style.marginTop = '15px';
+        if(window.innerWidth>991){
+          document.getElementsByClassName('cm-header-wrap')[0].style.marginTop = '15px';
+          document.getElementsByClassName('cm-menu-inner')[0].style.boxShadow = 'none'
+        } 
         // setLinkbg(color)
       }
     };
