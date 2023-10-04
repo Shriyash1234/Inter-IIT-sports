@@ -4,6 +4,11 @@ import { ChevronDown } from 'lucide-react'
 import JsonToTable from './jsontotable'
 import tableData from './Assests/Data/Inter-IIT-table.json'
 import data from './Assests/Data/Results/400m.json'
+import Day1MorRelay from './Assests/Data/Results/Day1-Result/4-100m-M-Medley.json'
+import Day1Mor50WBackStroke from './Assests/Data/Results/Day1-Result/50m-W-Backstroke.json'
+import Day1Mor100BackStroke from './Assests/Data/Results/Day1-Result/50m-W-Backstroke.json'
+import Day1Mor200BackStroke from './Assests/Data/Results/Day1-Result/200m-M-Breaststroke.json'
+import Day1Mor400Freestyle from './Assests/Data/Results/Day1-Result/400m.json'
 import './CSS/results.css'
 import './CSS/schedule.css'
 import Footer from './footer';
@@ -30,7 +35,6 @@ const Results = () => {
     window.scrollTo(0, 0)
   }, [])
   const toggleVisibility = (index) => {
-    return;
     const newVisibility = isVisible.map((value, i) => (i === index ? !value : false));
     setIsVisible(newVisibility);
     const eventDivs = document.getElementsByClassName("results-event-div");
@@ -124,7 +128,7 @@ const Results = () => {
                 <p className='event-timing'>400M Freestyle</p>
                 <p className='event-timing' style={{ color: '#7f848c', textAlign: 'left' }}>Heats/Time Trials</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[0] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day1Mor400Freestyle} visiblity={isVisible[0] ? "visible" : "not-visible"} />
               </div>
               <div className='event-div results-event-div' onClick={() => toggleVisibility(1)}>
                 <div className='vertical-line-blue'></div>

@@ -1,0 +1,23 @@
+[
+    {
+        "Rank": 1,
+        "Name": "IIT Delhi",
+        "College": "IIT Delhi",
+        "Time": "4:57.08",
+        "Points": 337
+    },
+    {
+        "Rank": 2,
+        "Name": "IIT Guwahati",
+        "College": "IIT Guwahati",
+        "Time": "5:01.07",
+        "Points": 323
+    },
+    {
+        "Rank": 3,
+        "Name": "IIT Hyderabad",
+        "College": "IIT Hyderabad",
+        "Time": "5:02.73",
+        "Points": 318
+    }
+]

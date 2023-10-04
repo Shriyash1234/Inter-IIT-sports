@@ -1,0 +1,26 @@
+[
+    {
+        "Rank": 1,
+        "Name": "Siddhartha Pamidi",
+        "College": "IIT Hyderabad",
+        "Time": "00:02:54.00",
+        "Points": 379,
+        "Status": "Q"
+    },
+    {
+        "Rank": 2,
+        "Name": "Karthik Xxx",
+        "College": "IIT Bombay",
+        "Time": "00:03:08.86",
+        "Points": 296,
+        "Status": "Q"
+    },
+    {
+        "Rank": 3,
+        "Name": "Ashwin Chaubey",
+        "College": "IIT Kanpur",
+        "Time": "00:03:12.29",
+        "Points": 281,
+        "Status": "Q"
+    }
+]
