@@ -9,8 +9,13 @@ import data from './Assests/Data/Results/400m.json'
 import Day1MorRelay from './Assests/Data/Results/Day1-Result/Morning/4-100m-M-Medley.json'
 import Day1Mor50WBackStroke from './Assests/Data/Results/Day1-Result/Morning/50m-W-Backstroke.json'
 import Day1Mor100BackStroke from './Assests/Data/Results/Day1-Result/Morning/100m-M-Backstroke.json'
-import Day1Mor200BackStroke from './Assests/Data/Results/Day1-Result/Morning/200m-M-Breaststroke.json'
+import Day1Mor200BreastStroke from './Assests/Data/Results/Day1-Result/Morning/200m-M-Breaststroke.json'
 import Day1Mor400Freestyle from './Assests/Data/Results/Day1-Result/Morning/400m.json'
+import Day1Eve50WBackStroke from './Assests/Data/Results/Day1-Result/Evening/50W-Backstroke.json'
+import Day1Eve100MBackStroke from './Assests/Data/Results/Day1-Result/Evening/100M-Backstroke.json'
+import Day1Eve200MBreastStroke from './Assests/Data/Results/Day1-Result/Evening/200M-Breaststroke.json'
+
+
 import './CSS/results.css'
 import './CSS/schedule.css'
 import Footer from './footer';
@@ -123,6 +128,7 @@ const Results = () => {
           <div>
             {/* Morning events */}
             <div className='event-divs result-divs'>
+
               <div className='event-div results-event-div' onClick={() => toggleVisibility(0)} >
                 <div className='vertical-line-blue'></div>
                 <img src={require('./Assests/icons/freesyle.png')} className='event-icon'></img>
@@ -132,6 +138,7 @@ const Results = () => {
                 <ChevronDown className='dropdown' />
                 <JsonToTable jsonData={Day1Mor400Freestyle} visiblity={isVisible[0] ? "visible" : "not-visible"} />
               </div>
+
               <div className='event-div results-event-div' onClick={() => toggleVisibility(1)}>
                 <div className='vertical-line-blue'></div>
                 <img src={require('./Assests/icons/backstroke.png')} className='event-icon'></img>
@@ -141,10 +148,9 @@ const Results = () => {
                 <ChevronDown className='dropdown' />
                 <JsonToTable jsonData={Day1Mor50WBackStroke} visiblity={isVisible[1] ? "visible" : "not-visible"} />
               </div>
+
               <div className='event-div results-event-div' onClick={() => toggleVisibility(2)}>
                 <div className='vertical-line-blue'></div>
-
-
                 <img src={require('./Assests/icons/backstroke.png')} className='event-icon'></img>
                 <p className='event-timing'>Men</p>
                 <p className='event-timing'>100M BackStroke</p>
@@ -152,21 +158,19 @@ const Results = () => {
                 <ChevronDown className='dropdown' />
                 <JsonToTable jsonData={Day1Mor100BackStroke} visiblity={isVisible[2] ? "visible" : "not-visible"} />
               </div>
+
               <div className='event-div results-event-div' onClick={() => toggleVisibility(3)}>
                 <div className='vertical-line-blue'></div>
-
-
                 <img src={require('./Assests/icons/breaststroke.png')} className='event-icon'></img>
                 <p className='event-timing'>Men</p>
                 <p className='event-timing'>200M Breast Stroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Heats</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[3] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day1Mor200BreastStroke} visiblity={isVisible[3] ? "visible" : "not-visible"} />
               </div>
+
               <div className='event-div results-event-div' onClick={() => toggleVisibility(4)}>
                 <div className='vertical-line-blue'></div>
-
-
                 <img src={require('./Assests/icons/relay.png')} className='event-icon'></img>
                 <p className='event-timing'>Men</p>
                 <p className='event-timing'>4 X 100M Medley Relay</p>
@@ -174,10 +178,9 @@ const Results = () => {
                 <ChevronDown className='dropdown' />
                 <JsonToTable visiblity={isVisible[4] ? "visible" : "not-visible"} />
               </div>
+
               <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(5)}>
                 <div className='vertical-line-blue'></div>
-
-
                 <img src={require('./Assests/icons/water-polo.png')} className='event-icon'></img>
                 <p className='event-timing'>Men</p>
                 <p className='event-timing'>Water Polo</p>
@@ -195,10 +198,9 @@ const Results = () => {
                   </div>
                 </div>
               </div>
+
               <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(6)}>
                 <div className='vertical-line-blue'></div>
-
-
                 <img src={require('./Assests/icons/water-polo.png')} className='event-icon'></img>
                 <p className='event-timing' >Men</p>
                 <p className='event-timing' >Water Polo</p>
@@ -231,43 +233,39 @@ const Results = () => {
                 <ChevronDown className='dropdown' />
                 <JsonToTable visiblity={isVisible[7] ? "visible" : "not-visible"} />
               </div> */}
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(8)}>
+
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(7)}>
                 <div className='vertical-line-orange'></div>
-
-
                 <img src={require('./Assests/icons/backstroke.png')} className='event-icon'></img>
                 <p className='event-timing'>Women</p>
                 <p className='event-timing'>50M Backstroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[8] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day1Eve50WBackStroke} visiblity={isVisible[7] ? "visible" : "not-visible"} />
               </div>
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(9)}>
+
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(8)}>
                 <div className='vertical-line-orange'></div>
-
-
                 <img src={require('./Assests/icons/backstroke.png')} className='event-icon'></img>
                 <p className='event-timing'>Men</p>
                 <p className='event-timing'>100M Backstroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[9] ? "visible" : "not-visible"} />
+                <JsonToTable  jsonData={Day1Eve100MBackStroke} visiblity={isVisible[8] ? "visible" : "not-visible"} />
               </div>
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(10)}>
+
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(9)}>
                 <div className='vertical-line-orange'></div>
-
-
                 <img src={require('./Assests/icons/breaststroke.png')} className='event-icon'></img>
                 <p className='event-timing'>Men</p>
                 <p className='event-timing'>200M Breast Stroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[10] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day1Eve200MBreastStroke} visiblity={isVisible[9] ? "visible" : "not-visible"} />
               </div>
-              <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(11)}>
+
+              <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(10)}>
                 <div className='vertical-line-orange'></div>
-
-
                 <img src={require('./Assests/icons/water-polo.png')} className='event-icon'></img>
                 <p className='event-timing'>Men</p>
                 <p className='event-timing'>Water Polo</p>
@@ -277,7 +275,7 @@ const Results = () => {
                 </p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>League Matches</p>
                 <ChevronDown className='dropdown' />
-                <div className={isVisible[11] ? 'event-div versus-div' : 'not-visible'}>
+                <div className={isVisible[10] ? 'event-div versus-div' : 'not-visible'}>
                   <p className='versus-div-score-text'>BOMBAY&nbsp;&nbsp;<img src={require('./Assests/IITs/IITB.jpg')} className="IIT-icon" /><p className='scores'>5 : 13</p>  &nbsp;&nbsp;
                     <img src={require('./Assests/IITs/IITK.jpg')} className="IIT-icon" />KANPUR</p>
                   <div>
@@ -285,10 +283,9 @@ const Results = () => {
                   </div>
                 </div>
               </div>
-              <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(12)}>
+
+              <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(11)}>
                 <div className='vertical-line-orange'></div>
-
-
                 <img src={require('./Assests/icons/water-polo.png')} className='event-icon'></img>
                 <p className='event-timing' >Men</p>
                 <p className='event-timing' >Water Polo</p>
@@ -298,7 +295,7 @@ const Results = () => {
                 </p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>League Matches</p>
                 <ChevronDown className='dropdown' />
-                <div className={isVisible[5] ? 'event-div versus-div' : 'not-visible'}>
+                <div className={isVisible[11] ? 'event-div versus-div' : 'not-visible'}>
                   <p className='versus-div-score-text'>BOMBAY&nbsp;&nbsp;<img src={require('./Assests/IITs/IITB.jpg')} className="IIT-icon" /><p className='scores'>5 : 13</p>  &nbsp;&nbsp;
                     <img src={require('./Assests/IITs/IITK.jpg')} className="IIT-icon" />KANPUR</p>
                   <div>
