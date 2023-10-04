@@ -2,7 +2,7 @@
 
 .excel-like-table {
     position: absolute;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 100%;
     left: 0%;
     margin-top: 60px;
@@ -48,9 +48,14 @@
   .excel-like-table th {
     border-bottom: 2px solid #000; /* Black border */
   }
-@media all and (max-width:991px) {
+/* @media all and (max-width:1300px) {
     .excel-like-table {
         font-size: 1.3rem;
+    }
+} */
+@media all and (max-width:991px) {
+    .excel-like-table {
+        font-size: 1rem;
     }
     .list-text{
       padding: 30px;
@@ -58,17 +63,17 @@
 }
 @media all and (max-width:768px) {
     .excel-like-table {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 }
 @media all and (max-width:676px) {
     .excel-like-table {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 }
 @media all and (max-width:479px) {
     .excel-like-table {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
     .Results-div{
         width: 90% !important;
@@ -76,7 +81,7 @@
 }
 @media all and (max-width:479px) {
     .excel-like-table {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
    
 }

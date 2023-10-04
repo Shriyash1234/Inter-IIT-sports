@@ -29,7 +29,7 @@ const Results = () => {
     const handleWindowLoad = () => {
         const elementHeight = document.getElementById('result-table').offsetHeight;
         
-        document.getElementsByClassName('result-divs1')[0].style.marginTop = elementHeight * 1.1 + 'px';
+        document.getElementsByClassName('result-divs1')[0].style.marginTop = elementHeight * 1.4 + 'px';
     };
     window.addEventListener('load', handleWindowLoad);
     return () => {
@@ -52,7 +52,7 @@ const Results = () => {
 
     if (newVisibility[index]) {
       for (let i = index; i < eventDivs.length; i++) {
-        eventDivs[i].style.transform = `translateY(${elementHeight * 1.1}px)`;
+        eventDivs[i].style.transform = `translateY(${elementHeight * 1.4}px)`;
       }
       document.getElementsByClassName('footer-div')[0].style.marginTop = `${elementHeight * 1.1}px`;
       console.log(document.getElementsByClassName('schedule-div')[0])
