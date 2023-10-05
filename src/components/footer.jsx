@@ -16,7 +16,7 @@ const Footer = () => {
             <div style={styles.description}>
                 <h4 className='CRTDH-name-footer1'>Inter IIT Sports Meet 2023</h4>
                 <hr></hr>
-                <p className='CRTDH-name-footer1'>Hospitality: <span className='Head-office'> <Phone /></span> <span className='head-office-address'>+91-99250 29889</span> </p>
+                <p className='CRTDH-desc'>Oficial website of INTER IIT Sports Meet 2023<br></br>Copyright © 2023, IIT Gandhinagar, All rights reserved </p>
                 <div className="social-icons">
                     <hr></hr>
                     <h4 className='CRTDH-name-footer1' style={{ marginBottom: '0px', marginTop: '30px' }}>Connect with us!</h4>
