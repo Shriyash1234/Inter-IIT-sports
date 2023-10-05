@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Official website of INTER IIT Sports Meet 2023
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##### This repository contains the source code for the interiit.in website.
 
-## Available Scripts
+## Home Page
+![image](https://github.com/123nxxp/Inter-IIT-sports/assets/105475941/a4dc02f3-191e-4b61-9a9d-e1599e9cf647)
 
-In the project directory, you can run:
 
-### `npm start`
+## Description
+TThe project involved the development of a responsive website dedicated to the 56th Inter IIT Sports Meet, utilizing the ReactJS framework. The primary objective was to establish a centralized platform that provides extensive event information, including game schedules and results, specifically tailored for the Inter IIT event. The primary aim was to ensure convenient access to event details for participants as well as the audience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Events
+![image](https://github.com/123nxxp/Inter-IIT-sports/assets/105475941/71de3148-c81b-451f-a39a-e7087f425632)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Schedules
+![image](https://github.com/123nxxp/Inter-IIT-sports/assets/105475941/ba498add-ae3e-42dc-a3b3-1da1a8e3ba68)
+![image](https://github.com/123nxxp/Inter-IIT-sports/assets/105475941/19c3fdb7-5979-4a75-96fd-017ac33e5a28)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Key Features
 
-### `npm run build`
+### Responsive Design : 
+The website seamlessly adapts to various devices, providing an optimal user experience on desktops, tablets, and smartphones.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Event information :
+Detailed and comprehensive event information, including schedules, game details, and results
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Day Wise Results :
+Present detailed results on a day-to-day basis, encompassing final outcomes, and provide an overview of the overall medal tallies earned by the IITs.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### Overall Results
+![image](https://github.com/123nxxp/Inter-IIT-sports/assets/105475941/7a713748-2a3d-4f96-8438-4b4e308d2bb5)
+##### Game Wise Results:
+![image](https://github.com/123nxxp/Inter-IIT-sports/assets/105475941/f578a0f6-2ad4-4dc4-a554-e5fb7960d2b9)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation
+To set up the project locally, follow these steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Clone the repository.
+- Navigate to the project directory.
+- Install dependencies using [npm](https://www.npmjs.com/): `npm install`.
+- Run the application: `npm start`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Technologies Used
 
-## Learn More
+- ReactJS framework
+- HTML / CSS / JS
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
+Copyright © 2023, IIT Gandhinagar, All rights reserved.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🔗 Link
+[[interiit.in]](https://interiit.in/)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [@Mahesh Dange](https://github.com/123nxxp/)
+- [@Shriyash Mandavekar](https://github.com/Shriyash1234)
 
-### Advanced Configuration
+## Feedback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+If you have any feedback, please reach out to me at dange.mahesh@iitgn.ac.in
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
