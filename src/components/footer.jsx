@@ -43,9 +43,10 @@ const Footer = () => {
                         Gujarat - 382355</Link> </p>
                 <hr></hr>
                 <p className='Head-office'><Phone />&nbsp;&nbsp;CALL US</p>
-                <p className='head-office-address'>Aman Samria(+91 7357637225) Sports Secretary 
-                Anil Kataria (+91 83858 13914) Overall Coordinator 
-                Suteekshna Mishra (+91 9044412185) Hospitality Core</p>
+                <p className='head-office-address'>Aman Samria(+91 7357637225) Sports Secretary <br></br>
+                Anil Kataria (+91 83858 13914) Overall Coordinator <br></br>
+                Suteekshna Mishra (+91 9044412185) Hospitality Core
+                </p>
                 <hr></hr>
                 <p className='Head-office'><Mail />&nbsp;&nbsp;Email</p>
                 <p className='head-office-address'>sports.secretary@iitgn.ac.in</p>

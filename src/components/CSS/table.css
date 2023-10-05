@@ -78,6 +78,10 @@
     .Results-div{
         width: 90% !important;
     }
+    #result-table{
+      width: 85%;
+      left: 7.5%;
+    }
 }
 @media all and (max-width:479px) {
     .excel-like-table {

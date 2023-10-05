@@ -46,7 +46,6 @@ const Results = () => {
     setIsVisible(newVisibility);
     const eventDivs = document.getElementsByClassName("results-event-div");
     const targetDiv = eventDivs[index];
-
     const element = document.getElementById("normal-table");
     const elementHeight = element.offsetHeight;
 
@@ -54,8 +53,8 @@ const Results = () => {
       for (let i = index; i < eventDivs.length; i++) {
         eventDivs[i].style.transform = `translateY(${elementHeight * 1.4}px)`;
       }
-      document.getElementsByClassName('footer-div')[0].style.marginTop = `${elementHeight * 1.4}px`;
-      console.log(document.getElementsByClassName('schedule-div')[0])
+      // document.getElementsByClassName('footer-div')[0].style.marginTop = `${elementHeight * 1.4}px`;
+      // console.log(document.getElementsByClassName('schedule-div')[0])
       targetDiv.style.transform = "translateY(0)";
     } else {
       for (let i = index; i < eventDivs.length; i++) {

@@ -14,8 +14,8 @@
     flex-direction: row !important;
 }
 .dropdown{
-    position: absolute;
-    right: 18%;
+    position: relative;
+    margin: 0 50px 0 auto;
 }
 .not-visible{
    visibility: hidden;
