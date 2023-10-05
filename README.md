@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Official website of INTER IIT Sports Meet 2023
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the source code for the interiit.in website.
+![image](https://github.com/123nxxp/Inter-IIT-sports/assets/105475941/a4dc02f3-191e-4b61-9a9d-e1599e9cf647)
 
-## Available Scripts
 
-In the project directory, you can run:
+## Description
+The project aimed to develop a responsive website for the 56th Inter IIT Sports Meet using the ReactJS framework. The goal was to create a centralized platform offering comprehensive event information, encompassing game schedules, and results. The intention was to facilitate easy access to event details for both participants and the audience.
 
-### `npm start`
+![image](https://github.com/123nxxp/Inter-IIT-sports/assets/105475941/71de3148-c81b-451f-a39a-e7087f425632)
+![image](https://github.com/123nxxp/Inter-IIT-sports/assets/105475941/ba498add-ae3e-42dc-a3b3-1da1a8e3ba68)
+![image](https://github.com/123nxxp/Inter-IIT-sports/assets/105475941/19c3fdb7-5979-4a75-96fd-017ac33e5a28)
+![image](https://github.com/123nxxp/Inter-IIT-sports/assets/105475941/7a713748-2a3d-4f96-8438-4b4e308d2bb5)
+![image](https://github.com/123nxxp/Inter-IIT-sports/assets/105475941/7b91c0cf-e2a5-4991-b7a8-d24bbaa8f7b2)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Responsive Design : 
+The website seamlessly adapts to various devices, providing an optimal user experience on desktops, tablets, and smartphones.
 
-### `npm test`
+#### Event information :
+Detailed and comprehensive event information, including schedules, game details, and results
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Day Wise Results :
+Present detailed results on a day-to-day basis, encompassing final outcomes, and provide an overview of the overall medal tallies earned by the IITs.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
+To set up the project locally, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Clone the repository.
+- Navigate to the project directory.
+- Install dependencies using [npm](https://www.npmjs.com/): `npm install`.
+- Run the application: `npm start`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Technologies Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- ReactJS framework
+- HTML / CSS / JS
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Copyright © 2023, IIT Gandhinagar, All rights reserved.
 
-## Learn More
+## 🔗 Link
+[[interiit.in]](https://interiit.in/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [@Mahesh Dange](https://github.com/123nxxp/)
+- [@Shriyash Mandavekar](https://github.com/Shriyash1234)
 
-### Analyzing the Bundle Size
+## Feedback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+If you have any feedback, please reach out to me at dange.mahesh@iitgn.ac.in
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Tech Stack
 
-### Advanced Configuration
+**Framework:** ReactJs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Frontend:** HTML, CSS, Js
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
