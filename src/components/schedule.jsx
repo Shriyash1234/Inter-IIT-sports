@@ -50,6 +50,7 @@ const Schedule = () => {
           <div>
             {/* Morning events */}
             <div className='event-divs'>
+              <p>Morning Session: 07.00 AM | <span>Evening Session: 03.30 PM </span> </p>
               <div className='event-div'>
                 <div className='vertical-line-blue'></div>
                 <p className='event-timing'>Morning</p>
@@ -136,6 +137,8 @@ const Schedule = () => {
           <div>
             {/* Morning events */}
             <div className='event-divs'>
+              <p>Morning Session: 07.00 AM | <span>Evening Session: 03.30 PM </span> </p>
+              
               {/* Morning Session */}
               <div className='event-div'>
                 <div className='vertical-line-blue'></div>
@@ -254,6 +257,8 @@ const Schedule = () => {
         return (
           <div>
             <div className='event-divs'>
+              <p>Morning Session: 07.00 AM | <span>Evening Session: 03.30 PM </span> </p>
+              
               {/* Morning Session */}
               <div className='event-div'>
                 <div className='vertical-line-blue'></div>
@@ -401,6 +406,8 @@ const Schedule = () => {
         return (
           <div>
             <div className='event-divs'>
+              <p>Morning Session: 07.00 AM | <span>Evening Session: 03.30 PM </span> </p>
+              
               {/* Morning Session */}
               <div className='event-div'>
                 <div className='vertical-line-blue'></div>
@@ -478,6 +485,7 @@ const Schedule = () => {
                 </p>
               </div>
             </div>
+
             <div className='event-divs'>
               {/* Evening Session */}
               <div className='event-div'>
@@ -549,6 +557,8 @@ const Schedule = () => {
         return (
           <div>
             <div className='event-divs'>
+              <p>Morning Session: 07.00 AM | <span>Evening Session: 03.30 PM </span> </p>
+              
               {/* Morning Session */}
               <div className='event-div'>
                 <div className='vertical-line-blue'></div>
@@ -611,6 +621,7 @@ const Schedule = () => {
                 </p>
               </div>
             </div>
+
             <div className='event-divs'>
               {/* Evening Session */}
               <div className='event-div'>
@@ -653,6 +664,8 @@ const Schedule = () => {
           <div>
             {/* Morning events */}
             <div className='event-divs'>
+              <p>Morning Session: 07.00 AM | <span>Evening Session: 03.30 PM </span> </p>
+              
               <div className='event-div'>
                 <div className='vertical-line-blue'></div>
                 <p className='event-timing'>Morning</p>
