@@ -30,7 +30,8 @@ Present detailed results on a day-to-day basis, encompassing final outcomes, and
 ##### Overall Results
 ![image](https://github.com/123nxxp/Inter-IIT-sports/assets/105475941/7a713748-2a3d-4f96-8438-4b4e308d2bb5)
 ##### Game Wise Results:
-![image](https://github.com/123nxxp/Inter-IIT-sports/assets/105475941/7b91c0cf-e2a5-4991-b7a8-d24bbaa8f7b2
+![image](https://github.com/123nxxp/Inter-IIT-sports/assets/105475941/f578a0f6-2ad4-4dc4-a554-e5fb7960d2b9)
+
 
 ## Installation
 To set up the project locally, follow these steps:
