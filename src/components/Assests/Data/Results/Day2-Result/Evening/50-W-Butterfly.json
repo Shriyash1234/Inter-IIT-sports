@@ -1,20 +1,20 @@
 [
     {
-     "Rank": 1,
-     "Athlete": "Pravalika Das",
-     "IIT": "IIT Kharagpur",
-     "Timing": 33.89
+        "Rank": 1,
+        "Athlete": "Pravalika Das",
+        "IIT": "IIT Kharagpur (IITKGP)",
+        "Timing": "00:00:00.33.89"
     },
     {
-     "Rank": 2,
-     "Athlete": "Ananya Balike",
-     "IIT": "IIT Gandhinagar",
-     "Timing": 45.9
+        "Rank": 2,
+        "Athlete": "Ananya Balike",
+        "IIT": "IIT Gandhinagar (IITGN)",
+        "Timing": "00:00:00.45.9"
     },
     {
-     "Rank": 3,
-     "Athlete": "Manvi Bengani",
-     "IIT": "IIT Kanpur",
-     "Timing": 46.35
+        "Rank": 3,
+        "Athlete": "Manvi Bengani",
+        "IIT": "IIT Kanpur (IITK)",
+        "Timing": "00:00:00.46.35"
     }
-   ]
+]

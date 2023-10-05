@@ -1,3 +1,20 @@
 [
-    
+    {
+        "Rank": 1,
+        "Athlete": "Rishabh Pillai",
+        "IIT": "IIT Hyderabad (IITH)",
+        "Timing": "00:02:13.800"
+    },
+    {
+        "Rank": 2,
+        "Athlete": "Karthi Hari Krishnan",
+        "IIT": "IIT Madras (IITM)",
+        "Timing": "00:02:25.800"
+    },
+    {
+        "Rank": 3,
+        "Athlete": "Bhuvan Jambhulkar",
+        "IIT": "IIT Kharagpur (IITKGP)",
+        "Timing": "00:02:28.400"
+    }
 ]
