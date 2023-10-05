@@ -68,9 +68,4 @@ Copyright © 2023, IIT Gandhinagar, All rights reserved.
 If you have any feedback, please reach out to me at dange.mahesh@iitgn.ac.in
 
 
-## Tech Stack
-
-**Framework:** ReactJs
-
-**Frontend:** HTML, CSS, Js
 
