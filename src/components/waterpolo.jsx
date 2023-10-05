@@ -122,8 +122,8 @@ const Water_Polo = () => {
             pool: 'Quarter Final',
             home_team: 'Winner of Pool A',
             away_team: 'Runner of Pool C',
-            logo_home_team: '',
-            logo_away_team: '',
+            logo_home_team: require('./Assests/IITs/temp.jpg'),
+            logo_away_team: require('./Assests/IITs/temp.jpg'),
         },
         {
             id: 10,
@@ -132,8 +132,8 @@ const Water_Polo = () => {
             pool: 'Quarter Final',
             home_team: 'Winner of Pool B',
             away_team: 'Runner of Pool D',
-            logo_home_team: '',
-            logo_away_team: '',
+            logo_home_team:require('./Assests/IITs/temp.jpg'),
+            logo_away_team:require('./Assests/IITs/temp.jpg'),
         },
         {
             id: 11,
@@ -142,8 +142,8 @@ const Water_Polo = () => {
             pool: 'Semi Final',
             home_team: 'Runner of Pool A',
             away_team: 'Winner of Pool C',
-            logo_home_team: '',
-            logo_away_team: '',
+            logo_home_team:require('./Assests/IITs/temp.jpg'),
+            logo_away_team:require('./Assests/IITs/temp.jpg'),
         },
         {
             id: 12,
@@ -152,8 +152,8 @@ const Water_Polo = () => {
             pool: 'Semi Final',
             home_team: 'Runner of Pool B',
             away_team: 'Winner of Pool D',
-            logo_home_team: '',
-            logo_away_team: '',
+            logo_home_team:require('./Assests/IITs/temp.jpg'),
+            logo_away_team:require('./Assests/IITs/temp.jpg'),
         },
         {
             id: 13,
@@ -162,8 +162,8 @@ const Water_Polo = () => {
             pool: 'Final',
             home_team: 'SF 1',
             away_team: 'SF 4',
-            logo_home_team: '',
-            logo_away_team: '',
+            logo_home_team:require('./Assests/IITs/temp.jpg'),
+            logo_away_team:require('./Assests/IITs/temp.jpg'),
         },
         {
             id: 14,
@@ -172,8 +172,8 @@ const Water_Polo = () => {
             pool: 'Final',
             home_team: 'SF 2',
             away_team: 'SF 3',
-            logo_home_team: '',
-            logo_away_team: '',
+            logo_home_team:require('./Assests/IITs/temp.jpg'),
+            logo_away_team:require('./Assests/IITs/temp.jpg'),
         },
         {
             id: 15,
@@ -182,8 +182,8 @@ const Water_Polo = () => {
             pool: '3rd Place',
             home_team: 'Loser of F1',
             away_team: 'Loser of F2',
-            logo_home_team: '',
-            logo_away_team: '',
+            logo_home_team:require('./Assests/IITs/temp.jpg'),
+            logo_away_team:require('./Assests/IITs/temp.jpg'),
         },
         {
             id: 16,
@@ -192,8 +192,8 @@ const Water_Polo = () => {
             pool: 'Final',
             home_team: 'Winner of F1',
             away_team: 'Winner of F2',
-            logo_home_team: '',
-            logo_away_team: '',
+            logo_home_team:require('./Assests/IITs/temp.jpg'),
+            logo_away_team:require('./Assests/IITs/temp.jpg'),
         },
     ]);
 
