@@ -15,6 +15,15 @@ import Day1Eve50WBackStroke from './Assests/Data/Results/Day1-Result/Evening/50W
 import Day1Eve100MBackStroke from './Assests/Data/Results/Day1-Result/Evening/100M-Backstroke.json'
 import Day1Eve200MBreastStroke from './Assests/Data/Results/Day1-Result/Evening/200M-Breaststroke.json'
 
+import Day2Mor50MBackStroke from './Assests/Data/Results/Day2-Result/Morning/50-M-BackStroke.json'
+import Day2Mor50WButterfly from './Assests/Data/Results/Day2-Result/Morning/50-W-Butterfly.json'
+import Day2Mor200MFreeStyle from './Assests/Data/Results/Day2-Result/Morning/200-M-FreeStyle.json'
+import Day2Mor200MMedly from './Assests/Data/Results/Day2-Result/Morning/200-M-Medly.json'
+import Day2Eve50MBackStroke from './Assests/Data/Results/Day2-Result/Evening/50-M-BackStroke.json'
+import Day2Eve50WButterfly from './Assests/Data/Results/Day2-Result/Evening/50-W-Butterfly.json'
+import Day2Eve200MFreeStyle from './Assests/Data/Results/Day2-Result/Evening/200-M-FreeStyle.json'
+
+
 
 import './CSS/results.css'
 import './CSS/schedule.css'
@@ -128,7 +137,8 @@ const Results = () => {
           <div>
             {/* Morning events */}
             <div className='event-divs result-divs'>
-
+              <h5>Morning Results</h5>
+              
               <div className='event-div results-event-div' onClick={() => toggleVisibility(0)} >
                 <div className='vertical-line-blue'></div>
                 <img src={require('./Assests/icons/freesyle.png')} className='event-icon'></img>
@@ -215,6 +225,8 @@ const Results = () => {
 
             {/* Evening Events  */}
             <div className='event-divs result-divs'>
+              <h5>Evening Results</h5>
+              
               {/* <div className='event-div results-event-div' onClick={() => toggleVisibility(7)}>
                 <div className='vertical-line-orange'></div>
 
