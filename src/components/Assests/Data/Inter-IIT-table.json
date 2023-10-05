@@ -2,7 +2,7 @@
     {
      "Rank": 1,
      "IIT": "IIT Delhi (IITD)",
-     "Gold": 2,
+     "Gold": 3,
      "Silver": 0,
      "Bronze": 1
     },
@@ -22,38 +22,38 @@
     },
     {
      "Rank": 4,
+     "IIT": "IIT Madras (IITM)",
+     "Gold": 0,
+     "Silver": 1,
+     "Bronze": 1
+    },
+    {
+     "Rank": 5,
      "IIT": "IIT Kanpur (IITK)",
      "Gold": 0,
      "Silver": 1,
      "Bronze": 0
     },
     {
-     "Rank": 5,
+     "Rank": 6,
      "IIT": "IIT Bombay (IITB)",
      "Gold": 0,
      "Silver": 1,
      "Bronze": 0
     },
     {
-     "Rank": 6,
+     "Rank": 7,
      "IIT": "IIT Guwahati (IITG)",
      "Gold": 0,
      "Silver": 1,
      "Bronze": 0
     },
     {
-     "Rank": 7,
+     "Rank": 8,
      "IIT": "IIT Dhanbad (IIT ISM)",
      "Gold": 0,
      "Silver": 0,
      "Bronze": 1
-    },
-    {
-     "Rank": 8,
-     "IIT": "IIT Madras (IITM)",
-     "Gold": 0,
-     "Silver": 0,
-     "Bronze": 0
     },
     {
      "Rank": 9,
