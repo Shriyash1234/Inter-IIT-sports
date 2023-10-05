@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f10a9fb5.css",
-    "main.js": "/static/js/main.4589e1ba.js",
+    "main.js": "/static/js/main.33ca367a.js",
     "static/js/787.fa79374b.chunk.js": "/static/js/787.fa79374b.chunk.js",
     "static/media/sports-meet.jpg": "/static/media/sports-meet.7c8d00e3fe0b5551e8d1.jpg",
     "static/media/staff.jpg": "/static/media/staff.36653b7528672432c390.jpg",
@@ -20,6 +20,7 @@
     "static/media/Inter-IIT-logo-new.jpg": "/static/media/Inter-IIT-logo-new.8fee20db6055714770c3.jpg",
     "static/media/IITGOA.jpg": "/static/media/IITGOA.949b19c1858c5af12e39.jpg",
     "static/media/IITK.jpg": "/static/media/IITK.7627dd101efa71abb3dc.jpg",
+    "static/media/temp.jpg": "/static/media/temp.ea74ce4dfe4d9e3b8494.jpg",
     "static/media/IITM.jpg": "/static/media/IITM.92ff1e97d8351104898b.jpg",
     "static/media/IITRPR.jpg": "/static/media/IITRPR.6d7ae14c74107adc91d1.jpg",
     "static/media/IITI.jpg": "/static/media/IITI.1fd72daef892a230bb57.jpg",
@@ -47,11 +48,11 @@
     "static/media/logo.svg": "/static/media/logo.4361579e402959270574.svg",
     "index.html": "/index.html",
     "main.f10a9fb5.css.map": "/static/css/main.f10a9fb5.css.map",
-    "main.4589e1ba.js.map": "/static/js/main.4589e1ba.js.map",
+    "main.33ca367a.js.map": "/static/js/main.33ca367a.js.map",
     "787.fa79374b.chunk.js.map": "/static/js/787.fa79374b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f10a9fb5.css",
-    "static/js/main.4589e1ba.js"
+    "static/js/main.33ca367a.js"
   ]
 }
