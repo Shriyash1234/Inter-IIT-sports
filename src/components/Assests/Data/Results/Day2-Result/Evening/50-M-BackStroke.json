@@ -1,0 +1,20 @@
+[
+    {
+        "Rank": 1,
+        "Athlete": "Rachit Rambhia",
+        "IIT": "IIT Delhi (IITD)",
+        "Timing": "00:00:00.30.72"
+    },
+    {
+        "Rank": 2,
+        "Athlete": "Bhavik Baruah",
+        "IIT": "IIT Dhanbad (IIT ISM)",
+        "Timing": "00:00:00.33.28"
+    },
+    {
+        "Rank": 3,
+        "Athlete": "Prasanna G",
+        "IIT": "IIT Madras (IITM)",
+        "Timing": "00:00:00.33.89"
+    }
+]
