@@ -1,12 +1,13 @@
 # Official website of INTER IIT Sports Meet 2023
 
-This repository contains the source code for the interiit.in website.
+##### This repository contains the source code for the interiit.in website.
+
 ## Home Page
 ![image](https://github.com/123nxxp/Inter-IIT-sports/assets/105475941/a4dc02f3-191e-4b61-9a9d-e1599e9cf647)
 
 
 ## Description
-The project aimed to develop a responsive website for the 56th Inter IIT Sports Meet using the ReactJS framework. The goal was to create a centralized platform offering comprehensive event information, encompassing game schedules, and results. The intention was to facilitate easy access to event details for both participants and the audience.
+TThe project involved the development of a responsive website dedicated to the 56th Inter IIT Sports Meet, utilizing the ReactJS framework. The primary objective was to establish a centralized platform that provides extensive event information, including game schedules and results, specifically tailored for the Inter IIT event. The primary aim was to ensure convenient access to event details for participants as well as the audience.
 
 ### Events
 ![image](https://github.com/123nxxp/Inter-IIT-sports/assets/105475941/71de3148-c81b-451f-a39a-e7087f425632)
@@ -18,13 +19,13 @@ The project aimed to develop a responsive website for the 56th Inter IIT Sports 
 
 ## Key Features
 
-#### Responsive Design : 
+### Responsive Design : 
 The website seamlessly adapts to various devices, providing an optimal user experience on desktops, tablets, and smartphones.
 
-#### Event information :
+### Event information :
 Detailed and comprehensive event information, including schedules, game details, and results
 
-#### Day Wise Results :
+### Day Wise Results :
 Present detailed results on a day-to-day basis, encompassing final outcomes, and provide an overview of the overall medal tallies earned by the IITs.
 
 ##### Overall Results
