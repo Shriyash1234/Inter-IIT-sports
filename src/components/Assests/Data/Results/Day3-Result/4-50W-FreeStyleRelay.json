@@ -1,0 +1,20 @@
+[
+    {
+        "Rank": 1,
+        "Athlete": "Pravika Das, Prama Adhya, Kanchan Potdar, Nikita Pavle",
+        "IIT": "IIT Kharagpur (IITKGP)",
+        "Timing": "00:02:28.300"
+    },
+    {
+        "Rank": 2,
+        "Athlete": "Poorvie Sadagopan, Kanak Potdar, Rachita Bhattacharya, Manvi Bengani",
+        "IIT": "IIT Kanpur (IITK)",
+        "Timing": "00:02:36.500"
+    },
+    {
+        "Rank": 3,
+        "Athlete": "Kavuri Monisa, Ananya Balike, Kalash Kankariya, Tanya Vyas",
+        "IIT": "IIT Gandhinagar (IITGN)",
+        "Timing": "00:02:36.700"
+    }
+]
