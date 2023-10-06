@@ -815,21 +815,10 @@ const waterPoloMatches = {
       logo_home_team: require('./Assests/IITs/IITD.jpg'),
       logo_away_team: require('./Assests/IITs/IITG.jpg'),
     },
-    {
-      id: 5,
-      date: 'Oct 4 2023',
-      time: 'Evening',
-      pool: 'C',
-      home_team: 'IIT ROORKEE',
-      away_team: 'IIT KANPUR',
-      logo_home_team: require('./Assests/IITs/IITR.jpg'),
-      logo_away_team: require('./Assests/IITs/IITK.jpg'),
-    },
-    // Add more matches for this date if needed
   ],
   "Thursday 5th October": [
     {
-      id: 6,
+      id: 5,
       date: 'Oct 5 2023',
       time: 'Morning',
       pool: 'C',
@@ -839,7 +828,7 @@ const waterPoloMatches = {
       logo_away_team: require('./Assests/IITs/IITR.jpg'),
     },
     {
-      id: 7,
+      id: 6,
       date: 'Oct 5 2023',
       time: 'Morning',
       pool: 'B',
@@ -849,7 +838,7 @@ const waterPoloMatches = {
       logo_away_team: require('./Assests/IITs/IITBHU.jpg'),
     },
     {
-      id: 8,
+      id: 7,
       date: 'Oct 5 2023',
       time: 'Evening',
       pool: 'C',
@@ -859,7 +848,7 @@ const waterPoloMatches = {
       logo_away_team: require('./Assests/IITs/IITK.jpg'),
     },
     {
-      id: 9,
+      id: 8,
       date: 'Oct 5 2023',
       time: 'Evening',
       pool: 'B',
@@ -871,6 +860,16 @@ const waterPoloMatches = {
 
   ],
   "Friday 6th October": [{
+    id: 9,
+    date: 'Oct 6 2023',
+    time: 'Morning',
+    pool: 'Quarter Final',
+    home_team: 'Winner of Pool A',
+    away_team: 'Runner of Pool C',
+    logo_home_team: require('./Assests/IITs/temp.jpg'),
+    logo_away_team: require('./Assests/IITs/temp.jpg'),
+  },
+  {
     id: 10,
     date: 'Oct 6 2023',
     time: 'Morning',
