@@ -1313,7 +1313,7 @@ const Results = () => {
     <section className='Results'>
       <Header color='white' />
       <div className='Results-div'>
-        <p className='results-heading'>Overall Results</p>
+        <p className='results-heading'>Medal Tally</p>
         <JsonToTable jsonData={tableData} table="resultTable" />
       </div>
       <div className='event-divs result-divs1'>
