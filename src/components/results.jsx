@@ -18,7 +18,11 @@ import Day2Eve50MBackStroke from './Assests/Data/Results/Day2-Result/Evening/50-
 import Day2Eve50WButterfly from './Assests/Data/Results/Day2-Result/Evening/50-W-Butterfly.json'
 import Day2Eve200MFreeStyle from './Assests/Data/Results/Day2-Result/Evening/200-M-FreeStyle.json'
 
-
+import Day3FreeStyle50M from './Assests/Data/Results/Day3-Result/50M-FreeStyle.json'
+import Day3FreeStyle50W from './Assests/Data/Results/Day3-Result/50W-FreeStyle.json'
+import Day3Butterfly100M from './Assests/Data/Results/Day3-Result/100M-Butterfly.json'
+import Day3BackStroke200M from './Assests/Data/Results/Day3-Result/200M-BackStroke.json'
+import Day3FreeStyleRelay50W from './Assests/Data/Results/Day3-Result/4-50W-FreeStyleRelay.json'
 
 import './CSS/results.css'
 import './CSS/schedule.css'
@@ -643,19 +647,7 @@ const Results = () => {
                 <JsonToTable visiblity={isVisible[19] ? "visible" : "not-visible"} />
               </div> */}
 
-              {/* <div className='event-div results-event-div' onClick={() => toggleVisibility(20)}>
-                <div className='vertical-line-blue'></div>
-                <img
-                  src={require('./Assests/icons/relay.png')}
-                  className='event-icon'
-                  alt='Event Icon'
-                />
-                <p className='event-timing'>Women</p>
-                <p className='event-timing'>4 x 50M Freestyle Relay</p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>Time Trials</p>
-                <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[20] ? "visible" : "not-visible"} />
-              </div> */}
+
 
 
               {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(30)}>
@@ -690,6 +682,7 @@ const Results = () => {
             </div>
             <div className='event-divs result-divs'>
               {/* Evening Session */}
+
               <div className='event-div results-event-div' onClick={() => toggleVisibility(9,9)}>
                 <div className='vertical-line-orange'></div>
                 <img
@@ -701,10 +694,24 @@ const Results = () => {
                 <p className='event-timing'>200M Back Stroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[9] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day3BackStroke200M} visiblity={isVisible[9] ? "visible" : "not-visible"} />
               </div>
 
               <div className='event-div results-event-div' onClick={() => toggleVisibility(10,9)}>
+                <div className='vertical-line-blue'></div>
+                <img
+                  src={require('./Assests/icons/relay.png')}
+                  className='event-icon'
+                  alt='Event Icon'
+                />
+                <p className='event-timing'>Women</p>
+                <p className='event-timing'>4 x 50M Freestyle Relay</p>
+                <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
+                <ChevronDown className='dropdown' />
+                <JsonToTable jsonData={Day3FreeStyleRelay50W} visiblity={isVisible[10] ? "visible" : "not-visible"} />
+              </div>
+
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(11,9)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/freesyle.png')}
@@ -715,10 +722,10 @@ const Results = () => {
                 <p className='event-timing'>100M Butterfly</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[10] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day3Butterfly100M} visiblity={isVisible[11] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(11,9)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(12,9)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/freesyle.png')}
@@ -729,10 +736,10 @@ const Results = () => {
                 <p className='event-timing'>50M Freestyle</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[11] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day3FreeStyle50W} visiblity={isVisible[12] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(12,9)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(13,9)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/freesyle.png')}
@@ -743,7 +750,7 @@ const Results = () => {
                 <p className='event-timing'>50M Freestyle</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[12] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day3FreeStyle50M} visiblity={isVisible[13] ? "visible" : "not-visible"} />
               </div>
 
               {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(35)}>

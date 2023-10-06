@@ -1,0 +1,20 @@
+[
+    {
+        "Rank": 1,
+        "Athlete": "Adit Rambhia",
+        "IIT": "IIT Gandhinagar (IITGN)",
+        "Timing": "00:01:07.700"
+    },
+    {
+        "Rank": 2,
+        "Athlete": "Saksham Paliwal",
+        "IIT": "IIT Delhi (IITD)",
+        "Timing": "00:01:12.800"
+    },
+    {
+        "Rank": 3,
+        "Athlete": "Aaditya Sattawan",
+        "IIT": "IIT Varanasi (IIT BHU)",
+        "Timing": "00:01:13.400"
+    }
+]
