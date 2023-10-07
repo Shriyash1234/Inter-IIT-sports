@@ -8,7 +8,7 @@ const Match = ({ match }) => {
                 Match - {match.id} | {match.date}
             </div>
             <div>
-                Pool - {match.pool}
+                {match.pool}
             </div>
             <div className="time">
                 {match.time}

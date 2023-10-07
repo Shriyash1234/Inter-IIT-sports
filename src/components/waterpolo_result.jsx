@@ -22,7 +22,7 @@ const Match = ({ match }) => {
       <div className="date">
         Match - {match.id} | {match.date}
       </div>
-      <div>Pool - {match.pool}</div>
+      <div>{match.pool}</div>
       <div className="time">{match.time}</div>
       <hr />
       <div className="teams">
