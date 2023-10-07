@@ -1,0 +1,20 @@
+[
+    {
+        "Rank": 1,
+        "Athlete": "Bhargov Phukan",
+        "IIT": "IIT Guwahati (IITG)",
+        "Timing": "00:00:29.800"
+    },
+    {
+        "Rank": 2,
+        "Athlete": "Prasanna G",
+        "IIT": "IIT Madras (IITM)",
+        "Timing": "00:00:30.300"
+    },
+    {
+        "Rank": 3,
+        "Athlete": "Vardhman Jain",
+        "IIT": "IIT Roorkee (IITR)",
+        "Timing": "00:00:31.010"
+    }
+]
