@@ -62,6 +62,7 @@ Copyright © 2023, IIT Gandhinagar, All rights reserved.
 
 - [@Mahesh Dange](https://github.com/123nxxp/)
 - [@Shriyash Mandavekar](https://github.com/Shriyash1234)
+- [@Vraj Shah](https://github.com/Vraj2811)
 
 ## Feedback
 

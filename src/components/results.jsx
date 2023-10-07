@@ -34,46 +34,48 @@ import Day4FreeStyle100W from './Assests/Data/Results/Day4-Result/100W-FreeStyle
 
 import './CSS/results.css'
 import './CSS/schedule.css'
+import Water_Polo_Result from './waterpolo_result'
+import Footer from './footer'
 // import Footer from './footer';
 
 const Results = () => {
 
   const [isVisible, setIsVisible] = useState(Array(100).fill(false));
 
-  
+
   useEffect(() => {
     const handleWindowLoad = () => {
-        const elementHeight = document.getElementById('result-table').offsetHeight;
-        
-        document.getElementsByClassName('result-divs1')[0].style.marginTop = elementHeight * 1.1 + 'px';
+      const elementHeight = document.getElementById('result-table').offsetHeight;
+
+      document.getElementsByClassName('result-divs1')[0].style.marginTop = elementHeight * 1.1 + 'px';
     };
     window.addEventListener('load', handleWindowLoad);
     return () => {
-        window.removeEventListener('load', handleWindowLoad);
+      window.removeEventListener('load', handleWindowLoad);
     };
-}, []);
+  }, []);
 
 
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
-  const toggleVisibility = (index,sindex) => {
+  const toggleVisibility = (index, sindex) => {
     const newVisibility = isVisible.map((value, i) => (i === index ? !value : false));
     setIsVisible(newVisibility);
     const eventDivs = document.getElementsByClassName("results-event-div");
-    const targetDiv = eventDivs[index-sindex];
+    const targetDiv = eventDivs[index - sindex];
     const element = document.getElementById("normal-table");
     const elementHeight = element.offsetHeight;
 
     if (newVisibility[index]) {
-      for (let i = index-sindex; i < eventDivs.length; i++) {
+      for (let i = index - sindex; i < eventDivs.length; i++) {
         eventDivs[i].style.transform = `translateY(${elementHeight * 1.4}px)`;
       }
       // document.getElementsByClassName('footer-div')[0].style.marginTop = `${elementHeight * 1.4}px`;
       // console.log(document.getElementsByClassName('schedule-div')[0])
       targetDiv.style.transform = "translateY(0)";
     } else {
-      for (let i = index-sindex; i < eventDivs.length; i++) {
+      for (let i = index - sindex; i < eventDivs.length; i++) {
         eventDivs[i].style.transform = "translateY(0)";
       }
     }
@@ -149,7 +151,7 @@ const Results = () => {
             {/* Morning events */}
             <div className='event-divs result-divs'>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(0,0)} >
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(0, 0)} >
                 <div className='vertical-line-blue'></div>
                 <img src={require('./Assests/icons/freesyle.png')} className='event-icon'></img>
                 <p className='event-timing'>Men</p>
@@ -189,7 +191,7 @@ const Results = () => {
                 <JsonToTable jsonData={Day1Mor200BreastStroke} visiblity={isVisible[3] ? "visible" : "not-visible"} />
               </div> */}
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(1,0)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(1, 0)}>
                 <div className='vertical-line-blue'></div>
                 <img src={require('./Assests/icons/relay.png')} className='event-icon'></img>
                 <p className='event-timing'>Men</p>
@@ -235,7 +237,7 @@ const Results = () => {
 
             {/* Evening Events  */}
             <div className='event-divs result-divs'>
-              
+
               {/* <div className='event-div results-event-div' onClick={() => toggleVisibility(7)}>
                 <div className='vertical-line-orange'></div>
 
@@ -248,7 +250,7 @@ const Results = () => {
                 <JsonToTable visiblity={isVisible[7] ? "visible" : "not-visible"} />
               </div> */}
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(2,0)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(2, 0)}>
                 <div className='vertical-line-orange'></div>
                 <img src={require('./Assests/icons/backstroke.png')} className='event-icon'></img>
                 <p className='event-timing'>Women</p>
@@ -258,17 +260,17 @@ const Results = () => {
                 <JsonToTable jsonData={Day1Eve50WBackStroke} visiblity={isVisible[2] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(3,0)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(3, 0)}>
                 <div className='vertical-line-orange'></div>
                 <img src={require('./Assests/icons/backstroke.png')} className='event-icon'></img>
                 <p className='event-timing'>Men</p>
                 <p className='event-timing'>100M Backstroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable  jsonData={Day1Eve100MBackStroke} visiblity={isVisible[3] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day1Eve100MBackStroke} visiblity={isVisible[3] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(4,0)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(4, 0)}>
                 <div className='vertical-line-orange'></div>
                 <img src={require('./Assests/icons/breaststroke.png')} className='event-icon'></img>
                 <p className='event-timing'>Men</p>
@@ -342,7 +344,7 @@ const Results = () => {
                 <ChevronDown className='dropdown' />
                 <JsonToTable visiblity={isVisible[8] ? "visible" : "not-visible"} />
               </div> */}
-              
+
               {/* <div className='event-div results-event-div' onClick={() => toggleVisibility(9,8)}>
                 <div className='vertical-line-blue'></div>
                 <img
@@ -462,7 +464,7 @@ const Results = () => {
 
             <div className='event-divs result-divs'>
               {/* Evening Session */}
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(5,5)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(5, 5)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/freesyle.png')}
@@ -476,7 +478,7 @@ const Results = () => {
                 <JsonToTable jsonData={Day2Eve200MFreeStyle} visiblity={isVisible[5] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(6,5)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(6, 5)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/freesyle.png')}
@@ -490,7 +492,7 @@ const Results = () => {
                 <JsonToTable jsonData={Day2Eve50WButterfly} visiblity={isVisible[6] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(7,5)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(7, 5)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/relay.png')}
@@ -504,7 +506,7 @@ const Results = () => {
                 <JsonToTable jsonData={Day2Mor200MMedly} visiblity={isVisible[7] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(8,5)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(8, 5)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/backstroke.png')}
@@ -515,7 +517,7 @@ const Results = () => {
                 <p className='event-timing'>50M Back Stroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable jsonData={Day2Eve50MBackStroke}  visiblity={isVisible[8] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day2Eve50MBackStroke} visiblity={isVisible[8] ? "visible" : "not-visible"} />
               </div>
 
 
@@ -691,7 +693,7 @@ const Results = () => {
             <div className='event-divs result-divs'>
               {/* Evening Session */}
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(9,9)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(9, 9)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/backstroke.png')}
@@ -705,7 +707,7 @@ const Results = () => {
                 <JsonToTable jsonData={Day3BackStroke200M} visiblity={isVisible[9] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(10,9)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(10, 9)}>
                 <div className='vertical-line-blue'></div>
                 <img
                   src={require('./Assests/icons/relay.png')}
@@ -719,7 +721,7 @@ const Results = () => {
                 <JsonToTable jsonData={Day3FreeStyleRelay50W} visiblity={isVisible[10] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(11,9)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(11, 9)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/freesyle.png')}
@@ -733,7 +735,7 @@ const Results = () => {
                 <JsonToTable jsonData={Day3Butterfly100M} visiblity={isVisible[11] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(12,9)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(12, 9)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/freesyle.png')}
@@ -747,7 +749,7 @@ const Results = () => {
                 <JsonToTable jsonData={Day3FreeStyle50W} visiblity={isVisible[12] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(13,9)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(13, 9)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/freesyle.png')}
@@ -880,7 +882,7 @@ const Results = () => {
             </div>
             <div className='event-divs result-divs'>
               {/* Evening Session */}
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(14,14)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(14, 14)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/freesyle.png')}
@@ -894,7 +896,7 @@ const Results = () => {
                 <JsonToTable jsonData={Day4FreeStyle100M} visiblity={isVisible[14] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(15,14)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(15, 14)}>
                 <div className='vertical-line-blue'></div>
                 <img
                   src={require('./Assests/icons/relay.png')}
@@ -908,7 +910,7 @@ const Results = () => {
                 <JsonToTable jsonData={Day4Relay100M} visiblity={isVisible[15] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(16,14)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(16, 14)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/freesyle.png')}
@@ -922,7 +924,7 @@ const Results = () => {
                 <JsonToTable jsonData={Day4FreeStyle100W} visiblity={isVisible[16] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(17,14)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(17, 14)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/freesyle.png')}
@@ -936,7 +938,7 @@ const Results = () => {
                 <JsonToTable jsonData={Day4Butterfly50M} visiblity={isVisible[17] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(18,14)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(18, 14)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/backstroke.png')}
@@ -1069,7 +1071,7 @@ const Results = () => {
             </div>
             <div className='event-divs result-divs'>
               {/* Evening Session */}
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(17,17)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(17, 17)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/backstroke.png')}
@@ -1083,7 +1085,7 @@ const Results = () => {
                 <JsonToTable visiblity={isVisible[17] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(18,17)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(18, 17)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/backstroke.png')}
@@ -1342,10 +1344,220 @@ const Results = () => {
             </div>
             {renderSchedule()}
           </div>
+          <Water_Polo_Result matches={waterPoloMatches[selectedDate]} />
+          <Footer />
         </section>
       </div>
     </section>
   );
+};
+
+
+const waterPoloMatches = {
+  "Wednesday 4th October": [
+    {
+      id: 1,
+      date: 'Oct 4 2023',
+      time: 'Morning',
+      pool: 'C',
+      home_team: 'IIT BOMBAY',
+      away_team: 'IIT KANPUR',
+      logo_home_team: require('./Assests/IITs/IITB.jpg'),
+      logo_away_team: require('./Assests/IITs/IITK.jpg'),
+      home_score:'10',
+      away_score:'7',
+    },
+    {
+      id: 2,
+      date: 'Oct 4 2023',
+      time: 'Morning',
+      pool: 'D',
+      home_team: 'IIT MADRAS',
+      away_team: 'IIT GANDHINAGAR',
+      logo_home_team: require('./Assests/IITs/IITM.jpg'),
+      logo_away_team: require('./Assests/IITs/IITGN.jpg'),
+      home_score:'12',
+      away_score:'2',
+    },
+    {
+      id: 3,
+      date: 'Oct 4 2023',
+      time: 'Evening',
+      pool: 'A',
+      home_team: 'IIT DHANBAD',
+      away_team: 'IIT KHARAGPUR',
+      logo_home_team: require('./Assests/IITs/IITDH.jpg'),
+      logo_away_team: require('./Assests/IITs/IITKGP.jpg'),
+      home_score:'4',
+      away_score:'10',
+    },
+    {
+      id: 4,
+      date: 'Oct 4 2023',
+      time: 'Evening',
+      pool: 'B',
+      home_team: 'IIT DELHI',
+      away_team: 'IIT GUWAHATI',
+      logo_home_team: require('./Assests/IITs/IITD.jpg'),
+      logo_away_team: require('./Assests/IITs/IITG.jpg'),
+      home_score:'11',
+      away_score:'3',
+    },
+  ],
+  "Thursday 5th October": [
+    {
+      id: 5,
+      date: 'Oct 5 2023',
+      time: 'Morning',
+      pool: 'C',
+      home_team: 'IIT BOMBAY',
+      away_team: 'IIT ROORKEE',
+      logo_home_team: require('./Assests/IITs/IITB.jpg'),
+      logo_away_team: require('./Assests/IITs/IITR.jpg'),
+      home_score:'7',
+      away_score:'3',
+    },
+    {
+      id: 6,
+      date: 'Oct 5 2023',
+      time: 'Morning',
+      pool: 'B',
+      home_team: 'IIT DELHI',
+      away_team: 'IIT BHU',
+      logo_home_team: require('./Assests/IITs/IITD.jpg'),
+      logo_away_team: require('./Assests/IITs/IITBHU.jpg'),
+      home_score:'14',
+      away_score:'3',
+    },
+    {
+      id: 7,
+      date: 'Oct 5 2023',
+      time: 'Evening',
+      pool: 'C',
+      home_team: 'IIT ROORKEE',
+      away_team: 'IIT KANPUR',
+      logo_home_team: require('./Assests/IITs/IITR.jpg'),
+      logo_away_team: require('./Assests/IITs/IITK.jpg'),
+      home_score:'10',
+      away_score:'4',
+    },
+    {
+      id: 8,
+      date: 'Oct 5 2023',
+      time: 'Evening',
+      pool: 'B',
+      home_team: 'IIT BHU',
+      away_team: 'IIT GUWAHATI',
+      logo_home_team: require('./Assests/IITs/IITBHU.jpg'),
+      logo_away_team: require('./Assests/IITs/IITG.jpg'),
+      home_score:'3',
+      away_score:'11',
+    },
+
+  ],
+  "Friday 6th October": [{
+    id: 9,
+    date: 'Oct 6 2023',
+    time: 'Morning',
+    pool: 'Quarter Final',
+    home_team: 'IIT KHARAGPUR',
+    away_team: 'IIT ROORKEE',
+    logo_home_team: require('./Assests/IITs/IITKGP.jpg'),
+    logo_away_team: require('./Assests/IITs/IITR.jpg'),
+      home_score:'5',
+      home_p:' ( 3 ) ',
+      away_score:'5',
+      away_p:' ( 2 ) ',
+  },
+  {
+    id: 10,
+    date: 'Oct 6 2023',
+    time: 'Morning',
+    pool: 'Quarter Final',
+    home_team: 'IIT DELHI',
+    away_team: 'IIT GANDHINAGAR',
+    logo_home_team: require('./Assests/IITs/IITD.jpg'),
+    logo_away_team: require('./Assests/IITs/IITGN.jpg'),
+      home_score:'6',
+      home_p:' ( 4 ) ',
+      away_score:'6',
+      away_p:' ( 2 ) ',
+  },
+  {
+    id: 11,
+    date: 'Oct 6 2023',
+    time: 'Evening',
+    pool: 'Quarter Final',
+    home_team: 'IIT DHANBAD',
+    away_team: 'IIT BOMBAY',
+    logo_home_team: require('./Assests/IITs/IITISM.jpg'),
+    logo_away_team: require('./Assests/IITs/IITB.jpg'),
+      home_score:'8',
+      away_score:'26',
+  },
+  {
+    id: 12,
+    date: 'Oct 6 2023',
+    time: 'Evening',
+    pool: 'Quarter Final',
+    home_team: 'IIT GUWAHATI',
+    away_team: 'IIT MADRAS',
+    logo_home_team: require('./Assests/IITs/IITG.jpg'),
+    logo_away_team: require('./Assests/IITs/IITM.jpg'),
+      home_score:'0',
+      away_score:'13',
+  },
+  ],
+  "Saturday 7th October": [{
+    id: 13,
+    date: 'Oct 7 2023',
+    time: 'Evening',
+    pool: 'Semi Final',
+    home_team: 'IIT KHARAGPUR',
+    away_team: 'IIT MADRAS',
+    logo_home_team: require('./Assests/IITs/IITKGP.jpg'),
+    logo_away_team: require('./Assests/IITs/IITM.jpg'),
+      home_score:'6',
+      away_score:'4',
+  },
+  {
+    id: 14,
+    date: 'Oct 7 2023',
+    time: 'Evening',
+    pool: 'Semi Final',
+    home_team: 'IIT DELHI',
+    away_team: 'IIT BOMBAY',
+    logo_home_team: require('./Assests/IITs/IITD.jpg'),
+    logo_away_team: require('./Assests/IITs/IITB.jpg'),
+      home_score:'3',
+      away_score:'12',
+  },
+  ],
+  "Sunday 8th October": [{
+    id: 15,
+    date: 'Oct 8 2023',
+    time: 'Evening',
+    pool: '3rd Place',
+    home_team: 'Loser of F1',
+    away_team: 'Loser of F2',
+    logo_home_team: require('./Assests/IITs/temp.jpg'),
+    logo_away_team: require('./Assests/IITs/temp.jpg'),
+      home_score:'',
+      away_score:'',
+  },
+  {
+    id: 16,
+    date: 'Oct 8 2023',
+    time: 'Evening',
+    pool: 'Final',
+    home_team: 'Winner of F1',
+    away_team: 'Winner of F2',
+    logo_home_team: require('./Assests/IITs/temp.jpg'),
+    logo_away_team: require('./Assests/IITs/temp.jpg'),
+      home_score:'',
+      away_score:'',
+  },
+  ],
 };
 
 export default Results;
