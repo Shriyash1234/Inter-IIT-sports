@@ -24,6 +24,14 @@ import Day3Butterfly100M from './Assests/Data/Results/Day3-Result/100M-Butterfly
 import Day3BackStroke200M from './Assests/Data/Results/Day3-Result/200M-BackStroke.json'
 import Day3FreeStyleRelay50W from './Assests/Data/Results/Day3-Result/4-50W-FreeStyleRelay.json'
 
+import Day4BreastStroke50M from './Assests/Data/Results/Day4-Result/50M-BreastStroke.json'
+import Day4Butterfly50M from './Assests/Data/Results/Day4-Result/50M-Butterfly.json'
+import Day4FreeStyle100M from './Assests/Data/Results/Day4-Result/100M-FreeStyle.json'
+import Day4Relay100M from './Assests/Data/Results/Day4-Result/100M-Relay.json'
+import Day4FreeStyle100W from './Assests/Data/Results/Day4-Result/100W-FreeStyle.json'
+
+
+
 import './CSS/results.css'
 import './CSS/schedule.css'
 // import Footer from './footer';
@@ -848,19 +856,7 @@ const Results = () => {
                 <JsonToTable visiblity={isVisible[28] ? "visible" : "not-visible"} />
               </div> */}
 
-              {/* <div className='event-div results-event-div' onClick={() => toggleVisibility(29)}>
-                <div className='vertical-line-blue'></div>
-                <img
-                  src={require('./Assests/icons/relay.png')}
-                  className='event-icon'
-                  alt='Event Icon'
-                />
-                <p className='event-timing'>Men</p>
-                <p className='event-timing'>4 x 100M Freestyle Relay</p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>Time Trials</p>
-                <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[29] ? "visible" : "not-visible"} />
-              </div> */}
+
 
               {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(41)}>
                 <div className='vertical-line-blue'></div>
@@ -884,7 +880,7 @@ const Results = () => {
             </div>
             <div className='event-divs result-divs'>
               {/* Evening Session */}
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(13,13)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(14,14)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/freesyle.png')}
@@ -895,10 +891,24 @@ const Results = () => {
                 <p className='event-timing'>100M Freestyle</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[13] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day4FreeStyle100M} visiblity={isVisible[14] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(14,13)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(15,14)}>
+                <div className='vertical-line-blue'></div>
+                <img
+                  src={require('./Assests/icons/relay.png')}
+                  className='event-icon'
+                  alt='Event Icon'
+                />
+                <p className='event-timing'>Men</p>
+                <p className='event-timing'>4 x 100M Freestyle Relay</p>
+                <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
+                <ChevronDown className='dropdown' />
+                <JsonToTable jsonData={Day4Relay100M} visiblity={isVisible[15] ? "visible" : "not-visible"} />
+              </div>
+
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(16,14)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/freesyle.png')}
@@ -909,10 +919,10 @@ const Results = () => {
                 <p className='event-timing'>100M Freestyle</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[14] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day4FreeStyle100W} visiblity={isVisible[16] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(15,13)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(17,14)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/freesyle.png')}
@@ -923,10 +933,10 @@ const Results = () => {
                 <p className='event-timing'>50M Butterfly</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[15] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day4Butterfly50M} visiblity={isVisible[17] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(16,13)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(18,14)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/backstroke.png')}
@@ -937,7 +947,7 @@ const Results = () => {
                 <p className='event-timing'>50M Back Stroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[16] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day4BreastStroke50M} visiblity={isVisible[18] ? "visible" : "not-visible"} />
               </div>
 
               {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(46)}>

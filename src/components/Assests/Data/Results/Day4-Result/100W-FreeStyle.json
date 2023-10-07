@@ -1,0 +1,20 @@
+[
+    {
+        "Rank": 1,
+        "Athlete": "Pravalika Das",
+        "IIT": "IIT Kharagpur (IITKGP)",
+        "Timing": "00:01:12.400"
+    },
+    {
+        "Rank": 2,
+        "Athlete": "Bhumishka Tapadiya",
+        "IIT": "IIT Varanasi (IIT BHU)",
+        "Timing": "00:01:20.600"
+    },
+    {
+        "Rank": 3,
+        "Athlete": "Nikita Pavle",
+        "IIT": "IIT Kharagpur (IITKGP)",
+        "Timing": "00:01:25.500"
+    }
+]

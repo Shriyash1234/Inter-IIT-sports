@@ -1,0 +1,20 @@
+[
+    {
+        "Rank": 1,
+        "Athlete": "Bhargov Phukan, Rajib Modak, Shlok Suraiya, Kushal Dornahalli",
+        "IIT": "IIT Guwahati (IITG)",
+        "Timing": "00:04:18.300"
+    },
+    {
+        "Rank": 2,
+        "Athlete": "Akash Suryawanshi, Saksham Paliwal, Suchir Kohli, Rachit Rambhia",
+        "IIT": "IIT Delhi (IITD)",
+        "Timing": "00:04:19.900"
+    },
+    {
+        "Rank": 3,
+        "Athlete": "Siddharth Pamidi, Manikanta Venkata Kumbha, Bharath Surya M, Rishabh Pillai",
+        "IIT": "IIT Hyderabad (IITH)",
+        "Timing": "00:04:21.500"
+    }
+]
