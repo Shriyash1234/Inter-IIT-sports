@@ -1,0 +1,20 @@
+[
+    {
+        "Rank": 1,
+        "Athlete": "Pravalika Das",
+        "IIT": "IIT Kharagpur (IITKGP)",
+        "Timing": "00:00:39.390"
+    },
+    {
+        "Rank": 2,
+        "Athlete": "Tanya Vyas",
+        "IIT": "IIT Gandhinagar (IITGN)",
+        "Timing": "00:00:43.200"
+    },
+    {
+        "Rank": 3,
+        "Athlete": "Kavya Pai Raiturker",
+        "IIT": "IIT Madras (IITM)",
+        "Timing": "00:00:47.880"
+    }
+]

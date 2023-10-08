@@ -30,6 +30,12 @@ import Day4FreeStyle100M from './Assests/Data/Results/Day4-Result/100M-FreeStyle
 import Day4Relay100M from './Assests/Data/Results/Day4-Result/100M-Relay.json'
 import Day4FreeStyle100W from './Assests/Data/Results/Day4-Result/100W-FreeStyle.json'
 
+import Day5BreasStroke50W from './Assests/Data/Results/Day5-Result/50W-BreastStroke.json'
+import Day5MedleyRelay50W from './Assests/Data/Results/Day5-Result/50W-MedleyRelay.json'
+import Day5BreasStroke100M from './Assests/Data/Results/Day5-Result/100M-BreastStroke.json'
+import Day5FreeStyle1500M from './Assests/Data/Results/Day5-Result/1500M-FreeStyle.json'
+
+
 
 
 import './CSS/results.css'
@@ -986,19 +992,7 @@ const Results = () => {
           <div>
             <div className='event-divs result-divs'>
               {/* Morning Session */}
-              {/* <div className='event-div results-event-div' onClick={() => toggleVisibility(34)}>
-                <div className='vertical-line-blue'></div>
-                <img
-                  src={require('./Assests/icons/freesyle.png')}
-                  className='event-icon'
-                  alt='Event Icon'
-                />
-                <p className='event-timing'>Men</p>
-                <p className='event-timing'>1500M Freestyle</p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>Time Trials</p>
-                <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[34] ? "visible" : "not-visible"} />
-              </div> */}
+
 
               {/* <div className='event-div results-event-div' onClick={() => toggleVisibility(35)}>
                 <div className='vertical-line-blue'></div>
@@ -1028,19 +1022,7 @@ const Results = () => {
                 <JsonToTable visiblity={isVisible[36] ? "visible" : "not-visible"} />
               </div> */}
 
-              {/* <div className='event-div results-event-div' onClick={() => toggleVisibility(37)}>
-                <div className='vertical-line-blue'></div>
-                <img
-                  src={require('./Assests/icons/relay.png')}
-                  className='event-icon'
-                  alt='Event Icon'
-                />
-                <p className='event-timing'>Women</p>
-                <p className='event-timing'>4 x 50M Medley Relay</p>
-                <p className='event-timing' style={{ color: '#7f848c' }}>Time Trials</p>
-                <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[37] ? "visible" : "not-visible"} />
-              </div> */}
+
 
 
               {/* <div className='event-div results-event-div' onClick={() => toggleVisibilityLeague(51)}>
@@ -1071,7 +1053,7 @@ const Results = () => {
             </div>
             <div className='event-divs result-divs'>
               {/* Evening Session */}
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(17, 17)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(19, 19)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/backstroke.png')}
@@ -1079,13 +1061,41 @@ const Results = () => {
                   alt='Event Icon'
                 />
                 <p className='event-timing'>Women</p>
-                <p className='event-timing'>50M Back Stroke</p>
+                <p className='event-timing'>50M Breast Stroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[17] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day5BreasStroke50W}  visiblity={isVisible[19] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(18, 17)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(20,19)}>
+                <div className='vertical-line-blue'></div>
+                <img
+                  src={require('./Assests/icons/relay.png')}
+                  className='event-icon'
+                  alt='Event Icon'
+                />
+                <p className='event-timing'>Women</p>
+                <p className='event-timing'>4 x 50M Medley Relay</p>
+                <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
+                <ChevronDown className='dropdown' />
+                <JsonToTable jsonData={Day5MedleyRelay50W} visiblity={isVisible[20] ? "visible" : "not-visible"} />
+              </div>
+
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(21,19)}>
+                <div className='vertical-line-blue'></div>
+                <img
+                  src={require('./Assests/icons/freesyle.png')}
+                  className='event-icon'
+                  alt='Event Icon'
+                />
+                <p className='event-timing'>Men</p>
+                <p className='event-timing'>1500M Freestyle</p>
+                <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
+                <ChevronDown className='dropdown' />
+                <JsonToTable jsonData={Day5FreeStyle1500M}  visiblity={isVisible[21] ? "visible" : "not-visible"} />
+              </div>
+
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(22, 19)}>
                 <div className='vertical-line-orange'></div>
                 <img
                   src={require('./Assests/icons/backstroke.png')}
@@ -1093,10 +1103,10 @@ const Results = () => {
                   alt='Event Icon'
                 />
                 <p className='event-timing'>Men</p>
-                <p className='event-timing'>100M Back Stroke</p>
+                <p className='event-timing'>100M Breast Stroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable visiblity={isVisible[18] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day5BreasStroke100M} visiblity={isVisible[22] ? "visible" : "not-visible"} />
               </div>
 
 
@@ -1517,8 +1527,8 @@ const waterPoloMatches = {
     away_team: 'IIT MADRAS',
     logo_home_team: require('./Assests/IITs/IITKGP.jpg'),
     logo_away_team: require('./Assests/IITs/IITM.jpg'),
-      home_score:'6',
-      away_score:'4',
+      home_score:'4',
+      away_score:'6',
   },
   {
     id: 14,
