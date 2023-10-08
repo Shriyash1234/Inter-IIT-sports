@@ -1,70 +1,70 @@
 [
     {
      "Rank": 1,
+     "IIT": "IIT Gandhinagar (IITGN)",
+     "Gold": 5,
+     "Silver": 3,
+     "Bronze": 2
+    },
+    {
+     "Rank": 2,
      "IIT": "IIT Delhi (IITD)",
      "Gold": 5,
      "Silver": 2,
      "Bronze": 1
     },
     {
-     "Rank": 2,
-     "IIT": "IIT Gandhinagar (IITGN)",
-     "Gold": 5,
-     "Silver": 1,
-     "Bronze": 2
-    },
-    {
      "Rank": 3,
-     "IIT": "IIT Guwahati (IITG)",
-     "Gold": 3,
-     "Silver": 3,
-     "Bronze": 1
+     "IIT": "IIT Kharagpur (IITKGP)",
+     "Gold": 5,
+     "Silver": 2,
+     "Bronze": 5
     },
     {
      "Rank": 4,
-     "IIT": "IIT Kharagpur (IITKGP)",
-     "Gold": 3,
-     "Silver": 2,
-     "Bronze": 3
+     "IIT": "IIT Guwahati (IITG)",
+     "Gold": 4,
+     "Silver": 3,
+     "Bronze": 1
     },
     {
      "Rank": 5,
      "IIT": "IIT Hyderabad (IITH)",
      "Gold": 3,
-     "Silver": 1,
+     "Silver": 2,
      "Bronze": 3
     },
     {
      "Rank": 6,
      "IIT": "IIT Madras (IITM)",
-     "Gold": 0,
+     "Gold": 2,
      "Silver": 3,
-     "Bronze": 3
+     "Bronze": 4
     },
     {
      "Rank": 7,
      "IIT": "IIT Varanasi (IIT BHU)",
      "Gold": 0,
      "Silver": 3,
-     "Bronze": 2
+     "Bronze": 3
     },
     {
      "Rank": 8,
      "IIT": "IIT Kanpur (IITK)",
      "Gold": 0,
+     "Silver": 3,
+     "Bronze": 2
+    },
+    {
+     "Rank": 9,
+     "IIT": "IIT Bombay (IITB)",
+     "Gold": 0,
      "Silver": 2,
      "Bronze": 1
     },
     {
-     "Rank": 9,
-     "IIT": "IIT Dhanbad (IIT ISM)",
-     "Gold": 0,
-     "Silver": 1,
-     "Bronze": 1
-    },
-    {
      "Rank": 10,
-     "IIT": "IIT Bombay (IITB)",
+     "IIT": "IIT Dhanbad (IIT ISM)",
      "Gold": 0,
      "Silver": 1,
      "Bronze": 1
@@ -106,7 +106,7 @@
     },
     {
      "Rank": 16,
-     "IIT": "IIT Tirupati (IITT)",
+     "IIT": "IIT Goa (IIT GOA)",
      "Gold": 0,
      "Silver": 0,
      "Bronze": 0
