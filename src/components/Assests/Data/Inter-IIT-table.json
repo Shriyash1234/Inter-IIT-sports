@@ -7,19 +7,20 @@
      "Bronze": 2
     },
     {
-     "Rank": 2,
+        "Rank": 2,
+        "IIT": "IIT Kharagpur (IITKGP)",
+        "Gold": 5,
+        "Silver": 2,
+        "Bronze": 5
+    },
+    {
+     "Rank": 3,
      "IIT": "IIT Delhi (IITD)",
      "Gold": 5,
      "Silver": 2,
      "Bronze": 1
     },
-    {
-     "Rank": 3,
-     "IIT": "IIT Kharagpur (IITKGP)",
-     "Gold": 5,
-     "Silver": 2,
-     "Bronze": 5
-    },
+    
     {
      "Rank": 4,
      "IIT": "IIT Guwahati (IITG)",

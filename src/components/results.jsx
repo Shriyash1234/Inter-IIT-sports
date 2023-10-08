@@ -71,41 +71,20 @@ const Results = () => {
     const eventDivs = document.getElementsByClassName("results-event-div");
     const targetDiv = eventDivs[index - sindex];
     const element = document.getElementById("normal-table");
+    const waterpoloDiv = document.getElementsByClassName('schedule')[0];
     const elementHeight = element.offsetHeight;
 
     if (newVisibility[index]) {
       for (let i = index - sindex; i < eventDivs.length; i++) {
         eventDivs[i].style.transform = `translateY(${elementHeight * 1.4}px)`;
       }
-      // document.getElementsByClassName('footer-div')[0].style.marginTop = `${elementHeight * 1.4}px`;
-      // console.log(document.getElementsByClassName('schedule-div')[0])
+      if(waterpoloDiv) waterpoloDiv.style.marginTop = `${elementHeight * 1.4}px`;
       targetDiv.style.transform = "translateY(0)";
     } else {
       for (let i = index - sindex; i < eventDivs.length; i++) {
         eventDivs[i].style.transform = "translateY(0)";
       }
-    }
-  };
-  const toggleVisibilityLeague = (index) => {
-    return;
-    const newVisibility = isVisible.map((value, i) => (i === index ? !value : false));
-    setIsVisible(newVisibility);
-    const eventDivs = document.getElementsByClassName("results-event-div");
-    const targetDiv = eventDivs[index];
-
-    const element = document.getElementById("normal-table");
-    const elementHeight = element.offsetHeight;
-
-    console.log('height', elementHeight)
-    if (newVisibility[index]) {
-      for (let i = index; i < eventDivs.length; i++) {
-        eventDivs[i].style.transform = `translateY(${elementHeight * 1.1}px)`;
-      }
-      targetDiv.style.transform = "translateY(0)";
-    } else {
-      for (let i = index; i < eventDivs.length; i++) {
-        eventDivs[i].style.transform = "translateY(0)";
-      }
+      if(waterpoloDiv) waterpoloDiv.style.marginTop = `0px`;
     }
   };
 
