@@ -3,7 +3,6 @@ import Header from './header'
 import { ChevronDown } from 'lucide-react'
 import JsonToTable from './jsontotable'
 import tableData from './Assests/Data/Inter-IIT-table.json'
-import data from './Assests/Data/Results/400m.json'
 
 
 import Day1MorRelay from './Assests/Data/Results/Day1-Result/Morning/4-100m-M-Medley.json'
@@ -73,6 +72,12 @@ const Results = () => {
     const element = document.getElementById("normal-table");
     const waterpoloDiv = document.getElementsByClassName('schedule')[0];
     const elementHeight = element.offsetHeight;
+
+    //To remove the glitch
+    for (let i = 0; i < eventDivs.length; i++) {
+      eventDivs[i].style.transform = "translateY(0)";
+    }
+
 
     if (newVisibility[index]) {
       for (let i = index - sindex; i < eventDivs.length; i++) {
