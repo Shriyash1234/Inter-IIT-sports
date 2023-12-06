@@ -62,7 +62,15 @@
 .vs {
     color: gray;
 }
-
+.match-details{
+    display: flex;
+    justify-content: space-between;
+}
+.no-matches-block{
+    height: 450px;
+    text-align: center;
+    font-size: 3rem;
+}
 @media (max-width: 640px) {
     .team-2 {
         display: flex;

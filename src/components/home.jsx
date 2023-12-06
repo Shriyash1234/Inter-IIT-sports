@@ -7,6 +7,7 @@ import Footer from './footer'
 import './CSS/home.css'
 import Caraousel from './caraousel'
 import {CalendarDays } from 'lucide-react'
+import bgvideo from './Assests/video/bg-video.mp4'
 const Home = () => {
 
   useEffect(()=>{
@@ -17,16 +18,18 @@ const Home = () => {
       <Header color={'white'} />
       <section className='home'>
         <div className='image-section'>
-          <img src={require('./Assests/Swimming-pool.jpg')}></img>
+        <video autoPlay muted loop id="myVideo" >
+          <source src={bgvideo} type="video/mp4"/>
+        </video>
         </div>
         <img src={require('./Assests/Inter-IIT-logo.jpg')} className='homapage-logo'></img>
 
         <div className="blue-section">
-          <h2 className="centered-heading">37th Inter IIT Aquatics Meet 
+          <h2 className="centered-heading">56th Inter IIT Sports Meet 
           <div className='name-place'>
             {/* <img src={require('./Assests/IITs/IITGN.jpg')} className='IITGN-icon'></img> */}
             &nbsp; IIT Gandhinagar&nbsp;&nbsp;
-            <span className='home-date'> <CalendarDays/> 04 Oct - 08 Oct 2023</span>
+            <span className='home-date'> <CalendarDays/> 14 Dec - 22 Dec 2023</span>
           </div>
           </h2>
         </div>

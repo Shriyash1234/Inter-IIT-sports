@@ -7,6 +7,7 @@ import Home from './components/home';
 import Schedule from './components/schedule';
 import Results from './components/results';
 import About from './components/about';
+import Sportsschdule from './components/schedulesports'
 
 import './index.css';
 
@@ -18,6 +19,7 @@ export default function App() {
         <Route index path="/About" element={<About />} />
         <Route index path="/Schedule" element={<Schedule />} />
         <Route index path="/Results" element={<Results />} />
+        <Route index path="/Sportsschdule" element={<Sportsschdule />} />
       </Routes>
     </HashRouter>
   );
