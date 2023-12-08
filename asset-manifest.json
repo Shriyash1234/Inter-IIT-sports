@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.6f15ad53.css",
-    "main.js": "/static/js/main.df9b2153.js",
+    "main.css": "/static/css/main.2052a7c5.css",
+    "main.js": "/static/js/main.37133c0d.js",
     "static/js/787.fa79374b.chunk.js": "/static/js/787.fa79374b.chunk.js",
-    "static/media/bg-video.mp4": "/static/media/bg-video.0f00f2110b80ee9d55a6.mp4",
+    "static/media/bg-video.mp4": "/static/media/bg-video.b260248db76e0e1fce46.mp4",
     "static/media/sports-meet.jpg": "/static/media/sports-meet.7c8d00e3fe0b5551e8d1.jpg",
     "static/media/staff.jpg": "/static/media/staff.36653b7528672432c390.jpg",
     "static/media/aquatics.jpg": "/static/media/aquatics.2624c32c45fd7eeb0339.jpg",
     "static/media/Swimming-pool.jpg": "/static/media/Swimming-pool.9e98f6f679442b9f559b.jpg",
     "static/media/swmming.png": "/static/media/swmming.53010e0269f648c33987.png",
     "static/media/iitgn-sports.jpg": "/static/media/iitgn-sports.b3ec87754ca648e7fbd5.jpg",
+    "static/media/InterIIT_logo_Transparent.png": "/static/media/InterIIT_logo_Transparent.9324a09ec2c0f0936095.png",
     "static/media/IITISM.jpg": "/static/media/IITISM.0c17ba354243813e4258.jpg",
     "static/media/logo-1.png": "/static/media/logo-1.93d18af8509154590ab5.png",
     "static/media/Inter-IIT-logo-circle.jpg": "/static/media/Inter-IIT-logo-circle.32790eccdff6c5c2cf4c.jpg",
@@ -49,12 +50,12 @@
     "static/media/breaststroke.png": "/static/media/breaststroke.4eccfb011f11e875a261.png",
     "static/media/logo.svg": "/static/media/logo.4361579e402959270574.svg",
     "index.html": "/index.html",
-    "main.6f15ad53.css.map": "/static/css/main.6f15ad53.css.map",
-    "main.df9b2153.js.map": "/static/js/main.df9b2153.js.map",
+    "main.2052a7c5.css.map": "/static/css/main.2052a7c5.css.map",
+    "main.37133c0d.js.map": "/static/js/main.37133c0d.js.map",
     "787.fa79374b.chunk.js.map": "/static/js/787.fa79374b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f15ad53.css",
-    "static/js/main.df9b2153.js"
+    "static/css/main.2052a7c5.css",
+    "static/js/main.37133c0d.js"
   ]
 }
