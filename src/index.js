@@ -4,10 +4,11 @@ import reportWebVitals from './reportWebVitals';
 import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Home from './components/home';
-import Schedule from './components/schedule';
-import Results from './components/results';
+import AquaticsSchedule from './components/AquaticsSchedule';
+import AquaticsResults from './components/AquaticsResults';
 import About from './components/about';
-import Sportsschdule from './components/schedulesports'
+import Schedule from './components/Schedule'
+import Results from './components/Results';
 
 import './index.css';
 
@@ -17,9 +18,10 @@ export default function App() {
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route index path="/About" element={<About />} />
+        <Route index path="/Aquatics/Schedule" element={<AquaticsSchedule />} />
+        <Route index path="/Aquatics/Results" element={<AquaticsResults />} />
         <Route index path="/Schedule" element={<Schedule />} />
         <Route index path="/Results" element={<Results />} />
-        <Route index path="/Sportsschdule" element={<Sportsschdule />} />
       </Routes>
     </HashRouter>
   );

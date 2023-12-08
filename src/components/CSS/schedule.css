@@ -148,6 +148,16 @@
     .event-icon{
         margin-right: 0px;
     }
+    .buttons-container-2{
+        position: relative;
+        flex-direction: row;
+        height: fit-content;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .Dates-text{
+        display: none;
+    }
 }
 @media all and (max-width:685px) {
     .schedule-div{
@@ -169,13 +179,12 @@
         flex-direction: row;
         overflow-x:scroll;
         margin: 10px 0px;
+        justify-content: flex-start;
     }
     .date-button{
-        margin: 0px 20px;
-        padding: 10px 90px 10px 20px;
+        margin: 10px 20px;
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+       
     }
 }
 @media all and (max-width:479px) {

@@ -62,9 +62,6 @@
         width: 100% !important;
         left: 0px !important;
     }
-    .btn-1{
-        margin-left: 350px;
-    }
 }
 @media all and (max-width:479px) {
     .vertical-line-blue{

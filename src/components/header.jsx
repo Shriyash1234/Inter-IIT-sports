@@ -103,6 +103,11 @@ function Header(props) {
                 {/* <a href="https://interiit.in/#/Results" >Results</a> */}
                 <Link to="/Results" onClick={handleLinkClick} className='link1 links' style={{ color: linkbg }}>Results</Link>
               </li>
+              <li className="has-child aquatics-header">
+                <Link to="/" className='link1 links' style={{ color: linkbg }}>Aquatics</Link>
+                <Link to="/Aquatics/Schedule" className='link1 links aquatics-link' style={{ color: linkbg }}>Schedule</Link>
+                <Link to="/Aquatics/Results" onClick={handleLinkClick} className='link1 links aquatics-link aquatics-link-2' style={{ color: linkbg }}>Results</Link>
+              </li>
               <li className="has-child">
                 <div onClick={handleFooterLink} className='link1 links contact-link' style={{ color: linkbg,fontSize:"1.4rem" }}>Contact us</div>
               </li>
