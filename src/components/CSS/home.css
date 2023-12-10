@@ -17,6 +17,7 @@
     left: calc(50vw - 220px);
     bottom: 25vh;
     margin-bottom: 30px;
+    display: none;
 }
 
 .image-section {
@@ -68,7 +69,25 @@
         font-size: 8rem;
     }
 }
-
+.instagramPost{
+    width: 400px;
+    max-width: 90%;
+}
+.Instagram-posts{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Latest-stories{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Fjalla One';
+    margin-top: 30px;
+}
+.mobile-stories{
+    display: none;
+}
 @media all and (max-width:991px) {
     .heading{
         top: 37vh;
@@ -84,6 +103,17 @@
     .centered-heading{
         font-size: 2rem;
         margin-top: 60px;
+    }
+    .mobile-stories{
+        display: block;
+    }
+    .laptop-stories{
+        display: none;
+    }
+    .instagramPost{
+        width:90vw;
+        margin: 0px auto;
+        height: 670px;
     }
 }
 @media all and (max-width:768px) {

@@ -8,6 +8,9 @@ import './CSS/home.css'
 import Caraousel from './caraousel'
 import {CalendarDays } from 'lucide-react'
 import bgvideo from './Assests/video/bg-video.mp4'
+import { InstagramEmbed } from 'react-social-media-embed';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 const Home = () => {
 
   useEffect(()=>{
@@ -34,6 +37,23 @@ const Home = () => {
           </h2>
         </div>
       </section>
+      <p className='Latest-stories'>Latest Stories</p>
+      <div className='Instagram-posts laptop-stories'>
+        <InstagramEmbed  className="instagramPost" url="https://www.instagram.com/reel/C0oPK6Ugiwp" />
+        <InstagramEmbed  className="instagramPost" url="https://www.instagram.com/reel/C0mLM04oELT" />
+        <InstagramEmbed  className="instagramPost" url="https://www.instagram.com/reel/C0jkxMConm9" />
+      </div>
+      <Carousel className='mobile-stories' autoPlay="true" infiniteLoop="true">
+          <div>
+          <InstagramEmbed  className="instagramPost" url="https://www.instagram.com/reel/C0oPK6Ugiwp" />
+          </div>
+          <div>
+          <InstagramEmbed  className="instagramPost" url="https://www.instagram.com/reel/C0mLM04oELT" />
+          </div>
+          <div>
+          <InstagramEmbed  className="instagramPost" url="https://www.instagram.com/reel/C0jkxMConm9" />
+          </div>
+      </Carousel>
 
 
       <About />
