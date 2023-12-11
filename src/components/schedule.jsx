@@ -5,24 +5,25 @@ import './CSS/schedule.css';
 import ScheduleHelper from './schedulehelper';
 
 const Schedule = () => {
-  const [selectedSport, setselectedSport] = useState('Football Men');
+  const [selectedSport, setselectedSport] = useState('Cricket Men');
   const [selectedDate,setSelectedDate] = useState('15th Dec')
 
   const dateButtonMappings = {
-    "Football Men": 'btn-1',
-    "Cricket Men": 'btn-2',
+    "Cricket Men": 'btn-1',
+    "Football Men": 'btn-2',
     "Squash Men": 'btn-3',
     "Squash Women": 'btn-4',
     "Tennis Men": 'btn-5',
     "Tennis Women": 'btn-6',
     "Athletics": 'btn-7',
-    "15th Dec": 'btn-8',
-    "16th Dec": 'btn-9',
-    "17th Dec": 'btn-10',
-    "18th Dec": 'btn-11',
-    "19th Dec": 'btn-12',
-    "20th Dec": 'btn-13',
-    "21st Dec": 'btn-14',
+    "14th Dec":"btn-8",
+    "15th Dec": 'btn-9',
+    "16th Dec": 'btn-10',
+    "17th Dec": 'btn-11',
+    "18th Dec": 'btn-12',
+    "19th Dec": 'btn-13',
+    "20th Dec": 'btn-14',
+    "21st Dec": 'btn-15',
   };
   function setColor(btn) {
     const buttons = document.getElementsByClassName('date-button');
@@ -76,15 +77,14 @@ const Schedule = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
-  const dates = ["15th Dec","16th Dec","17th Dec","18th Dec","19th Dec","20th Dec","21st Dec"]
   const renderEventsForDate = (date) => {
     return (
       <div key={date} className='event-divs'>
         <p>Morning Session: 08:00 AM | <span>Evening Session: 04:00 PM </span> </p>
-        {
+        {athleticsMatches[date].length !== 0 ? (
           athleticsMatches[date].map((match, index) => (
             <div key={index} className='event-div'>
-              {match.Session === "Morning"?<div className='vertical-line-blue'></div>:<div className='vertical-line-orange'></div>}
+              {match.Session === "Morning" ? <div className='vertical-line-blue'></div> : <div className='vertical-line-orange'></div>}
               <p className='event-timing'>{match.Session}</p>
               <div className='vertical-line-grey'></div>
               <img src={iconsPath[match.Event]} className='event-icon' alt={match.Event}></img>
@@ -93,7 +93,9 @@ const Schedule = () => {
               <p className='event-timing' style={{ color: '#7f848c', textAlign: 'left' }}>{match.Round}</p>
             </div>
           ))
-        }
+        ) : (
+          <p className='no-matches-block'>No Matches</p>
+        )}
       </div>
     );
   };
@@ -101,8 +103,8 @@ const Schedule = () => {
     <section className='schedule-page'>
       <Header color='white' />
       <div className='buttons-container'id="style-2" >
-        <button className='date-button btn-1' onClick={() => handleSportsButtonClick('Football Men')}>Football Men</button>
-        <button className='date-button btn-2' onClick={() => handleSportsButtonClick('Cricket Men')}>Cricket Men</button>
+        <button className='date-button btn-1' onClick={() => handleSportsButtonClick('Cricket Men')}>Cricket Men</button>
+        <button className='date-button btn-2' onClick={() => handleSportsButtonClick('Football Men')}>Football Men</button>
         <button className='date-button btn-3' onClick={() => handleSportsButtonClick('Squash Men')}>Squash Men</button>
         <button className='date-button btn-4' onClick={() => handleSportsButtonClick('Squash Women')}>Squash Women</button>
         <button className='date-button btn-5' onClick={() => handleSportsButtonClick('Tennis Men')}>Tennis Men</button>
@@ -111,13 +113,14 @@ const Schedule = () => {
       </div>
       <div className='buttons-container-2' id="style-2">
         <p className='Dates-text'>Dates</p>
-        <button className='btn-8 date-button-2' onClick={() => handleDateButtonClick('15th Dec')}>15th Dec</button>
-        <button className='btn-9 date-button-2' onClick={() => handleDateButtonClick('16th Dec')}>16th Dec</button>
-        <button className='btn-10 date-button-2' onClick={() => handleDateButtonClick('17th Dec')}>17th Dec</button>
-        <button className='btn-11 date-button-2' onClick={() => handleDateButtonClick('18th Dec')}>18th Dec</button>
-        <button className='btn-12 date-button-2' onClick={() => handleDateButtonClick('19th Dec')}>19th Dec</button>
-        <button className='btn-13 date-button-2' onClick={() => handleDateButtonClick('20th Dec')}>20th Dec</button>
-        <button className='btn-14 date-button-2' onClick={() => handleDateButtonClick('21st Dec')}>21st Dec</button>
+        <button className='btn-8 date-button-2' onClick={() => handleDateButtonClick('14th Dec')}>14th Dec</button>
+        <button className='btn-9 date-button-2' onClick={() => handleDateButtonClick('15th Dec')}>15th Dec</button>
+        <button className='btn-10 date-button-2' onClick={() => handleDateButtonClick('16th Dec')}>16th Dec</button>
+        <button className='btn-11 date-button-2' onClick={() => handleDateButtonClick('17th Dec')}>17th Dec</button>
+        <button className='btn-12 date-button-2' onClick={() => handleDateButtonClick('18th Dec')}>18th Dec</button>
+        <button className='btn-13 date-button-2' onClick={() => handleDateButtonClick('19th Dec')}>19th Dec</button>
+        <button className='btn-14 date-button-2' onClick={() => handleDateButtonClick('20th Dec')}>20th Dec</button>
+        <button className='btn-15 date-button-2' onClick={() => handleDateButtonClick('21st Dec')}>21st Dec</button>
       </div>
 
       <div className='schedule-div'>
@@ -2294,6 +2297,9 @@ const sportsMatches = {
 };
 
 const athleticsMatches = {
+  "14th Dec": [
+
+  ],
   "15th Dec": [
     {
       Session: "Morning",
