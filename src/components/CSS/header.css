@@ -60,7 +60,7 @@
 	font-weight:500;
     font-family: Raleway;
     color: #fff;
-    padding: 5px 20px;
+    padding: 5px 15px;
     font-size: 1.3rem;
     text-decoration: none;
 	/* font-family: Inter; */
@@ -91,7 +91,7 @@
 }
 .about-link{
 	font-size: 2.2rem;
-	padding: 12px 12px 14px 12px;
+	padding: 10px;
 }
 .aquatics-link{
 	position: absolute;
@@ -247,7 +247,7 @@
 		top:25px; */
 	}
 	.cm-header-wrap {
-		padding: 5px 15px;
+		padding: 5px 12px;
 		margin-top: 0px;
 	}
 	.menu-ul{

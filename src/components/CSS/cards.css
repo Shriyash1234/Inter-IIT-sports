@@ -43,6 +43,6 @@
 @media all and (max-width:991px) {
     .cards{
         position: relative;
-        bottom: 0px;
+        top: -70px !important;
     }
 }
