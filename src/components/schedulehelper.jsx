@@ -36,7 +36,25 @@ const Match = props => {
                         
                     </div>
                 </div>
+                
             </div>
+            {
+                match.home_score?(
+                    <div>
+                        <hr />
+                        <div className="teams">
+                            <div className="team-1" style={{width:"10%"}}>
+                                <div className="team-name-1 left" >{match.home_score} {match.home_p}</div>
+                            </div>
+                            {match.statement?<div className='match-statement'>{match.statement}</div>:""}
+                            <div className="team-2" style={{width:"10%"}}>
+                                <div className="team-name-2 right">{match.away_score} {match.away_p}</div>
+                            </div>
+                        </div>
+                    </div>
+                ):<>{match.statement?<div className='match-statement' style={{textAlign:"center"}}>{match.statement}</div>:""}</>
+            }
+            
         </div>
     );
 };

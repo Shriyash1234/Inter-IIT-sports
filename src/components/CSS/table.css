@@ -48,6 +48,10 @@
   .excel-like-table th {
     border-bottom: 2px solid #000; /* Black border */
   }
+  .medaltype{
+    font-family: 'open sans';
+    text-align: center !important;
+  }
 /* @media all and (max-width:1300px) {
     .excel-like-table {
         font-size: 1.3rem;

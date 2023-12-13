@@ -148,6 +148,9 @@ const sportsMatches = {
           "away_team": "IIT Mandi",
           "logo_home_team":  require('./Assests/IITs/IITP.jpg'),
           "logo_away_team": require('./Assests/IITs/IITMD.jpg')
+          // home_score:'7',
+          // away_score:'3',
+          // statement:"IIT Patna won by 4 goals."
         },
         {
           "id": 2,
@@ -530,7 +533,7 @@ const sportsMatches = {
         "home_team": "IIT Palakkad",
         "away_team": "IIT Dharwad",
         "logo_home_team": require('./Assests/IITs/IITPKD.jpg'),
-        "logo_away_team": require('./Assests/IITs/IITDH.jpg')
+        "logo_away_team": require('./Assests/IITs/IITDH.jpg'),
       },
       {
         "id": 2,

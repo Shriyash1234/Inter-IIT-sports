@@ -26,9 +26,11 @@ function JsonToTable({ jsonData,visiblity,table }) {
       <table className={visiblity === "not-visible" ? "excel-like-table not-visible" : "excel-like-table"} id={table==="resultTable"?"result-table":"normal-table"} >
         <thead>
           <tr>
-            {columns.map((column, index) => (
-              <th key={index}>{column}</th>
-            ))}
+          {columns.map((column, index) => (
+            <th key={index} style={{ textAlign: column === 'IIT' ? 'unset' : 'center' }}>
+              {column}
+            </th>
+          ))}
           </tr>
         </thead>
         <tbody>
@@ -36,7 +38,7 @@ function JsonToTable({ jsonData,visiblity,table }) {
           table !== "resultTable" ? (
             jsonData.map((item, index) => (
               <tr key={index}>
-                <td>{index + 1}</td>
+                <td >{index + 1}</td>
                 <td>{item["Athlete"]}</td>
                 <td><img src={require(`${getImageByTitle(item["IIT"])}`)} className='IIT-icon' alt={item["IIT"]}/>{item["IIT"]}</td>
                 <td className='timing'>{item["Timing"]}</td>
@@ -45,12 +47,12 @@ function JsonToTable({ jsonData,visiblity,table }) {
           ) : (
             jsonData.map((item, index) => (
               <tr key={index}>
-                <td>{index + 1}</td>
+                <td className='medaltype'>{index + 1}</td>
                 {/* <td>{item["Rank"]}</td> */}
-                <td><img src={require(`${getImageByTitle(item["IIT"])}`)} className='IIT-icon' alt={item["IIT"]}/>{item["IIT"]}</td>
-                <td>{item["Gold"]}</td>
-                <td>{item["Silver"]}</td>
-                <td>{item["Bronze"]}</td>
+                <td ><img src={require(`${getImageByTitle(item["IIT"])}`)} className='IIT-icon' alt={item["IIT"]}/>{item["IIT"]}</td>
+                <td className='medaltype'>{item["Gold"]}</td>
+                <td className='medaltype'>{item["Silver"]}</td>
+                <td className='medaltype'>{item["Bronze"]}</td>
               </tr>
             ))
           )
