@@ -97,7 +97,7 @@ function Header(props) {
                 <div onClick={handleAboutLink} className='about-link links' style={{ color: linkbg }}><Link to="/" className='links' style={{ color: linkbg }}>About</Link></div>
               </li>
               <li className="has-child">
-                <Link to="/liveUpdates" className='link1 links' style={{ color: linkbg }}>Updates</Link>
+                <Link to="https://scoreboard.interiit.in/" className='link1 links' style={{ color: linkbg }}>Live Scores</Link>
               </li>
               <li className="has-child">
                 <Link to="/Schedule" className='link1 links' style={{ color: linkbg }}>Schedule</Link>
