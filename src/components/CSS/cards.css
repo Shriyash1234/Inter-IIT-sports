@@ -1,8 +1,8 @@
-
 .card-title::before,
 .card-text::before {
     content: "";
-    background-image: url('../Assests//blue.jpg'); /* Reference the local image file */
+    background-image: url('../Assests//blue.jpg');
+    /* Reference the local image file */
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -13,35 +13,42 @@
     opacity: 1.6;
     z-index: -1;
 }
-.card-img-top{
+
+.card-img-top {
     height: 200px;
 }
-.card-text-date{
+
+.card-text-date {
     text-align: center;
     font-size: 1.2rem;
 }
-.card-title{
+
+.card-title {
     font-weight: 500;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
 }
-.left-aligned-header{
+
+.left-aligned-header {
     font-family: "Fjalla One";
 }
-.cards{
+
+.cards {
     position: relative;
-    top:50px
+    top: 50px
 }
+
 .cardsX {
     font-family: "Olympic Sans", Arial, Helvetica, sans-serif;
 }
 
-.dates{
+.dates {
     font-size: 2rem;
     line-height: 1.8rem;
 }
+
 @media all and (max-width:991px) {
-    .cards{
+    .cards {
         position: relative;
         top: -70px !important;
     }

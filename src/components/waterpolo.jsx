@@ -33,8 +33,8 @@ const Match = ({ match }) => {
     );
 };
 
-const Water_Polo =({ matches }) => {
-    
+const Water_Polo = ({ matches }) => {
+
 
     return (
         <div className="schedule">

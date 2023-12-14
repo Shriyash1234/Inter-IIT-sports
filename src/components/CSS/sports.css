@@ -1,18 +1,21 @@
-.sports{
+.sports {
     position: relative;
     bottom: 50px;
     width: 70%;
     margin: auto;
 }
-.sports-heading{
+
+.sports-heading {
     font-family: "Fjalla One";
     text-align: center;
 }
-.sports-names{
+
+.sports-names {
     display: flex;
     flex-wrap: wrap;
 }
-.sport-div{
+
+.sport-div {
     width: 32%;
     font-size: 1.6rem;
     padding: 15px 30px;
@@ -21,21 +24,25 @@
     background-color: #41c5eb;
     color: #fff;
 }
-.sport-div:hover{
-    background-color:#0351a4;
-    transition: 300ms ;
+
+.sport-div:hover {
+    background-color: #0351a4;
+    transition: 300ms;
 }
+
 @media all and (max-width:1070px) {
-    .sport-div{
+    .sport-div {
         width: 48%;
     }
 }
+
 @media all and (max-width:768px) {
-    .sports{
+    .sports {
         width: 90%;
         bottom: 100px;
     }
-    .sport-div{
+
+    .sport-div {
         width: 100%;
         font-size: 1.5rem;
         padding: 12px 25px;

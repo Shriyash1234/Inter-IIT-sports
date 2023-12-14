@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Header from './header'
 import Footer from './footer'
 import JsonToTable from './jsontotable'
@@ -8,7 +8,7 @@ import ScheduleHelper from './schedulehelper';
 import Day1Eve200MBreastStroke from './Assests/Data/Results/Day1-Result/Evening/200M-Breaststroke.json'
 const Results = () => {
   const [selectedSport, setselectedSport] = useState('Cricket Men');
-  const [selectedDate,setSelectedDate] = useState('15th Dec')
+  const [selectedDate, setSelectedDate] = useState('15th Dec')
   const [isVisible, setIsVisible] = useState(Array(100).fill(false));
   const dateButtonMappings = {
     "Cricket Men": 'btn-1',
@@ -18,7 +18,7 @@ const Results = () => {
     "Tennis Men": 'btn-5',
     "Tennis Women": 'btn-6',
     "Athletics": 'btn-7',
-    "14th Dec":"btn-8",
+    "14th Dec": "btn-8",
     "15th Dec": 'btn-9',
     "16th Dec": 'btn-10',
     "17th Dec": 'btn-11',
@@ -36,7 +36,7 @@ const Results = () => {
     }
     activeButton.style.color = "#fff";
     activeButton.style.backgroundColor = "#41c5eb";
-    
+
   }
   function setDateColor(btn) {
     const dateButtons = document.getElementsByClassName('date-button-2');
@@ -47,7 +47,7 @@ const Results = () => {
     }
     activeButton.style.color = "#fff";
     activeButton.style.backgroundColor = "#41c5eb";
-    
+
   }
   window.onload = () => {
     setColor('btn-1');
@@ -84,21 +84,21 @@ const Results = () => {
     setIsVisible(newVisibility);
     const eventDivs = document.getElementsByClassName("event-div");
     const targetDiv = eventDivs[index - sindex];
-  
+
     for (let i = 0; i < eventDivs.length; i++) {
       eventDivs[i].style.transform = "translateY(0)";
     }
     if (newVisibility[index]) {
-      for (let i = index+1; i < eventDivs.length; i++) {
+      for (let i = index + 1; i < eventDivs.length; i++) {
         eventDivs[i].style.transform = "translateY(200px)";
       }
     }
-    else{
+    else {
       for (let i = index + 1; i < eventDivs.length; i++) {
         eventDivs[i].style.transform = "translateY(0)";
       }
     }
-    
+
   };
   const renderEventsForDate = (date) => {
     return (
@@ -115,7 +115,7 @@ const Results = () => {
               <p className='event-timing'>{match.Event}</p>
               <p className='event-timing' style={{ color: '#7f848c', textAlign: 'left' }}>{match.Round}</p>
               <ChevronDown className='dropdown' />
-              <JsonToTable jsonData={ match.jsonFile } visiblity={isVisible[index] ? "visible" : "not-visible"} />
+              <JsonToTable jsonData={match.jsonFile} visiblity={isVisible[index] ? "visible" : "not-visible"} />
             </div>
           ))
         ) : (
@@ -124,14 +124,14 @@ const Results = () => {
       </div>
     );
   };
-  window.onload = function() {
+  window.onload = function () {
     var toggleCheckbox = document.getElementById('toggle');
-  
+
     if (toggleCheckbox) {
-      toggleCheckbox.addEventListener('change', function() {
+      toggleCheckbox.addEventListener('change', function () {
         var resultsDiv = document.querySelector('.Results-div');
         var schedulePage = document.querySelector('.schedule-page');
-  
+
         if (this.checked) {
           resultsDiv.style.display = 'none';
           schedulePage.style.display = 'block';
@@ -142,465 +142,465 @@ const Results = () => {
       });
     }
   };
-  
-  
+
+
   return (
     <section className='Results'>
-      <Header color="white"/>
-      
+      <Header color="white" />
+
       <input type="checkbox" id="toggle" class="toggleCheckbox" />
       <label for="toggle" class="toggleContainer">
         <div id="div1">Medal Tally</div>
         <div id="div2">Results</div>
       </label>
 
-        <div className='Results-div'>
-            <p className='results-heading'>Medal Tally</p>
-            <JsonToTable jsonData={tableData} table="resultTable" />
+      <div className='Results-div'>
+        <p className='results-heading'>Medal Tally</p>
+        <JsonToTable jsonData={tableData} table="resultTable" />
+      </div>
+
+      <section className='schedule-page hidden' >
+        <Header color='white' />
+        <div className='buttons-container' id="style-2" >
+          <button className='date-button btn-1' onClick={() => handleSportsButtonClick('Cricket Men')}>Cricket Men</button>
+          <button className='date-button btn-2' onClick={() => handleSportsButtonClick('Football Men')}>Football Men</button>
+          <button className='date-button btn-3' onClick={() => handleSportsButtonClick('Squash Men')}>Squash Men</button>
+          <button className='date-button btn-4' onClick={() => handleSportsButtonClick('Squash Women')}>Squash Women</button>
+          <button className='date-button btn-5' onClick={() => handleSportsButtonClick('Tennis Men')}>Tennis Men</button>
+          <button className='date-button btn-6' onClick={() => handleSportsButtonClick('Tennis Women')}>Tennis Women</button>
+          <button className='date-button btn-7' onClick={() => handleSportsButtonClick('Athletics')}>Athletics</button>
+        </div>
+        <div className='buttons-container-2' id="style-2">
+          <p className='Dates-text'>Dates</p>
+          <button className='btn-8 date-button-2' onClick={() => handleDateButtonClick('14th Dec')}>14th Dec</button>
+          <button className='btn-9 date-button-2' onClick={() => handleDateButtonClick('15th Dec')}>15th Dec</button>
+          <button className='btn-10 date-button-2' onClick={() => handleDateButtonClick('16th Dec')}>16th Dec</button>
+          <button className='btn-11 date-button-2' onClick={() => handleDateButtonClick('17th Dec')}>17th Dec</button>
+          <button className='btn-12 date-button-2' onClick={() => handleDateButtonClick('18th Dec')}>18th Dec</button>
+          <button className='btn-13 date-button-2' onClick={() => handleDateButtonClick('19th Dec')}>19th Dec</button>
+          <button className='btn-14 date-button-2' onClick={() => handleDateButtonClick('20th Dec')}>20th Dec</button>
+          <button className='btn-15 date-button-2' onClick={() => handleDateButtonClick('21st Dec')}>21st Dec</button>
         </div>
 
-        <section className='schedule-page hidden' >
-          <Header color='white' />
-          <div className='buttons-container'id="style-2" >
-            <button className='date-button btn-1' onClick={() => handleSportsButtonClick('Cricket Men')}>Cricket Men</button>
-            <button className='date-button btn-2' onClick={() => handleSportsButtonClick('Football Men')}>Football Men</button>
-            <button className='date-button btn-3' onClick={() => handleSportsButtonClick('Squash Men')}>Squash Men</button>
-            <button className='date-button btn-4' onClick={() => handleSportsButtonClick('Squash Women')}>Squash Women</button>
-            <button className='date-button btn-5' onClick={() => handleSportsButtonClick('Tennis Men')}>Tennis Men</button>
-            <button className='date-button btn-6' onClick={() => handleSportsButtonClick('Tennis Women')}>Tennis Women</button>
-            <button className='date-button btn-7' onClick={() => handleSportsButtonClick('Athletics')}>Athletics</button>
+        <div className='schedule-div'>
+          <div className='date-day'>
+            <p>{selectedSport}</p>
           </div>
-          <div className='buttons-container-2' id="style-2">
-            <p className='Dates-text'>Dates</p>
-            <button className='btn-8 date-button-2' onClick={() => handleDateButtonClick('14th Dec')}>14th Dec</button>
-            <button className='btn-9 date-button-2' onClick={() => handleDateButtonClick('15th Dec')}>15th Dec</button>
-            <button className='btn-10 date-button-2' onClick={() => handleDateButtonClick('16th Dec')}>16th Dec</button>
-            <button className='btn-11 date-button-2' onClick={() => handleDateButtonClick('17th Dec')}>17th Dec</button>
-            <button className='btn-12 date-button-2' onClick={() => handleDateButtonClick('18th Dec')}>18th Dec</button>
-            <button className='btn-13 date-button-2' onClick={() => handleDateButtonClick('19th Dec')}>19th Dec</button>
-            <button className='btn-14 date-button-2' onClick={() => handleDateButtonClick('20th Dec')}>20th Dec</button>
-            <button className='btn-15 date-button-2' onClick={() => handleDateButtonClick('21st Dec')}>21st Dec</button>
-          </div>
-
-          <div className='schedule-div'>
-            <div className='date-day'>
-              <p>{selectedSport}</p>
-            </div>
-            {selectedSport ==="Athletics"?renderEventsForDate(selectedDate):""}
-            </div>
-            {selectedSport != "Athletics"?<ScheduleHelper matches={sportsMatches[selectedSport]} date={selectedDate}/>:""}
-        </section>
+          {selectedSport === "Athletics" ? renderEventsForDate(selectedDate) : ""}
+        </div>
+        {selectedSport != "Athletics" ? <ScheduleHelper matches={sportsMatches[selectedSport]} date={selectedDate} /> : ""}
+      </section>
 
     </section>
   )
 }
 const sportsMatches = {
-  "Football Men": 
+  "Football Men":
     [
-        {
-          "id": 1,
-          "date": "15.12.2023",
-          "time": "12:15 PM",
-          "pool": "C",
-          "ground":"G-1",
-          "home_team": "IIT Patna",
-          "away_team": "IIT Mandi",
-          "logo_home_team":  require('./Assests/IITs/IITP.jpg'),
-          "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
-          // home_score:'7',
-          // away_score:'3',
-          // statement:"IIT Patna won by 4 goals."
-          statement:"Match is yet to happen"
-        },
-        {
-          "id": 2,
-          "date": "15.12.2023",
-          "time": "08:30 AM",
-          "pool": "F",
-          "ground":"G-2",
-          "home_team": "IIT Tirupati",
-          "away_team": "IIT Dharwad",
-          "logo_home_team": require('./Assests/IITs/IITT.jpg'),
-          "logo_away_team": require('././Assests/IITs/IITDH.jpg'),
-          statement:"Match is yet to happen"
-        },
-        {
-          "id": 3,
-          "date": "15.12.2023",
-          "time": "10:30 AM",
-          "pool": "G",
-          "ground":"G-2",
-          "home_team": "IIT Hyderbad",
-          "away_team": "IIT Varanasi",
-          "logo_home_team": require('./Assests/IITs/IITDH.jpg'),
-          "logo_away_team": require('./Assests/IITs/IITBHU.jpg'),
-        },
-        {
-          "id": 4,
-          "date": "15.12.2023",
-          "time": "06:30 PM",
-          "pool": "E",
-          "ground":"G-1",
-          "home_team": "IIT Bhubaneshwar",
-          "away_team": "IIT Delhi",
-          "logo_home_team": require("./Assests/IITs/IITBBS.jpg"),
-          "logo_away_team": require('./Assests/IITs/IITD.jpg'),
-          statement:"Match is yet to happen"
-        },
-        {
-          "id": 5,
-          "date": "15.12.2023",
-          "time": "12:30 PM",
-          "pool": "D",
-          "ground":"G-2",
-          "home_team": "IIT Bombay",
-          "away_team": "IIT Kharagpur",
-          "logo_home_team": require('./Assests/IITs/IITB.jpg'),
-          "logo_away_team": require('./Assests/IITs/IITKGP.jpg'),
-          statement:"Match is yet to happen"
-        },
-        {
-          "id": 6,
-          "date": "15.12.2023",
-          "time": "03:30 PM",
-          "pool": "A",
-          "ground":"G-2",
-          "home_team": "IIT Dhanbad",
-          "away_team": "IIT Madras",
-          "logo_home_team": require('./Assests/IITs/IITISM.jpg'),
-          "logo_away_team": require('./Assests/IITs/IITM.jpg'),
-          statement:"Match is yet to happen"
-        },
-        {
-          "id": 7,
-          "date": "16.12.2023",
-          "time": "10:30 AM",
-          "pool": "E",
-          "ground":"G-1",
-          "home_team": "IIT Ropar",
-          "away_team": "IIT Delhi",
-          "logo_home_team": require('./Assests/IITs/IITRPR.jpg'),
-          "logo_away_team": require('./Assests/IITs/IITD.jpg'),
-          statement:"Match is yet to happen"
-        },
-        {
-          "id": 8,
-          "date": "16.12.2023",
-          "time": "12:15 PM",
-          "pool": "C",
-          "ground":"G-1",
-          "home_team": "IIT Kanpur",
-          "away_team": "IIT Mandi",
-          "logo_home_team": require('./Assests/IITs/IITK.jpg'),
-          "logo_away_team":require('./Assests/IITs/IITMD.jpg'),
-          statement:"Match is yet to happen"
-        },
-        {
-          "id": 9,
-          "date": "16.12.2023",
-          "time": "08:30 AM",
-          "pool": "F",
-          "ground":"G-2",
-          "home_team": "IIT Bhilai",
-          "away_team": "IIT Dharwad",
-          "logo_home_team": require('./Assests/IITs/IITBH.jpg'),
-          "logo_away_team": require('./Assests/IITs/IITDH.jpg'),
-          statement:"Match is yet to happen"
-        },
-        {
-          "id": 10,
-          "date": "16.12.2023",
-          "time": "10:30 AM",
-          "pool": "G",
-          "ground":"G-2",
-          "home_team": "IIT Guwahati",
-          "away_team": "IIT Varanasi",
-          "logo_home_team": require('./Assests/IITs/IITG.jpg'),
-          "logo_away_team": require('./Assests/IITs/IITBHU.jpg'),
-          statement:"Match is yet to happen"
-        },
-        {
-          "id": 11,
-          "date": "16.12.2023",
-          "time": "06:30 PM",
-          "pool": "B",
-          "ground":"G-1",
-          "home_team": "GANDHINAGAR (B1)",
-          "away_team": "PALAKKAD (B2)",
-          "logo_home_team": require('./Assests/IITs/IITGN.jpg'),
-          "logo_away_team": require('./Assests/IITs/IITPKD.jpg'),
-          statement:"Match is yet to happen"
-        },
-        {
-          "id": 12,
-          "date": "16.12.2023",
-          "time": "12:30 PM",
-          "pool": "D",
-          "ground":"G-2",
-          "home_team": "IIT Indore",
-          "away_team": "IIT Kharagpur",
-          "logo_home_team": require('./Assests/IITs/IITI.jpg'),
-          "logo_away_team": require('./Assests/IITs/IITKGP.jpg'),
-          statement:"Match is yet to happen"
-        },
-        {
-          "id": 13,
-          "date": "16.12.2023",
-          "time": "03:30 PM",
-          "pool": "A",
-          "ground":"G-2",
-          "home_team": "IIT Jodhpur",
-          "away_team": "IIT Madras",
-          "logo_home_team": require('./Assests/IITs/IITJ.jpg'),
-          "logo_away_team": require('./Assests/IITs/IITM.jpg'),
-          statement:"Match is yet to happen"
-        },
-        {
-          "id": 14,
-          "date": "17.12.2023",
-          "time": "12:15 PM",
-          "pool": "C",
-          "ground":"G-1",
-          "home_team": "IIT Patna",
-          "away_team": "IIT Kanpur",
-          "logo_home_team": require('./Assests/IITs/IITP.jpg'),
-          "logo_away_team": require('./Assests/IITs/IITK.jpg'),
-          statement:"Match is yet to happen"
-        },
-        {
-          "id": 15,
-          "date": "17.12.2023",
-          "time": "08:30 AM",
-          "pool": "F",
-          "ground":"G-2",
-          "home_team": "IIT Tirupati",
-          "away_team": "IIT Bhilai",
-          "logo_home_team": require('./Assests/IITs/IITT.jpg'),
-          "logo_away_team": require('./Assests/IITs/IITBH.jpg'),
-          statement:"Match is yet to happen"
-        },
-        {
-          "id": 16,
-          "date": "17.12.2023",
-          "time": "10:30 AM",
-          "pool": "G",
-          "ground":"G-2",
-          "home_team": "IIT Hyderbad",
-          "away_team": "IIT Guwahati",
-          "logo_home_team": require('./Assests/IITs/IITDH.jpg'),
-          "logo_away_team": require('./Assests/IITs/IITG.jpg'),
-          statement:"Match is yet to happen"
-        },
-        {
-          "id": 17,
-          "date": "17.12.2023",
-          "time": "06:30 PM",
-          "pool": "E",
-          "ground":"G-1",
-          "home_team": "IIT Bhubaneshwar",
-          "away_team": "IIT Ropar",
-          "logo_home_team": require("./Assests/IITs/IITBBS.jpg"),
-          "logo_away_team": require('./Assests/IITs/IITRPR.jpg'),
-          statement:"Match is yet to happen"
-        },
-        {
-          "id": 18,
-          "date": "17.12.2023",
-          "time": "12:30 PM",
-          "pool": "D",
-          "ground":"G-2",
-          "home_team": "IIT Bombay",
-          "away_team": "IIT Indore",
-          "logo_home_team": require('./Assests/IITs/IITB.jpg'),
-          "logo_away_team": require('./Assests/IITs/IITI.jpg'),
-          statement:"Match is yet to happen"
-        },
-        {
-          "id": 19,
-          "date": "17.12.2023",
-          "time": "03:30 PM",
-          "pool": "A",
-          "ground":"G-2",
-          "home_team": "IIT Dhanbad",
-          "away_team": "IIT Jodhpur",
-          "logo_home_team": require('./Assests/IITs/IITISM.jpg'),
-          "logo_away_team": require('./Assests/IITs/IITJ.jpg')
-        },
-        {
-          "id": 20,
-          "date": "17.12.2023",
-          "time": "08:00 PM",
-          "pool": "H",
-          "ground":"G-1",
-          "home_team": "IIT Roorkee",
-          "away_team": "IIT Jammu",
-          "logo_home_team": require('./Assests/IITs/IITR.jpg'),
-          "logo_away_team": require('./Assests/IITs/IITJMU.jpg'),
-          statement:"Match is yet to happen"
-        },
-        {
-          "id": 21,
-          "date": "18.12.2023",
-          "time": "10:30 AM",
-          "ground":"G-1",
-          "stage": "PRE-QUARTER FINAL",
-          "home_team": "WINNER OF POOL A - A1",
-          "away_team": "RUNNER OF POOL C - C2",
-          "ground": "G-1"
-        },
-        {
-          "id": 22,
-          "date": "18.12.2023",
-          "time": "06:30 PM",
-          "ground":"G-1",
-          "stage": "PRE-QUARTER FINAL",
-          "home_team": "WINNER OF POOL B - B1",
-          "away_team": "RUNNER OF POOL D - D2",
-          "ground": "G-1"
-        },
-        {
-          "id": 23,
-          "date": "18.12.2023",
-          "time": "08:30 AM",
-          "ground":"G-2",
-          "stage": "PRE-QUARTER FINAL",
-          "home_team": "RUNNER OF POOL A - A2",
-          "away_team": "WINNER OF POOL C - C1",
-          "ground": "G-2"
-        },
-        {
-          "id": 24,
-          "date": "18.12.2023",
-          "time": "08:00 PM",
-          "ground":"G-1",
-          "stage": "PRE-QUARTER FINAL",
-          "home_team": "RUNNER OF POOL B - B2",
-          "away_team": "WINNER OF POOL D - D1",
-          "ground": "G-1"
-        },
-        {
-          "id": 25,
-          "date": "18.12.2023",
-          "time": "12:30 PM",
-          "ground":"G-1",
-          "stage": "PRE-QUARTER FINAL",
-          "home_team": "WINNER OF POOL E - E1",
-          "away_team": "RUNNER OF POOL G - G2",
-          "ground": "G-1"
-        },
-        {
-          "id": 26,
-          "date": "18.12.2023",
-          "time": "12:30 PM",
-          "ground":"G-2",
-          "stage": "PRE-QUARTER FINAL",
-          "home_team": "WINNER OF POOL F - F1",
-          "away_team": "RUNNER OF POOL H - H2",
-          "ground": "G-2"
-        },
-        {
-          "id": 27,
-          "date": "18.12.2023",
-          "time": "03:30 PM",
-          "ground":"G-2",
-          "stage": "PRE-QUARTER FINAL",
-          "home_team": "RUNNER OF POOL E - E2",
-          "away_team": "WINNER OF POOL G - G1",
-          "ground": "G-2"
-        },
-        {
-          "id": 28,
-          "date": "18.12.2023",
-          "time": "10:30 AM",
-          "ground":"G-2",
-          "stage": "PRE-QUARTER FINAL",
-          "home_team": "RUNNER OF POOL F - F2",
-          "away_team": "WINNER OF POOL H - H1",
-          "ground": "G-2"
-        },
-        {
-          "id": 29,
-          "date": "19.12.2023",
-          "time": "10:45 AM",
-          "ground":"G-1",
-          "stage": "QUARTER FINAL",
-          "home_team": "WINNER OF PQ 1",
-          "away_team": "WINNER OF PQ 6",
-          "ground": "G-1"
-        },
-        {
-          "id": 30,
-          "date": "19.12.2023",
-          "time": "12:15 PM",
-          "ground":"G-1",
-          "stage": "QUARTER FINAL",
-          "home_team": "WINNER OF PQ 2",
-          "away_team": "WINNER OF PQ 5",
-          "ground": "G-1"
-        },
-        {
-          "id": 31,
-          "date": "19.12.2023",
-          "time": "06:00 PM",
-          "ground":"G-1",
-          "stage": "QUARTER FINAL",
-          "home_team": "WINNER OF PQ 3",
-          "away_team": "WINNER OF PQ 8",
-          "ground": "G-1"
-        },
-        {
-          "id": 32,
-          "date": "19.12.2023",
-          "time": "07:30 PM",
-          "ground":"G-1",
-          "stage": "QUARTER FINAL",
-          "home_team": "WINNER OF PQ 4",
-          "away_team": "WINNER OF PQ 7",
-          "ground": "G-1"
-        },
-        {
-          "id": 33,
-          "date": "20.12.2023",
-          "time": "6:00 PM",
-          "ground":"G-1",
-          "stage": "SEMI FINAL",
-          "home_team": "QF 1",
-          "away_team": "QF 4",
-          "ground": "G-1"
-        },
-        {
-          "id": 34,
-          "date": "20.12.2023",
-          "time": "7:30 PM",
-          "ground":"G-1",
-          "stage": "SEMI FINAL",
-          "home_team": "QF 2",
-          "away_team": "QF 3",
-          "ground": "G-1"
-        },
-        {
-          "id": 35,
-          "date": "21.12.2023",
-          "time": "6:00 PM",
-          "ground":"G-1",
-          "stage": "3rd Place",
-          "home_team": "LOSER OF SF1",
-          "away_team": "LOSER OF SF2",
-          "ground": "G-1"
-        },
-        {
-          "id": 36,
-          "date": "21.12.2023",
-          "time": "7:30 PM",
-          "ground":"G-1",
-          "stage": "FINAL",
-          "home_team": "WINNER OF SF1",
-          "away_team": "WINNER OF SF2",
-          "ground": "G-1"
-        }
-  ],
-  "Cricket Men": 
-  [
+      {
+        "id": 1,
+        "date": "15.12.2023",
+        "time": "12:15 PM",
+        "pool": "C",
+        "ground": "G-1",
+        "home_team": "IIT Patna",
+        "away_team": "IIT Mandi",
+        "logo_home_team": require('./Assests/IITs/IITP.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
+        // home_score:'7',
+        // away_score:'3',
+        // statement:"IIT Patna won by 4 goals."
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 2,
+        "date": "15.12.2023",
+        "time": "08:30 AM",
+        "pool": "F",
+        "ground": "G-2",
+        "home_team": "IIT Tirupati",
+        "away_team": "IIT Dharwad",
+        "logo_home_team": require('./Assests/IITs/IITT.jpg'),
+        "logo_away_team": require('././Assests/IITs/IITDH.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 3,
+        "date": "15.12.2023",
+        "time": "10:30 AM",
+        "pool": "G",
+        "ground": "G-2",
+        "home_team": "IIT Hyderbad",
+        "away_team": "IIT Varanasi",
+        "logo_home_team": require('./Assests/IITs/IITDH.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITBHU.jpg'),
+      },
+      {
+        "id": 4,
+        "date": "15.12.2023",
+        "time": "06:30 PM",
+        "pool": "E",
+        "ground": "G-1",
+        "home_team": "IIT Bhubaneshwar",
+        "away_team": "IIT Delhi",
+        "logo_home_team": require("./Assests/IITs/IITBBS.jpg"),
+        "logo_away_team": require('./Assests/IITs/IITD.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 5,
+        "date": "15.12.2023",
+        "time": "12:30 PM",
+        "pool": "D",
+        "ground": "G-2",
+        "home_team": "IIT Bombay",
+        "away_team": "IIT Kharagpur",
+        "logo_home_team": require('./Assests/IITs/IITB.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITKGP.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 6,
+        "date": "15.12.2023",
+        "time": "03:30 PM",
+        "pool": "A",
+        "ground": "G-2",
+        "home_team": "IIT Dhanbad",
+        "away_team": "IIT Madras",
+        "logo_home_team": require('./Assests/IITs/IITISM.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITM.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 7,
+        "date": "16.12.2023",
+        "time": "10:30 AM",
+        "pool": "E",
+        "ground": "G-1",
+        "home_team": "IIT Ropar",
+        "away_team": "IIT Delhi",
+        "logo_home_team": require('./Assests/IITs/IITRPR.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITD.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 8,
+        "date": "16.12.2023",
+        "time": "12:15 PM",
+        "pool": "C",
+        "ground": "G-1",
+        "home_team": "IIT Kanpur",
+        "away_team": "IIT Mandi",
+        "logo_home_team": require('./Assests/IITs/IITK.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 9,
+        "date": "16.12.2023",
+        "time": "08:30 AM",
+        "pool": "F",
+        "ground": "G-2",
+        "home_team": "IIT Bhilai",
+        "away_team": "IIT Dharwad",
+        "logo_home_team": require('./Assests/IITs/IITBH.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITDH.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 10,
+        "date": "16.12.2023",
+        "time": "10:30 AM",
+        "pool": "G",
+        "ground": "G-2",
+        "home_team": "IIT Guwahati",
+        "away_team": "IIT Varanasi",
+        "logo_home_team": require('./Assests/IITs/IITG.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITBHU.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 11,
+        "date": "16.12.2023",
+        "time": "06:30 PM",
+        "pool": "B",
+        "ground": "G-1",
+        "home_team": "GANDHINAGAR (B1)",
+        "away_team": "PALAKKAD (B2)",
+        "logo_home_team": require('./Assests/IITs/IITGN.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITPKD.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 12,
+        "date": "16.12.2023",
+        "time": "12:30 PM",
+        "pool": "D",
+        "ground": "G-2",
+        "home_team": "IIT Indore",
+        "away_team": "IIT Kharagpur",
+        "logo_home_team": require('./Assests/IITs/IITI.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITKGP.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 13,
+        "date": "16.12.2023",
+        "time": "03:30 PM",
+        "pool": "A",
+        "ground": "G-2",
+        "home_team": "IIT Jodhpur",
+        "away_team": "IIT Madras",
+        "logo_home_team": require('./Assests/IITs/IITJ.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITM.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 14,
+        "date": "17.12.2023",
+        "time": "12:15 PM",
+        "pool": "C",
+        "ground": "G-1",
+        "home_team": "IIT Patna",
+        "away_team": "IIT Kanpur",
+        "logo_home_team": require('./Assests/IITs/IITP.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITK.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 15,
+        "date": "17.12.2023",
+        "time": "08:30 AM",
+        "pool": "F",
+        "ground": "G-2",
+        "home_team": "IIT Tirupati",
+        "away_team": "IIT Bhilai",
+        "logo_home_team": require('./Assests/IITs/IITT.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITBH.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 16,
+        "date": "17.12.2023",
+        "time": "10:30 AM",
+        "pool": "G",
+        "ground": "G-2",
+        "home_team": "IIT Hyderbad",
+        "away_team": "IIT Guwahati",
+        "logo_home_team": require('./Assests/IITs/IITDH.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITG.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 17,
+        "date": "17.12.2023",
+        "time": "06:30 PM",
+        "pool": "E",
+        "ground": "G-1",
+        "home_team": "IIT Bhubaneshwar",
+        "away_team": "IIT Ropar",
+        "logo_home_team": require("./Assests/IITs/IITBBS.jpg"),
+        "logo_away_team": require('./Assests/IITs/IITRPR.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 18,
+        "date": "17.12.2023",
+        "time": "12:30 PM",
+        "pool": "D",
+        "ground": "G-2",
+        "home_team": "IIT Bombay",
+        "away_team": "IIT Indore",
+        "logo_home_team": require('./Assests/IITs/IITB.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITI.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 19,
+        "date": "17.12.2023",
+        "time": "03:30 PM",
+        "pool": "A",
+        "ground": "G-2",
+        "home_team": "IIT Dhanbad",
+        "away_team": "IIT Jodhpur",
+        "logo_home_team": require('./Assests/IITs/IITISM.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITJ.jpg')
+      },
+      {
+        "id": 20,
+        "date": "17.12.2023",
+        "time": "08:00 PM",
+        "pool": "H",
+        "ground": "G-1",
+        "home_team": "IIT Roorkee",
+        "away_team": "IIT Jammu",
+        "logo_home_team": require('./Assests/IITs/IITR.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITJMU.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 21,
+        "date": "18.12.2023",
+        "time": "10:30 AM",
+        "ground": "G-1",
+        "stage": "PRE-QUARTER FINAL",
+        "home_team": "WINNER OF POOL A - A1",
+        "away_team": "RUNNER OF POOL C - C2",
+        "ground": "G-1"
+      },
+      {
+        "id": 22,
+        "date": "18.12.2023",
+        "time": "06:30 PM",
+        "ground": "G-1",
+        "stage": "PRE-QUARTER FINAL",
+        "home_team": "WINNER OF POOL B - B1",
+        "away_team": "RUNNER OF POOL D - D2",
+        "ground": "G-1"
+      },
+      {
+        "id": 23,
+        "date": "18.12.2023",
+        "time": "08:30 AM",
+        "ground": "G-2",
+        "stage": "PRE-QUARTER FINAL",
+        "home_team": "RUNNER OF POOL A - A2",
+        "away_team": "WINNER OF POOL C - C1",
+        "ground": "G-2"
+      },
+      {
+        "id": 24,
+        "date": "18.12.2023",
+        "time": "08:00 PM",
+        "ground": "G-1",
+        "stage": "PRE-QUARTER FINAL",
+        "home_team": "RUNNER OF POOL B - B2",
+        "away_team": "WINNER OF POOL D - D1",
+        "ground": "G-1"
+      },
+      {
+        "id": 25,
+        "date": "18.12.2023",
+        "time": "12:30 PM",
+        "ground": "G-1",
+        "stage": "PRE-QUARTER FINAL",
+        "home_team": "WINNER OF POOL E - E1",
+        "away_team": "RUNNER OF POOL G - G2",
+        "ground": "G-1"
+      },
+      {
+        "id": 26,
+        "date": "18.12.2023",
+        "time": "12:30 PM",
+        "ground": "G-2",
+        "stage": "PRE-QUARTER FINAL",
+        "home_team": "WINNER OF POOL F - F1",
+        "away_team": "RUNNER OF POOL H - H2",
+        "ground": "G-2"
+      },
+      {
+        "id": 27,
+        "date": "18.12.2023",
+        "time": "03:30 PM",
+        "ground": "G-2",
+        "stage": "PRE-QUARTER FINAL",
+        "home_team": "RUNNER OF POOL E - E2",
+        "away_team": "WINNER OF POOL G - G1",
+        "ground": "G-2"
+      },
+      {
+        "id": 28,
+        "date": "18.12.2023",
+        "time": "10:30 AM",
+        "ground": "G-2",
+        "stage": "PRE-QUARTER FINAL",
+        "home_team": "RUNNER OF POOL F - F2",
+        "away_team": "WINNER OF POOL H - H1",
+        "ground": "G-2"
+      },
+      {
+        "id": 29,
+        "date": "19.12.2023",
+        "time": "10:45 AM",
+        "ground": "G-1",
+        "stage": "QUARTER FINAL",
+        "home_team": "WINNER OF PQ 1",
+        "away_team": "WINNER OF PQ 6",
+        "ground": "G-1"
+      },
+      {
+        "id": 30,
+        "date": "19.12.2023",
+        "time": "12:15 PM",
+        "ground": "G-1",
+        "stage": "QUARTER FINAL",
+        "home_team": "WINNER OF PQ 2",
+        "away_team": "WINNER OF PQ 5",
+        "ground": "G-1"
+      },
+      {
+        "id": 31,
+        "date": "19.12.2023",
+        "time": "06:00 PM",
+        "ground": "G-1",
+        "stage": "QUARTER FINAL",
+        "home_team": "WINNER OF PQ 3",
+        "away_team": "WINNER OF PQ 8",
+        "ground": "G-1"
+      },
+      {
+        "id": 32,
+        "date": "19.12.2023",
+        "time": "07:30 PM",
+        "ground": "G-1",
+        "stage": "QUARTER FINAL",
+        "home_team": "WINNER OF PQ 4",
+        "away_team": "WINNER OF PQ 7",
+        "ground": "G-1"
+      },
+      {
+        "id": 33,
+        "date": "20.12.2023",
+        "time": "6:00 PM",
+        "ground": "G-1",
+        "stage": "SEMI FINAL",
+        "home_team": "QF 1",
+        "away_team": "QF 4",
+        "ground": "G-1"
+      },
+      {
+        "id": 34,
+        "date": "20.12.2023",
+        "time": "7:30 PM",
+        "ground": "G-1",
+        "stage": "SEMI FINAL",
+        "home_team": "QF 2",
+        "away_team": "QF 3",
+        "ground": "G-1"
+      },
+      {
+        "id": 35,
+        "date": "21.12.2023",
+        "time": "6:00 PM",
+        "ground": "G-1",
+        "stage": "3rd Place",
+        "home_team": "LOSER OF SF1",
+        "away_team": "LOSER OF SF2",
+        "ground": "G-1"
+      },
+      {
+        "id": 36,
+        "date": "21.12.2023",
+        "time": "7:30 PM",
+        "ground": "G-1",
+        "stage": "FINAL",
+        "home_team": "WINNER OF SF1",
+        "away_team": "WINNER OF SF2",
+        "ground": "G-1"
+      }
+    ],
+  "Cricket Men":
+    [
       {
         "id": 1,
         "date": "14.12.2023",
@@ -611,7 +611,9 @@ const sportsMatches = {
         "away_team": "IIT Dharwad",
         "logo_home_team": require('./Assests/IITs/IITPKD.jpg'),
         "logo_away_team": require('./Assests/IITs/IITDH.jpg'),
-        statement:"Match is yet to happen"
+        home_score: '108 / 8 (19.4 Ov)',
+        away_score: '107 / 10 (19.0 Ov)',
+        statement: "IIT Palakkad won by 2 wickets"
       },
       {
         "id": 2,
@@ -623,7 +625,9 @@ const sportsMatches = {
         "away_team": "IIT Goa",
         "logo_home_team": require('./Assests/IITs/IITG.jpg'),
         "logo_away_team": require('./Assests/IITs/IITGOA.jpg'),
-        statement:"Match is yet to happen"
+        home_score: '108 / 3 (13.3 Ov)',
+        away_score: '107 / 9 (20 Ov)',
+        statement: "IIT GUWAHATI won by 7 wickets"
       },
       {
         "id": 3,
@@ -635,7 +639,9 @@ const sportsMatches = {
         "away_team": "IIT Tirupati",
         "logo_home_team": require('./Assests/IITs/IITI.jpg'),
         "logo_away_team": require('./Assests/IITs/IITT.jpg'),
-        statement:"Match is yet to happen"
+        home_score: '134 / 2 (18.5 Ov)',
+        away_score: '133 / 7 (20 Ov)',
+        statement: "IIT Indore won by 8 wickets"
       },
       {
         "id": 4,
@@ -647,7 +653,9 @@ const sportsMatches = {
         "away_team": "IIT Gandhinagar",
         "logo_home_team": require('./Assests/IITs/IITBBS.jpg'),
         "logo_away_team": require('./Assests/IITs/IITGN.jpg'),
-        statement:"Match is yet to happen"
+        home_score: '61 / 10 (13.3 Ov)',
+        away_score: '62 / 1 (6.4 Ov)',
+        statement: "IIT Gandhinagar won by 9 wickets"
       },
       {
         "id": 5,
@@ -659,7 +667,9 @@ const sportsMatches = {
         "away_team": "IIT Kharagpur",
         "logo_home_team": require('./Assests/IITs/IITH.jpg'),
         "logo_away_team": require('./Assests/IITs/IITKGP.jpg'),
-        statement:"Match is yet to happen"
+        home_score: '158 / 7 (19.5 Ov)',
+        away_score: '157 / 7 (20 Ov)',
+        statement: "IIT Hyderabad won by 3 wickets"
       },
       {
         "id": 6,
@@ -671,7 +681,7 @@ const sportsMatches = {
         "away_team": "IIT Kharagpur",
         "logo_home_team": require('./Assests/IITs/IITRPR.jpg'),
         "logo_away_team": require('./Assests/IITs/IITKGP.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 7,
@@ -683,7 +693,7 @@ const sportsMatches = {
         "away_team": "IIT Jodhpur",
         "logo_home_team": require('./Assests/IITs/IITR.jpg'),
         "logo_away_team": require('./Assests/IITs/IITJ.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 8,
@@ -695,7 +705,7 @@ const sportsMatches = {
         "away_team": "IIT Bombay",
         "logo_home_team": require('./Assests/IITs/IITMD.jpg'),
         "logo_away_team": require('./Assests/IITs/IITB.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 9,
@@ -707,7 +717,7 @@ const sportsMatches = {
         "away_team": "IIT Dharwad",
         "logo_home_team": require('./Assests/IITs/IITPKD.jpg'),
         "logo_away_team": require('./Assests/IITs/IITDH.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 10,
@@ -719,7 +729,7 @@ const sportsMatches = {
         "away_team": "IIT Goa",
         "logo_home_team": require('./Assests/IITs/IITK.jpg'),
         "logo_away_team": require('./Assests/IITs/IITGOA.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 11,
@@ -731,7 +741,7 @@ const sportsMatches = {
         "away_team": "IIT Tirupati",
         "logo_home_team": require('./Assests/IITs/IITBH.jpg'),
         "logo_away_team": require('./Assests/IITs/IITT.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 12,
@@ -743,7 +753,7 @@ const sportsMatches = {
         "away_team": "IIT Gandhinagar",
         "logo_home_team": require('./Assests/IITs/IITISM.jpg'),
         "logo_away_team": require('./Assests/IITs/IITGN.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 13,
@@ -755,7 +765,7 @@ const sportsMatches = {
         "away_team": "IIT Jodhpur",
         "logo_home_team": require('./Assests/IITs/IITM.jpg'),
         "logo_away_team": require('./Assests/IITs/IITJ.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 14,
@@ -767,7 +777,7 @@ const sportsMatches = {
         "away_team": "IIT Bombay",
         "logo_home_team": require('./Assests/IITs/IITBH.jpg'),
         "logo_away_team": require('./Assests/IITs/IITB.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 15,
@@ -779,7 +789,7 @@ const sportsMatches = {
         "away_team": "IIT Jammu",
         "logo_home_team": require('./Assests/IITs/IITPKD.jpg'),
         "logo_away_team": require('./Assests/IITs/IITJMU.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 16,
@@ -791,7 +801,7 @@ const sportsMatches = {
         "away_team": "IIT Kanpur",
         "logo_home_team": require('./Assests/IITs/IITG.jpg'),
         "logo_away_team": require('./Assests/IITs/IITK.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 17,
@@ -803,7 +813,7 @@ const sportsMatches = {
         "away_team": "IIT BHU",
         "logo_home_team": require('./Assests/IITs/IITI.jpg'),
         "logo_away_team": require('./Assests/IITs/IITBH.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 18,
@@ -815,7 +825,7 @@ const sportsMatches = {
         "away_team": "IIT Bhubaneswar",
         "logo_home_team": require('./Assests/IITs/IITISM.jpg'),
         "logo_away_team": require('./Assests/IITs/IITBBS.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 19,
@@ -827,7 +837,7 @@ const sportsMatches = {
         "away_team": "IIT Hyderabad",
         "logo_home_team": require('./Assests/IITs/IITRPR.jpg'),
         "logo_away_team": require('./Assests/IITs/IITH.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 20,
@@ -839,7 +849,7 @@ const sportsMatches = {
         "away_team": "IIT Madras",
         "logo_home_team": require('./Assests/IITs/IITR.jpg'),
         "logo_away_team": require('./Assests/IITs/IITM.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 21,
@@ -851,7 +861,7 @@ const sportsMatches = {
         "away_team": "IIT Bhilai",
         "logo_home_team": require('./Assests/IITs/IITMD.jpg'),
         "logo_away_team": require('./Assests/IITs/IITBH.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 22,
@@ -863,7 +873,7 @@ const sportsMatches = {
         "away_team": "IIT Patna",
         "logo_home_team": require('./Assests/IITs/IITD.jpg'),
         "logo_away_team": require('./Assests/IITs/IITP.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 23,
@@ -1009,319 +1019,319 @@ const sportsMatches = {
         "home_team": "Winner of SF1",
         "away_team": "Winner of SF2"
       }
-  ],
+    ],
   "Squash Men":
-  [
-    {
-      "id": 1,
-      "date": "15.12.2023",
-      "time": "10:00 AM",
-      "pool": "D",
-      "ground": "C-1",
-      "home_team": "IIT Madras",
-      "away_team": "IIT Indore",
-      "logo_home_team": require('./Assests/IITs/IITM.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITI.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 2,
-      "date": "15.12.2023",
-      "time": "10:00 AM",
-      "pool": "C",
-      "ground": "C-2",
-      "home_team": "IIT Bombay",
-      "away_team": "IIT Hyderabad",
-      "logo_home_team": require('./Assests/IITs/IITB.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITH.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 3,
-      "date": "15.12.2023",
-      "time": "11:00 PM",
-      "pool": "B",
-      "ground": "C-1",
-      "home_team": "IIT Delhi",
-      "away_team": "IIT BHU",
-      "logo_home_team": require('./Assests/IITs/IITD.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITBHU.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 4,
-      "date": "15.12.2023",
-      "time": "4:00 PM",
-      "pool": "A",
-      "ground": "C-1",
-      "home_team": "IIT Kharagpur",
-      "away_team": "IIT Guwahati",
-      "logo_home_team": require('./Assests/IITs/IITKGP.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITG.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 5,
-      "date": "15.12.2023",
-      "time": "4:00 PM",
-      "pool": "D",
-      "ground": "C-2",
-      "home_team": "IIT Dhanbad",
-      "away_team": "IIT Patna",
-      "logo_home_team": require('./Assests/IITs/IITISM.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITP.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 6,
-      "date": "15.12.2023",
-      "time": "5:00 PM",
-      "pool": "B",
-      "ground": "C-1",
-      "home_team": "IIT Kanpur",
-      "away_team": "IIT Mandi",
-      "logo_home_team": require('./Assests/IITs/IITK.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 7,
-      "date": "15.12.2023",
-      "time": "5:00 PM",
-      "pool": "C",
-      "ground": "C-2",
-      "home_team": "IIT Jodhpur",
-      "away_team": "IIT Roorkee",
-      "logo_home_team": require('./Assests/IITs/IITJ.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITR.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 8,
-      "date": "16.12.2023",
-      "time": "10:00 AM",
-      "ground": "C-1",
-      "home_team": "IIT Madras",
-      "away_team": "IIT Patna",
-      "logo_home_team": require('./Assests/IITs/IITM.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITP.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 9,
-      "date": "16.12.2023",
-      "time": "10:00 AM",
-      "ground": "C-2",
-      "home_team": "IIT Delhi",
-      "away_team": "IIT Mandi",
-      "logo_home_team": require('./Assests/IITs/IITD.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 10,
-      "date": "16.12.2023",
-      "time": "11:00 AM",
-      "ground": "C-1",
-      "home_team": "IIT Bombay",
-      "away_team": "IIT Roorkee",
-      "logo_home_team": require('./Assests/IITs/IITB.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITR.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 11,
-      "date": "16.12.2023",
-      "time": "11:00 AM",
-      "ground": "C-2",
-      "home_team": "IIT Dhanbad",
-      "away_team": "IIT Indore",
-      "logo_home_team": require('./Assests/IITs/IITISM.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITI.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 12,
-      "date": "16.12.2023",
-      "time": "4:00 PM",
-      "ground": "C-1",
-      "home_team": "IIT Jodhpur",
-      "away_team": "IIT Hyderabad",
-      "logo_home_team": require('./Assests/IITs/IITJ.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITH.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 13,
-      "date": "16.12.2023",
-      "time": "4:00 PM",
-      "ground": "C-2",
-      "home_team": "IIT Kanpur",
-      "away_team": "IIT BHU",
-      "logo_home_team": require('./Assests/IITs/IITK.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITBHU.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 14,
-      "date": "16.12.2023",
-      "time": "5:00 PM",
-      "ground": "C-1",
-      "home_team": "IIT Gandhinagar",
-      "away_team": "IIT Guwahati",
-      "logo_home_team": require('./Assests/IITs/IITGN.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITG.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 15,
-      "date": "17.12.2023",
-      "time": "10:00 AM",
-      "ground": "C-1",
-      "home_team": "IIT Madras",
-      "away_team": "IIT Dhanbad",
-      "logo_home_team": require('./Assests/IITs/IITM.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITISM.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 16,
-      "date": "17.12.2023",
-      "time": "10:00 AM",
-      "ground": "C-2",
-      "home_team": "IIT Bombay",
-      "away_team": "IIT Jodhpur",
-      "logo_home_team": require('./Assests/IITs/IITB.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITJ.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 17,
-      "date": "17.12.2023",
-      "time": "11:00 PM",
-      "ground": "C-1",
-      "home_team": "IIT Delhi",
-      "away_team": "IIT Kanpur",
-      "logo_home_team": require('./Assests/IITs/IITD.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITK.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 18,
-      "date": "17.12.2023",
-      "time": "4:00 PM",
-      "ground": "C-2",
-      "home_team": "IIT Kharagpur",
-      "away_team": "IIT Gandhinagar",
-      "logo_home_team": require('./Assests/IITs/IITKGP.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITGN.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 19,
-      "date": "17.12.2023",
-      "time": "4:00 PM",
-      "ground": "C-1",
-      "home_team": "IIT Indore",
-      "away_team": "IIT Patna",
-      "logo_home_team": require('./Assests/IITs/IITI.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITP.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 20,
-      "date": "17.12.2023",
-      "time": "5:00 PM",
-      "ground": "C-2",
-      "home_team": "IIT Varanasi",
-      "away_team": "IIT Mandi",
-      "logo_home_team": require('./Assests/IITs/IITBHU.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 21,
-      "date": "17.12.2023",
-      "time": "5:00 PM",
-      "ground": "C-1",
-      "home_team": "IIT Hyderabad",
-      "away_team": "IIT Roorkee",
-      "logo_home_team": require('./Assests/IITs/IITH.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITR.jpg')
-    },
-    {
-      "id": 22,
-      "date": "19.12.2023",
-      "time": "10:00 AM",
-      "stage":"QF-1",
-      "ground": "C-1",
-      "home_team": "WINNER OF POOL A",
-      "away_team": "RUNNER OF POOL C"
-    },
-    {
-      "id": 23,
-      "date": "19.12.2023",
-      "time": "10:00 AM",
-      "stage":"QF-2",
-      "ground": "C-2",
-      "home_team": "WINNER OF POOL B",
-      "away_team": "RUNNER OF POOL D"
-    },
-    {
-      "id": 24,
-      "date": "19.12.2023",
-      "time": "12:00 PM",
-      "stage":"QF-3",
-      "ground": "C-1",
-      "home_team": "RUNNER OF POOL A",
-      "away_team": "WINNER OF POOL C"
-    },
-    {
-      "id": 25,
-      "date": "19.12.2023",
-      "time": "12:00 PM",
-      "stage":"QF-4",
-      "ground": "C-2",
-      "home_team": "RUNNER OF POOL B",
-      "away_team": "WINNER OF POOL D"
-    },
-    {
-      "id": 26,
-      "date": "20.12.2023",
-      "time": "10:00 AM",
-      "stage":"SF-1",
-      "ground": "C-1",
-      "home_team": "QF 1",
-      "away_team": "QF 4"
-    },
-    {
-      "id": 27,
-      "date": "20.12.2023",
-      "time": "12:00 PM",
-      "stage":"SF-2",
-      "ground": "C-2",
-      "home_team": "QF 2",
-      "away_team": "QF 3"
-    },
-    {
-      "id": 28,
-      "date": "21.12.2023",
-      "time": "10:00 AM",
-      "stage":"3rd place",
-      "ground": "C-1",
-      "home_team": "LOSER OF SF1",
-      "away_team": "LOSER OF SF2"
-    },
-    {
-      "id": 29,
-      "date": "21.12.2023",
-      "time": "12:00 PM",
-      "stage":"Final",
-      "ground": "C-2",
-      "home_team": "WINNER OF SF1",
-      "away_team": "WINNER OF SF2"
-    }
-  ],
+    [
+      {
+        "id": 1,
+        "date": "15.12.2023",
+        "time": "10:00 AM",
+        "pool": "D",
+        "ground": "C-1",
+        "home_team": "IIT Madras",
+        "away_team": "IIT Indore",
+        "logo_home_team": require('./Assests/IITs/IITM.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITI.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 2,
+        "date": "15.12.2023",
+        "time": "10:00 AM",
+        "pool": "C",
+        "ground": "C-2",
+        "home_team": "IIT Bombay",
+        "away_team": "IIT Hyderabad",
+        "logo_home_team": require('./Assests/IITs/IITB.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITH.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 3,
+        "date": "15.12.2023",
+        "time": "11:00 PM",
+        "pool": "B",
+        "ground": "C-1",
+        "home_team": "IIT Delhi",
+        "away_team": "IIT BHU",
+        "logo_home_team": require('./Assests/IITs/IITD.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITBHU.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 4,
+        "date": "15.12.2023",
+        "time": "4:00 PM",
+        "pool": "A",
+        "ground": "C-1",
+        "home_team": "IIT Kharagpur",
+        "away_team": "IIT Guwahati",
+        "logo_home_team": require('./Assests/IITs/IITKGP.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITG.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 5,
+        "date": "15.12.2023",
+        "time": "4:00 PM",
+        "pool": "D",
+        "ground": "C-2",
+        "home_team": "IIT Dhanbad",
+        "away_team": "IIT Patna",
+        "logo_home_team": require('./Assests/IITs/IITISM.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITP.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 6,
+        "date": "15.12.2023",
+        "time": "5:00 PM",
+        "pool": "B",
+        "ground": "C-1",
+        "home_team": "IIT Kanpur",
+        "away_team": "IIT Mandi",
+        "logo_home_team": require('./Assests/IITs/IITK.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 7,
+        "date": "15.12.2023",
+        "time": "5:00 PM",
+        "pool": "C",
+        "ground": "C-2",
+        "home_team": "IIT Jodhpur",
+        "away_team": "IIT Roorkee",
+        "logo_home_team": require('./Assests/IITs/IITJ.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITR.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 8,
+        "date": "16.12.2023",
+        "time": "10:00 AM",
+        "ground": "C-1",
+        "home_team": "IIT Madras",
+        "away_team": "IIT Patna",
+        "logo_home_team": require('./Assests/IITs/IITM.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITP.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 9,
+        "date": "16.12.2023",
+        "time": "10:00 AM",
+        "ground": "C-2",
+        "home_team": "IIT Delhi",
+        "away_team": "IIT Mandi",
+        "logo_home_team": require('./Assests/IITs/IITD.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 10,
+        "date": "16.12.2023",
+        "time": "11:00 AM",
+        "ground": "C-1",
+        "home_team": "IIT Bombay",
+        "away_team": "IIT Roorkee",
+        "logo_home_team": require('./Assests/IITs/IITB.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITR.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 11,
+        "date": "16.12.2023",
+        "time": "11:00 AM",
+        "ground": "C-2",
+        "home_team": "IIT Dhanbad",
+        "away_team": "IIT Indore",
+        "logo_home_team": require('./Assests/IITs/IITISM.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITI.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 12,
+        "date": "16.12.2023",
+        "time": "4:00 PM",
+        "ground": "C-1",
+        "home_team": "IIT Jodhpur",
+        "away_team": "IIT Hyderabad",
+        "logo_home_team": require('./Assests/IITs/IITJ.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITH.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 13,
+        "date": "16.12.2023",
+        "time": "4:00 PM",
+        "ground": "C-2",
+        "home_team": "IIT Kanpur",
+        "away_team": "IIT BHU",
+        "logo_home_team": require('./Assests/IITs/IITK.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITBHU.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 14,
+        "date": "16.12.2023",
+        "time": "5:00 PM",
+        "ground": "C-1",
+        "home_team": "IIT Gandhinagar",
+        "away_team": "IIT Guwahati",
+        "logo_home_team": require('./Assests/IITs/IITGN.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITG.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 15,
+        "date": "17.12.2023",
+        "time": "10:00 AM",
+        "ground": "C-1",
+        "home_team": "IIT Madras",
+        "away_team": "IIT Dhanbad",
+        "logo_home_team": require('./Assests/IITs/IITM.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITISM.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 16,
+        "date": "17.12.2023",
+        "time": "10:00 AM",
+        "ground": "C-2",
+        "home_team": "IIT Bombay",
+        "away_team": "IIT Jodhpur",
+        "logo_home_team": require('./Assests/IITs/IITB.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITJ.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 17,
+        "date": "17.12.2023",
+        "time": "11:00 PM",
+        "ground": "C-1",
+        "home_team": "IIT Delhi",
+        "away_team": "IIT Kanpur",
+        "logo_home_team": require('./Assests/IITs/IITD.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITK.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 18,
+        "date": "17.12.2023",
+        "time": "4:00 PM",
+        "ground": "C-2",
+        "home_team": "IIT Kharagpur",
+        "away_team": "IIT Gandhinagar",
+        "logo_home_team": require('./Assests/IITs/IITKGP.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITGN.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 19,
+        "date": "17.12.2023",
+        "time": "4:00 PM",
+        "ground": "C-1",
+        "home_team": "IIT Indore",
+        "away_team": "IIT Patna",
+        "logo_home_team": require('./Assests/IITs/IITI.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITP.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 20,
+        "date": "17.12.2023",
+        "time": "5:00 PM",
+        "ground": "C-2",
+        "home_team": "IIT Varanasi",
+        "away_team": "IIT Mandi",
+        "logo_home_team": require('./Assests/IITs/IITBHU.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 21,
+        "date": "17.12.2023",
+        "time": "5:00 PM",
+        "ground": "C-1",
+        "home_team": "IIT Hyderabad",
+        "away_team": "IIT Roorkee",
+        "logo_home_team": require('./Assests/IITs/IITH.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITR.jpg')
+      },
+      {
+        "id": 22,
+        "date": "19.12.2023",
+        "time": "10:00 AM",
+        "stage": "QF-1",
+        "ground": "C-1",
+        "home_team": "WINNER OF POOL A",
+        "away_team": "RUNNER OF POOL C"
+      },
+      {
+        "id": 23,
+        "date": "19.12.2023",
+        "time": "10:00 AM",
+        "stage": "QF-2",
+        "ground": "C-2",
+        "home_team": "WINNER OF POOL B",
+        "away_team": "RUNNER OF POOL D"
+      },
+      {
+        "id": 24,
+        "date": "19.12.2023",
+        "time": "12:00 PM",
+        "stage": "QF-3",
+        "ground": "C-1",
+        "home_team": "RUNNER OF POOL A",
+        "away_team": "WINNER OF POOL C"
+      },
+      {
+        "id": 25,
+        "date": "19.12.2023",
+        "time": "12:00 PM",
+        "stage": "QF-4",
+        "ground": "C-2",
+        "home_team": "RUNNER OF POOL B",
+        "away_team": "WINNER OF POOL D"
+      },
+      {
+        "id": 26,
+        "date": "20.12.2023",
+        "time": "10:00 AM",
+        "stage": "SF-1",
+        "ground": "C-1",
+        "home_team": "QF 1",
+        "away_team": "QF 4"
+      },
+      {
+        "id": 27,
+        "date": "20.12.2023",
+        "time": "12:00 PM",
+        "stage": "SF-2",
+        "ground": "C-2",
+        "home_team": "QF 2",
+        "away_team": "QF 3"
+      },
+      {
+        "id": 28,
+        "date": "21.12.2023",
+        "time": "10:00 AM",
+        "stage": "3rd place",
+        "ground": "C-1",
+        "home_team": "LOSER OF SF1",
+        "away_team": "LOSER OF SF2"
+      },
+      {
+        "id": 29,
+        "date": "21.12.2023",
+        "time": "12:00 PM",
+        "stage": "Final",
+        "ground": "C-2",
+        "home_team": "WINNER OF SF1",
+        "away_team": "WINNER OF SF2"
+      }
+    ],
   "Squash Women":
     [
       {
@@ -1332,9 +1342,9 @@ const sportsMatches = {
         "ground": "C-1",
         "home_team": "IIT Madras",
         "away_team": "IIT Varanasi",
-        "logo_home_team":  require('./Assests/IITs/IITM.jpg'),
+        "logo_home_team": require('./Assests/IITs/IITM.jpg'),
         "logo_away_team": require('./Assests/IITs/IITBHU.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 2,
@@ -1346,7 +1356,7 @@ const sportsMatches = {
         "away_team": "IIT Mandi",
         "logo_home_team": require('./Assests/IITs/IITR.jpg'),
         "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 3,
@@ -1358,7 +1368,7 @@ const sportsMatches = {
         "away_team": "IIT Kanpur",
         "logo_home_team": require('./Assests/IITs/IITB.jpg'),
         "logo_away_team": require('./Assests/IITs/IITK.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 4,
@@ -1370,7 +1380,7 @@ const sportsMatches = {
         "away_team": "IIT Kharagpur",
         "logo_home_team": require('./Assests/IITs/IITD.jpg'),
         "logo_away_team": require('./Assests/IITs/IITKGP.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 5,
@@ -1382,7 +1392,7 @@ const sportsMatches = {
         "away_team": "IIT Dhanbad",
         "logo_home_team": require('./Assests/IITs/IITGN.jpg'),
         "logo_away_team": require('./Assests/IITs/IITISM.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 6,
@@ -1394,7 +1404,7 @@ const sportsMatches = {
         "away_team": "IIT Varanasi",
         "logo_home_team": require('./Assests/IITs/IITGN.jpg'),
         "logo_away_team": require('./Assests/IITs/IITBHU.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 7,
@@ -1406,7 +1416,7 @@ const sportsMatches = {
         "away_team": "IIT Mandi",
         "logo_home_team": require('./Assests/IITs/IITJ.jpg'),
         "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 8,
@@ -1418,7 +1428,7 @@ const sportsMatches = {
         "away_team": "IIT Kanpur",
         "logo_home_team": require('./Assests/IITs/IITG.jpg'),
         "logo_away_team": require('./Assests/IITs/IITK.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 9,
@@ -1430,7 +1440,7 @@ const sportsMatches = {
         "away_team": "IIT Kharagpur",
         "logo_home_team": require('./Assests/IITs/IITI.jpg'),
         "logo_away_team": require('./Assests/IITs/IITKGP.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 10,
@@ -1442,7 +1452,7 @@ const sportsMatches = {
         "away_team": "IIT Dhanbad",
         "logo_home_team": require('./Assests/IITs/IITM.jpg'),
         "logo_away_team": require('./Assests/IITs/IITISM.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 11,
@@ -1454,7 +1464,7 @@ const sportsMatches = {
         "away_team": "IIT Dhanbad",
         "logo_home_team": require('./Assests/IITs/IITBHU.jpg'),
         "logo_away_team": require('./Assests/IITs/IITISM.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 12,
@@ -1466,7 +1476,7 @@ const sportsMatches = {
         "away_team": "IIT Jodhpur",
         "logo_home_team": require('./Assests/IITs/IITR.jpg'),
         "logo_away_team": require('./Assests/IITs/IITJ.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 13,
@@ -1478,7 +1488,7 @@ const sportsMatches = {
         "away_team": "IIT Guwahati",
         "logo_home_team": require('./Assests/IITs/IITB.jpg'),
         "logo_away_team": require('./Assests/IITs/IITG.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 14,
@@ -1490,7 +1500,7 @@ const sportsMatches = {
         "away_team": "IIT Indore",
         "logo_home_team": require('./Assests/IITs/IITD.jpg'),
         "logo_away_team": require('./Assests/IITs/IITI.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 15,
@@ -1502,7 +1512,7 @@ const sportsMatches = {
         "away_team": "IIT Gandhinagar",
         "logo_home_team": require('./Assests/IITs/IITM.jpg'),
         "logo_away_team": require('./Assests/IITs/IITGN.jpg'),
-        statement:"Match is yet to happen"
+        statement: "Match is yet to happen"
       },
       {
         "id": 16,
@@ -1576,915 +1586,915 @@ const sportsMatches = {
         "home_team": "WINNER OF SF1",
         "away_team": "WINNER OF SF2"
       }
-  ],
+    ],
   "Tennis Men":
-  [
-    {
-      "id": 1,
-      "date": "15.12.2023",
-      "time": "4:00 PM",
-      "pool": "D",
-      "ground": "1",
-      "home_team": "IIT Roorkee",
-      "away_team": "IIT Tirupati",
-      "logo_home_team":  require('./Assests/IITs/IITR.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITT.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 2,
-      "date": "15.12.2023",
-      "time": "4:00 PM",
-      "pool": "C",
-      "ground": "3",
-      "home_team": "IIT Delhi",
-      "away_team": "IIT Dhanbad",
-      "logo_home_team":  require('./Assests/IITs/IITD.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITISM.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 3,
-      "date": "15.12.2023",
-      "time": "5:00 PM",
-      "pool": "B",
-      "ground": "2",
-      "home_team": "IIT Madras",
-      "away_team": "IIT Ropar",
-      "logo_home_team":  require('./Assests/IITs/IITM.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITRPR.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 4,
-      "date": "15.12.2023",
-      "time": "5:00 PM",
-      "pool": "A",
-      "ground": "4",
-      "home_team": "IIT Kharagpur",
-      "away_team": "IIT Jodhpur",
-      "logo_home_team":  require('./Assests/IITs/IITKGP.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITJ.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 5,
-      "date": "15.12.2023",
-      "time": "6:00 PM",
-      "pool": "D",
-      "ground": "1",
-      "home_team": "IIT BHU",
-      "away_team": "IIT Goa",
-      "logo_home_team":  require('./Assests/IITs/IITBHU.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITGOA.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 6,
-      "date": "15.12.2023",
-      "time": "6:00 PM",
-      "pool": "C",
-      "ground": "3",
-      "home_team": "IIT Kanpur",
-      "away_team": "IIT Mandi",
-      "logo_home_team":  require('./Assests/IITs/IITK.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 7,
-      "date": "15.12.2023",
-      "time": "7:00 PM",
-      "pool": "B",
-      "ground": "2",
-      "home_team": "IIT Guwahati",
-      "away_team": "IIT Bombay",
-      "logo_home_team":  require('./Assests/IITs/IITG.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITB.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 8,
-      "date": "15.12.2023",
-      "time": "7:00 PM",
-      "pool": "A",
-      "ground": "4",
-      "home_team": "IIT Gandhinagar",
-      "away_team": "IIT Indore",
-      "logo_home_team":  require('./Assests/IITs/IITGN.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITI.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 9,
-      "date": "16.12.2023",
-      "time": "4:00 PM",
-      "pool": "D",
-      "ground": "1",
-      "home_team": "IIT Roorkee",
-      "away_team": "IIT Goa",
-      "logo_home_team":  require('./Assests/IITs/IITR.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITGOA.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 10,
-      "date": "16.12.2023",
-      "time": "4:00 PM",
-      "pool": "C",
-      "ground": "3",
-      "home_team": "IIT Delhi",
-      "away_team": "IIT Mandi",
-      "logo_home_team":  require('./Assests/IITs/IITD.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 11,
-      "date": "16.12.2023",
-      "time": "5:00 PM",
-      "pool": "B",
-      "ground": "2",
-      "home_team": "IIT Madras",
-      "away_team": "IIT Bombay",
-      "logo_home_team":  require('./Assests/IITs/IITM.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITB.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 12,
-      "date": "16.12.2023",
-      "time": "5:00 PM",
-      "pool": "A",
-      "ground": "4",
-      "home_team": "IIT Kharagpur",
-      "away_team": "IIT Indore",
-      "logo_home_team":  require('./Assests/IITs/IITKGP.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITI.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 13,
-      "date": "16.12.2023",
-      "time": "6:00 PM",
-      "pool": "D",
-      "ground": "1",
-      "home_team": "IIT BHU",
-      "away_team": "IIT Patna",
-      "logo_home_team":  require('./Assests/IITs/IITBHU.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITP.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 14,
-      "date": "16.12.2023",
-      "time": "6:00 PM",
-      "pool": "C",
-      "ground": "3",
-      "home_team": "IIT Kanpur",
-      "away_team": "IIT Bhubaneswar",
-      "logo_home_team":  require('./Assests/IITs/IITK.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITBBS.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 15,
-      "date": "16.12.2023",
-      "time": "7:00 PM",
-      "pool": "B",
-      "ground": "2",
-      "home_team": "IIT Guwahati",
-      "away_team": "IIT Dharwad",
-      "logo_home_team":  require('./Assests/IITs/IITG.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITDH.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 16,
-      "date": "16.12.2023",
-      "time": "7:00 PM",
-      "pool": "A",
-      "ground": "4",
-      "home_team": "IIT Gandhinagar",
-      "away_team": "IIT Hyderabad",
-      "logo_home_team":  require('./Assests/IITs/IITGN.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITH.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 17,
-      "date": "17.12.2023",
-      "time": "4:00 PM",
-      "pool": "D",
-      "ground": "1",
-      "home_team": "IIT BHU",
-      "away_team": "IIT Tirupati",
-      "logo_home_team":  require('./Assests/IITs/IITBHU.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITT.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 18,
-      "date": "17.12.2023",
-      "time": "4:00 PM",
-      "pool": "C",
-      "ground": "3",
-      "home_team": "IIT Kanpur",
-      "away_team": "IIT Dhanbad",
-      "logo_home_team":  require('./Assests/IITs/IITK.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITISM.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 19,
-      "date": "17.12.2023",
-      "time": "5:00 PM",
-      "pool": "B",
-      "ground": "2",
-      "home_team": "IIT Guwahati",
-      "away_team": "IIT Ropar",
-      "logo_home_team":  require('./Assests/IITs/IITG.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITRPR.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 20,
-      "date": "17.12.2023",
-      "time": "5:00 PM",
-      "pool": "A",
-      "ground": "4",
-      "home_team": "IIT Gandhinagar",
-      "away_team": "IIT Jodhpur",
-      "logo_home_team":  require('./Assests/IITs/IITGN.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITJ.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 21,
-      "date": "17.12.2023",
-      "time": "6:00 PM",
-      "pool": "D",
-      "ground": "1",
-      "home_team": "IIT Goa",
-      "away_team": "IIT Patna",
-      "logo_home_team":  require('./Assests/IITs/IITGOA.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITP.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 22,
-      "date": "17.12.2023",
-      "time": "6:00 PM",
-      "pool": "C",
-      "ground": "3",
-      "home_team": "IIT Mandi",
-      "away_team": "IIT Bhubaneswar",
-      "logo_home_team":  require('./Assests/IITs/IITMD.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITBBS.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 23,
-      "date": "17.12.2023",
-      "time": "7:00 PM",
-      "pool": "B",
-      "ground": "2",
-      "home_team": "IIT Bombay",
-      "away_team": "IIT Dharwad",
-      "logo_home_team":  require('./Assests/IITs/IITB.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITDH.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 24,
-      "date": "17.12.2023",
-      "time": "7:00 PM",
-      "pool": "A",
-      "ground": "4",
-      "home_team": "IIT Indore",
-      "away_team": "IIT Hyderabad",
-      "logo_home_team":  require('./Assests/IITs/IITI.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITH.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 25,
-      "date": "18.12.2023",
-      "time": "4:00 PM",
-      "pool": "D",
-      "ground": "1",
-      "home_team": "IIT Roorkee",
-      "away_team": "IIT Patna",
-      "logo_home_team":  require('./Assests/IITs/IITR.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITP.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 26,
-      "date": "18.12.2023",
-      "time": "4:00 PM",
-      "pool": "C",
-      "ground": "3",
-      "home_team": "IIT Delhi",
-      "away_team": "IIT Bhubaneswar",
-      "logo_home_team":  require('./Assests/IITs/IITD.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITBBS.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 27,
-      "date": "18.12.2023",
-      "time": "5:00 PM",
-      "pool": "B",
-      "ground": "2",
-      "home_team": "IIT Madras",
-      "away_team": "IIT Dharwad",
-      "logo_home_team":  require('./Assests/IITs/IITM.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITDH.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 28,
-      "date": "18.12.2023",
-      "time": "5:00 PM",
-      "pool": "A",
-      "ground": "4",
-      "home_team": "IIT Kharagpur",
-      "away_team": "IIT Hyderabad",
-      "logo_home_team":  require('./Assests/IITs/IITKGP.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITH.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 29,
-      "date": "18.12.2023",
-      "time": "6:00 PM",
-      "pool": "D",
-      "ground": "1",
-      "home_team": "IIT Tirupati",
-      "away_team": "IIT Goa",
-      "logo_home_team":  require('./Assests/IITs/IITT.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITGOA.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 30,
-      "date": "18.12.2023",
-      "time": "6:00 PM",
-      "pool": "C",
-      "ground": "3",
-      "home_team": "IIT Dhanbad",
-      "away_team": "IIT Mandi",
-      "logo_home_team":  require('./Assests/IITs/IITISM.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 31,
-      "date": "18.12.2023",
-      "time": "7:00 PM",
-      "pool": "B",
-      "ground": "2",
-      "home_team": "IIT Ropar",
-      "away_team": "IIT Bombay",
-      "logo_home_team":  require('./Assests/IITs/IITRPR.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITB.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 32,
-      "date": "18.12.2023",
-      "time": "7:00 PM",
-      "pool": "A",
-      "ground": "4",
-      "home_team": "IIT Jodhpur",
-      "away_team": "IIT Indore",
-      "logo_home_team":  require('./Assests/IITs/IITJ.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITI.jpg')
-    },
-    {
-      "id": 33,
-      "date": "19.12.2023",
-      "time": "4:00 PM",
-      "pool": "D",
-      "ground": "1",
-      "home_team": "IIT Roorkee",
-      "away_team": "IIT BHU",
-      "logo_home_team":  require('./Assests/IITs/IITR.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITBHU.jpg')
-    },
-    {
-      "id": 34,
-      "date": "19.12.2023",
-      "time": "4:00 PM",
-      "pool": "C",
-      "ground": "3",
-      "home_team": "IIT Delhi",
-      "away_team": "IIT Kanpur",
-      "logo_home_team":  require('./Assests/IITs/IITD.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITK.jpg')
-    },
-    {
-      "id": 35,
-      "date": "19.12.2023",
-      "time": "5:00 PM",
-      "pool": "B",
-      "ground": "2",
-      "home_team": "IIT Madras",
-      "away_team": "IIT Guwahati",
-      "logo_home_team":  require('./Assests/IITs/IITM.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITG.jpg')
-    },
-    {
-      "id": 36,
-      "date": "19.12.2023",
-      "time": "5:00 PM",
-      "pool": "A",
-      "ground": "4",
-      "home_team": "IIT Kharagpur",
-      "away_team": "IIT Gandhinagar",
-      "logo_home_team":  require('./Assests/IITs/IITKGP.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITGN.jpg')
-    },
-    {
-      "id": 37,
-      "date": "19.12.2023",
-      "time": "6:00 PM",
-      "pool": "D",
-      "ground": "1",
-      "home_team": "IIT Tirupati",
-      "away_team": "IIT Patna",
-      "logo_home_team":  require('./Assests/IITs/IITT.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITP.jpg')
-    },
-    {
-      "id": 38,
-      "date": "19.12.2023",
-      "time": "6:00 PM",
-      "pool": "C",
-      "ground": "3",
-      "home_team": "IIT Dhanbad",
-      "away_team": "IIT Bhubaneswar",
-      "logo_home_team":  require('./Assests/IITs/IITISM.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITBBS.jpg')
-    },
-    {
-      "id": 39,
-      "date": "19.12.2023",
-      "time": "7:00 PM",
-      "pool": "B",
-      "ground": "2",
-      "home_team": "IIT Ropar",
-      "away_team": "IIT Dharwad",
-      "logo_home_team":  require('./Assests/IITs/IITRPR.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITDH.jpg')
-    },
-    {
-      "id": 40,
-      "date": "19.12.2023",
-      "time": "7:00 PM",
-      "pool": "A",
-      "ground": "4",
-      "home_team": "IIT Jodhpur",
-      "away_team": "IIT Hyderabad",
-      "logo_home_team":  require('./Assests/IITs/IITJ.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITH.jpg')
-    },
-    {
-      "id": 41,
-      "date": "20.12.2023",
-      "time": "8:30 AM",
-      "ground": "1",
-      "stage": "SF1",
-      "home_team": "WINNER OF POOL A",
-      "away_team": "RUNNER OF POOL C"
-    },
-    {
-      "id": 42,
-      "date": "20.12.2023",
-      "time": "8:30 AM",
-      "ground": "3",
-      "stage": "SF2",
-      "home_team": "WINNER OF POOL B",
-      "away_team": "RUNNER OF POOL D"
-    },
-    {
-      "id": 43,
-      "date": "20.12.2023",
-      "time": "9:30 AM",
-      "ground": "2",
-      "stage": "SF3",
-      "home_team": "RUNNER OF POOL A",
-      "away_team": "WINNER OF POOL C"
-    },
-    {
-      "id": 44,
-      "date": "20.12.2023",
-      "time": "9:30 AM",
-      "ground": "4",
-      "stage": "SF4",
-      "home_team": "RUNNER OF POOL B",
-      "away_team": "WINNER OF POOL D"
-    },
-    {
-      "id": 45,
-      "date": "21.12.2023",
-      "time": "6:30 PM",
-      "ground": "1",
-      "stage": "F1",
-      "home_team": "SF 1",
-      "away_team": "SF 4"
-    },
-    {
-      "id": 46,
-      "date": "21.12.2023",
-      "time": "6:30 PM",
-      "ground": "3",
-      "stage": "F2",
-      "home_team": "SF 2",
-      "away_team": "SF 3"
-    },
-    {
-      "id": 47,
-      "date": "22.12.2023",
-      "time": "9:00 AM",
-      "ground": "3",
-      "stage": "3rd PLACE",
-      "home_team": "LOSER OF F1",
-      "away_team": "LOSER OF F2"
-    },
-    {
-      "id": 48,
-      "date": "22.12.2023",
-      "time": "10:30 AM",
-      "ground": "1",
-      "stage": "FINAL",
-      "home_team": "WINNER OF F1",
-      "away_team": "WINNER OF F2"
-    }
-  ],
+    [
+      {
+        "id": 1,
+        "date": "15.12.2023",
+        "time": "4:00 PM",
+        "pool": "D",
+        "ground": "1",
+        "home_team": "IIT Roorkee",
+        "away_team": "IIT Tirupati",
+        "logo_home_team": require('./Assests/IITs/IITR.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITT.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 2,
+        "date": "15.12.2023",
+        "time": "4:00 PM",
+        "pool": "C",
+        "ground": "3",
+        "home_team": "IIT Delhi",
+        "away_team": "IIT Dhanbad",
+        "logo_home_team": require('./Assests/IITs/IITD.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITISM.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 3,
+        "date": "15.12.2023",
+        "time": "5:00 PM",
+        "pool": "B",
+        "ground": "2",
+        "home_team": "IIT Madras",
+        "away_team": "IIT Ropar",
+        "logo_home_team": require('./Assests/IITs/IITM.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITRPR.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 4,
+        "date": "15.12.2023",
+        "time": "5:00 PM",
+        "pool": "A",
+        "ground": "4",
+        "home_team": "IIT Kharagpur",
+        "away_team": "IIT Jodhpur",
+        "logo_home_team": require('./Assests/IITs/IITKGP.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITJ.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 5,
+        "date": "15.12.2023",
+        "time": "6:00 PM",
+        "pool": "D",
+        "ground": "1",
+        "home_team": "IIT BHU",
+        "away_team": "IIT Goa",
+        "logo_home_team": require('./Assests/IITs/IITBHU.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITGOA.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 6,
+        "date": "15.12.2023",
+        "time": "6:00 PM",
+        "pool": "C",
+        "ground": "3",
+        "home_team": "IIT Kanpur",
+        "away_team": "IIT Mandi",
+        "logo_home_team": require('./Assests/IITs/IITK.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 7,
+        "date": "15.12.2023",
+        "time": "7:00 PM",
+        "pool": "B",
+        "ground": "2",
+        "home_team": "IIT Guwahati",
+        "away_team": "IIT Bombay",
+        "logo_home_team": require('./Assests/IITs/IITG.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITB.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 8,
+        "date": "15.12.2023",
+        "time": "7:00 PM",
+        "pool": "A",
+        "ground": "4",
+        "home_team": "IIT Gandhinagar",
+        "away_team": "IIT Indore",
+        "logo_home_team": require('./Assests/IITs/IITGN.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITI.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 9,
+        "date": "16.12.2023",
+        "time": "4:00 PM",
+        "pool": "D",
+        "ground": "1",
+        "home_team": "IIT Roorkee",
+        "away_team": "IIT Goa",
+        "logo_home_team": require('./Assests/IITs/IITR.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITGOA.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 10,
+        "date": "16.12.2023",
+        "time": "4:00 PM",
+        "pool": "C",
+        "ground": "3",
+        "home_team": "IIT Delhi",
+        "away_team": "IIT Mandi",
+        "logo_home_team": require('./Assests/IITs/IITD.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 11,
+        "date": "16.12.2023",
+        "time": "5:00 PM",
+        "pool": "B",
+        "ground": "2",
+        "home_team": "IIT Madras",
+        "away_team": "IIT Bombay",
+        "logo_home_team": require('./Assests/IITs/IITM.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITB.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 12,
+        "date": "16.12.2023",
+        "time": "5:00 PM",
+        "pool": "A",
+        "ground": "4",
+        "home_team": "IIT Kharagpur",
+        "away_team": "IIT Indore",
+        "logo_home_team": require('./Assests/IITs/IITKGP.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITI.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 13,
+        "date": "16.12.2023",
+        "time": "6:00 PM",
+        "pool": "D",
+        "ground": "1",
+        "home_team": "IIT BHU",
+        "away_team": "IIT Patna",
+        "logo_home_team": require('./Assests/IITs/IITBHU.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITP.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 14,
+        "date": "16.12.2023",
+        "time": "6:00 PM",
+        "pool": "C",
+        "ground": "3",
+        "home_team": "IIT Kanpur",
+        "away_team": "IIT Bhubaneswar",
+        "logo_home_team": require('./Assests/IITs/IITK.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITBBS.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 15,
+        "date": "16.12.2023",
+        "time": "7:00 PM",
+        "pool": "B",
+        "ground": "2",
+        "home_team": "IIT Guwahati",
+        "away_team": "IIT Dharwad",
+        "logo_home_team": require('./Assests/IITs/IITG.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITDH.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 16,
+        "date": "16.12.2023",
+        "time": "7:00 PM",
+        "pool": "A",
+        "ground": "4",
+        "home_team": "IIT Gandhinagar",
+        "away_team": "IIT Hyderabad",
+        "logo_home_team": require('./Assests/IITs/IITGN.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITH.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 17,
+        "date": "17.12.2023",
+        "time": "4:00 PM",
+        "pool": "D",
+        "ground": "1",
+        "home_team": "IIT BHU",
+        "away_team": "IIT Tirupati",
+        "logo_home_team": require('./Assests/IITs/IITBHU.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITT.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 18,
+        "date": "17.12.2023",
+        "time": "4:00 PM",
+        "pool": "C",
+        "ground": "3",
+        "home_team": "IIT Kanpur",
+        "away_team": "IIT Dhanbad",
+        "logo_home_team": require('./Assests/IITs/IITK.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITISM.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 19,
+        "date": "17.12.2023",
+        "time": "5:00 PM",
+        "pool": "B",
+        "ground": "2",
+        "home_team": "IIT Guwahati",
+        "away_team": "IIT Ropar",
+        "logo_home_team": require('./Assests/IITs/IITG.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITRPR.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 20,
+        "date": "17.12.2023",
+        "time": "5:00 PM",
+        "pool": "A",
+        "ground": "4",
+        "home_team": "IIT Gandhinagar",
+        "away_team": "IIT Jodhpur",
+        "logo_home_team": require('./Assests/IITs/IITGN.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITJ.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 21,
+        "date": "17.12.2023",
+        "time": "6:00 PM",
+        "pool": "D",
+        "ground": "1",
+        "home_team": "IIT Goa",
+        "away_team": "IIT Patna",
+        "logo_home_team": require('./Assests/IITs/IITGOA.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITP.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 22,
+        "date": "17.12.2023",
+        "time": "6:00 PM",
+        "pool": "C",
+        "ground": "3",
+        "home_team": "IIT Mandi",
+        "away_team": "IIT Bhubaneswar",
+        "logo_home_team": require('./Assests/IITs/IITMD.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITBBS.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 23,
+        "date": "17.12.2023",
+        "time": "7:00 PM",
+        "pool": "B",
+        "ground": "2",
+        "home_team": "IIT Bombay",
+        "away_team": "IIT Dharwad",
+        "logo_home_team": require('./Assests/IITs/IITB.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITDH.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 24,
+        "date": "17.12.2023",
+        "time": "7:00 PM",
+        "pool": "A",
+        "ground": "4",
+        "home_team": "IIT Indore",
+        "away_team": "IIT Hyderabad",
+        "logo_home_team": require('./Assests/IITs/IITI.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITH.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 25,
+        "date": "18.12.2023",
+        "time": "4:00 PM",
+        "pool": "D",
+        "ground": "1",
+        "home_team": "IIT Roorkee",
+        "away_team": "IIT Patna",
+        "logo_home_team": require('./Assests/IITs/IITR.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITP.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 26,
+        "date": "18.12.2023",
+        "time": "4:00 PM",
+        "pool": "C",
+        "ground": "3",
+        "home_team": "IIT Delhi",
+        "away_team": "IIT Bhubaneswar",
+        "logo_home_team": require('./Assests/IITs/IITD.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITBBS.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 27,
+        "date": "18.12.2023",
+        "time": "5:00 PM",
+        "pool": "B",
+        "ground": "2",
+        "home_team": "IIT Madras",
+        "away_team": "IIT Dharwad",
+        "logo_home_team": require('./Assests/IITs/IITM.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITDH.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 28,
+        "date": "18.12.2023",
+        "time": "5:00 PM",
+        "pool": "A",
+        "ground": "4",
+        "home_team": "IIT Kharagpur",
+        "away_team": "IIT Hyderabad",
+        "logo_home_team": require('./Assests/IITs/IITKGP.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITH.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 29,
+        "date": "18.12.2023",
+        "time": "6:00 PM",
+        "pool": "D",
+        "ground": "1",
+        "home_team": "IIT Tirupati",
+        "away_team": "IIT Goa",
+        "logo_home_team": require('./Assests/IITs/IITT.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITGOA.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 30,
+        "date": "18.12.2023",
+        "time": "6:00 PM",
+        "pool": "C",
+        "ground": "3",
+        "home_team": "IIT Dhanbad",
+        "away_team": "IIT Mandi",
+        "logo_home_team": require('./Assests/IITs/IITISM.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 31,
+        "date": "18.12.2023",
+        "time": "7:00 PM",
+        "pool": "B",
+        "ground": "2",
+        "home_team": "IIT Ropar",
+        "away_team": "IIT Bombay",
+        "logo_home_team": require('./Assests/IITs/IITRPR.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITB.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 32,
+        "date": "18.12.2023",
+        "time": "7:00 PM",
+        "pool": "A",
+        "ground": "4",
+        "home_team": "IIT Jodhpur",
+        "away_team": "IIT Indore",
+        "logo_home_team": require('./Assests/IITs/IITJ.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITI.jpg')
+      },
+      {
+        "id": 33,
+        "date": "19.12.2023",
+        "time": "4:00 PM",
+        "pool": "D",
+        "ground": "1",
+        "home_team": "IIT Roorkee",
+        "away_team": "IIT BHU",
+        "logo_home_team": require('./Assests/IITs/IITR.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITBHU.jpg')
+      },
+      {
+        "id": 34,
+        "date": "19.12.2023",
+        "time": "4:00 PM",
+        "pool": "C",
+        "ground": "3",
+        "home_team": "IIT Delhi",
+        "away_team": "IIT Kanpur",
+        "logo_home_team": require('./Assests/IITs/IITD.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITK.jpg')
+      },
+      {
+        "id": 35,
+        "date": "19.12.2023",
+        "time": "5:00 PM",
+        "pool": "B",
+        "ground": "2",
+        "home_team": "IIT Madras",
+        "away_team": "IIT Guwahati",
+        "logo_home_team": require('./Assests/IITs/IITM.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITG.jpg')
+      },
+      {
+        "id": 36,
+        "date": "19.12.2023",
+        "time": "5:00 PM",
+        "pool": "A",
+        "ground": "4",
+        "home_team": "IIT Kharagpur",
+        "away_team": "IIT Gandhinagar",
+        "logo_home_team": require('./Assests/IITs/IITKGP.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITGN.jpg')
+      },
+      {
+        "id": 37,
+        "date": "19.12.2023",
+        "time": "6:00 PM",
+        "pool": "D",
+        "ground": "1",
+        "home_team": "IIT Tirupati",
+        "away_team": "IIT Patna",
+        "logo_home_team": require('./Assests/IITs/IITT.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITP.jpg')
+      },
+      {
+        "id": 38,
+        "date": "19.12.2023",
+        "time": "6:00 PM",
+        "pool": "C",
+        "ground": "3",
+        "home_team": "IIT Dhanbad",
+        "away_team": "IIT Bhubaneswar",
+        "logo_home_team": require('./Assests/IITs/IITISM.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITBBS.jpg')
+      },
+      {
+        "id": 39,
+        "date": "19.12.2023",
+        "time": "7:00 PM",
+        "pool": "B",
+        "ground": "2",
+        "home_team": "IIT Ropar",
+        "away_team": "IIT Dharwad",
+        "logo_home_team": require('./Assests/IITs/IITRPR.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITDH.jpg')
+      },
+      {
+        "id": 40,
+        "date": "19.12.2023",
+        "time": "7:00 PM",
+        "pool": "A",
+        "ground": "4",
+        "home_team": "IIT Jodhpur",
+        "away_team": "IIT Hyderabad",
+        "logo_home_team": require('./Assests/IITs/IITJ.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITH.jpg')
+      },
+      {
+        "id": 41,
+        "date": "20.12.2023",
+        "time": "8:30 AM",
+        "ground": "1",
+        "stage": "SF1",
+        "home_team": "WINNER OF POOL A",
+        "away_team": "RUNNER OF POOL C"
+      },
+      {
+        "id": 42,
+        "date": "20.12.2023",
+        "time": "8:30 AM",
+        "ground": "3",
+        "stage": "SF2",
+        "home_team": "WINNER OF POOL B",
+        "away_team": "RUNNER OF POOL D"
+      },
+      {
+        "id": 43,
+        "date": "20.12.2023",
+        "time": "9:30 AM",
+        "ground": "2",
+        "stage": "SF3",
+        "home_team": "RUNNER OF POOL A",
+        "away_team": "WINNER OF POOL C"
+      },
+      {
+        "id": 44,
+        "date": "20.12.2023",
+        "time": "9:30 AM",
+        "ground": "4",
+        "stage": "SF4",
+        "home_team": "RUNNER OF POOL B",
+        "away_team": "WINNER OF POOL D"
+      },
+      {
+        "id": 45,
+        "date": "21.12.2023",
+        "time": "6:30 PM",
+        "ground": "1",
+        "stage": "F1",
+        "home_team": "SF 1",
+        "away_team": "SF 4"
+      },
+      {
+        "id": 46,
+        "date": "21.12.2023",
+        "time": "6:30 PM",
+        "ground": "3",
+        "stage": "F2",
+        "home_team": "SF 2",
+        "away_team": "SF 3"
+      },
+      {
+        "id": 47,
+        "date": "22.12.2023",
+        "time": "9:00 AM",
+        "ground": "3",
+        "stage": "3rd PLACE",
+        "home_team": "LOSER OF F1",
+        "away_team": "LOSER OF F2"
+      },
+      {
+        "id": 48,
+        "date": "22.12.2023",
+        "time": "10:30 AM",
+        "ground": "1",
+        "stage": "FINAL",
+        "home_team": "WINNER OF F1",
+        "away_team": "WINNER OF F2"
+      }
+    ],
   "Tennis Women":
-  [
-    {
-      "id": 1,
-      "date": "15.12.2023",
-      "time": "8:30 AM",
-      "pool": "D",
-      "ground": "1",
-      "home_team": "IIT Roorkee",
-      "away_team": "IIT Kanpur",
-      "logo_home_team":  require('./Assests/IITs/IITR.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITK.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 2,
-      "date": "15.12.2023",
-      "time": "8:30 AM",
-      "pool": "C",
-      "ground": "3",
-      "home_team": "IIT Dhanbad",
-      "away_team": "IIT Indore",
-      "logo_home_team": require('./Assests/IITs/IITDH.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITI.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 3,
-      "date": "15.12.2023",
-      "time": "9:30 AM",
-      "pool": "B",
-      "ground": "2",
-      "home_team": "IIT Delhi",
-      "away_team": "IIT Patna",
-      "logo_home_team": require('./Assests/IITs/IITD.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITP.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 4,
-      "date": "15.12.2023",
-      "time": "9:30 AM",
-      "pool": "A",
-      "ground": "4",
-      "home_team": "IIT Ropar",
-      "away_team": "IIT Guwahati",
-      "logo_home_team": require('./Assests/IITs/IITRPR.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITG.jpg')
-    },
-    {
-      "id": 5,
-      "date": "15.12.2023",
-      "time": "10:00 AM",
-      "pool": "D",
-      "ground": "1",
-      "home_team": "IIT Hyderabad",
-      "away_team": "IIT Jodhpur",
-      "logo_home_team": require('./Assests/IITs/IITH.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITJ.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 6,
-      "date": "15.12.2023",
-      "time": "10:00 AM",
-      "pool": "C",
-      "ground": "3",
-      "home_team": "IIT Madras",
-      "away_team": "IIT Mandi",
-      "logo_home_team": require('./Assests/IITs/IITM.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 7,
-      "date": "15.12.2023",
-      "time": "11:00 AM",
-      "pool": "B",
-      "ground": "2",
-      "home_team": "IIT Bhubaneswar",
-      "away_team": "IIT Bombay",
-      "logo_home_team": require('./Assests/IITs/IITBBS.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITB.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 8,
-      "date": "15.12.2023",
-      "time": "11:00 AM",
-      "pool": "A",
-      "ground": "4",
-      "home_team": "IIT Gandhinagar",
-      "away_team": "IIT Kharagpur",
-      "logo_home_team": require('./Assests/IITs/IITGN.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITKGP.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 9,
-      "date": "16.12.2023",
-      "time": "8:30 AM",
-      "pool": "D",
-      "ground": "1",
-      "home_team": "IIT Roorkee",
-      "away_team": "IIT Jodhpur",
-      "logo_home_team": require('./Assests/IITs/IITR.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITJ.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 10,
-      "date": "16.12.2023",
-      "time": "8:30 AM",
-      "pool": "C",
-      "ground": "3",
-      "home_team": "IIT Dhanbad",
-      "away_team": "IIT Mandi",
-      "logo_home_team": require('./Assests/IITs/IITDH.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 11,
-      "date": "16.12.2023",
-      "time": "9:30 AM",
-      "pool": "B",
-      "ground": "2",
-      "home_team": "IIT Delhi",
-      "away_team": "IIT Bombay",
-      "logo_home_team": require('./Assests/IITs/IITD.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITB.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 12,
-      "date": "16.12.2023",
-      "time": "9:30 AM",
-      "pool": "A",
-      "ground": "4",
-      "home_team": "IIT Ropar",
-      "away_team": "IIT Kharagpur",
-      "logo_home_team": require('./Assests/IITs/IITRPR.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITKGP.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 13,
-      "date": "16.12.2023",
-      "time": "10:00 AM",
-      "pool": "D",
-      "ground": "1",
-      "home_team": "IIT Hyderabad",
-      "away_team": "IIT Kanpur",
-      "logo_home_team": require('./Assests/IITs/IITH.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITK.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 14,
-      "date": "16.12.2023",
-      "time": "10:00 AM",
-      "pool": "C",
-      "ground": "3",
-      "home_team": "IIT Madras",
-      "away_team": "IIT Indore",
-      "logo_home_team": require('./Assests/IITs/IITM.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITI.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 15,
-      "date": "16.12.2023",
-      "time": "11:00 AM",
-      "pool": "B",
-      "ground": "2",
-      "home_team": "IIT Bhubaneswar",
-      "away_team": "IIT Patna",
-      "logo_home_team": require('./Assests/IITs/IITBBS.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITP.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 16,
-      "date": "16.12.2023",
-      "time": "11:00 AM",
-      "pool": "A",
-      "ground": "4",
-      "home_team": "IIT Gandhinagar",
-      "away_team": "IIT Guwahati",
-      "logo_home_team": require('./Assests/IITs/IITGN.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITG.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 17,
-      "date": "17.12.2023",
-      "time": "8:30 AM",
-      "pool": "D",
-      "ground": "1",
-      "home_team": "IIT Roorkee",
-      "away_team": "IIT Hyderabad",
-      "logo_home_team": require('./Assests/IITs/IITR.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITH.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 18,
-      "date": "17.12.2023",
-      "time": "8:30 AM",
-      "pool": "C",
-      "ground": "3",
-      "home_team": "IIT Dhanbad",
-      "away_team": "IIT Madras",
-      "logo_home_team": require('./Assests/IITs/IITDH.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITM.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 19,
-      "date": "17.12.2023",
-      "time": "9:30 AM",
-      "pool": "B",
-      "ground": "2",
-      "home_team": "IIT Delhi",
-      "away_team": "IIT Bhubaneswar",
-      "logo_home_team": require('./Assests/IITs/IITD.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITBBS.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 20,
-      "date": "17.12.2023",
-      "time": "9:30 AM",
-      "pool": "A",
-      "ground": "4",
-      "home_team": "IIT Ropar",
-      "away_team": "IIT Gandhinagar",
-      "logo_home_team": require('./Assests/IITs/IITRPR.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITGN.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 21,
-      "date": "17.12.2023",
-      "time": "10:00 AM",
-      "pool": "D",
-      "ground": "1",
-      "home_team": "IIT Kanpur",
-      "away_team": "IIT Jodhpur",
-      "logo_home_team": require('./Assests/IITs/IITK.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITJ.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 22,
-      "date": "17.12.2023",
-      "time": "10:00 AM",
-      "pool": "C",
-      "ground": "3",
-      "home_team": "IIT Indore",
-      "away_team": "IIT Mandi",
-      "logo_home_team": require('./Assests/IITs/IITI.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 23,
-      "date": "17.12.2023",
-      "time": "11:00 AM",
-      "pool": "B",
-      "ground": "2",
-      "home_team": "IIT Patna",
-      "away_team": "IIT Bombay",
-      "logo_home_team": require('./Assests/IITs/IITP.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITB.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 24,
-      "date": "17.12.2023",
-      "time": "11:00 AM",
-      "pool": "A",
-      "ground": "4",
-      "home_team": "IIT Guwahati",
-      "away_team": "IIT Kharagpur",
-      "logo_home_team": require('./Assests/IITs/IITG.jpg'),
-      "logo_away_team": require('./Assests/IITs/IITKGP.jpg'),
-      statement:"Match is yet to happen"
-    },
-    {
-      "id": 25,
-      "date": "19.12.2023",
-      "time": "5:30 PM",
-      "ground": "1",
-      "stage": "SF1",
-      "home_team": "WINNER OF POOL A",
-      "away_team": "RUNNER OF POOL C"
-    },
-    {
-      "id": 26,
-      "date": "19.12.2023",
-      "time": "5:30 PM",
-      "ground": "3",
-      "stage": "SF2",
-      "home_team": "WINNER OF POOL B",
-      "away_team": "RUNNER OF POOL D"
-    },
-    {
-      "id": 27,
-      "date": "19.12.2023",
-      "time": "7:00 PM",
-      "ground": "2",
-      "stage": "SF3",
-      "home_team": "RUNNER OF POOL A",
-      "away_team": "WINNER OF POOL C"
-    },
-    {
-      "id": 28,
-      "date": "19.12.2023",
-      "time": "7:00 PM",
-      "ground": "4",
-      "stage": "SF4",
-      "home_team": "RUNNER OF POOL B",
-      "away_team": "WINNER OF POOL D"
-    },
-    {
-      "id": 29,
-      "date": "20.12.2023",
-      "time": "9:00 AM",
-      "ground": "1",
-      "stage": "F1",
-      "home_team": "SF 1",
-      "away_team": "SF 4"
-    },
-    {
-      "id": 30,
-      "date": "20.12.2023",
-      "time": "9:00 AM",
-      "ground": "3",
-      "stage": "F2",
-      "home_team": "SF 2",
-      "away_team": "SF 3"
-    },
-    {
-      "id": 31,
-      "date": "21.12.2023",
-      "time": "5:30 PM",
-      "ground": "2",
-      "stage": "3rd PLACE",
-      "home_team": "LOSER OF F1",
-      "away_team": "LOSER OF F2"
-    },
-    {
-      "id": 32,
-      "date": "21.12.2023",
-      "time": "5:00 PM",
-      "ground": "4",
-      "stage": "FINAL",
-      "home_team": "WINNER OF F1",
-      "away_team": "WINNER OF F2"
-    }
-  ]          
+    [
+      {
+        "id": 1,
+        "date": "15.12.2023",
+        "time": "8:30 AM",
+        "pool": "D",
+        "ground": "1",
+        "home_team": "IIT Roorkee",
+        "away_team": "IIT Kanpur",
+        "logo_home_team": require('./Assests/IITs/IITR.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITK.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 2,
+        "date": "15.12.2023",
+        "time": "8:30 AM",
+        "pool": "C",
+        "ground": "3",
+        "home_team": "IIT Dhanbad",
+        "away_team": "IIT Indore",
+        "logo_home_team": require('./Assests/IITs/IITDH.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITI.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 3,
+        "date": "15.12.2023",
+        "time": "9:30 AM",
+        "pool": "B",
+        "ground": "2",
+        "home_team": "IIT Delhi",
+        "away_team": "IIT Patna",
+        "logo_home_team": require('./Assests/IITs/IITD.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITP.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 4,
+        "date": "15.12.2023",
+        "time": "9:30 AM",
+        "pool": "A",
+        "ground": "4",
+        "home_team": "IIT Ropar",
+        "away_team": "IIT Guwahati",
+        "logo_home_team": require('./Assests/IITs/IITRPR.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITG.jpg')
+      },
+      {
+        "id": 5,
+        "date": "15.12.2023",
+        "time": "10:00 AM",
+        "pool": "D",
+        "ground": "1",
+        "home_team": "IIT Hyderabad",
+        "away_team": "IIT Jodhpur",
+        "logo_home_team": require('./Assests/IITs/IITH.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITJ.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 6,
+        "date": "15.12.2023",
+        "time": "10:00 AM",
+        "pool": "C",
+        "ground": "3",
+        "home_team": "IIT Madras",
+        "away_team": "IIT Mandi",
+        "logo_home_team": require('./Assests/IITs/IITM.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 7,
+        "date": "15.12.2023",
+        "time": "11:00 AM",
+        "pool": "B",
+        "ground": "2",
+        "home_team": "IIT Bhubaneswar",
+        "away_team": "IIT Bombay",
+        "logo_home_team": require('./Assests/IITs/IITBBS.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITB.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 8,
+        "date": "15.12.2023",
+        "time": "11:00 AM",
+        "pool": "A",
+        "ground": "4",
+        "home_team": "IIT Gandhinagar",
+        "away_team": "IIT Kharagpur",
+        "logo_home_team": require('./Assests/IITs/IITGN.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITKGP.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 9,
+        "date": "16.12.2023",
+        "time": "8:30 AM",
+        "pool": "D",
+        "ground": "1",
+        "home_team": "IIT Roorkee",
+        "away_team": "IIT Jodhpur",
+        "logo_home_team": require('./Assests/IITs/IITR.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITJ.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 10,
+        "date": "16.12.2023",
+        "time": "8:30 AM",
+        "pool": "C",
+        "ground": "3",
+        "home_team": "IIT Dhanbad",
+        "away_team": "IIT Mandi",
+        "logo_home_team": require('./Assests/IITs/IITDH.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 11,
+        "date": "16.12.2023",
+        "time": "9:30 AM",
+        "pool": "B",
+        "ground": "2",
+        "home_team": "IIT Delhi",
+        "away_team": "IIT Bombay",
+        "logo_home_team": require('./Assests/IITs/IITD.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITB.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 12,
+        "date": "16.12.2023",
+        "time": "9:30 AM",
+        "pool": "A",
+        "ground": "4",
+        "home_team": "IIT Ropar",
+        "away_team": "IIT Kharagpur",
+        "logo_home_team": require('./Assests/IITs/IITRPR.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITKGP.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 13,
+        "date": "16.12.2023",
+        "time": "10:00 AM",
+        "pool": "D",
+        "ground": "1",
+        "home_team": "IIT Hyderabad",
+        "away_team": "IIT Kanpur",
+        "logo_home_team": require('./Assests/IITs/IITH.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITK.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 14,
+        "date": "16.12.2023",
+        "time": "10:00 AM",
+        "pool": "C",
+        "ground": "3",
+        "home_team": "IIT Madras",
+        "away_team": "IIT Indore",
+        "logo_home_team": require('./Assests/IITs/IITM.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITI.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 15,
+        "date": "16.12.2023",
+        "time": "11:00 AM",
+        "pool": "B",
+        "ground": "2",
+        "home_team": "IIT Bhubaneswar",
+        "away_team": "IIT Patna",
+        "logo_home_team": require('./Assests/IITs/IITBBS.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITP.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 16,
+        "date": "16.12.2023",
+        "time": "11:00 AM",
+        "pool": "A",
+        "ground": "4",
+        "home_team": "IIT Gandhinagar",
+        "away_team": "IIT Guwahati",
+        "logo_home_team": require('./Assests/IITs/IITGN.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITG.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 17,
+        "date": "17.12.2023",
+        "time": "8:30 AM",
+        "pool": "D",
+        "ground": "1",
+        "home_team": "IIT Roorkee",
+        "away_team": "IIT Hyderabad",
+        "logo_home_team": require('./Assests/IITs/IITR.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITH.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 18,
+        "date": "17.12.2023",
+        "time": "8:30 AM",
+        "pool": "C",
+        "ground": "3",
+        "home_team": "IIT Dhanbad",
+        "away_team": "IIT Madras",
+        "logo_home_team": require('./Assests/IITs/IITDH.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITM.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 19,
+        "date": "17.12.2023",
+        "time": "9:30 AM",
+        "pool": "B",
+        "ground": "2",
+        "home_team": "IIT Delhi",
+        "away_team": "IIT Bhubaneswar",
+        "logo_home_team": require('./Assests/IITs/IITD.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITBBS.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 20,
+        "date": "17.12.2023",
+        "time": "9:30 AM",
+        "pool": "A",
+        "ground": "4",
+        "home_team": "IIT Ropar",
+        "away_team": "IIT Gandhinagar",
+        "logo_home_team": require('./Assests/IITs/IITRPR.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITGN.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 21,
+        "date": "17.12.2023",
+        "time": "10:00 AM",
+        "pool": "D",
+        "ground": "1",
+        "home_team": "IIT Kanpur",
+        "away_team": "IIT Jodhpur",
+        "logo_home_team": require('./Assests/IITs/IITK.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITJ.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 22,
+        "date": "17.12.2023",
+        "time": "10:00 AM",
+        "pool": "C",
+        "ground": "3",
+        "home_team": "IIT Indore",
+        "away_team": "IIT Mandi",
+        "logo_home_team": require('./Assests/IITs/IITI.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 23,
+        "date": "17.12.2023",
+        "time": "11:00 AM",
+        "pool": "B",
+        "ground": "2",
+        "home_team": "IIT Patna",
+        "away_team": "IIT Bombay",
+        "logo_home_team": require('./Assests/IITs/IITP.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITB.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 24,
+        "date": "17.12.2023",
+        "time": "11:00 AM",
+        "pool": "A",
+        "ground": "4",
+        "home_team": "IIT Guwahati",
+        "away_team": "IIT Kharagpur",
+        "logo_home_team": require('./Assests/IITs/IITG.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITKGP.jpg'),
+        statement: "Match is yet to happen"
+      },
+      {
+        "id": 25,
+        "date": "19.12.2023",
+        "time": "5:30 PM",
+        "ground": "1",
+        "stage": "SF1",
+        "home_team": "WINNER OF POOL A",
+        "away_team": "RUNNER OF POOL C"
+      },
+      {
+        "id": 26,
+        "date": "19.12.2023",
+        "time": "5:30 PM",
+        "ground": "3",
+        "stage": "SF2",
+        "home_team": "WINNER OF POOL B",
+        "away_team": "RUNNER OF POOL D"
+      },
+      {
+        "id": 27,
+        "date": "19.12.2023",
+        "time": "7:00 PM",
+        "ground": "2",
+        "stage": "SF3",
+        "home_team": "RUNNER OF POOL A",
+        "away_team": "WINNER OF POOL C"
+      },
+      {
+        "id": 28,
+        "date": "19.12.2023",
+        "time": "7:00 PM",
+        "ground": "4",
+        "stage": "SF4",
+        "home_team": "RUNNER OF POOL B",
+        "away_team": "WINNER OF POOL D"
+      },
+      {
+        "id": 29,
+        "date": "20.12.2023",
+        "time": "9:00 AM",
+        "ground": "1",
+        "stage": "F1",
+        "home_team": "SF 1",
+        "away_team": "SF 4"
+      },
+      {
+        "id": 30,
+        "date": "20.12.2023",
+        "time": "9:00 AM",
+        "ground": "3",
+        "stage": "F2",
+        "home_team": "SF 2",
+        "away_team": "SF 3"
+      },
+      {
+        "id": 31,
+        "date": "21.12.2023",
+        "time": "5:30 PM",
+        "ground": "2",
+        "stage": "3rd PLACE",
+        "home_team": "LOSER OF F1",
+        "away_team": "LOSER OF F2"
+      },
+      {
+        "id": 32,
+        "date": "21.12.2023",
+        "time": "5:00 PM",
+        "ground": "4",
+        "stage": "FINAL",
+        "home_team": "WINNER OF F1",
+        "away_team": "WINNER OF F2"
+      }
+    ]
 };
 
 const athleticsMatches = {

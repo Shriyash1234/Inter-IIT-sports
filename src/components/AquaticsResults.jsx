@@ -83,13 +83,13 @@ const Results = () => {
       for (let i = index - sindex; i < eventDivs.length; i++) {
         eventDivs[i].style.transform = `translateY(${elementHeight * 1.4}px)`;
       }
-      if(waterpoloDiv) waterpoloDiv.style.marginTop = `${elementHeight * 1.4}px`;
+      if (waterpoloDiv) waterpoloDiv.style.marginTop = `${elementHeight * 1.4}px`;
       targetDiv.style.transform = "translateY(0)";
     } else {
       for (let i = index - sindex; i < eventDivs.length; i++) {
         eventDivs[i].style.transform = "translateY(0)";
       }
-      if(waterpoloDiv) waterpoloDiv.style.marginTop = `0px`;
+      if (waterpoloDiv) waterpoloDiv.style.marginTop = `0px`;
     }
   };
 
@@ -1048,10 +1048,10 @@ const Results = () => {
                 <p className='event-timing'>50M Breast Stroke</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable jsonData={Day5BreasStroke50W}  visiblity={isVisible[19] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day5BreasStroke50W} visiblity={isVisible[19] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(20,19)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(20, 19)}>
                 <div className='vertical-line-blue'></div>
                 <img
                   src={require('./Assests/icons/relay.png')}
@@ -1065,7 +1065,7 @@ const Results = () => {
                 <JsonToTable jsonData={Day5MedleyRelay50W} visiblity={isVisible[20] ? "visible" : "not-visible"} />
               </div>
 
-              <div className='event-div results-event-div' onClick={() => toggleVisibility(21,19)}>
+              <div className='event-div results-event-div' onClick={() => toggleVisibility(21, 19)}>
                 <div className='vertical-line-blue'></div>
                 <img
                   src={require('./Assests/icons/freesyle.png')}
@@ -1076,7 +1076,7 @@ const Results = () => {
                 <p className='event-timing'>1500M Freestyle</p>
                 <p className='event-timing' style={{ color: '#7f848c' }}>Final</p>
                 <ChevronDown className='dropdown' />
-                <JsonToTable jsonData={Day5FreeStyle1500M}  visiblity={isVisible[21] ? "visible" : "not-visible"} />
+                <JsonToTable jsonData={Day5FreeStyle1500M} visiblity={isVisible[21] ? "visible" : "not-visible"} />
               </div>
 
               <div className='event-div results-event-div' onClick={() => toggleVisibility(22, 19)}>
@@ -1358,8 +1358,8 @@ const waterPoloMatches = {
       away_team: 'IIT KANPUR',
       logo_home_team: require('./Assests/IITs/IITB.jpg'),
       logo_away_team: require('./Assests/IITs/IITK.jpg'),
-      home_score:'10',
-      away_score:'7',
+      home_score: '10',
+      away_score: '7',
     },
     {
       id: 2,
@@ -1370,8 +1370,8 @@ const waterPoloMatches = {
       away_team: 'IIT GANDHINAGAR',
       logo_home_team: require('./Assests/IITs/IITM.jpg'),
       logo_away_team: require('./Assests/IITs/IITGN.jpg'),
-      home_score:'12',
-      away_score:'2',
+      home_score: '12',
+      away_score: '2',
     },
     {
       id: 3,
@@ -1382,8 +1382,8 @@ const waterPoloMatches = {
       away_team: 'IIT KHARAGPUR',
       logo_home_team: require('./Assests/IITs/IITDH.jpg'),
       logo_away_team: require('./Assests/IITs/IITKGP.jpg'),
-      home_score:'4',
-      away_score:'10',
+      home_score: '4',
+      away_score: '10',
     },
     {
       id: 4,
@@ -1394,8 +1394,8 @@ const waterPoloMatches = {
       away_team: 'IIT GUWAHATI',
       logo_home_team: require('./Assests/IITs/IITD.jpg'),
       logo_away_team: require('./Assests/IITs/IITG.jpg'),
-      home_score:'11',
-      away_score:'3',
+      home_score: '11',
+      away_score: '3',
     },
   ],
   "Thursday 5th October": [
@@ -1408,8 +1408,8 @@ const waterPoloMatches = {
       away_team: 'IIT ROORKEE',
       logo_home_team: require('./Assests/IITs/IITB.jpg'),
       logo_away_team: require('./Assests/IITs/IITR.jpg'),
-      home_score:'7',
-      away_score:'3',
+      home_score: '7',
+      away_score: '3',
     },
     {
       id: 6,
@@ -1420,8 +1420,8 @@ const waterPoloMatches = {
       away_team: 'IIT BHU',
       logo_home_team: require('./Assests/IITs/IITD.jpg'),
       logo_away_team: require('./Assests/IITs/IITBHU.jpg'),
-      home_score:'14',
-      away_score:'3',
+      home_score: '14',
+      away_score: '3',
     },
     {
       id: 7,
@@ -1432,8 +1432,8 @@ const waterPoloMatches = {
       away_team: 'IIT KANPUR',
       logo_home_team: require('./Assests/IITs/IITR.jpg'),
       logo_away_team: require('./Assests/IITs/IITK.jpg'),
-      home_score:'10',
-      away_score:'4',
+      home_score: '10',
+      away_score: '4',
     },
     {
       id: 8,
@@ -1444,8 +1444,8 @@ const waterPoloMatches = {
       away_team: 'IIT GUWAHATI',
       logo_home_team: require('./Assests/IITs/IITBHU.jpg'),
       logo_away_team: require('./Assests/IITs/IITG.jpg'),
-      home_score:'3',
-      away_score:'11',
+      home_score: '3',
+      away_score: '11',
     },
 
   ],
@@ -1458,10 +1458,10 @@ const waterPoloMatches = {
     away_team: 'IIT ROORKEE',
     logo_home_team: require('./Assests/IITs/IITKGP.jpg'),
     logo_away_team: require('./Assests/IITs/IITR.jpg'),
-      home_score:'5',
-      home_p:' ( 3 ) ',
-      away_score:'5',
-      away_p:' ( 2 ) ',
+    home_score: '5',
+    home_p: ' ( 3 ) ',
+    away_score: '5',
+    away_p: ' ( 2 ) ',
   },
   {
     id: 10,
@@ -1472,10 +1472,10 @@ const waterPoloMatches = {
     away_team: 'IIT GANDHINAGAR',
     logo_home_team: require('./Assests/IITs/IITD.jpg'),
     logo_away_team: require('./Assests/IITs/IITGN.jpg'),
-      home_score:'6',
-      home_p:' ( 4 ) ',
-      away_score:'6',
-      away_p:' ( 2 ) ',
+    home_score: '6',
+    home_p: ' ( 4 ) ',
+    away_score: '6',
+    away_p: ' ( 2 ) ',
   },
   {
     id: 11,
@@ -1486,8 +1486,8 @@ const waterPoloMatches = {
     away_team: 'IIT BOMBAY',
     logo_home_team: require('./Assests/IITs/IITISM.jpg'),
     logo_away_team: require('./Assests/IITs/IITB.jpg'),
-      home_score:'8',
-      away_score:'26',
+    home_score: '8',
+    away_score: '26',
   },
   {
     id: 12,
@@ -1498,8 +1498,8 @@ const waterPoloMatches = {
     away_team: 'IIT MADRAS',
     logo_home_team: require('./Assests/IITs/IITG.jpg'),
     logo_away_team: require('./Assests/IITs/IITM.jpg'),
-      home_score:'0',
-      away_score:'13',
+    home_score: '0',
+    away_score: '13',
   },
   ],
   "Saturday 7th October": [{
@@ -1511,8 +1511,8 @@ const waterPoloMatches = {
     away_team: 'IIT MADRAS',
     logo_home_team: require('./Assests/IITs/IITKGP.jpg'),
     logo_away_team: require('./Assests/IITs/IITM.jpg'),
-      home_score:'4',
-      away_score:'6',
+    home_score: '4',
+    away_score: '6',
   },
   {
     id: 14,
@@ -1523,8 +1523,8 @@ const waterPoloMatches = {
     away_team: 'IIT BOMBAY',
     logo_home_team: require('./Assests/IITs/IITD.jpg'),
     logo_away_team: require('./Assests/IITs/IITB.jpg'),
-      home_score:'3',
-      away_score:'12',
+    home_score: '3',
+    away_score: '12',
   },
   ],
   "Sunday 8th October": [{
@@ -1536,8 +1536,8 @@ const waterPoloMatches = {
     away_team: 'IIT KHARAGPUR',
     logo_home_team: require('./Assests/IITs/IITD.jpg'),
     logo_away_team: require('./Assests/IITs/IITKGP.jpg'),
-      home_score:'7',
-      away_score:'8',
+    home_score: '7',
+    away_score: '8',
   },
   {
     id: 16,
@@ -1548,8 +1548,8 @@ const waterPoloMatches = {
     away_team: 'IIT BOMBAY',
     logo_home_team: require('./Assests/IITs/IITM.jpg'),
     logo_away_team: require('./Assests/IITs/IITB.jpg'),
-      home_score:'10',
-      away_score:'6',
+    home_score: '10',
+    away_score: '6',
   },
   ],
 };

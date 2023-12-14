@@ -7,8 +7,8 @@ import Home from './components/home';
 import AquaticsSchedule from './components/AquaticsSchedule';
 import AquaticsResults from './components/AquaticsResults';
 import About from './components/about';
-import Schedule from './components/Schedule'
-import Results from './components/Results';
+import Schedule from './components/schedule'
+import Results from './components/results';
 
 import './index.css';
 

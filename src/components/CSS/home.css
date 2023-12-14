@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-.homapage-logo{
+.homapage-logo {
     position: absolute;
     text-align: center;
     min-width: 20vw;
@@ -11,8 +11,10 @@
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    align-items: center; /* Center vertically */
-    margin: auto; /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    margin: auto;
+    /* Center horizontally */
     /* left: calc(50vw - 150px); */
     left: calc(50vw - 220px);
     bottom: 25vh;
@@ -38,7 +40,7 @@
     align-items: center;
     height: 30vh;
 }
-  
+
 .centered-heading {
     color: white;
     text-align: center;
@@ -47,166 +49,203 @@
     margin-bottom: 80px;
     line-height: 1.5;
     font-size: 2.5rem;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.1rem;
     z-index: 10;
 }
-.home-date{
+
+.home-date {
     font-family: 'open sans';
 }
-.name-place{
+
+.name-place {
     display: flex;
-   height: 50px;
+    height: 50px;
 }
-#myVideo{
+
+#myVideo {
     position: absolute;
     width: 100vw;
     height: 100vh;
     object-fit: cover;
 }
+
 @media all and (max-width:1220px) {
-    .heading{
+    .heading {
         font-size: 8rem;
     }
 }
-.instagramPost{
+
+.instagramPost {
     width: 350px;
     max-width: 90%;
 }
-.instagram-media{
+
+.instagram-media {
     width: 350px !important;
-    min-width:250px !important;
+    min-width: 250px !important;
     height: 650px !important;
 }
-.Instagram-posts{
+
+.Instagram-posts {
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.Latest-stories{
+
+.Latest-stories {
     text-align: center;
     font-size: 3rem;
     font-family: 'Fjalla One';
     margin-top: 30px;
 }
-.mobile-stories{
+
+.mobile-stories {
     display: none;
 }
+
 @media all and (max-width:991px) {
-    .heading{
+    .heading {
         top: 37vh;
         font-size: 6rem;
         left: 20px;
     }
-    .homapage-logo{
+
+    .homapage-logo {
         /* height: 250px;
         width: 250px; */
         left: calc(50vw - 200px);
         bottom: 42vh;
     }
-    .centered-heading{
+
+    .centered-heading {
         font-size: 2rem;
         margin-top: 60px;
     }
-    .mobile-stories{
+
+    .mobile-stories {
         display: block;
     }
-    .laptop-stories{
+
+    .laptop-stories {
         display: none;
     }
-    .instagramPost{
-        width:80vw;
+
+    .instagramPost {
+        width: 80vw;
         margin: 0px auto;
         height: 580px;
     }
-    .instagram-media{
-        width:80vw !important;
+
+    .instagram-media {
+        width: 80vw !important;
         height: 500px !important;
         margin: auto !important;
     }
 }
+
 @media all and (max-width:768px) {
-    .heading{
+    .heading {
         top: 32vh;
         font-size: 6rem;
     }
-    .remaining-time-div{
+
+    .remaining-time-div {
         font-size: 2.5rem;
         bottom: 150px;
     }
-    .duration{
+
+    .duration {
         font-size: 1.2rem;
     }
-    .homapge-logo{
+
+    .homapge-logo {
         left: calc(50vw - 150px);
     }
-    .time-div p{
+
+    .time-div p {
         margin-bottom: 10px;
     }
-    .homapage-logo{
-       bottom: 35vh;
+
+    .homapage-logo {
+        bottom: 35vh;
     }
-    .centered-heading{
+
+    .centered-heading {
         font-size: 1.7rem;
         margin-top: 60px;
     }
+
     .image-section {
         height: 50vh;
-    } 
+    }
+
     .blue-section {
         height: 50vh;
     }
-    .IITGN-icon{
+
+    .IITGN-icon {
         margin-top: 5px;
         width: 30px;
         height: 30px;
     }
 }
+
 @media all and (max-width:576px) {
-    .centered-heading{
+    .centered-heading {
         font-size: 1.5rem;
     }
-    .homapage-logo{
+
+    .homapage-logo {
         bottom: 30vh;
     }
-    .name-place{
+
+    .name-place {
         flex-direction: column;
     }
-    .IITGN-icon{
+
+    .IITGN-icon {
         position: relative;
         top: 30px;
         left: 15px;
     }
-    .Latest-stories{
+
+    .Latest-stories {
         font-size: 2.2rem;
     }
 }
+
 @media all and (max-width:479px) {
-    .heading{
+    .heading {
         top: 32vh;
         font-size: 5rem;
     }
-    .centered-heading{
+
+    .centered-heading {
         font-size: 1.3rem;
         margin-top: 60px;
     }
-    .homapage-logo{
+
+    .homapage-logo {
         width: 300px;
         left: calc(50vw - 150px);
         bottom: calc(50vh - 190px);
     }
-    .match-statement{
+
+    .match-statement {
         width: 50%;
         text-align: center;
     }
 }
+
 @media all and (max-width:380px) {
-    .heading{
+    .heading {
         top: 32vh;
         font-size: 4rem;
     }
-    .remaining-time-div{
+
+    .remaining-time-div {
         font-size: 2rem;
         bottom: 150px;
     }

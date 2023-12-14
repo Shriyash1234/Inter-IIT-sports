@@ -171,7 +171,7 @@ const Caraousel = () => {
         >
 
             <div className="carousel-container">
-            <h2 className='about-us'>Participating IITs</h2>
+                <h2 className='about-us'>Participating IITs</h2>
                 <div className="carousel-cards">
                     {displayedCards.map((item) => (
                         <div key={item.id} className="carousel-card">

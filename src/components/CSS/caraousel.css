@@ -50,7 +50,7 @@
     justify-content: center;
     position: relative;
     background-color: #fff;
-    top:50px;
+    top: 50px;
 }
 
 .carousel-cards {
@@ -93,7 +93,7 @@
     /* Center the "Know more" link */
 }
 
-.buttons-carousel{
+.buttons-carousel {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,11 +145,13 @@
         font-size: 1.6rem;
     }
 }
+
 @media all and (max-width: 991px) {
-    .carousel-container{
+    .carousel-container {
         bottom: 0px;
     }
 }
+
 @media all and (max-width: 576px) {
     .carousel-card {
         width: 100%;

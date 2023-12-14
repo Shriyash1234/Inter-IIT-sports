@@ -1,133 +1,145 @@
 .about-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: #f0f8ff;  */
-    margin-top: 50px;
-    padding: 30px 20px;
-    position: relative;
-    top: 50px;
-    width: 75%;
-    margin: auto;
-    scroll-margin-top:110px;
-  }
-  
-  .left-section {
-    flex: 1;
-    align-self: flex-start; /* Align the left section to the top */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 70px;
-  }
-  
-  .right-section {
-    flex: 2;
-    font-family: 'Montserrat',sans-serif;
-    max-width: 750px; /* Set the maximum width for the right section */
-  }
-  
-  .about-the-games{
-    font-size: 2em;
-    font-weight: 700;
-    margin-bottom: 10px;
-    font-size: 4.5rem;
-    line-height: 100%;
-    color: rgb(0, 0, 0);
-    font-family: "Fjalla One", Helvetica, sans-serif;
-    line-height: 80px;
-    letter-spacing: 2px;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #f0f8ff;  */
+  margin-top: 50px;
+  padding: 30px 20px;
+  position: relative;
+  top: 50px;
+  width: 75%;
+  margin: auto;
+  scroll-margin-top: 110px;
+}
 
-  /* h1::first-child {
+.left-section {
+  flex: 1;
+  align-self: flex-start;
+  /* Align the left section to the top */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 70px;
+}
+
+.right-section {
+  flex: 2;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 750px;
+  /* Set the maximum width for the right section */
+}
+
+.about-the-games {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 4.5rem;
+  line-height: 100%;
+  color: rgb(0, 0, 0);
+  font-family: "Fjalla One", Helvetica, sans-serif;
+  line-height: 80px;
+  letter-spacing: 2px;
+}
+
+/* h1::first-child {
     margin-bottom: 1rem; 
   } */
-  
-  .sub-heading {
-    margin-bottom: 2.2rem;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    color: #1a1616d6;
-    word-wrap: break-word;
-  }
-  
-  .about-paragraph {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #2d2d2d;
-    font-weight: 100;
-    word-wrap: break-word;
-  }
 
-  .button-plus {
-    font-size: 2em;
-    font-weight: bold;
-    width: 70px;
-    height: 70px;
-    border: none;
-    background-color: #007BFF;
-    color: #fff;
-    cursor: pointer;
-    font-family: "Olympic Sans", Arial, Helvetica, sans-serif;
-    border-radius: 50%;
-    justify-content: center;
-    border-style: solid;
-    border-width: 0.5rem;
-    margin-top: 0.5rem;
-  }
-  
-  .button-plus:hover {
-    background-color: #0056b3;
-  }
-  
-  .iit-names {
-    white-space: nowrap; /* Prevent line breaks within the span */
-  }
-  .inter-iit-logo{
-    width: 100%;
-  }
+.sub-heading {
+  margin-bottom: 2.2rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #1a1616d6;
+  word-wrap: break-word;
+}
 
-  .bold {
-    font-weight: bold;
-  }
-  
+.about-paragraph {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #2d2d2d;
+  font-weight: 100;
+  word-wrap: break-word;
+}
+
+.button-plus {
+  font-size: 2em;
+  font-weight: bold;
+  width: 70px;
+  height: 70px;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Olympic Sans", Arial, Helvetica, sans-serif;
+  border-radius: 50%;
+  justify-content: center;
+  border-style: solid;
+  border-width: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.button-plus:hover {
+  background-color: #0056b3;
+}
+
+.iit-names {
+  white-space: nowrap;
+  /* Prevent line breaks within the span */
+}
+
+.inter-iit-logo {
+  width: 100%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 @media all and (max-width:1300px) {
-    .about-container {
-        width: 85%;
-        margin: auto;
-      }
+  .about-container {
+    width: 85%;
+    margin: auto;
+  }
 }
+
 @media all and (max-width:991px) {
-    .about-container {
-        top:-100px ;
-        flex-direction: column;
-        margin: 0px auto;
-    }
-    .hide-br {
-        display: none;
-    }
+  .about-container {
+    top: -100px;
+    flex-direction: column;
+    margin: 0px auto;
+  }
+
+  .hide-br {
+    display: none;
+  }
 }
+
 @media all and (max-width:768px) {
-    .left-section{
-        margin-right: 0px;
-        flex-direction: column-reverse;
-        margin-top: 20px;
-    }
-    .about-paragraph{
-        font-size: 1.2rem;
-    }
-    .about-the-games{
-        font-size: 2.1rem;
-    }
-    .about-container {
-       width: 90%;
-       bottom: 0px;
-    }
-    .hide-br {
-        display: none;
-    }
-    .sub-heading{
-        margin: 0px auto;
-    }
+  .left-section {
+    margin-right: 0px;
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+
+  .about-paragraph {
+    font-size: 1.2rem;
+  }
+
+  .about-the-games {
+    font-size: 2.1rem;
+  }
+
+  .about-container {
+    width: 90%;
+    bottom: 0px;
+  }
+
+  .hide-br {
+    display: none;
+  }
+
+  .sub-heading {
+    margin: 0px auto;
+  }
 }

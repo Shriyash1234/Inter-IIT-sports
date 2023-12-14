@@ -3,8 +3,8 @@ import './CSS/sports.css'
 const Sports = () => {
   return (
     <section className='sports'>
-       <h1 className='sports-heading'>Sports</h1>
-       <div className='sports-names'>
+      <h1 className='sports-heading'>Sports</h1>
+      <div className='sports-names'>
         <div className='sport-div'>Athletics</div>
         <div className='sport-div'>Badminton</div>
         <div className='sport-div'>Basketball</div>
@@ -18,7 +18,7 @@ const Sports = () => {
         <div className='sport-div'>Volleyball</div>
         <div className='sport-div'>Water Polo</div>
         <div className='sport-div'>Weightlifting</div>
-       </div>
+      </div>
     </section>
   )
 }

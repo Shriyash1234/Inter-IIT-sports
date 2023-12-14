@@ -56,13 +56,13 @@ const Match = ({ match }) => {
 const Water_Polo_Result = ({ matches }) => {
 
 
-    return (
-        <div className="schedule">
-            {matches.map((match) => (
-                <Match match={match} key={match.id} />
-            ))}
-        </div>
-    );
+  return (
+    <div className="schedule">
+      {matches.map((match) => (
+        <Match match={match} key={match.id} />
+      ))}
+    </div>
+  );
 };
 
 export default Water_Polo_Result;
