@@ -236,6 +236,7 @@
     .match-statement {
         width: 50%;
         text-align: center;
+        margin: 10px;
     }
 }
 

@@ -21,7 +21,7 @@ const Match = props => {
                 <div className="team-1">
                     <div className="team-logo">
                         {
-                            match.logo_home_team ? <img src={match.logo_home_team} className="w-100" alt="LOGO" /> : ""
+                            match.logo_home_team ? <img src={match.logo_home_team} className="logo-img" alt="LOGO" /> : ""
                         }
                     </div>
                     <div className="team-name-1">{match.home_team}</div>
@@ -31,7 +31,7 @@ const Match = props => {
                     <div className="team-name-2">{match.away_team}</div>
                     <div className="team-logo">
                         {
-                            match.logo_away_team ? <img src={match.logo_away_team} className="w-100" alt="LOGO" /> : ""
+                            match.logo_away_team ? <img src={match.logo_away_team} className="logo-img" alt="LOGO" /> : ""
                         }
 
                     </div>
@@ -43,16 +43,16 @@ const Match = props => {
                     <div>
                         <hr />
                         <div className="teams">
-                            <div className="team-1" style={{ width: "10%" }}>
+                            <div className="team-1" style={{ width: "30%" }}>
                                 <div className="team-name-1 left" >{match.home_score} {match.home_p}</div>
                             </div>
                             {match.statement ? <div className='match-statement'>{match.statement}</div> : ""}
-                            <div className="team-2" style={{ width: "10%" }}>
+                            <div className="team-2" style={{ width: "30%" }}>
                                 <div className="team-name-2 right">{match.away_score} {match.away_p}</div>
                             </div>
                         </div>
                     </div>
-                ) : <>{match.statement ? <div className='match-statement' style={{ textAlign: "center" }}>{match.statement}</div> : ""}</>
+                ) : <>{match.statement ? <div className='match-statement' style={{ margin:"auto",textAlign:"center" }}>{match.statement}</div> : ""}</>
             }
 
         </div>
