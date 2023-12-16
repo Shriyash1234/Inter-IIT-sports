@@ -38,10 +38,10 @@ function JsonToTable({ jsonData, visiblity, table }) {
             table !== "resultTable" ? (
               jsonData.map((item, index) => (
                 <tr key={index}>
-                  <td >{index + 1}</td>
-                  <td>{item["Athlete"]}</td>
+                  <td className='medaltype'>{index + 1}</td>
+                  <td className='medaltype'>{item["Athlete"]}</td>
                   <td><img src={require(`${getImageByTitle(item["IIT"])}`)} className='IIT-icon' alt={item["IIT"]} />{item["IIT"]}</td>
-                  <td className='timing'>{item["Timing"]}</td>
+                  <td className='timing medaltype'>{item["Timing"]|| item["Height (m)"]||item["Distance (m)"]}</td>
                 </tr>
               ))
             ) : (
