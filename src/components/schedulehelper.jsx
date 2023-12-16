@@ -52,7 +52,11 @@ const Match = props => {
                             </div>
                         </div>
                     </div>
-                ) : <>{match.statement ? <div className='match-statement' style={{ margin:"auto",textAlign:"center" }}>{match.statement}</div> : ""}</>
+                ) :
+                <>
+                {match.subStatement ? <div className='match-statement' style={{ margin:"auto",textAlign:"center" }}>{match.subStatement}</div> : ""}
+                {match.statement ? <div className='match-statement' style={{ margin:"auto",textAlign:"center" }}>{match.statement}</div> : ""}
+                </>
             }
 
         </div>
