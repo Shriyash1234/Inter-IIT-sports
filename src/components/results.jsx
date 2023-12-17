@@ -143,11 +143,11 @@ const Results = () => {
         var schedulePage = document.querySelector('.schedule-page');
 
         if (this.checked) {
-          resultsDiv.style.display = 'none';
-          schedulePage.style.display = 'block';
-        } else {
           resultsDiv.style.display = 'block';
           schedulePage.style.display = 'none';
+        } else {
+          resultsDiv.style.display = 'none';
+          schedulePage.style.display = 'block';
         }
       });
     }
@@ -160,16 +160,16 @@ const Results = () => {
 
       <input type="checkbox" id="toggle" class="toggleCheckbox" />
       <label for="toggle" class="toggleContainer">
-        <div id="div1">Medal Tally</div>
-        <div id="div2">Results</div>
+        <div id="div1">Results</div>
+        <div id="div2">Medal Tally</div>
       </label>
 
-      <div className='Results-div'>
+      <div className='Results-div hidden'>
         <p className='results-heading'>Medal Tally</p>
         <JsonToTable jsonData={tableData} table="resultTable" />
       </div>
 
-      <section className='schedule-page hidden' >
+      <section className='schedule-page' >
         <Header color='white' />
         <div className='buttons-container' id="style-2" >
           <button className='date-button btn-1' onClick={() => handleSportsButtonClick('Cricket Men')}>Cricket Men</button>

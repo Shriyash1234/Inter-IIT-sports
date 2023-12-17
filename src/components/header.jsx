@@ -11,7 +11,7 @@ function Header(props) {
   const [linkbg, setLinkbg] = useState(color);
   const handleLinkClick = () => {
     window.location.href = '/#/Results'; // Set the URL to the desired location
-    window.location.reload();
+    // window.location.reload();
   };
   useEffect(() => {
     const handleScroll = () => {
@@ -104,7 +104,7 @@ function Header(props) {
               </li>
               <li className="has-child">
                 {/* <a href="https://interiit.in/#/Results" >Results</a> */}
-                <Link to="/Results" onClick={handleLinkClick} className='link1 links' style={{ color: linkbg }}>Results</Link>
+                <Link to="/Results"  className='link1 links' style={{ color: linkbg }}>Results</Link>
               </li>
               <li className="has-child aquatics-header">
                 <Link to="/" className='link1 links' style={{ color: linkbg }}>Aquatics</Link>
