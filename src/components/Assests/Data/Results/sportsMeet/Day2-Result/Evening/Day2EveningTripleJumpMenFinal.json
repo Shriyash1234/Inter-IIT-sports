@@ -3,19 +3,19 @@
         "Rank": "1.",
         "Athlete": "D. VETRICHELVAN",
         "IIT": "IIT Madras (IITM)",
-        "Height": "14.05"
+        "Height (m)": "14.05"
     },
     {
         "Rank": "2.",
         "Athlete": "MARWAN KUZHIMPATTIL",
         "IIT": "IIT Kharagpur (IITKGP)",
-        "Height": "13.64"
+        "Height (m)": "13.64"
     },
     {
         "Rank": "3.",
         "Athlete": "HEMANT SINGH SIDAR",
         "IIT": "IIT Goa (IIT GOA)",
-        "Height": "13.19"
+        "Height (m)": "13.19"
     }
 ]
 

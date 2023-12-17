@@ -39,9 +39,9 @@ const Home = () => {
       </section>
       <p className='Latest-stories'>Latest Stories</p>
       <div className='Instagram-posts laptop-stories'>
-        <InstagramEmbed className="instagramPost" url="https://www.instagram.com/reel/C0oPK6Ugiwp" />
-        <InstagramEmbed className="instagramPost" url="https://www.instagram.com/reel/C0mLM04oELT" />
-        <InstagramEmbed className="instagramPost" url="https://www.instagram.com/reel/C0jkxMConm9" />
+        <InstagramEmbed className="instagramPost" url="https://www.instagram.com/p/C09JVGqoS2F" />
+        <InstagramEmbed className="instagramPost" url="https://www.instagram.com/p/C08-pMnIdS-" />
+        <InstagramEmbed className="instagramPost" url="https://www.instagram.com/p/C08ItIionw4" />
       </div>
       <Carousel className='mobile-stories' autoPlay="true" infiniteLoop="true">
         <div>

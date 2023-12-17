@@ -15,11 +15,15 @@ import Day1Evening400mWomen from "./Assests/Data/Results/sportsMeet/Day1-Result/
 
 import Day2MorningPoleMen from "./Assests/Data/Results/sportsMeet/Day2-Result/Morning/Day2MorningPoleMen.json"
 import Day2MorningShotWomen from "./Assests/Data/Results/sportsMeet/Day2-Result/Morning/Day2MorningShotWomen.json"
+import Day2Evening100mMen from "./Assests/Data/Results/sportsMeet/Day2-Result/Evening/Day2Evening100mMen.json"
+import Day2Evening100mWomen from "./Assests/Data/Results/sportsMeet/Day2-Result/Evening/Day2Evening100mWomen.json"
+import Day2EveningTripleJumpMenFinal from "./Assests/Data/Results/sportsMeet/Day2-Result/Evening/Day2EveningTripleJumpMenFinal.json"
 
-import Day3EveningTripleJumpMenFinal from "./Assests/Data/Results/sportsMeet/Day3-Result/Evening/Day3EveningTripleJumpMenFinal.json"
-
-import Day4Evening400MFinal from "./Assests/Data/Results/sportsMeet/Day4-Result/Evening/Day4Evening400MFinal.json"
-import Day4Evening400WFinal from "./Assests/Data/Results/sportsMeet/Day4-Result/Evening/Day4Evening400WFinal.json"
+import Day3MorningLongMen from "./Assests/Data/Results/sportsMeet/Day3-Result/Morning/Day3MorningLongMen.json"
+import Day3MorningHighMen from "./Assests/Data/Results/sportsMeet/Day3-Result/Morning/Day3MorningHighMen.json"
+import Day3Evening400MFinal from "./Assests/Data/Results/sportsMeet/Day3-Result/Evening/Day3Evening400MFinal.json"
+import Day3Evening400WFinal from "./Assests/Data/Results/sportsMeet/Day3-Result/Evening/Day3Evening400WFinal.json"
+import Day3EveningHurdlesMenfrom from "./Assests/Data/Results/sportsMeet/Day3-Result/Evening/Day3EveningHurdlesMen.json"
 
 
 
@@ -3136,7 +3140,7 @@ const athleticsMatches = {
       Event: "Triple Jump",
       Gender: "Men",
       Round: "Final",
-      jsonFile:Day3EveningTripleJumpMenFinal
+      jsonFile:Day2EveningTripleJumpMenFinal
       
     },
     {
@@ -3145,6 +3149,7 @@ const athleticsMatches = {
       Event: "100M",
       Gender: "Women",
       Round: "Semi-Final",
+      jsonFile:Day2Evening100mWomen
     },
     {
       Session: "Evening",
@@ -3152,23 +3157,24 @@ const athleticsMatches = {
       Event: "100M",
       Gender: "Men",
       Round: "Semi-Final",
+      jsonFile:Day2Evening100mMen
     },
   ],
   "17th Dec": [
-    {
-      Session: "Morning",
-      EventNo: "301",
-      Event: "200M",
-      Gender: "Men",
-      Round: "Heats",
-    },
-    {
-      Session: "Morning",
-      EventNo: "302",
-      Event: "200M",
-      Gender: "Women",
-      Round: "Heats",
-    },
+    // {
+    //   Session: "Morning",
+    //   EventNo: "301",
+    //   Event: "200M",
+    //   Gender: "Men",
+    //   Round: "Heats",
+    // },
+    // {
+    //   Session: "Morning",
+    //   EventNo: "302",
+    //   Event: "200M",
+    //   Gender: "Women",
+    //   Round: "Heats",
+    // },
     {
       Session: "Morning",
       EventNo: "303",
@@ -3182,6 +3188,7 @@ const athleticsMatches = {
       Event: "High Jump",
       Gender: "Women",
       Round: "Final",
+      jsonFile:Day3MorningHighMen
     },
     {
       Session: "Morning",
@@ -3189,6 +3196,7 @@ const athleticsMatches = {
       Event: "Long Jump",
       Gender: "Men",
       Round: "Final",
+      jsonFile:Day3MorningLongMen
     },
     {
       Session: "Evening",
@@ -3196,6 +3204,7 @@ const athleticsMatches = {
       Event: "110M Hurdles",
       Gender: "Men",
       Round: "Final",
+      jsonFile:Day3EveningHurdlesMenfrom
     },
     {
       Session: "Evening",
@@ -3203,7 +3212,7 @@ const athleticsMatches = {
       Event: "400M",
       Gender: "Women",
       Round: "Final",
-      jsonFile:Day4Evening400WFinal
+      jsonFile:Day3Evening400WFinal
     },
     {
       Session: "Evening",
@@ -3211,7 +3220,7 @@ const athleticsMatches = {
       Event: "400M",
       Gender: "Men",
       Round: "Final",
-      jsonFile:Day4Evening400MFinal
+      jsonFile:Day3Evening400MFinal
     },
   ],
   "18th Dec": [
