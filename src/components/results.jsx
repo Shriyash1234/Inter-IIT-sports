@@ -15,6 +15,14 @@ import Day1Evening400mWomen from "./Assests/Data/Results/sportsMeet/Day1-Result/
 
 import Day2MorningPoleMen from "./Assests/Data/Results/sportsMeet/Day2-Result/Morning/Day2MorningPoleMen.json"
 import Day2MorningShotWomen from "./Assests/Data/Results/sportsMeet/Day2-Result/Morning/Day2MorningShotWomen.json"
+
+import Day3EveningTripleJumpMenFinal from "./Assests/Data/Results/sportsMeet/Day3-Result/Evening/Day3EveningTripleJumpMenFinal.json"
+
+import Day4Evening400MFinal from "./Assests/Data/Results/sportsMeet/Day4-Result/Evening/Day4Evening400MFinal.json"
+import Day4Evening400WFinal from "./Assests/Data/Results/sportsMeet/Day4-Result/Evening/Day4Evening400WFinal.json"
+
+
+
 const Results = () => {
   const [selectedSport, setselectedSport] = useState('Cricket Men');
   const [selectedDate, setSelectedDate] = useState('15th Dec')
@@ -886,7 +894,9 @@ const sportsMatches = {
         "away_team": "IIT Hyderabad",
         "logo_home_team": require('./Assests/IITs/IITRPR.jpg'),
         "logo_away_team": require('./Assests/IITs/IITH.jpg'),
-        statement: "Match is yet to happen"
+        home_score:"114/9 (20.0 OV)",
+        away_score:"146/9 (20.0 OV)",
+        statement: "IIT Hyderabad won by 32 runs"
       },
       {
         "id": 20,
@@ -898,7 +908,9 @@ const sportsMatches = {
         "away_team": "IIT Madras",
         "logo_home_team": require('./Assests/IITs/IITR.jpg'),
         "logo_away_team": require('./Assests/IITs/IITM.jpg'),
-        statement: "Match is yet to happen"
+        home_score:"124/10 (20.0 OV)",
+        away_score:"113/9 (20.0 OV)",
+        statement: "IIT Roorkee won by 11 runs"
       },
       {
         "id": 21,
@@ -910,7 +922,9 @@ const sportsMatches = {
         "away_team": "IIT Bhilai",
         "logo_home_team": require('./Assests/IITs/IITMD.jpg'),
         "logo_away_team": require('./Assests/IITs/IITBH.jpg'),
-        statement: "Match is yet to happen"
+        home_score:"228/4 (20.0 OV)",
+        away_score:"50/10 (19.1 OV)", 
+        statement: "IIT Mandi won by 178 runs"
       },
       {
         "id": 22,
@@ -922,7 +936,9 @@ const sportsMatches = {
         "away_team": "IIT Patna",
         "logo_home_team": require('./Assests/IITs/IITD.jpg'),
         "logo_away_team": require('./Assests/IITs/IITP.jpg'),
-        statement: "Match is yet to happen"
+        home_score:"79/0 (6.0 OV)",
+        away_score:"78/10 (17.1 OV)",
+        statement: "IIT Delhi won by 10 wickets"
       },
       {
         "id": 23,
@@ -2863,6 +2879,116 @@ const sportsMatches = {
       away_score:'1',
       statement:"IIT Tirupati won the match"
     },
+    {
+      "id": 1,
+      "date": "17.12.2023",
+      "home_team": "IIT Kanpur",
+      "away_team": "IIT Madras",
+      "logo_home_team": require('./Assests/IITs/IITK.jpg'),
+      "logo_away_team": require('./Assests/IITs/IITM.jpg'),
+      home_score:'2',
+      away_score:'2',
+      statement:"Match Tied"
+    },
+    {
+      "id": 1,
+      "date": "17.12.2023",
+      "home_team": "IIT Jodhpur",
+      "away_team": "IIT Bombay",
+      "logo_home_team": require('./Assests/IITs/IITJ.jpg'),
+      "logo_away_team": require('./Assests/IITs/IITB.jpg'),
+      home_score:'2',
+      away_score:'2',
+      statement:"Match Tied"
+    },
+    {
+      "id": 1,
+      "date": "17.12.2023",
+      "home_team": "IIT Kharagpur",
+      "away_team": "IIT Hyderabad",
+      "logo_home_team": require('./Assests/IITs/IITKGP.jpg'),
+      "logo_away_team": require('./Assests/IITs/IITH.jpg'),
+      home_score:'4',
+      away_score:'0',
+      statement:"IIT Kharagpur won the match"
+    },
+    {
+      "id": 1,
+      "date": "17.12.2023",
+      "home_team": "IIT Guwahati",
+      "away_team": "IIT Delhi",
+      "logo_home_team": require('./Assests/IITs/IITG.jpg'),
+      "logo_away_team": require('./Assests/IITs/IITD.jpg'),
+      home_score:'1.5',
+      away_score:'2.5',
+      statement:"IIT Delhi won the match"
+    },
+    {
+      "id": 1,
+      "date": "17.12.2023",
+      "home_team": "IIT Dharwad",
+      "away_team": "IIT Ropar",
+      "logo_home_team": require('./Assests/IITs/IITMD.jpg'),
+      "logo_away_team": require('./Assests/IITs/IITRPR.jpg'),
+      home_score:'3.5',
+      away_score:'0.5',
+      statement:"IIT Dharwad won the match"
+    },
+    {
+      "id": 1,
+      "date": "17.12.2023",
+      "home_team": "IIT BHU",
+      "away_team": "IIT Dhanbad",
+      "logo_home_team": require('./Assests/IITs/IITBHU.jpg'),
+      "logo_away_team": require('./Assests/IITs/IITISM.jpg'),
+      home_score:'2.5',
+      away_score:'1.5',
+      statement:"IIT BHU won the match"
+    },
+    {
+      "id": 1,
+      "date": "17.12.2023",
+      "home_team": "IIT Bhubaneshwar",
+      "away_team": "IIT Palakkad",
+      "logo_home_team": require('./Assests/IITs/IITBBS.jpg'),
+      "logo_away_team": require('./Assests/IITs/IITPKD.jpg'),
+      home_score:'1',
+      away_score:'3',
+      statement:"IIT Palakkad won the match"
+    },
+    {
+      "id": 1,
+      "date": "17.12.2023",
+      "home_team": "IIT Indore",
+      "away_team": "IIT Tirupati",
+      "logo_home_team": require('./Assests/IITs/IITI.jpg'),
+      "logo_away_team": require('./Assests/IITs/IITT.jpg'),
+      home_score:'2',
+      away_score:'2',
+      statement:"Match Tied"
+    },
+    {
+      "id": 1,
+      "date": "17.12.2023",
+      "home_team": "IIT Patna",
+      "away_team": "IIT Mandi",
+      "logo_home_team": require('./Assests/IITs/IITP.jpg'),
+      "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
+      home_score:'2',
+      away_score:'2',
+      statement:"Match Tied"
+    },
+    {
+      "id": 1,
+      "date": "17.12.2023",
+      "home_team": "IIT Bhilai",
+      "away_team": "IIT Jammu",
+      "logo_home_team": require('./Assests/IITs/IITBH.jpg'),
+      "logo_away_team": require('./Assests/IITs/IITJMU.jpg'),
+      home_score:'0.5',
+      away_score:'3.5',
+      statement:"IIT Jammu won the match"
+    },
   ]  
 };
 
@@ -2985,6 +3111,8 @@ const athleticsMatches = {
       Event: "Triple Jump",
       Gender: "Men",
       Round: "Final",
+      jsonFile:Day3EveningTripleJumpMenFinal
+      
     },
     {
       Session: "Evening",
@@ -3050,6 +3178,7 @@ const athleticsMatches = {
       Event: "400M",
       Gender: "Women",
       Round: "Final",
+      jsonFile:Day4Evening400WFinal
     },
     {
       Session: "Evening",
@@ -3057,6 +3186,7 @@ const athleticsMatches = {
       Event: "400M",
       Gender: "Men",
       Round: "Final",
+      jsonFile:Day4Evening400MFinal
     },
   ],
   "18th Dec": [
