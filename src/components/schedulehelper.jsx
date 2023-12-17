@@ -12,8 +12,8 @@ const Match = props => {
                     {match.pool ? <p>Pool - {match.pool}</p> : ""}
                 </div>
                 <div className="time">
-                    Time - {match.time}<br />
-                    Ground/Court - {match.ground}
+                    {match.time?<>Time - {match.time}</>:""}<br />
+                    {match.ground?<>Ground/Court - {match.ground}</>:""}<br />
                 </div>
             </div>
             <hr />
