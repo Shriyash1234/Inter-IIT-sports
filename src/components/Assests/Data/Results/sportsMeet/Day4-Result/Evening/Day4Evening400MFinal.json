@@ -1,0 +1,21 @@
+[
+    {
+        "Rank": "1.",
+        "Athlete": "ABHISHEK",
+        "IIT": "IIT Delhi (IITD)",
+        "Timing": "50.08"
+    },
+    {
+        "Rank": "2.",
+        "Athlete": "YASHVEER GAHLOT",
+        "IIT": "IIT Hyderabad (IITH)",
+        "Timing": "50.61"
+    },
+    {
+        "Rank": "3.",
+        "Athlete": "AKHIL KUMAR",
+        "IIT": "IIT Kharagpur (IITKGP)",
+        "Timing": "52.13"
+    }
+]
+
