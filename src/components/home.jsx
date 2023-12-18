@@ -3,6 +3,7 @@ import Header from './header'
 import About from './about'
 import Cards from './cards'
 import Sports from './sports'
+import Sponsers from './sponsers'
 import Footer from './footer'
 import './CSS/home.css'
 import Caraousel from './caraousel'
@@ -60,6 +61,7 @@ const Home = () => {
       <Cards />
       <Caraousel />
       <Sports />
+      <Sponsers/>
       <Footer />
     </section>
 

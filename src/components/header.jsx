@@ -52,6 +52,20 @@ function Header(props) {
       }, 500);
     }
   };
+  const handleSponsersLink = () => {
+    const element = document.getElementsByClassName('Sponsers')[0];
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      Navigate('/');
+      setTimeout(() => {
+        const updatedElement = document.getElementsByClassName('Sponsers')[0];
+        if (updatedElement) {
+          updatedElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 500);
+    }
+  };
   const handleFooterLink = () => {
     const element = document.getElementsByClassName('footer-div')[0];
     if (element) {
@@ -106,13 +120,16 @@ function Header(props) {
                 {/* <a href="https://interiit.in/#/Results" >Results</a> */}
                 <Link to="/Results"  className='link1 links' style={{ color: linkbg }}>Results</Link>
               </li>
+              <li className="has-child">
+                <div onClick={handleSponsersLink} className='about-link links' style={{ color: linkbg }}><Link to="/" className='links' style={{ color: linkbg }}>Sponsers</Link></div>
+              </li>
               <li className="has-child aquatics-header">
                 <Link to="/" className='link1 links' style={{ color: linkbg }}>Aquatics</Link>
                 <Link to="/Aquatics/Schedule" className='link1 links aquatics-link' style={{ color: linkbg }}>Schedule</Link>
                 <Link to="/Aquatics/Results" className='link1 links aquatics-link aquatics-link-2' style={{ color: linkbg }}>Results</Link>
               </li>
               <li className="has-child">
-                <div onClick={handleFooterLink} className='link1 links about-link' style={{ color: linkbg, fontSize: "1.4rem" }}>Contact us</div>
+                <div onClick={handleFooterLink} className='link1 links about-link' style={{ color: linkbg, fontSize: "1.4rem" }}><Link to="/" className='links' style={{ color: linkbg }}>Contact us</Link></div>
               </li>
             </ul>
           </div>
