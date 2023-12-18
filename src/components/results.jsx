@@ -411,7 +411,9 @@ const sportsMatches = {
         "away_team": "IIT Kanpur",
         "logo_home_team": require('./Assests/IITs/IITP.jpg'),
         "logo_away_team": require('./Assests/IITs/IITK.jpg'),
-        statement: "Match is yet to happen"
+        home_score:"1",
+        away_score:"1",
+        statement: "Match Tied"
       },
       {
         "id": 15,
@@ -423,7 +425,9 @@ const sportsMatches = {
         "away_team": "IIT Bhilai",
         "logo_home_team": require('./Assests/IITs/IITT.jpg'),
         "logo_away_team": require('./Assests/IITs/IITBH.jpg'),
-        statement: "Match is yet to happen"
+        home_score:"0",
+        away_score:"1",
+        statement: "IIT Bhilai won the match"
       },
       {
         "id": 16,
@@ -435,7 +439,9 @@ const sportsMatches = {
         "away_team": "IIT Guwahati",
         "logo_home_team": require('./Assests/IITs/IITDH.jpg'),
         "logo_away_team": require('./Assests/IITs/IITG.jpg'),
-        statement: "Match is yet to happen"
+        home_score:"1",
+        away_score:"2",
+        statement: "IIT Guwahati won the match"
       },
       {
         "id": 17,
@@ -447,7 +453,9 @@ const sportsMatches = {
         "away_team": "IIT Ropar",
         "logo_home_team": require("./Assests/IITs/IITBBS.jpg"),
         "logo_away_team": require('./Assests/IITs/IITRPR.jpg'),
-        statement: "Match is yet to happen"
+        home_score:"1",
+        away_score:"0",
+        statement: "IIT Bhubaneshwar won the match"
       },
       {
         "id": 18,
@@ -459,7 +467,9 @@ const sportsMatches = {
         "away_team": "IIT Indore",
         "logo_home_team": require('./Assests/IITs/IITB.jpg'),
         "logo_away_team": require('./Assests/IITs/IITI.jpg'),
-        statement: "Match is yet to happen"
+        home_score:"1",
+        away_score:"0",
+        statement: "IIT Bombay won the match"
       },
       {
         "id": 19,
@@ -470,7 +480,10 @@ const sportsMatches = {
         "home_team": "IIT Dhanbad",
         "away_team": "IIT Jodhpur",
         "logo_home_team": require('./Assests/IITs/IITISM.jpg'),
-        "logo_away_team": require('./Assests/IITs/IITJ.jpg')
+        "logo_away_team": require('./Assests/IITs/IITJ.jpg'),
+        home_score:"2",
+        away_score:"2",
+        statement:"Match Tied"
       },
       {
         "id": 20,
@@ -482,7 +495,9 @@ const sportsMatches = {
         "away_team": "IIT Jammu",
         "logo_home_team": require('./Assests/IITs/IITR.jpg'),
         "logo_away_team": require('./Assests/IITs/IITJMU.jpg'),
-        statement: "Match is yet to happen"
+        home_score:"2",
+        away_score:"1",
+        statement: "IIT Roorkee won the match"
       },
       {
         "id": 21,
@@ -1846,7 +1861,8 @@ const sportsMatches = {
         "away_team": "IIT Goa",
         "logo_home_team": require('./Assests/IITs/IITR.jpg'),
         "logo_away_team": require('./Assests/IITs/IITGOA.jpg'),
-        statement: "Match is yet to happen"
+        subStatement:"(1-6),(2-6)||(6-1),(6-1)||(6-2),(6-0)",
+        statement: "IIT Roorkee won the match"
       },
       {
         "id": 10,
@@ -1858,7 +1874,8 @@ const sportsMatches = {
         "away_team": "IIT Mandi",
         "logo_home_team": require('./Assests/IITs/IITD.jpg'),
         "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
-        statement: "Match is yet to happen"
+        subStatement:"(6-0), (6-0)||(6-1), (6-0)",
+        statement: "IIT Delhi won the match"
       },
       {
         "id": 11,
@@ -1870,7 +1887,8 @@ const sportsMatches = {
         "away_team": "IIT Bombay",
         "logo_home_team": require('./Assests/IITs/IITM.jpg'),
         "logo_away_team": require('./Assests/IITs/IITB.jpg'),
-        statement: "Match is yet to happen"
+        subStatement:"(1-6),(4-6)||(6-1),(6-1)||(0-6), (1-6)",
+        statement: "IIT Bombay won the match"
       },
       {
         "id": 12,
@@ -1882,7 +1900,8 @@ const sportsMatches = {
         "away_team": "IIT Indore",
         "logo_home_team": require('./Assests/IITs/IITKGP.jpg'),
         "logo_away_team": require('./Assests/IITs/IITI.jpg'),
-        statement: "Match is yet to happen"
+        subStatement:"(6-0),(6-0)||(6-0),(6-0)",
+        statement: "IIT Kharagpur won the match"
       },
       {
         "id": 13,
@@ -1894,7 +1913,8 @@ const sportsMatches = {
         "away_team": "IIT Patna",
         "logo_home_team": require('./Assests/IITs/IITBHU.jpg'),
         "logo_away_team": require('./Assests/IITs/IITP.jpg'),
-        statement: "Match is yet to happen"
+        subStatement:"(6-1),(6-0)||(6-2),(6-1)",
+        statement: "IIT Varanasi won the match"
       },
       {
         "id": 14,
@@ -1906,7 +1926,8 @@ const sportsMatches = {
         "away_team": "IIT Bhubaneswar",
         "logo_home_team": require('./Assests/IITs/IITK.jpg'),
         "logo_away_team": require('./Assests/IITs/IITBBS.jpg'),
-        statement: "Match is yet to happen"
+        subStatement:"(6-0),(6-0)||(6-0),(6-1)",
+        statement: "IIT Kanpur won the match"
       },
       {
         "id": 15,
@@ -1918,7 +1939,8 @@ const sportsMatches = {
         "away_team": "IIT Dharwad",
         "logo_home_team": require('./Assests/IITs/IITG.jpg'),
         "logo_away_team": require('./Assests/IITs/IITDH.jpg'),
-        statement: "Match is yet to happen"
+        subStatement:"(6-1),(6-1)||(6-1),(6-2)",
+        statement: "IIT Guwahati won the match"
       },
       {
         "id": 16,
@@ -1930,7 +1952,8 @@ const sportsMatches = {
         "away_team": "IIT Hyderabad",
         "logo_home_team": require('./Assests/IITs/IITGN.jpg'),
         "logo_away_team": require('./Assests/IITs/IITH.jpg'),
-        statement: "Match is yet to happen"
+        subStatement:"(6-7),(6-3),(6-7)||(1-6),(2-6)",
+        statement: "IIT Hyderabad won the match"
       },
       {
         "id": 17,
@@ -2398,7 +2421,8 @@ const sportsMatches = {
         "away_team": "IIT Jodhpur",
         "logo_home_team": require('./Assests/IITs/IITR.jpg'),
         "logo_away_team": require('./Assests/IITs/IITJ.jpg'),
-        statement: "Match is yet to happen"
+        subStatement:"(0-6),(2-6)||(7-5),(4-6),(10-8)||(6-3),(6-0)",
+        statement: "IIT Roorkee won the match"
       },
       {
         "id": 10,
@@ -2410,7 +2434,8 @@ const sportsMatches = {
         "away_team": "IIT Mandi",
         "logo_home_team": require('./Assests/IITs/IITDH.jpg'),
         "logo_away_team": require('./Assests/IITs/IITMD.jpg'),
-        statement: "Match is yet to happen"
+        subStatement:"(0-6),(0-6)||concede by Dhanbad",
+        statement: "IIT Mandi won the match"
       },
       {
         "id": 11,
@@ -2422,7 +2447,8 @@ const sportsMatches = {
         "away_team": "IIT Bombay",
         "logo_home_team": require('./Assests/IITs/IITD.jpg'),
         "logo_away_team": require('./Assests/IITs/IITB.jpg'),
-        statement: "Match is yet to happen"
+        subStatement:"(4-6),(1-6)||(6-4),(6-4)||(6-2),(6-3)",
+        statement: "IIT Delhi won the match"
       },
       {
         "id": 12,
@@ -2434,7 +2460,8 @@ const sportsMatches = {
         "away_team": "IIT Kharagpur",
         "logo_home_team": require('./Assests/IITs/IITRPR.jpg'),
         "logo_away_team": require('./Assests/IITs/IITKGP.jpg'),
-        statement: "Match is yet to happen"
+        subStatement:"(6-0),(6-0)||(6-0),(6-2)",
+        statement: "IIT Ropar won the match"
       },
       {
         "id": 13,
@@ -2446,31 +2473,33 @@ const sportsMatches = {
         "away_team": "IIT Kanpur",
         "logo_home_team": require('./Assests/IITs/IITH.jpg'),
         "logo_away_team": require('./Assests/IITs/IITK.jpg'),
-        statement: "Match is yet to happen"
+        subStatement:"(1-6),(6-2),(3-6)||(4-6),(5-7)",
+        statement: "IIT Kanpur won the match"
       },
-      {
-        "id": 14,
-        "date": "16.12.2023",
-        "time": "10:00 AM",
-        "pool": "C",
-        "ground": "3",
-        "home_team": "IIT Madras",
-        "away_team": "IIT Indore",
-        "logo_home_team": require('./Assests/IITs/IITM.jpg'),
-        "logo_away_team": require('./Assests/IITs/IITI.jpg'),
-        statement: "Match is yet to happen"
-      },
+      // {
+      //   "id": 14,
+      //   "date": "16.12.2023",
+      //   "time": "10:00 AM",
+      //   "pool": "C",
+      //   "ground": "3",
+      //   "home_team": "IIT Madras",
+      //   "away_team": "IIT Indore",
+      //   "logo_home_team": require('./Assests/IITs/IITM.jpg'),
+      //   "logo_away_team": require('./Assests/IITs/IITI.jpg'),
+      //   statement: "Match is yet to happen"
+      // },
       {
         "id": 15,
         "date": "16.12.2023",
         "time": "11:00 AM",
         "pool": "B",
         "ground": "2",
-        "home_team": "IIT Bhubaneswar",
+        "home_team": "IIT Bhu",
         "away_team": "IIT Patna",
-        "logo_home_team": require('./Assests/IITs/IITBBS.jpg'),
+        "logo_home_team": require('./Assests/IITs/IITBHU.jpg'),
         "logo_away_team": require('./Assests/IITs/IITP.jpg'),
-        statement: "Match is yet to happen"
+        subStatement:"(1-6),(3-6)||(6-3),(6-4)||(6-0),(6-1)",
+        statement: "IIT Varanasi won the match"
       },
       {
         "id": 16,
@@ -2482,7 +2511,8 @@ const sportsMatches = {
         "away_team": "IIT Guwahati",
         "logo_home_team": require('./Assests/IITs/IITGN.jpg'),
         "logo_away_team": require('./Assests/IITs/IITG.jpg'),
-        statement: "Match is yet to happen"
+        subStatement:"(6-2),(6-3)||(6-3),(7-5)",
+        statement: "IIT Gandhinagar won the match"
       },
       {
         "id": 17,

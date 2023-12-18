@@ -2103,26 +2103,26 @@ const sportsMatches = {
         "logo_home_team": require('./Assests/IITs/IITH.jpg'),
         "logo_away_team": require('./Assests/IITs/IITK.jpg')
       },
-      {
-        "id": 14,
-        "date": "16.12.2023",
-        "time": "10:00 AM",
-        "pool": "C",
-        "ground": "3",
-        "home_team": "IIT Madras",
-        "away_team": "IIT Indore",
-        "logo_home_team": require('./Assests/IITs/IITM.jpg'),
-        "logo_away_team": require('./Assests/IITs/IITI.jpg')
-      },
+      // {
+      //   "id": 14,
+      //   "date": "16.12.2023",
+      //   "time": "10:00 AM",
+      //   "pool": "C",
+      //   "ground": "3",
+      //   "home_team": "IIT Madras",
+      //   "away_team": "IIT Indore",
+      //   "logo_home_team": require('./Assests/IITs/IITM.jpg'),
+      //   "logo_away_team": require('./Assests/IITs/IITI.jpg')
+      // },
       {
         "id": 15,
         "date": "16.12.2023",
         "time": "11:00 AM",
         "pool": "B",
         "ground": "2",
-        "home_team": "IIT Bhubaneswar",
+        "home_team": "IIT Bhu",
         "away_team": "IIT Patna",
-        "logo_home_team": require('./Assests/IITs/IITBBS.jpg'),
+        "logo_home_team": require('./Assests/IITs/IITBHU.jpg'),
         "logo_away_team": require('./Assests/IITs/IITP.jpg')
       },
       {
