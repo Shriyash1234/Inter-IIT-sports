@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6d0f280e.css",
-    "main.js": "/static/js/main.f7f541d8.js",
+    "main.css": "/static/css/main.45d680da.css",
+    "main.js": "/static/js/main.eec1451e.js",
     "static/js/787.fa79374b.chunk.js": "/static/js/787.fa79374b.chunk.js",
     "static/media/bg-video.mp4": "/static/media/bg-video.b260248db76e0e1fce46.mp4",
     "static/media/sports-meet.jpg": "/static/media/sports-meet.7c8d00e3fe0b5551e8d1.jpg",
@@ -34,6 +34,7 @@
     "static/media/IITMD.jpg": "/static/media/IITMD.c05fa10a5e72f1f0b51e.jpg",
     "static/media/temp.jpg": "/static/media/temp.523063feb2c37954cfe4.jpg",
     "static/media/IITJ.jpg": "/static/media/IITJ.4a771cd19defb3f2fa29.jpg",
+    "static/media/GT.png": "/static/media/GT.3fe123c0ddccd80a8ec2.png",
     "static/media/IITJMU.jpg": "/static/media/IITJMU.912b1fd24328afec4d44.jpg",
     "static/media/IITBH.jpg": "/static/media/IITBH.da493c28e42962666c69.jpg",
     "static/media/IITB.jpg": "/static/media/IITB.a67bacad0015755394be.jpg",
@@ -41,21 +42,24 @@
     "static/media/IITKGP.jpg": "/static/media/IITKGP.df5d121f7202633a8149.jpg",
     "static/media/event1.webp": "/static/media/event1.145eef6bd67712f57a84.webp",
     "static/media/IITDH.jpg": "/static/media/IITDH.357528ded3ef873d8c09.jpg",
+    "static/media/Hitbullseye.png": "/static/media/Hitbullseye.7a123d69362410ddc802.png",
     "static/media/IITH.jpg": "/static/media/IITH.590043530d1a5d987ea0.jpg",
     "static/media/IITPKD.jpg": "/static/media/IITPKD.7b31a6a3a89b83ad57b4.jpg",
     "static/media/IITT.jpg": "/static/media/IITT.b00c6e76f1019b2b0569.jpg",
     "static/media/swim-logo-1.png": "/static/media/swim-logo-1.4e5a994208eba0f83b05.png",
+    "static/media/EMT.svg": "/static/media/EMT.fa2566b86a99f528b217a467083b54ab.svg",
     "static/media/swim-logo.png": "/static/media/swim-logo.bc3a690e5ba6062cdfe6.png",
     "static/media/backstroke.png": "/static/media/backstroke.de3bffab71e1fcc66150.png",
     "static/media/breaststroke.png": "/static/media/breaststroke.4eccfb011f11e875a261.png",
+    "static/media/afton.svg": "/static/media/afton.1636b19367e0bd436a2db43b744f2f99.svg",
     "static/media/logo.svg": "/static/media/logo.4361579e402959270574.svg",
     "index.html": "/index.html",
-    "main.6d0f280e.css.map": "/static/css/main.6d0f280e.css.map",
-    "main.f7f541d8.js.map": "/static/js/main.f7f541d8.js.map",
+    "main.45d680da.css.map": "/static/css/main.45d680da.css.map",
+    "main.eec1451e.js.map": "/static/js/main.eec1451e.js.map",
     "787.fa79374b.chunk.js.map": "/static/js/787.fa79374b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d0f280e.css",
-    "static/js/main.f7f541d8.js"
+    "static/css/main.45d680da.css",
+    "static/js/main.eec1451e.js"
   ]
 }
