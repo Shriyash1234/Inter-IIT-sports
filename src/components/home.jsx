@@ -40,8 +40,8 @@ const Home = () => {
       </section>
       <p className='Latest-stories'>Latest Stories</p>
       <div className='Instagram-posts laptop-stories'>
-        <InstagramEmbed className="instagramPost" url="https://www.instagram.com/p/C09JVGqoS2F" />
-        <InstagramEmbed className="instagramPost" url="https://www.instagram.com/p/C08-pMnIdS-" />
+        <InstagramEmbed className="instagramPost" url="https://www.instagram.com/reel/C0_RK39gTDF" />
+        <InstagramEmbed className="instagramPost" url="https://www.instagram.com/p/C0-72R7on7z" />
         <InstagramEmbed className="instagramPost" url="https://www.instagram.com/p/C08ItIionw4" />
       </div>
       <Carousel className='mobile-stories' autoPlay="true" infiniteLoop="true">
