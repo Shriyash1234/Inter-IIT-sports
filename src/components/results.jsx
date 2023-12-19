@@ -1058,8 +1058,8 @@ const sportsMatches = {
         "stage": "PQ5",
         "home_team": "IIT Hyderabad",
         "away_team": "IIT Gandhinagar",
-        "logo_home_team":require('./Assests/IITs/IITJMU.jpg'),
-        "logo_away_team":require('./Assests/IITs/IITM.jpg'),
+        "logo_home_team":require('./Assests/IITs/IITH.jpg'),
+        "logo_away_team":require('./Assests/IITs/IITGN.jpg'),
         home_score:"50/10 (16.4 OV)",
         away_score:"53/3 (9.1 OV)",
         statement:"IIT Gandhinagar won by 7 wickets"
@@ -1100,8 +1100,8 @@ const sportsMatches = {
         "stage": "PQ8",
         "home_team": "IIT Delhi",
         "away_team": "IIT Indore",
-        "logo_home_team":require('./Assests/IITs/IITJMU.jpg'),
-        "logo_away_team":require('./Assests/IITs/IITM.jpg'),
+        "logo_home_team":require('./Assests/IITs/IITD.jpg'),
+        "logo_away_team":require('./Assests/IITs/IITI.jpg'),
         home_score:"141/8 (20.0 OV)",
         away_score:"70/10 (17.5 OV)",
         statement:"IIT Delhi won by 71 runs"

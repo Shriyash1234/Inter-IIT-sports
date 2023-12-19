@@ -40,7 +40,7 @@ const Footer = () => {
                 <p className='head-office-address'>
                     <Link to="https://www.google.com/maps/dir//Indian+Institute+Of+Technology+Gandhinagar+(IIT+Gandhinagar)+Indian+Institute+of+Technology+Palaj,+Gujarat+382355/@23.2114236,72.6842489,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x395c2adec1f16d8d:0xdc447b8706689bc3" target='_blank' style={{ color: 'white', textDecoration: 'none' }}>
                         Sports Complex, IIT Gandhinagar, Palaj, Gandhinagar,
-                        Gujarat - 382355</Link> </p>
+                        Gujarat - 382055</Link> </p>
                 <hr></hr>
                 <p className='Head-office'><Phone />&nbsp;&nbsp;CALL US</p>
                 <p className='head-office-address'>Aman Samria(+91 7357637225) Sports Secretary <br></br>
