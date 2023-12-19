@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.45d680da.css",
-    "main.js": "/static/js/main.860d5ebe.js",
+    "main.js": "/static/js/main.2c44921c.js",
     "static/js/787.fa79374b.chunk.js": "/static/js/787.fa79374b.chunk.js",
     "static/media/bg-video.mp4": "/static/media/bg-video.b260248db76e0e1fce46.mp4",
     "static/media/sports-meet.jpg": "/static/media/sports-meet.7c8d00e3fe0b5551e8d1.jpg",
@@ -55,11 +55,11 @@
     "static/media/logo.svg": "/static/media/logo.4361579e402959270574.svg",
     "index.html": "/index.html",
     "main.45d680da.css.map": "/static/css/main.45d680da.css.map",
-    "main.860d5ebe.js.map": "/static/js/main.860d5ebe.js.map",
+    "main.2c44921c.js.map": "/static/js/main.2c44921c.js.map",
     "787.fa79374b.chunk.js.map": "/static/js/787.fa79374b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.45d680da.css",
-    "static/js/main.860d5ebe.js"
+    "static/js/main.2c44921c.js"
   ]
 }
