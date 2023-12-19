@@ -25,7 +25,11 @@ import Day3Evening400MFinal from "./Assests/Data/Results/sportsMeet/Day3-Result/
 import Day3Evening400WFinal from "./Assests/Data/Results/sportsMeet/Day3-Result/Evening/Day3Evening400WFinal.json"
 import Day3EveningHurdlesMenfrom from "./Assests/Data/Results/sportsMeet/Day3-Result/Evening/Day3EveningHurdlesMen.json"
 
-
+import Day4Morning800mMen from "./Assests/Data/Results/sportsMeet/Day4-Result/Morning/Day4Morning800Men.json"
+import Day4Morning800mWomen from "./Assests/Data/Results/sportsMeet/Day4-Result/Morning/Day4Morning800Women.json"
+import Day4Morning100mMen from "./Assests/Data/Results/sportsMeet/Day4-Result/Morning/Day4Morning100Men.json"
+import Day4Morning100mWomen from "./Assests/Data/Results/sportsMeet/Day4-Result/Morning/Day4Morning100Women.json"
+import Day4EveningDiscusMen from "./Assests/Data/Results/sportsMeet/Day4-Result/Evening/Day4EveningDiscusMen.json"
 
 const Results = () => {
   const [selectedSport, setselectedSport] = useState('Cricket Men');
@@ -3472,6 +3476,7 @@ const athleticsMatches = {
       Event: "800M",
       Gender: "Men",
       Round: "Final",
+      jsonFile:Day4Morning800mMen
     },
     {
       Session: "Morning",
@@ -3479,6 +3484,7 @@ const athleticsMatches = {
       Event: "800M",
       Gender: "Women",
       Round: "Final",
+      jsonFile:Day4Morning800mWomen
     },
     {
       Session: "Morning",
@@ -3486,6 +3492,7 @@ const athleticsMatches = {
       Event: "100M",
       Gender: "Men",
       Round: "Final",
+      jsonFile:Day4Morning100mMen
     },
     {
       Session: "Morning",
@@ -3493,6 +3500,7 @@ const athleticsMatches = {
       Event: "100M",
       Gender: "Women",
       Round: "Final",
+      jsonFile:Day4Morning100mWomen
     },
     {
       Session: "Evening",
@@ -3500,21 +3508,22 @@ const athleticsMatches = {
       Event: "Discus Throw",
       Gender: "Men",
       Round: "Final",
+      jsonFile:Day4EveningDiscusMen
     },
-    {
-      Session: "Evening",
-      EventNo: "406",
-      Event: "4x100M",
-      Gender: "Men",
-      Round: "Heats",
-    },
-    {
-      Session: "Evening",
-      EventNo: "407",
-      Event: "4x100M",
-      Gender: "Women",
-      Round: "Heats",
-    },
+    // {
+    //   Session: "Evening",
+    //   EventNo: "406",
+    //   Event: "4x100M",
+    //   Gender: "Men",
+    //   Round: "Heats",
+    // },
+    // {
+    //   Session: "Evening",
+    //   EventNo: "407",
+    //   Event: "4x100M",
+    //   Gender: "Women",
+    //   Round: "Heats",
+    // },
   ],
   "19th Dec": [
     {
