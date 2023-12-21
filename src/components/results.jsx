@@ -57,6 +57,7 @@ const Results = () => {
     "19th Dec": 'btn-14',
     "20th Dec": 'btn-15',
     "21st Dec": 'btn-16',
+    "22nd Dec": 'btn-17'
   };
   function setColor(btn) {
     const buttons = document.getElementsByClassName('date-button');
@@ -212,6 +213,7 @@ const Results = () => {
           <button className='btn-14 date-button-2' onClick={() => handleDateButtonClick('19th Dec')}>19th Dec</button>
           <button className='btn-15 date-button-2' onClick={() => handleDateButtonClick('20th Dec')}>20th Dec</button>
           <button className='btn-16 date-button-2' onClick={() => handleDateButtonClick('21st Dec')}>21st Dec</button>
+          <button className='btn-17 date-button-2' onClick={() => handleDateButtonClick('22nd Dec')}>22nd Dec</button>
         </div>
 
         <div className='schedule-div'>
@@ -685,9 +687,13 @@ const sportsMatches = {
         "time": "6:00 PM",
         "ground": "G-1",
         "stage": "SEMI FINAL",
-        "home_team": "QF 1",
-        "away_team": "QF 4",
-        "ground": "G-1"
+        "home_team": "IIT Bomaby",
+        "away_team": "IIT Madras",
+        "logo_home_team":require('./Assests/IITs/IITB.jpg'),
+        "logo_away_team":require('./Assests/IITs/IITM.jpg'),
+        home_score:"6",
+        away_score:"7",
+        statement:"IIT Madras won the match"
       },
       {
         "id": 34,
@@ -695,9 +701,13 @@ const sportsMatches = {
         "time": "7:30 PM",
         "ground": "G-1",
         "stage": "SEMI FINAL",
-        "home_team": "QF 2",
-        "away_team": "QF 3",
-        "ground": "G-1"
+        "home_team": "IIT Kharagpur",
+        "away_team": "IIT Roorkee",
+        "logo_home_team":require('./Assests/IITs/IITKGP.jpg'),
+        "logo_away_team":require('./Assests/IITs/IITR.jpg'),
+        home_score:"0",
+        away_score:"1",
+        statement:"IIT Roorkee won the match"
       },
       {
         "id": 35,
@@ -1192,9 +1202,13 @@ const sportsMatches = {
         "date": "21.12.2023",
         "time": "8:30 AM",
         "ground": "G-1",
-        "stage": "SF1",
-        "home_team": "WINNER OF QF1",
-        "away_team": "WINNER OF QF4"
+        "home_team": "IIT Roorkee",
+        "away_team": "IIT Kanpur",
+        "logo_home_team":require('./Assests/IITs/IITR.jpg'),
+        "logo_away_team":require('./Assests/IITs/IITK.jpg'),
+        home_score:"140/6 (20.0 OV)",
+        away_score:"139/10 (20.0 OV)",
+        statement:"IIT Roorkee won by 1 runs"
       },
       {
         "id": 36,
@@ -1202,8 +1216,13 @@ const sportsMatches = {
         "time": "12:30 PM",
         "ground": "G-1",
         "stage": "SF2",
-        "home_team": "WINNER OF QF2",
-        "away_team": "WINNER OF QF3"
+        "home_team": "IIT Delhi",
+        "away_team": "IIT Madras",
+        "logo_home_team":require('./Assests/IITs/IITD.jpg'),
+        "logo_away_team":require('./Assests/IITs/IITM.jpg'),
+        home_score:"98/10 (19.2 OV)",
+        away_score:"82/8 (20.0 OV)",
+        statement:"IIT Delhi won by 16 runs"
       },
       {
         "id": 37,
@@ -1568,8 +1587,13 @@ const sportsMatches = {
         "time": "10:00 AM",
         "stage": "SF-1",
         "ground": "C-1",
-        "home_team": "QF 1",
-        "away_team": "QF 4"
+        "home_team": "IIT Kharagpur",
+        "away_team": "IIT Kanpur",
+        "logo_home_team": require('./Assests/IITs/IITKGP.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITK.jpg'),
+        home_score:"2",
+        away_score:"1",
+        statement: "IIT Kharagpur won the match" 
       },
       {
         "id": 27,
@@ -1577,8 +1601,13 @@ const sportsMatches = {
         "time": "12:00 PM",
         "stage": "SF-2",
         "ground": "C-2",
-        "home_team": "QF 2",
-        "away_team": "QF 3"
+        "home_team": "IIT Delhi",
+        "away_team": "IIT Roorkee",
+        "logo_home_team": require('./Assests/IITs/IITD.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITR.jpg'),
+        home_score:"2",
+        away_score:"0",
+        statement: "IIT Delhi won the match" 
       },
       {
         "id": 28,
@@ -1873,8 +1902,13 @@ const sportsMatches = {
         "time": "3:00 PM",
         "ground": "C-1",
         "stage": "SF1",
-        "home_team": "QF 1",
-        "away_team": "QF 4"
+        "home_team": "IIT Delhi",
+        "away_team": "IIT Kanpur",
+        "logo_home_team": require('./Assests/IITs/IITD.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITK.jpg'),
+        home_score:"2",
+        away_score:"1",
+        statement: "IIT Delhi won the match"    
       },
       {
         "id": 21,
@@ -1882,8 +1916,13 @@ const sportsMatches = {
         "time": "3:00 PM",
         "ground": "C-2",
         "stage": "SF2",
-        "home_team": "QF 2",
-        "away_team": "QF 3"
+        "home_team": "IIT Bombay",
+        "away_team": "IIT Kharagpur",
+        "logo_home_team": require('./Assests/IITs/IITB.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITKGP.jpg'),
+        home_score:"2",
+        away_score:"0",
+        statement: "IIT Bombay won the match" 
       },
       {
         "id": 22,
@@ -2433,8 +2472,12 @@ const sportsMatches = {
         "time": "8:30 AM",
         "ground": "1",
         "stage": "SF1",
-        "home_team": "WINNER OF POOL A",
-        "away_team": "RUNNER OF POOL C"
+        "home_team": "IIT Kharagpur",
+        "away_team": "IIT Kanpur",
+        "logo_home_team": require('./Assests/IITs/IITKGP.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITK.jpg'),
+        subStatement:"(6-2),(6-4)||(3-6),(7-6),(8-10)||(6-2),(6-3)",
+        statement: "IIT Kharagpur won the match"
       },
       {
         "id": 42,
@@ -2442,8 +2485,12 @@ const sportsMatches = {
         "time": "8:30 AM",
         "ground": "3",
         "stage": "SF2",
-        "home_team": "WINNER OF POOL B",
-        "away_team": "RUNNER OF POOL D"
+        "home_team": "IIT Bombay",
+        "away_team": "IIT Bhu",
+        "logo_home_team": require('./Assests/IITs/IITB.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITBHU.jpg'),
+        subStatement:"(3-7),(3-6)||(6-4),(4-6),(10-8)||(6-2),(6-2)",
+        statement: "IIT Bombay won the match"
       },
       {
         "id": 43,
@@ -2451,8 +2498,12 @@ const sportsMatches = {
         "time": "9:30 AM",
         "ground": "2",
         "stage": "SF3",
-        "home_team": "RUNNER OF POOL A",
-        "away_team": "WINNER OF POOL C"
+        "home_team": "IIT Indore",
+        "away_team": "IIT Delhi",
+        "logo_home_team": require('./Assests/IITs/IITI.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITD.jpg'),
+        subStatement:"(6-0),(6-0)||(6-1),(6-1)",
+        statement: "IIT Indore won the match"
       },
       {
         "id": 44,
@@ -2460,8 +2511,12 @@ const sportsMatches = {
         "time": "9:30 AM",
         "ground": "4",
         "stage": "SF4",
-        "home_team": "RUNNER OF POOL B",
-        "away_team": "WINNER OF POOL D"
+        "home_team": "IIT Madras",
+        "away_team": "IIT Roorkee",
+        "logo_home_team": require('./Assests/IITs/IITM.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITR.jpg'),
+        subStatement:"(6-2),(6-1)||(6-1),(6-0)",
+        statement: "IIT Madras won the match"
       },
       {
         "id": 45,
@@ -2869,8 +2924,12 @@ const sportsMatches = {
         "time": "9:00 AM",
         "ground": "1",
         "stage": "F1",
-        "home_team": "SF 1",
-        "away_team": "SF 4"
+        "home_team": "IIT Ropar",
+        "away_team": "IIT Roorkee",
+        "logo_home_team": require('./Assests/IITs/IITRPR.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITR.jpg'),
+        subStatement:"(6-2),(6-1)||(6-2),(6-1)",
+        statement: "IIT Ropar won the match"
       },
       {
         "id": 30,
@@ -2878,8 +2937,12 @@ const sportsMatches = {
         "time": "9:00 AM",
         "ground": "3",
         "stage": "F2",
-        "home_team": "SF 2",
-        "away_team": "SF 3"
+        "home_team": "IIT Delhi",
+        "away_team": "IIT Madras",
+        "logo_home_team": require('./Assests/IITs/IITD.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITM.jpg'),
+        subStatement:"(6-4),(7-6),(8-6)||(4-6),(5-7)||(6-3),(6-2)",
+        statement: "IIT Delhi won the match"
       },
       {
         "id": 31,
@@ -3897,6 +3960,8 @@ const athleticsMatches = {
       Round: "Final",
     },
   ],
+  "22nd Dec":[
+  ]
 };
 
 const iconsPath = {
