@@ -23,7 +23,7 @@ function JsonToTable({ jsonData, visiblity, table }) {
 
   return (
     <div>
-      <table className={visiblity === "not-visible" ? "excel-like-table not-visible" : "excel-like-table"} id={table === "resultTable" ? "result-table" : "normal-table"} >
+      <table className={visiblity === "not-visible" ? "excel-like-table not-visible" : "excel-like-table"} id={table === "resultTable" || "pointsTable" ? "result-table" : "normal-table"} >
         <thead>
           <tr>
             {columns.map((column, index) => (
@@ -35,16 +35,7 @@ function JsonToTable({ jsonData, visiblity, table }) {
         </thead>
         <tbody>
           {
-            table !== "resultTable" ? (
-              jsonData.map((item, index) => (
-                <tr key={index}>
-                  <td className='medaltype'>{index + 1}</td>
-                  <td className='medaltype'>{item["Athlete"]}</td>
-                  <td><img src={require(`${getImageByTitle(item["IIT"])}`)} className='IIT-icon' alt={item["IIT"]} />{item["IIT"]}</td>
-                  <td className='timing medaltype'>{item["Timing"]|| item["Height (m)"]||item["Distance (m)"]}</td>
-                </tr>
-              ))
-            ) : (
+            table === "resultTable" ? (
               jsonData.map((item, index) => (
                 <tr key={index}>
                   <td className='medaltype'>{index + 1}</td>
@@ -53,6 +44,25 @@ function JsonToTable({ jsonData, visiblity, table }) {
                   <td className='medaltype'>{item["Gold"]}</td>
                   <td className='medaltype'>{item["Silver"]}</td>
                   <td className='medaltype'>{item["Bronze"]}</td>
+                </tr>
+              ))
+            ) : (table === "pointsTable") ? (
+              // Code for pointTable
+              jsonData.map((item, index) => (
+                <tr key={index}>
+                  {/* Adjust the content for the pointTable as needed */}
+                  <td className='medaltype'>{index + 1}</td>
+                  <td><img src={require(`${getImageByTitle(item["IIT"])}`)} className='IIT-icon' alt={item["IIT"]} />{item["IIT"]}</td>
+                  <td className='medaltype'>{item["Points"]}</td>
+                </tr>
+              ))
+            ) : (
+              jsonData.map((item, index) => (
+                <tr key={index}>
+                  <td className='medaltype'>{index + 1}</td>
+                  {item["Athlete"]?<td className='medaltype'>{item["Athlete"]}</td>:""}
+                  <td><img src={require(`${getImageByTitle(item["IIT"])}`)} className='IIT-icon' alt={item["IIT"]} />{item["IIT"]}</td>
+                  <td className='timing medaltype'>{item["Timing"]|| item["Height (m)"]||item["Distance (m)"]}</td>
                 </tr>
               ))
             )

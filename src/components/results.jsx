@@ -3,7 +3,7 @@ import Header from './header'
 import Footer from './footer'
 import JsonToTable from './jsontotable'
 import { ChevronDown } from 'lucide-react'
-import tableData from './Assests/Data/MedalTally.json'
+import tableData from './Assests/Data/PonitsTable.json'
 import ScheduleHelper from './schedulehelper';
 
 import Day1Morning1500mMen from "./Assests/Data/Results/sportsMeet/Day1-Result/Morning/Day1Morning1500mMen.json"
@@ -21,6 +21,7 @@ import Day2EveningTripleJumpMenFinal from "./Assests/Data/Results/sportsMeet/Day
 
 import Day3MorningLongMen from "./Assests/Data/Results/sportsMeet/Day3-Result/Morning/Day3MorningLongMen.json"
 import Day3MorningHighMen from "./Assests/Data/Results/sportsMeet/Day3-Result/Morning/Day3MorningHighMen.json"
+import Day3MorningJavMen from "./Assests/Data/Results/sportsMeet/Day3-Result/Morning/Day3MorningJavMen.json"
 import Day3Evening400MFinal from "./Assests/Data/Results/sportsMeet/Day3-Result/Evening/Day3Evening400MFinal.json"
 import Day3Evening400WFinal from "./Assests/Data/Results/sportsMeet/Day3-Result/Evening/Day3Evening400WFinal.json"
 import Day3EveningHurdlesMenfrom from "./Assests/Data/Results/sportsMeet/Day3-Result/Evening/Day3EveningHurdlesMen.json"
@@ -31,11 +32,22 @@ import Day4Morning100mMen from "./Assests/Data/Results/sportsMeet/Day4-Result/Mo
 import Day4Morning100mWomen from "./Assests/Data/Results/sportsMeet/Day4-Result/Morning/Day4Morning100Women.json"
 import Day4EveningDiscusMen from "./Assests/Data/Results/sportsMeet/Day4-Result/Evening/Day4EveningDiscusMen.json"
 
+import Day5MorningHighMen from "./Assests/Data/Results/sportsMeet/Day5-Result/Morning/Day5MorningHighMen.json"
+import Day5MorningRelayMen from "./Assests/Data/Results/sportsMeet/Day5-Result/Morning/Day5MorningRelayMen.json"
+import Day5MorningRelayWomen from "./Assests/Data/Results/sportsMeet/Day5-Result/Morning/Day5MorningRelayWomen.json"
+
 import Day5Evening200Men from "./Assests/Data/Results/sportsMeet/Day5-Result/Evening/Day5Evening200Men.json"
 import Day5Evening200Women from "./Assests/Data/Results/sportsMeet/Day5-Result/Evening/Day5Evening200Women.json"
 import Day5EveningShotMen from "./Assests/Data/Results/sportsMeet/Day5-Result/Evening/Day5EveningSHotMen.json"
-import Day5MorningHighMen from "./Assests/Data/Results/sportsMeet/Day5-Result/Morning/Day5MorningHighMen.json"
 
+import Day6Morning200Men from "./Assests/Data/Results/sportsMeet/Day6-Result/Morning/Day6Morning200Men.json"
+import Day6Morning200Women from "./Assests/Data/Results/sportsMeet/Day6-Result/Morning/Day6Morning200Women.json"
+import Day6Morning5000Men from "./Assests/Data/Results/sportsMeet/Day6-Result/Morning/Day6Morning5000Men.json"
+
+import Day7MorningHurdlesMen from "./Assests/Data/Results/sportsMeet/Day7-Result/Morning/Day7MorningHurdles.json"
+import Day7MorningJavWomen from "./Assests/Data/Results/sportsMeet/Day7-Result/Morning/Day7MorningJavWomen.json"
+import Day7EveningRelayMen from "./Assests/Data/Results/sportsMeet/Day7-Result/Evening/Day7EveningRelayMen.json"
+import Day7EveningRelayWomen from "./Assests/Data/Results/sportsMeet/Day7-Result/Evening/Day7EveningRelayWomen.json"
 const Results = () => {
   const [selectedSport, setselectedSport] = useState('Cricket Men');
   const [selectedDate, setSelectedDate] = useState('15th Dec')
@@ -183,12 +195,12 @@ const Results = () => {
       <input type="checkbox" id="toggle" class="toggleCheckbox" />
       <label for="toggle" class="toggleContainer">
         <div id="div1">Results</div>
-        <div id="div2">Medal Tally</div>
+        <div id="div2">Points Table</div>
       </label>
 
       <div className='Results-div hidden'>
-        <p className='results-heading'>Medal Tally</p>
-        <JsonToTable jsonData={tableData} table="resultTable" />
+        <p className='results-heading'>Points Table</p>
+        <JsonToTable jsonData={tableData} table="pointsTable" />
       </div>
 
       <section className='schedule-page' >
@@ -715,9 +727,13 @@ const sportsMatches = {
         "time": "6:00 PM",
         "ground": "G-1",
         "stage": "3rd Place",
-        "home_team": "LOSER OF SF1",
-        "away_team": "LOSER OF SF2",
-        "ground": "G-1"
+        "home_team": "IIT Kharagpur",
+        "away_team": "IIT Madras",
+        "logo_home_team":require('./Assests/IITs/IITKGP.jpg'),
+        "logo_away_team":require('./Assests/IITs/IITM.jpg'),
+        home_score:"1(3)",
+        away_score:"1(4)",
+        statement:"IIT Madras won the match"
       },
       {
         "id": 36,
@@ -725,9 +741,13 @@ const sportsMatches = {
         "time": "7:30 PM",
         "ground": "G-1",
         "stage": "FINAL",
-        "home_team": "WINNER OF SF1",
-        "away_team": "WINNER OF SF2",
-        "ground": "G-1"
+        "home_team": "IIT Bombay",
+        "away_team": "IIT Roorkee",
+        "logo_home_team":require('./Assests/IITs/IITB.jpg'),
+        "logo_away_team":require('./Assests/IITs/IITR.jpg'),
+        home_score:"0",
+        away_score:"4",
+        statement:"IIT Roorkee won the match"
       }
     ],
   "Cricket Men":
@@ -1230,8 +1250,13 @@ const sportsMatches = {
         "time": "8:30 AM",
         "ground": "G-2",
         "stage": "3rd Place",
-        "home_team": "Loser of SF1",
-        "away_team": "Loser of SF2"
+        "home_team": "IIT Kanpur",
+        "away_team": "IIT Madras",
+        "logo_home_team":require('./Assests/IITs/IITK.jpg'),
+        "logo_away_team":require('./Assests/IITs/IITM.jpg'),
+        home_score:"156/5 (20.0 OV)",
+        away_score:"132/10 (19.0 OV)",
+        statement:"IIT Kanpur won by 24 runs"
       },
       {
         "id": 38,
@@ -1239,8 +1264,13 @@ const sportsMatches = {
         "time": "8:30 AM",
         "ground": "G-1",
         "stage": "Final",
-        "home_team": "Winner of SF1",
-        "away_team": "Winner of SF2"
+        "home_team": "IIT Delhi",
+        "away_team": "IIT Roorkee",
+        "logo_home_team":require('./Assests/IITs/IITD.jpg'),
+        "logo_away_team":require('./Assests/IITs/IITR.jpg'),
+        home_score:"128/3 (18.3 OV)",
+        away_score:"127/8 (20.0 OV)",
+        statement:"IIT Delhi won by 7 wickets"
       }
     ],
   "Squash Men":
@@ -1615,8 +1645,13 @@ const sportsMatches = {
         "time": "10:00 AM",
         "stage": "3rd place",
         "ground": "C-1",
-        "home_team": "LOSER OF SF1",
-        "away_team": "LOSER OF SF2"
+        "home_team": "IIT Kanpur",
+        "away_team": "IIT Roorkee",
+        "logo_home_team": require('./Assests/IITs/IITK.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITR.jpg'),
+        home_score:"2",
+        away_score:"0",
+        statement: "IIT Kanpur won the match" 
       },
       {
         "id": 29,
@@ -1624,8 +1659,13 @@ const sportsMatches = {
         "time": "12:00 PM",
         "stage": "Final",
         "ground": "C-2",
-        "home_team": "WINNER OF SF1",
-        "away_team": "WINNER OF SF2"
+        "home_team": "IIT Delhi",
+        "away_team": "IIT Kharagpur",
+        "logo_home_team": require('./Assests/IITs/IITD.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITKGP.jpg'),
+        home_score:"1",
+        away_score:"2",
+        statement: "IIT Kharagpur won the match" 
       }
     ],
   "Squash Women":
@@ -1930,8 +1970,13 @@ const sportsMatches = {
         "time": "3:00 PM",
         "ground": "C-1",
         "stage": "3rd PLACE",
-        "home_team": "LOSER OF SF1",
-        "away_team": "LOSER OF SF2"
+        "home_team": "IIT Kanpur",
+        "away_team": "IIT Kharagpur",
+        "logo_home_team": require('./Assests/IITs/IITK.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITKGP.jpg'),
+        home_score:"2",
+        away_score:"0",
+        statement: "IIT Kanpur won the match" 
       },
       {
         "id": 23,
@@ -1939,8 +1984,13 @@ const sportsMatches = {
         "time": "3:00 PM",
         "ground": "C-2",
         "stage": "FINAL",
-        "home_team": "WINNER OF SF1",
-        "away_team": "WINNER OF SF2"
+        "home_team": "IIT Bombay",
+        "away_team": "IIT Delhi",
+        "logo_home_team": require('./Assests/IITs/IITB.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITD.jpg'),
+        home_score:"1",
+        away_score:"2",
+        statement: "IIT Delhi won the match" 
       }
     ],
   "Tennis Men":
@@ -2524,8 +2574,12 @@ const sportsMatches = {
         "time": "6:30 PM",
         "ground": "1",
         "stage": "F1",
-        "home_team": "SF 1",
-        "away_team": "SF 4"
+        "home_team": "IIT Kharagpur",
+        "away_team": "IIT Madras",
+        "logo_home_team": require('./Assests/IITs/IITKGP.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITM.jpg'),
+        subStatement:"(6-0),(6-0)||(6-4),(6-4)",
+        statement: "IIT Kharagpur won the match"
       },
       {
         "id": 46,
@@ -2533,8 +2587,12 @@ const sportsMatches = {
         "time": "6:30 PM",
         "ground": "3",
         "stage": "F2",
-        "home_team": "SF 2",
-        "away_team": "SF 3"
+        "home_team": "IIT Bombay",
+        "away_team": "IIT Delhi",
+        "logo_home_team": require('./Assests/IITs/IITB.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITD.jpg'),
+        subStatement:"(6-1),(6-7),(6-1)||(6-2),(6-2)||(7-6),(6-4)",
+        statement: "IIT Delhi won the match"
       },
       {
         "id": 47,
@@ -2950,8 +3008,12 @@ const sportsMatches = {
         "time": "5:30 PM",
         "ground": "2",
         "stage": "3rd PLACE",
-        "home_team": "LOSER OF F1",
-        "away_team": "LOSER OF F2"
+        "home_team": "IIT Ropar",
+        "away_team": "IIT Madras",
+        "logo_home_team": require('./Assests/IITs/IITRPR.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITM.jpg'),
+        subStatement:"(6-1),(6-0)||(6-0),(6-0)",
+        statement: "IIT Ropar won the match"
       },
       {
         "id": 32,
@@ -2959,8 +3021,12 @@ const sportsMatches = {
         "time": "5:00 PM",
         "ground": "4",
         "stage": "FINAL",
-        "home_team": "WINNER OF F1",
-        "away_team": "WINNER OF F2"
+        "home_team": "IIT Roorkee",
+        "away_team": "IIT Delhi",
+        "logo_home_team": require('./Assests/IITs/IITR.jpg'),
+        "logo_away_team": require('./Assests/IITs/IITD.jpg'),
+        subStatement:"(6-2),(6-1)||(6-4),(6-3)",
+        statement: "IIT Roorkee won the match"
       }
     ],
   "Chess":
@@ -3975,6 +4041,7 @@ const athleticsMatches = {
       Event: "Javelin Throw",
       Gender: "Men",
       Round: "Final",
+      jsonFile:Day3MorningJavMen 
     },
     {
       Session: "Morning",
@@ -4088,6 +4155,7 @@ const athleticsMatches = {
       Event: "4x100M",
       Gender: "Women",
       Round: "Final",
+      jsonFile:Day5MorningRelayWomen
     },
     {
       Session: "Morning",
@@ -4095,6 +4163,7 @@ const athleticsMatches = {
       Event: "4x100M",
       Gender: "Men",
       Round: "Final",
+      jsonFile:Day5MorningRelayMen
     },
     {
       Session: "Evening",
@@ -4135,6 +4204,7 @@ const athleticsMatches = {
       Event: "5000M",
       Gender: "Men",
       Round: "Final",
+      jsonFile:Day6Morning5000Men
     },
     {
       Session: "Morning",
@@ -4142,6 +4212,7 @@ const athleticsMatches = {
       Event: "200M",
       Gender: "Men",
       Round: "Final",
+      jsonFile:Day6Morning200Men
     },
     {
       Session: "Morning",
@@ -4149,21 +4220,8 @@ const athleticsMatches = {
       Event: "200M",
       Gender: "Women",
       Round: "Final",
-    },
-    {
-      Session: "Evening",
-      EventNo: "604",
-      Event: "4x400M",
-      Gender: "Women",
-      Round: "Heats",
-    },
-    {
-      Session: "Evening",
-      EventNo: "605",
-      Event: "4x400M",
-      Gender: "Men",
-      Round: "Heats",
-    },
+      jsonFile:Day6Morning200Women
+    }
   ],
   "21st Dec": [
     {
@@ -4172,6 +4230,7 @@ const athleticsMatches = {
       Event: "400M Hurdles",
       Gender: "Men",
       Round: "Final",
+      jsonFile:Day7MorningHurdlesMen
     },
     {
       Session: "Morning",
@@ -4179,20 +4238,22 @@ const athleticsMatches = {
       Event: "Javelin Throw",
       Gender: "Women",
       Round: "Final",
+      jsonFile:Day7MorningJavWomen
     },
-    {
-      Session: "Evening",
-      EventNo: "801",
-      Event: "Long Jump",
-      Gender: "Women",
-      Round: "Final",
-    },
+    // {
+    //   Session: "Evening",
+    //   EventNo: "801",
+    //   Event: "Long Jump",
+    //   Gender: "Women",
+    //   Round: "Final",
+    // },
     {
       Session: "Evening",
       EventNo: "802",
       Event: "4x400M",
       Gender: "Women",
       Round: "Final",
+      jsonFile:Day7EveningRelayWomen 
     },
     {
       Session: "Evening",
@@ -4200,6 +4261,7 @@ const athleticsMatches = {
       Event: "4x400M",
       Gender: "Men",
       Round: "Final",
+      jsonFile:Day7EveningRelayMen
     },
   ],
   "22nd Dec":[
